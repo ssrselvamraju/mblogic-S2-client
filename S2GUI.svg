@@ -1266,452 +1266,452 @@
        y1="90"
        y2="0" />
     <linearGradient
-       y2="0"
+       id="MB_Column_WhiteGradient"
+       x1="0"
        x2="0"
        y1="1"
-       x1="0"
-       id="MB_Column_WhiteGradient">
+       y2="0">
       <stop
          id="stop3501"
-         stop-color="blue"
-         offset="0%" />
+         offset="0%"
+         stop-color="blue" />
       <stop
          id="stop3503"
-         stop-color="blue"
-         offset="10%" />
+         offset="10%"
+         stop-color="blue" />
       <stop
          id="stop3505"
-         stop-color="white"
-         offset="90%" />
+         offset="90%"
+         stop-color="white" />
       <stop
          id="stop3507"
-         stop-color="white"
-         offset="100%" />
+         offset="100%"
+         stop-color="white" />
     </linearGradient>
     <linearGradient
-       inkscape:collect="always"
-       xlink:href="#MB_Column_WhiteGradient"
+       gradientTransform="scale(0.31622777,3.1622777)"
+       gradientUnits="userSpaceOnUse"
        id="linearGradient3524"
-       x1="0"
-       y1="31.622777"
-       x2="0"
-       y2="0"
-       gradientTransform="scale(0.31622777,3.1622777)"
-       gradientUnits="userSpaceOnUse" />
-    <linearGradient
        inkscape:collect="always"
-       xlink:href="#MB_Column_WhiteGradient"
-       id="linearGradient3526"
        x1="0"
-       y1="31.622777"
        x2="0"
-       y2="0"
-       gradientTransform="scale(0.31622777,3.1622777)"
-       gradientUnits="userSpaceOnUse" />
+       xlink:href="#MB_Column_WhiteGradient"
+       y1="31.622777"
+       y2="0" />
     <linearGradient
-       y2="0"
+       gradientTransform="scale(0.31622777,3.1622777)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient3526"
+       inkscape:collect="always"
+       x1="0"
+       x2="0"
+       xlink:href="#MB_Column_WhiteGradient"
+       y1="31.622777"
+       y2="0" />
+    <linearGradient
+       id="MB_OrangeGradient"
+       x1="1"
        x2="0"
        y1="1"
-       x1="1"
-       id="MB_OrangeGradient">
+       y2="0">
       <stop
          id="stop3533"
-         stop-color="orange"
-         offset="50%" />
+         offset="50%"
+         stop-color="orange" />
       <stop
          id="stop3535"
-         stop-color="white"
-         offset="100%" />
+         offset="100%"
+         stop-color="white" />
     </linearGradient>
     <linearGradient
-       inkscape:collect="always"
-       xlink:href="#MB_OrangeGradient"
+       gradientUnits="userSpaceOnUse"
        id="linearGradient3678"
-       x1="36"
-       y1="36"
-       x2="0"
-       y2="0"
-       gradientUnits="userSpaceOnUse" />
-    <linearGradient
        inkscape:collect="always"
+       x1="36"
+       x2="0"
        xlink:href="#MB_OrangeGradient"
+       y1="36"
+       y2="0" />
+    <linearGradient
+       gradientUnits="userSpaceOnUse"
        id="linearGradient3680"
-       x1="36"
-       y1="36"
-       x2="0"
-       y2="0"
-       gradientUnits="userSpaceOnUse" />
-    <linearGradient
        inkscape:collect="always"
+       x1="36"
+       x2="0"
        xlink:href="#MB_OrangeGradient"
+       y1="36"
+       y2="0" />
+    <linearGradient
+       gradientUnits="userSpaceOnUse"
        id="linearGradient3682"
-       x1="36"
-       y1="36"
-       x2="0"
-       y2="0"
-       gradientUnits="userSpaceOnUse" />
-    <linearGradient
        inkscape:collect="always"
+       x1="36"
+       x2="0"
        xlink:href="#MB_OrangeGradient"
+       y1="36"
+       y2="0" />
+    <linearGradient
+       gradientUnits="userSpaceOnUse"
        id="linearGradient3684"
-       x1="36"
-       y1="36"
-       x2="0"
-       y2="0"
-       gradientUnits="userSpaceOnUse" />
-    <linearGradient
        inkscape:collect="always"
+       x1="36"
+       x2="0"
        xlink:href="#MB_OrangeGradient"
+       y1="36"
+       y2="0" />
+    <linearGradient
+       gradientUnits="userSpaceOnUse"
        id="linearGradient3686"
-       x1="36"
-       y1="36"
-       x2="0"
-       y2="0"
-       gradientUnits="userSpaceOnUse" />
-    <linearGradient
        inkscape:collect="always"
+       x1="36"
+       x2="0"
        xlink:href="#MB_OrangeGradient"
+       y1="36"
+       y2="0" />
+    <linearGradient
+       gradientUnits="userSpaceOnUse"
        id="linearGradient3688"
-       x1="36"
-       y1="36"
-       x2="0"
-       y2="0"
-       gradientUnits="userSpaceOnUse" />
-    <linearGradient
        inkscape:collect="always"
+       x1="36"
+       x2="0"
        xlink:href="#MB_OrangeGradient"
+       y1="36"
+       y2="0" />
+    <linearGradient
+       gradientUnits="userSpaceOnUse"
        id="linearGradient3690"
-       x1="36"
-       y1="36"
-       x2="0"
-       y2="0"
-       gradientUnits="userSpaceOnUse" />
-    <linearGradient
        inkscape:collect="always"
+       x1="36"
+       x2="0"
        xlink:href="#MB_OrangeGradient"
+       y1="36"
+       y2="0" />
+    <linearGradient
+       gradientUnits="userSpaceOnUse"
        id="linearGradient3692"
-       x1="36"
-       y1="36"
-       x2="0"
-       y2="0"
-       gradientUnits="userSpaceOnUse" />
-    <linearGradient
        inkscape:collect="always"
+       x1="36"
+       x2="0"
        xlink:href="#MB_OrangeGradient"
+       y1="36"
+       y2="0" />
+    <linearGradient
+       gradientUnits="userSpaceOnUse"
        id="linearGradient3694"
-       x1="36"
-       y1="36"
-       x2="0"
-       y2="0"
-       gradientUnits="userSpaceOnUse" />
-    <linearGradient
        inkscape:collect="always"
+       x1="36"
+       x2="0"
        xlink:href="#MB_OrangeGradient"
+       y1="36"
+       y2="0" />
+    <linearGradient
+       gradientUnits="userSpaceOnUse"
        id="linearGradient3696"
-       x1="36"
-       y1="36"
-       x2="0"
-       y2="0"
-       gradientUnits="userSpaceOnUse" />
-    <linearGradient
        inkscape:collect="always"
+       x1="36"
+       x2="0"
        xlink:href="#MB_OrangeGradient"
+       y1="36"
+       y2="0" />
+    <linearGradient
+       gradientUnits="userSpaceOnUse"
        id="linearGradient3698"
-       x1="36"
-       y1="36"
-       x2="0"
-       y2="0"
-       gradientUnits="userSpaceOnUse" />
-    <linearGradient
        inkscape:collect="always"
+       x1="36"
+       x2="0"
        xlink:href="#MB_OrangeGradient"
+       y1="36"
+       y2="0" />
+    <linearGradient
+       gradientUnits="userSpaceOnUse"
        id="linearGradient3700"
-       x1="36"
-       y1="36"
-       x2="0"
-       y2="0"
-       gradientUnits="userSpaceOnUse" />
-    <linearGradient
        inkscape:collect="always"
+       x1="36"
+       x2="0"
        xlink:href="#MB_OrangeGradient"
-       id="linearGradient3702"
-       x1="67.082039"
-       y1="67.082039"
-       x2="0"
-       y2="0"
-       gradientTransform="scale(1.86339,0.53665631)"
-       gradientUnits="userSpaceOnUse" />
+       y1="36"
+       y2="0" />
     <linearGradient
-       y2="0"
+       gradientTransform="scale(1.86339,0.53665631)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient3702"
+       inkscape:collect="always"
+       x1="67.082039"
+       x2="0"
+       xlink:href="#MB_OrangeGradient"
+       y1="67.082039"
+       y2="0" />
+    <linearGradient
+       gradientTransform="scale(1.86339,0.53665631)"
+       gradientUnits="userSpaceOnUse"
+       id="MB_OrangeGradient-0"
+       x1="67.082039"
        x2="0"
        y1="67.082039"
-       x1="67.082039"
-       id="MB_OrangeGradient-0"
-       gradientTransform="scale(1.86339,0.53665631)"
-       gradientUnits="userSpaceOnUse">
+       y2="0">
       <stop
          id="stop3709"
-         stop-color="orange"
-         offset="50%" />
+         offset="50%"
+         stop-color="orange" />
       <stop
          id="stop3711"
-         stop-color="white"
-         offset="100%" />
+         offset="100%"
+         stop-color="white" />
     </linearGradient>
     <linearGradient
-       y2="0"
+       gradientTransform="scale(1.86339,0.53665631)"
+       gradientUnits="userSpaceOnUse"
+       id="MB_OrangeGradient-0-2"
+       x1="67.082039"
        x2="0"
        y1="67.082039"
-       x1="67.082039"
-       id="MB_OrangeGradient-0-2"
-       gradientTransform="scale(1.86339,0.53665631)"
-       gradientUnits="userSpaceOnUse">
+       y2="0">
       <stop
          id="stop3709-4"
-         stop-color="orange"
-         offset="50%" />
+         offset="50%"
+         stop-color="orange" />
       <stop
          id="stop3711-2"
-         stop-color="white"
-         offset="100%" />
+         offset="100%"
+         stop-color="white" />
     </linearGradient>
     <linearGradient
-       y2="0"
+       gradientTransform="scale(1.86339,0.53665631)"
+       gradientUnits="userSpaceOnUse"
+       id="MB_OrangeGradient-0-7"
+       x1="67.082039"
        x2="0"
        y1="67.082039"
-       x1="67.082039"
-       id="MB_OrangeGradient-0-7"
-       gradientTransform="scale(1.86339,0.53665631)"
-       gradientUnits="userSpaceOnUse">
+       y2="0">
       <stop
          id="stop3709-0"
-         stop-color="orange"
-         offset="50%" />
+         offset="50%"
+         stop-color="orange" />
       <stop
          id="stop3711-6"
-         stop-color="white"
-         offset="100%" />
+         offset="100%"
+         stop-color="white" />
     </linearGradient>
     <linearGradient
-       y2="0"
+       gradientTransform="scale(1.86339,0.53665631)"
+       gradientUnits="userSpaceOnUse"
+       id="MB_OrangeGradient-0-8"
+       x1="67.082039"
        x2="0"
        y1="67.082039"
-       x1="67.082039"
-       id="MB_OrangeGradient-0-8"
-       gradientTransform="scale(1.86339,0.53665631)"
-       gradientUnits="userSpaceOnUse">
+       y2="0">
       <stop
          id="stop3709-5"
-         stop-color="orange"
-         offset="50%" />
+         offset="50%"
+         stop-color="orange" />
       <stop
          id="stop3711-3"
-         stop-color="white"
-         offset="100%" />
+         offset="100%"
+         stop-color="white" />
     </linearGradient>
     <linearGradient
-       y2="0"
+       gradientTransform="scale(1.86339,0.53665631)"
+       gradientUnits="userSpaceOnUse"
+       id="MB_OrangeGradient-0-3"
+       x1="67.082039"
        x2="0"
        y1="67.082039"
-       x1="67.082039"
-       id="MB_OrangeGradient-0-3"
-       gradientTransform="scale(1.86339,0.53665631)"
-       gradientUnits="userSpaceOnUse">
+       y2="0">
       <stop
          id="stop3709-46"
-         stop-color="orange"
-         offset="50%" />
+         offset="50%"
+         stop-color="orange" />
       <stop
          id="stop3711-64"
-         stop-color="white"
-         offset="100%" />
+         offset="100%"
+         stop-color="white" />
     </linearGradient>
     <linearGradient
-       y2="0"
+       gradientTransform="scale(1.86339,0.53665631)"
+       gradientUnits="userSpaceOnUse"
+       id="MB_OrangeGradient-0-33"
+       x1="67.082039"
        x2="0"
        y1="67.082039"
-       x1="67.082039"
-       id="MB_OrangeGradient-0-33"
-       gradientTransform="scale(1.86339,0.53665631)"
-       gradientUnits="userSpaceOnUse">
+       y2="0">
       <stop
          id="stop3709-2"
-         stop-color="orange"
-         offset="50%" />
+         offset="50%"
+         stop-color="orange" />
       <stop
          id="stop3711-66"
-         stop-color="white"
-         offset="100%" />
+         offset="100%"
+         stop-color="white" />
     </linearGradient>
     <linearGradient
-       y2="0"
+       gradientTransform="scale(1.86339,0.53665631)"
+       gradientUnits="userSpaceOnUse"
+       id="MB_OrangeGradient-0-80"
+       x1="67.082039"
        x2="0"
        y1="67.082039"
-       x1="67.082039"
-       id="MB_OrangeGradient-0-80"
-       gradientTransform="scale(1.86339,0.53665631)"
-       gradientUnits="userSpaceOnUse">
+       y2="0">
       <stop
          id="stop3709-56"
-         stop-color="orange"
-         offset="50%" />
+         offset="50%"
+         stop-color="orange" />
       <stop
          id="stop3711-5"
-         stop-color="white"
-         offset="100%" />
+         offset="100%"
+         stop-color="white" />
     </linearGradient>
     <linearGradient
-       y2="0"
+       gradientTransform="scale(1.86339,0.53665631)"
+       gradientUnits="userSpaceOnUse"
+       id="MB_OrangeGradient-0-9"
+       x1="67.082039"
        x2="0"
        y1="67.082039"
-       x1="67.082039"
-       id="MB_OrangeGradient-0-9"
-       gradientTransform="scale(1.86339,0.53665631)"
-       gradientUnits="userSpaceOnUse">
+       y2="0">
       <stop
          id="stop3709-1"
-         stop-color="orange"
-         offset="50%" />
+         offset="50%"
+         stop-color="orange" />
       <stop
          id="stop3711-9"
-         stop-color="white"
-         offset="100%" />
+         offset="100%"
+         stop-color="white" />
     </linearGradient>
     <linearGradient
-       y2="0"
+       gradientTransform="scale(1.86339,0.53665631)"
+       gradientUnits="userSpaceOnUse"
+       id="MB_OrangeGradient-0-6"
+       x1="67.082039"
        x2="0"
        y1="67.082039"
-       x1="67.082039"
-       id="MB_OrangeGradient-0-6"
-       gradientTransform="scale(1.86339,0.53665631)"
-       gradientUnits="userSpaceOnUse">
+       y2="0">
       <stop
          id="stop3709-41"
-         stop-color="orange"
-         offset="50%" />
+         offset="50%"
+         stop-color="orange" />
       <stop
          id="stop3711-1"
-         stop-color="white"
-         offset="100%" />
+         offset="100%"
+         stop-color="white" />
     </linearGradient>
     <linearGradient
-       y2="0"
+       gradientTransform="scale(1.86339,0.53665631)"
+       gradientUnits="userSpaceOnUse"
+       id="MB_OrangeGradient-0-32"
+       x1="67.082039"
        x2="0"
        y1="67.082039"
-       x1="67.082039"
-       id="MB_OrangeGradient-0-32"
-       gradientTransform="scale(1.86339,0.53665631)"
-       gradientUnits="userSpaceOnUse">
+       y2="0">
       <stop
          id="stop3709-52"
-         stop-color="orange"
-         offset="50%" />
+         offset="50%"
+         stop-color="orange" />
       <stop
          id="stop3711-36"
-         stop-color="white"
-         offset="100%" />
+         offset="100%"
+         stop-color="white" />
     </linearGradient>
     <linearGradient
-       y2="0"
+       gradientTransform="scale(1.86339,0.53665631)"
+       gradientUnits="userSpaceOnUse"
+       id="MB_OrangeGradient-0-79"
+       x1="67.082039"
        x2="0"
        y1="67.082039"
-       x1="67.082039"
-       id="MB_OrangeGradient-0-79"
-       gradientTransform="scale(1.86339,0.53665631)"
-       gradientUnits="userSpaceOnUse">
+       y2="0">
       <stop
          id="stop3709-8"
-         stop-color="orange"
-         offset="50%" />
+         offset="50%"
+         stop-color="orange" />
       <stop
          id="stop3711-96"
-         stop-color="white"
-         offset="100%" />
+         offset="100%"
+         stop-color="white" />
     </linearGradient>
     <linearGradient
-       y2="0"
+       gradientTransform="scale(1.86339,0.53665631)"
+       gradientUnits="userSpaceOnUse"
+       id="MB_OrangeGradient-0-97"
+       x1="67.082039"
        x2="0"
        y1="67.082039"
-       x1="67.082039"
-       id="MB_OrangeGradient-0-97"
-       gradientTransform="scale(1.86339,0.53665631)"
-       gradientUnits="userSpaceOnUse">
+       y2="0">
       <stop
          id="stop3709-6"
-         stop-color="orange"
-         offset="50%" />
+         offset="50%"
+         stop-color="orange" />
       <stop
          id="stop3711-8"
-         stop-color="white"
-         offset="100%" />
+         offset="100%"
+         stop-color="white" />
     </linearGradient>
     <linearGradient
-       y2="0"
+       gradientTransform="scale(1.86339,0.53665631)"
+       gradientUnits="userSpaceOnUse"
+       id="MB_OrangeGradient-0-93"
+       x1="67.082039"
        x2="0"
        y1="67.082039"
-       x1="67.082039"
-       id="MB_OrangeGradient-0-93"
-       gradientTransform="scale(1.86339,0.53665631)"
-       gradientUnits="userSpaceOnUse">
+       y2="0">
       <stop
          id="stop3709-9"
-         stop-color="orange"
-         offset="50%" />
+         offset="50%"
+         stop-color="orange" />
       <stop
          id="stop3711-98"
-         stop-color="white"
-         offset="100%" />
+         offset="100%"
+         stop-color="white" />
     </linearGradient>
     <linearGradient
-       y2="0"
+       gradientTransform="scale(1.86339,0.53665631)"
+       gradientUnits="userSpaceOnUse"
+       id="MB_OrangeGradient-0-60"
+       x1="67.082039"
        x2="0"
        y1="67.082039"
-       x1="67.082039"
-       id="MB_OrangeGradient-0-60"
-       gradientTransform="scale(1.86339,0.53665631)"
-       gradientUnits="userSpaceOnUse">
+       y2="0">
       <stop
          id="stop3709-7"
-         stop-color="orange"
-         offset="50%" />
+         offset="50%"
+         stop-color="orange" />
       <stop
          id="stop3711-4"
-         stop-color="white"
-         offset="100%" />
+         offset="100%"
+         stop-color="white" />
     </linearGradient>
     <linearGradient
-       y2="0"
+       gradientTransform="scale(1.86339,0.53665631)"
+       gradientUnits="userSpaceOnUse"
+       id="MB_OrangeGradient-0-94"
+       x1="67.082039"
        x2="0"
        y1="67.082039"
-       x1="67.082039"
-       id="MB_OrangeGradient-0-94"
-       gradientTransform="scale(1.86339,0.53665631)"
-       gradientUnits="userSpaceOnUse">
+       y2="0">
       <stop
          id="stop3709-91"
-         stop-color="orange"
-         offset="50%" />
+         offset="50%"
+         stop-color="orange" />
       <stop
          id="stop3711-65"
-         stop-color="white"
-         offset="100%" />
+         offset="100%"
+         stop-color="white" />
     </linearGradient>
     <linearGradient
-       y2="0"
+       gradientTransform="scale(1.86339,0.53665631)"
+       gradientUnits="userSpaceOnUse"
+       id="MB_OrangeGradient-0-4"
+       x1="67.082039"
        x2="0"
        y1="67.082039"
-       x1="67.082039"
-       id="MB_OrangeGradient-0-4"
-       gradientTransform="scale(1.86339,0.53665631)"
-       gradientUnits="userSpaceOnUse">
+       y2="0">
       <stop
          id="stop3709-40"
-         stop-color="orange"
-         offset="50%" />
+         offset="50%"
+         stop-color="orange" />
       <stop
          id="stop3711-42"
-         stop-color="white"
-         offset="100%" />
+         offset="100%"
+         stop-color="white" />
     </linearGradient>
   </defs>
   <sodipodi:namedview
@@ -1721,8 +1721,8 @@
      gridtolerance="10000"
      guidetolerance="10"
      id="base"
-     inkscape:current-layer="OpScr"
-     inkscape:cx="184.87967"
+     inkscape:current-layer="EngScr"
+     inkscape:cx="18.002469"
      inkscape:cy="258.63388"
      inkscape:document-units="px"
      inkscape:pageopacity="0.0"
@@ -1796,7 +1796,7 @@
        inkscape:label="#g3419"
        mblogic:editcount="3"
        mblogic:inputfunc="[]"
-       mblogic:menu="[{&quot;param&quot;: &quot;outputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;value&quot;: &quot;GraphSpeed&quot;}, {&quot;param&quot;: &quot;maxpoints&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Max Points&quot;, &quot;value&quot;: &quot;50&quot;}, {&quot;param&quot;: &quot;xincr&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;X Increment&quot;, &quot;value&quot;: &quot;10&quot;}, {&quot;param&quot;: &quot;yincr&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Y Scale&quot;, &quot;value&quot;: &quot;1&quot;}, {&quot;param&quot;: &quot;timeinterval&quot;, &quot;type&quot;: &quot;float&quot;, &quot;name&quot;: &quot;Time Interval&quot;, &quot;value&quot;: &quot;1.0&quot;}]"
+       mblogic:menu="[{&quot;value&quot;: &quot;GraphSpeed&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;param&quot;: &quot;outputtag&quot;}, {&quot;value&quot;: &quot;50&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Max Points&quot;, &quot;param&quot;: &quot;maxpoints&quot;}, {&quot;value&quot;: &quot;10&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;X Increment&quot;, &quot;param&quot;: &quot;xincr&quot;}, {&quot;value&quot;: &quot;1&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Y Scale&quot;, &quot;param&quot;: &quot;yincr&quot;}, {&quot;value&quot;: &quot;1.0&quot;, &quot;type&quot;: &quot;float&quot;, &quot;name&quot;: &quot;Time Interval&quot;, &quot;param&quot;: &quot;timeinterval&quot;}]"
        mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_StripChart(document, &quot;%(widgetid)s&quot;, %(maxpoints)s, %(xincr)s, %(yincr)s, %(timeinterval)s), &quot;%(outputtag)s&quot;, &quot;read&quot;);"
        mblogic:widgetname="Strip Chart"
        mblogic:widgettype="strip_chart"
@@ -1814,7 +1814,7 @@
        inkscape:label="#g3433"
        mblogic:editcount="3"
        mblogic:inputfunc="[]"
-       mblogic:menu="[{&quot;param&quot;: &quot;outputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;value&quot;: &quot;GrphScrTxt&quot;}]"
+       mblogic:menu="[{&quot;value&quot;: &quot;GrphScrTxt&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;param&quot;: &quot;outputtag&quot;}]"
        mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_StringDisplay(document, &quot;%(widgetid)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);"
        mblogic:widgetname="Centred String Display"
        mblogic:widgettype="text"
@@ -2508,7 +2508,7 @@
        inkscape:label="#g4338"
        mblogic:editcount="1"
        mblogic:inputfunc="[]"
-       mblogic:menu="[{&quot;param&quot;: &quot;outputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;value&quot;: &quot;din1&quot;}]"
+       mblogic:menu="[{&quot;value&quot;: &quot;din1&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;param&quot;: &quot;outputtag&quot;}]"
        mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, &quot;%(widgetid)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);"
        mblogic:widgetname="Integer Digits"
        mblogic:widgettype="text"
@@ -2525,7 +2525,7 @@
        inkscape:label="#g4338-5"
        mblogic:editcount="1"
        mblogic:inputfunc="[]"
-       mblogic:menu="[{&quot;param&quot;: &quot;outputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;value&quot;: &quot;din2&quot;}]"
+       mblogic:menu="[{&quot;value&quot;: &quot;din2&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;param&quot;: &quot;outputtag&quot;}]"
        mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, &quot;%(widgetid)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);"
        mblogic:widgetname="Integer Digits"
        mblogic:widgettype="text"
@@ -2543,7 +2543,7 @@
        inkscape:label="#g4338-4"
        mblogic:editcount="1"
        mblogic:inputfunc="[]"
-       mblogic:menu="[{&quot;param&quot;: &quot;outputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;value&quot;: &quot;din3&quot;}]"
+       mblogic:menu="[{&quot;value&quot;: &quot;din3&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;param&quot;: &quot;outputtag&quot;}]"
        mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, &quot;%(widgetid)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);"
        mblogic:widgetname="Integer Digits"
        mblogic:widgettype="text"
@@ -2561,7 +2561,7 @@
        inkscape:label="#g4338-8"
        mblogic:editcount="1"
        mblogic:inputfunc="[]"
-       mblogic:menu="[{&quot;param&quot;: &quot;outputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;value&quot;: &quot;din4&quot;}]"
+       mblogic:menu="[{&quot;value&quot;: &quot;din4&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;param&quot;: &quot;outputtag&quot;}]"
        mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, &quot;%(widgetid)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);"
        mblogic:widgetname="Integer Digits"
        mblogic:widgettype="text"
@@ -2579,7 +2579,7 @@
        inkscape:label="#g4338-89"
        mblogic:editcount="1"
        mblogic:inputfunc="[]"
-       mblogic:menu="[{&quot;param&quot;: &quot;outputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;value&quot;: &quot;din5&quot;}]"
+       mblogic:menu="[{&quot;value&quot;: &quot;din5&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;param&quot;: &quot;outputtag&quot;}]"
        mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, &quot;%(widgetid)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);"
        mblogic:widgetname="Integer Digits"
        mblogic:widgettype="text"
@@ -2597,7 +2597,7 @@
        inkscape:label="#g4338-6"
        mblogic:editcount="1"
        mblogic:inputfunc="[]"
-       mblogic:menu="[{&quot;param&quot;: &quot;outputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;value&quot;: &quot;din6&quot;}]"
+       mblogic:menu="[{&quot;value&quot;: &quot;din6&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;param&quot;: &quot;outputtag&quot;}]"
        mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, &quot;%(widgetid)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);"
        mblogic:widgetname="Integer Digits"
        mblogic:widgettype="text"
@@ -2615,7 +2615,7 @@
        inkscape:label="#g4338-0"
        mblogic:editcount="1"
        mblogic:inputfunc="[]"
-       mblogic:menu="[{&quot;param&quot;: &quot;outputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;value&quot;: &quot;din7&quot;}]"
+       mblogic:menu="[{&quot;value&quot;: &quot;din7&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;param&quot;: &quot;outputtag&quot;}]"
        mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, &quot;%(widgetid)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);"
        mblogic:widgetname="Integer Digits"
        mblogic:widgettype="text"
@@ -2633,7 +2633,7 @@
        inkscape:label="#g4338-56"
        mblogic:editcount="1"
        mblogic:inputfunc="[]"
-       mblogic:menu="[{&quot;param&quot;: &quot;outputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;value&quot;: &quot;din8&quot;}]"
+       mblogic:menu="[{&quot;value&quot;: &quot;din8&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;param&quot;: &quot;outputtag&quot;}]"
        mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, &quot;%(widgetid)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);"
        mblogic:widgetname="Integer Digits"
        mblogic:widgettype="text"
@@ -2651,7 +2651,7 @@
        inkscape:label="#g4427"
        mblogic:editcount="1"
        mblogic:inputfunc="[]"
-       mblogic:menu="[{&quot;param&quot;: &quot;outputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;value&quot;: &quot;ain1&quot;}]"
+       mblogic:menu="[{&quot;value&quot;: &quot;ain1&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;param&quot;: &quot;outputtag&quot;}]"
        mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, &quot;%(widgetid)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);"
        mblogic:widgetname="Integer Digits"
        mblogic:widgettype="text"
@@ -2668,7 +2668,7 @@
        inkscape:label="#g4427-2"
        mblogic:editcount="1"
        mblogic:inputfunc="[]"
-       mblogic:menu="[{&quot;param&quot;: &quot;outputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;value&quot;: &quot;ain2&quot;}]"
+       mblogic:menu="[{&quot;value&quot;: &quot;ain2&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;param&quot;: &quot;outputtag&quot;}]"
        mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, &quot;%(widgetid)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);"
        mblogic:widgetname="Integer Digits"
        mblogic:widgettype="text"
@@ -2686,7 +2686,7 @@
        inkscape:label="#g4427-8"
        mblogic:editcount="1"
        mblogic:inputfunc="[]"
-       mblogic:menu="[{&quot;param&quot;: &quot;outputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;value&quot;: &quot;ain3&quot;}]"
+       mblogic:menu="[{&quot;value&quot;: &quot;ain3&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;param&quot;: &quot;outputtag&quot;}]"
        mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, &quot;%(widgetid)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);"
        mblogic:widgetname="Integer Digits"
        mblogic:widgettype="text"
@@ -2704,7 +2704,7 @@
        inkscape:label="#g4427-9"
        mblogic:editcount="1"
        mblogic:inputfunc="[]"
-       mblogic:menu="[{&quot;param&quot;: &quot;outputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;value&quot;: &quot;ain4&quot;}]"
+       mblogic:menu="[{&quot;value&quot;: &quot;ain4&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;param&quot;: &quot;outputtag&quot;}]"
        mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, &quot;%(widgetid)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);"
        mblogic:widgetname="Integer Digits"
        mblogic:widgettype="text"
@@ -2722,7 +2722,7 @@
        inkscape:label="#g4427-6"
        mblogic:editcount="1"
        mblogic:inputfunc="[]"
-       mblogic:menu="[{&quot;param&quot;: &quot;outputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;value&quot;: &quot;ain5&quot;}]"
+       mblogic:menu="[{&quot;value&quot;: &quot;ain5&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;param&quot;: &quot;outputtag&quot;}]"
        mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, &quot;%(widgetid)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);"
        mblogic:widgetname="Integer Digits"
        mblogic:widgettype="text"
@@ -2740,7 +2740,7 @@
        inkscape:label="#g4427-27"
        mblogic:editcount="1"
        mblogic:inputfunc="[]"
-       mblogic:menu="[{&quot;param&quot;: &quot;outputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;value&quot;: &quot;ain6&quot;}]"
+       mblogic:menu="[{&quot;value&quot;: &quot;ain6&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;param&quot;: &quot;outputtag&quot;}]"
        mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, &quot;%(widgetid)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);"
        mblogic:widgetname="Integer Digits"
        mblogic:widgettype="text"
@@ -2758,7 +2758,7 @@
        inkscape:label="#g4427-98"
        mblogic:editcount="1"
        mblogic:inputfunc="[]"
-       mblogic:menu="[{&quot;param&quot;: &quot;outputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;value&quot;: &quot;ain7&quot;}]"
+       mblogic:menu="[{&quot;value&quot;: &quot;ain7&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;param&quot;: &quot;outputtag&quot;}]"
        mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, &quot;%(widgetid)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);"
        mblogic:widgetname="Integer Digits"
        mblogic:widgettype="text"
@@ -2776,7 +2776,7 @@
        inkscape:label="#g4427-1"
        mblogic:editcount="1"
        mblogic:inputfunc="[]"
-       mblogic:menu="[{&quot;param&quot;: &quot;outputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;value&quot;: &quot;ain8&quot;}]"
+       mblogic:menu="[{&quot;value&quot;: &quot;ain8&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;param&quot;: &quot;outputtag&quot;}]"
        mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, &quot;%(widgetid)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);"
        mblogic:widgetname="Integer Digits"
        mblogic:widgettype="text"
@@ -2791,1030 +2791,1033 @@
     </g>
     <g
        id="NumericWriter"
-       mblogic:outputfunc="var MBT_NumberPad = new MB_NumericPad(document, &quot;MBT_NumberPaddisplay&quot;, &quot;%(numdigits)s&quot;);"
+       inkscape:label="#g3537"
+       mblogic:editcount="1"
        mblogic:inputfunc="[]"
-       mblogic:menu="[{&quot;value&quot;: &quot;10&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Number of Digits&quot;, &quot;param&quot;: &quot;numdigits&quot;}]"
-       mblogic:editcount="0"
+       mblogic:menu="[{&quot;param&quot;: &quot;numdigits&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Number of Digits&quot;, &quot;value&quot;: &quot;10&quot;}]"
+       mblogic:outputfunc="var MBT_NumberPad = new MB_NumericPad(document, &quot;MBT_NumberPaddisplay&quot;, &quot;%(numdigits)s&quot;);"
        mblogic:widgetname="Numeric Pad"
        mblogic:widgettype="numeric_pad"
-       transform="matrix(0.87768964,0,0,0.69947962,16.394444,520.70353)"
-       inkscape:label="#g3537">
+       transform="matrix(0.87768964,0,0,0.69947962,16.394444,520.70353)">
       <!-- Outline. -->
       <rect
+         height="320"
          id="rect3539"
          rx="15"
-         height="320"
+         style="fill:#c0c0c0"
          width="185"
-         y="0"
          x="0"
-         style="fill:#c0c0c0" />
+         y="0" />
       <rect
+         height="300"
          id="rect3541"
          rx="15"
-         height="300"
+         style="fill:#808080"
          width="165"
-         y="10"
          x="10"
-         style="fill:#808080" />
+         y="10" />
       <!-- Numeric display -->
       <rect
+         height="50"
          id="rect3543"
          rx="15"
-         height="50"
+         style="fill:#ffffff"
          width="150"
-         y="20"
          x="20"
-         style="fill:#ffffff" />
+         y="20" />
       <text
          font-size="20"
-         y="50"
-         x="22"
          id="MBT_NumberPaddisplay"
-         style="font-size:20px;stroke-width:2px">????????????</text>
+         style="font-size:20px;stroke-width:2px"
+         x="22"
+         y="50">????????????</text>
       <!-- buttons. -->
       <g
          id="g3546"
          transform="translate(30,85)">
         <g
+           class="buttonactivate"
            id="g3548"
-           onclick="MBT_NumberPad.AppendDigit(7);"
-           class="buttonactivate">
+           onclick="MBT_NumberPad.AppendDigit(7);">
           <rect
+             height="36"
              id="rect3550"
              rx="5"
-             height="36"
+             style="fill:url(#linearGradient3678)"
              width="36"
-             y="0"
              x="0"
-             style="fill:url(#linearGradient3678)" />
+             y="0" />
           <text
-             id="text3552"
              font-size="24"
-             y="27"
+             id="text3552"
+             style="font-size:24px;text-anchor:middle;stroke-width:2px"
              x="18"
-             style="font-size:24px;text-anchor:middle;stroke-width:2px">7</text>
+             y="27">7</text>
         </g>
         <g
+           class="buttonactivate"
            id="g3554"
            onclick="MBT_NumberPad.AppendDigit(8);"
-           class="buttonactivate"
            transform="translate(45,0)">
           <rect
+             height="36"
              id="rect3556"
              rx="5"
-             height="36"
+             style="fill:url(#linearGradient3680)"
              width="36"
-             y="0"
              x="0"
-             style="fill:url(#linearGradient3680)" />
+             y="0" />
           <text
-             id="text3558"
              font-size="24"
-             y="27"
+             id="text3558"
+             style="font-size:24px;text-anchor:middle;stroke-width:2px"
              x="18"
-             style="font-size:24px;text-anchor:middle;stroke-width:2px">8</text>
+             y="27">8</text>
         </g>
         <g
+           class="buttonactivate"
            id="g3560"
            onclick="MBT_NumberPad.AppendDigit(9);"
-           class="buttonactivate"
            transform="translate(90,0)">
           <rect
+             height="36"
              id="rect3562"
              rx="5"
-             height="36"
+             style="fill:url(#linearGradient3682)"
              width="36"
-             y="0"
              x="0"
-             style="fill:url(#linearGradient3682)" />
+             y="0" />
           <text
-             id="text3564"
              font-size="24"
-             y="27"
+             id="text3564"
+             style="font-size:24px;text-anchor:middle;stroke-width:2px"
              x="18"
-             style="font-size:24px;text-anchor:middle;stroke-width:2px">9</text>
+             y="27">9</text>
         </g>
         <g
+           class="buttonactivate"
            id="g3566"
            onclick="MBT_NumberPad.AppendDigit(4);"
-           class="buttonactivate"
            transform="translate(0,45)">
           <rect
+             height="36"
              id="rect3568"
              rx="5"
-             height="36"
+             style="fill:url(#linearGradient3684)"
              width="36"
-             y="0"
              x="0"
-             style="fill:url(#linearGradient3684)" />
+             y="0" />
           <text
-             id="text3570"
              font-size="24"
-             y="27"
+             id="text3570"
+             style="font-size:24px;text-anchor:middle;stroke-width:2px"
              x="18"
-             style="font-size:24px;text-anchor:middle;stroke-width:2px">4</text>
+             y="27">4</text>
         </g>
         <g
+           class="buttonactivate"
            id="g3572"
            onclick="MBT_NumberPad.AppendDigit(5);"
-           class="buttonactivate"
            transform="translate(45,45)">
           <rect
+             height="36"
              id="rect3574"
              rx="5"
-             height="36"
+             style="fill:url(#linearGradient3686)"
              width="36"
-             y="0"
              x="0"
-             style="fill:url(#linearGradient3686)" />
+             y="0" />
           <text
-             id="text3576"
              font-size="24"
-             y="27"
+             id="text3576"
+             style="font-size:24px;text-anchor:middle;stroke-width:2px"
              x="18"
-             style="font-size:24px;text-anchor:middle;stroke-width:2px">5</text>
+             y="27">5</text>
         </g>
         <g
+           class="buttonactivate"
            id="g3578"
            onclick="MBT_NumberPad.AppendDigit(6);"
-           class="buttonactivate"
            transform="translate(90,45)">
           <rect
+             height="36"
              id="rect3580"
              rx="5"
-             height="36"
+             style="fill:url(#linearGradient3688)"
              width="36"
-             y="0"
              x="0"
-             style="fill:url(#linearGradient3688)" />
+             y="0" />
           <text
-             id="text3582"
              font-size="24"
-             y="27"
+             id="text3582"
+             style="font-size:24px;text-anchor:middle;stroke-width:2px"
              x="18"
-             style="font-size:24px;text-anchor:middle;stroke-width:2px">6</text>
+             y="27">6</text>
         </g>
         <g
+           class="buttonactivate"
            id="g3584"
            onclick="MBT_NumberPad.AppendDigit(1);"
-           class="buttonactivate"
            transform="translate(0,90)">
           <rect
+             height="36"
              id="rect3586"
              rx="5"
-             height="36"
+             style="fill:url(#linearGradient3690)"
              width="36"
-             y="0"
              x="0"
-             style="fill:url(#linearGradient3690)" />
+             y="0" />
           <text
-             id="text3588"
              font-size="24"
-             y="27"
+             id="text3588"
+             style="font-size:24px;text-anchor:middle;stroke-width:2px"
              x="18"
-             style="font-size:24px;text-anchor:middle;stroke-width:2px">1</text>
+             y="27">1</text>
         </g>
         <g
+           class="buttonactivate"
            id="g3590"
            onclick="MBT_NumberPad.AppendDigit(2);"
-           class="buttonactivate"
            transform="translate(45,90)">
           <rect
+             height="36"
              id="rect3592"
              rx="5"
-             height="36"
+             style="fill:url(#linearGradient3692)"
              width="36"
-             y="0"
              x="0"
-             style="fill:url(#linearGradient3692)" />
+             y="0" />
           <text
-             id="text3594"
              font-size="24"
-             y="27"
+             id="text3594"
+             style="font-size:24px;text-anchor:middle;stroke-width:2px"
              x="18"
-             style="font-size:24px;text-anchor:middle;stroke-width:2px">2</text>
+             y="27">2</text>
         </g>
         <g
+           class="buttonactivate"
            id="g3596"
            onclick="MBT_NumberPad.AppendDigit(3);"
-           class="buttonactivate"
            transform="translate(90,90)">
           <rect
+             height="36"
              id="rect3598"
              rx="5"
-             height="36"
+             style="fill:url(#linearGradient3694)"
              width="36"
-             y="0"
              x="0"
-             style="fill:url(#linearGradient3694)" />
+             y="0" />
           <text
-             id="text3600"
              font-size="24"
-             y="27"
+             id="text3600"
+             style="font-size:24px;text-anchor:middle;stroke-width:2px"
              x="18"
-             style="font-size:24px;text-anchor:middle;stroke-width:2px">3</text>
+             y="27">3</text>
         </g>
         <g
+           class="buttonactivate"
            id="g3602"
            onclick="MBT_NumberPad.AppendDigit(0);"
-           class="buttonactivate"
            transform="translate(0,135)">
           <rect
+             height="36"
              id="rect3604"
              rx="5"
-             height="36"
+             style="fill:url(#linearGradient3696)"
              width="36"
-             y="0"
              x="0"
-             style="fill:url(#linearGradient3696)" />
+             y="0" />
           <text
-             id="text3606"
              font-size="24"
-             y="27"
+             id="text3606"
+             style="font-size:24px;text-anchor:middle;stroke-width:2px"
              x="18"
-             style="font-size:24px;text-anchor:middle;stroke-width:2px">0</text>
+             y="27">0</text>
         </g>
         <g
+           class="buttonactivate"
            id="g3608"
            onclick="MBT_NumberPad.AppendDigit('.');"
-           class="buttonactivate"
            transform="translate(45,135)">
           <rect
+             height="36"
              id="rect3610"
              rx="5"
-             height="36"
+             style="fill:url(#linearGradient3698)"
              width="36"
-             y="0"
              x="0"
-             style="fill:url(#linearGradient3698)" />
+             y="0" />
           <text
-             id="text3612"
              font-size="24"
-             y="27"
+             id="text3612"
+             style="font-size:24px;text-anchor:middle;stroke-width:2px"
              x="18"
-             style="font-size:24px;text-anchor:middle;stroke-width:2px">.</text>
+             y="27">.</text>
         </g>
         <g
+           class="buttonactivate"
            id="g3614"
            onclick="MBT_NumberPad.AppendDigit('-');"
-           class="buttonactivate"
            transform="translate(90,135)">
           <rect
+             height="36"
              id="rect3616"
              rx="5"
-             height="36"
+             style="fill:url(#linearGradient3700)"
              width="36"
-             y="0"
              x="0"
-             style="fill:url(#linearGradient3700)" />
+             y="0" />
           <text
-             id="text3618"
              font-size="24"
-             y="27"
+             id="text3618"
+             style="font-size:24px;text-anchor:middle;stroke-width:2px"
              x="18"
-             style="font-size:24px;text-anchor:middle;stroke-width:2px">-</text>
+             y="27">-</text>
         </g>
         <!-- CLR button. -->
         <g
+           class="buttonactivate"
            id="g3620"
            onclick="MBT_NumberPad.ClearDisplay();"
-           class="buttonactivate"
            transform="translate(0,180)">
           <rect
+             height="36"
              id="rect3622"
              rx="5"
-             height="36"
+             style="fill:url(#linearGradient3702)"
              width="125"
-             y="0"
              x="0"
-             style="fill:url(#linearGradient3702)" />
+             y="0" />
           <text
-             id="text3624"
              font-size="24"
-             y="27"
+             id="text3624"
+             style="font-size:24px;text-anchor:middle;stroke-width:2px"
              x="62"
-             style="font-size:24px;text-anchor:middle;stroke-width:2px">CLEAR</text>
+             y="27">CLEAR</text>
         </g>
       </g>
     </g>
     <g
+       class="buttonactivate"
        id="d1"
-       mblogic:outputfunc=""
+       inkscape:label="#g3713"
+       mblogic:editcount="1"
        mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteImmediate(\&quot;%(inputtag)s\&quot;, MBT_NumberPad.GetValueInt());&quot;}]"
-       mblogic:menu="[{&quot;type&quot;:&quot;tag&quot;, &quot;name&quot;:&quot;Input Tag&quot;, &quot;param&quot;:&quot;inputtag&quot;, &quot;value&quot;:&quot;&quot;}]"
-       mblogic:editcount="0"
+       mblogic:menu="[{&quot;value&quot;: &quot;d1&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;param&quot;: &quot;inputtag&quot;}]"
+       mblogic:outputfunc=""
        mblogic:widgetname="Numeric Entry Store (Int)"
        mblogic:widgettype="pb_numericpad"
-       class="buttonactivate"
-       transform="matrix(0.29855007,0,0,0.56787919,387.21991,176.21406)"
-       inkscape:label="#g3713">
+       transform="matrix(0.29855007,0,0,0.56787919,387.21991,176.21406)">
       <rect
-         style="fill:url(#MB_OrangeGradient-0)"
+         height="36"
          id="rect3715"
          rx="5"
-         height="36"
+         style="fill:url(#MB_OrangeGradient-0)"
          width="125"
-         y="0"
-         x="0" />
+         x="0"
+         y="0" />
       <text
-         id="text3717"
          font-size="24"
-         y="27"
+         id="text3717"
+         style="font-size:24px;text-anchor:middle;stroke-width:2px"
          x="62"
-         style="font-size:24px;text-anchor:middle;stroke-width:2px">STR</text>
+         y="27">STR</text>
     </g>
     <g
-       style="display:inline"
+       class="buttonactivate"
        id="d2"
-       mblogic:outputfunc=""
+       inkscape:label="#g3713-1"
+       mblogic:editcount="1"
        mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteImmediate(\&quot;%(inputtag)s\&quot;, MBT_NumberPad.GetValueInt());&quot;}]"
-       mblogic:menu="[{&quot;type&quot;:&quot;tag&quot;, &quot;name&quot;:&quot;Input Tag&quot;, &quot;param&quot;:&quot;inputtag&quot;, &quot;value&quot;:&quot;&quot;}]"
-       mblogic:editcount="0"
+       mblogic:menu="[{&quot;value&quot;: &quot;d2&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;param&quot;: &quot;inputtag&quot;}]"
+       mblogic:outputfunc=""
        mblogic:widgetname="Numeric Entry Store (Int)"
        mblogic:widgettype="pb_numericpad"
-       class="buttonactivate"
-       transform="matrix(0.29855007,0,0,0.56787919,387.21991,222.17601)"
-       inkscape:label="#g3713-1">
+       style="display:inline"
+       transform="matrix(0.29855007,0,0,0.56787919,387.21991,222.17601)">
       <rect
-         style="fill:url(#MB_OrangeGradient-0-2)"
+         height="36"
          id="rect3715-3"
          rx="5"
-         height="36"
+         style="fill:url(#MB_OrangeGradient-0-2)"
          width="125"
-         y="0"
-         x="0" />
+         x="0"
+         y="0" />
       <text
-         id="text3717-4"
          font-size="24"
-         y="27"
+         id="text3717-4"
+         style="font-size:24px;text-anchor:middle;stroke-width:2px"
          x="62"
-         style="font-size:24px;text-anchor:middle;stroke-width:2px">STR</text>
+         y="27">STR</text>
     </g>
     <g
-       style="display:inline"
+       class="buttonactivate"
        id="d3"
-       mblogic:outputfunc=""
+       inkscape:label="#g3713-2"
+       mblogic:editcount="1"
        mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteImmediate(\&quot;%(inputtag)s\&quot;, MBT_NumberPad.GetValueInt());&quot;}]"
-       mblogic:menu="[{&quot;type&quot;:&quot;tag&quot;, &quot;name&quot;:&quot;Input Tag&quot;, &quot;param&quot;:&quot;inputtag&quot;, &quot;value&quot;:&quot;&quot;}]"
-       mblogic:editcount="0"
+       mblogic:menu="[{&quot;value&quot;: &quot;d3&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;param&quot;: &quot;inputtag&quot;}]"
+       mblogic:outputfunc=""
        mblogic:widgetname="Numeric Entry Store (Int)"
        mblogic:widgettype="pb_numericpad"
-       class="buttonactivate"
-       transform="matrix(0.29855007,0,0,0.56787919,387.21991,266.01663)"
-       inkscape:label="#g3713-2">
+       style="display:inline"
+       transform="matrix(0.29855007,0,0,0.56787919,387.21991,266.01663)">
       <rect
-         style="fill:url(#MB_OrangeGradient-0-7)"
+         height="36"
          id="rect3715-2"
          rx="5"
-         height="36"
+         style="fill:url(#MB_OrangeGradient-0-7)"
          width="125"
-         y="0"
-         x="0" />
+         x="0"
+         y="0" />
       <text
-         id="text3717-8"
          font-size="24"
-         y="27"
+         id="text3717-8"
+         style="font-size:24px;text-anchor:middle;stroke-width:2px"
          x="62"
-         style="font-size:24px;text-anchor:middle;stroke-width:2px">STR</text>
+         y="27">STR</text>
     </g>
     <g
-       style="display:inline"
+       class="buttonactivate"
        id="d4"
-       mblogic:outputfunc=""
+       inkscape:label="#g3713-7"
+       mblogic:editcount="1"
        mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteImmediate(\&quot;%(inputtag)s\&quot;, MBT_NumberPad.GetValueInt());&quot;}]"
-       mblogic:menu="[{&quot;type&quot;:&quot;tag&quot;, &quot;name&quot;:&quot;Input Tag&quot;, &quot;param&quot;:&quot;inputtag&quot;, &quot;value&quot;:&quot;&quot;}]"
-       mblogic:editcount="0"
+       mblogic:menu="[{&quot;value&quot;: &quot;d4&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;param&quot;: &quot;inputtag&quot;}]"
+       mblogic:outputfunc=""
        mblogic:widgetname="Numeric Entry Store (Int)"
        mblogic:widgettype="pb_numericpad"
-       class="buttonactivate"
-       transform="matrix(0.29855007,0,0,0.56787919,388.63412,311.27146)"
-       inkscape:label="#g3713-7">
+       style="display:inline"
+       transform="matrix(0.29855007,0,0,0.56787919,388.63412,311.27146)">
       <rect
-         style="fill:url(#MB_OrangeGradient-0-8)"
+         height="36"
          id="rect3715-1"
          rx="5"
-         height="36"
+         style="fill:url(#MB_OrangeGradient-0-8)"
          width="125"
-         y="0"
-         x="0" />
+         x="0"
+         y="0" />
       <text
-         id="text3717-2"
          font-size="24"
-         y="27"
+         id="text3717-2"
+         style="font-size:24px;text-anchor:middle;stroke-width:2px"
          x="62"
-         style="font-size:24px;text-anchor:middle;stroke-width:2px">STR</text>
+         y="27">STR</text>
     </g>
     <g
-       style="display:inline"
+       class="buttonactivate"
        id="d5"
-       mblogic:outputfunc=""
+       inkscape:label="#g3713-8"
+       mblogic:editcount="1"
        mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteImmediate(\&quot;%(inputtag)s\&quot;, MBT_NumberPad.GetValueInt());&quot;}]"
-       mblogic:menu="[{&quot;type&quot;:&quot;tag&quot;, &quot;name&quot;:&quot;Input Tag&quot;, &quot;param&quot;:&quot;inputtag&quot;, &quot;value&quot;:&quot;&quot;}]"
-       mblogic:editcount="0"
+       mblogic:menu="[{&quot;value&quot;: &quot;d5&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;param&quot;: &quot;inputtag&quot;}]"
+       mblogic:outputfunc=""
        mblogic:widgetname="Numeric Entry Store (Int)"
        mblogic:widgettype="pb_numericpad"
-       class="buttonactivate"
-       transform="matrix(0.29855007,0,0,0.56787919,388.63413,352.28366)"
-       inkscape:label="#g3713-8">
+       style="display:inline"
+       transform="matrix(0.29855007,0,0,0.56787919,388.63413,352.28366)">
       <rect
-         style="fill:url(#MB_OrangeGradient-0-3)"
+         height="36"
          id="rect3715-9"
          rx="5"
-         height="36"
+         style="fill:url(#MB_OrangeGradient-0-3)"
          width="125"
-         y="0"
-         x="0" />
+         x="0"
+         y="0" />
       <text
-         id="text3717-0"
          font-size="24"
-         y="27"
+         id="text3717-0"
+         style="font-size:24px;text-anchor:middle;stroke-width:2px"
          x="62"
-         style="font-size:24px;text-anchor:middle;stroke-width:2px">STR</text>
+         y="27">STR</text>
     </g>
     <g
-       style="display:inline"
+       class="buttonactivate"
        id="d6"
-       mblogic:outputfunc=""
+       inkscape:label="#g3713-72"
+       mblogic:editcount="1"
        mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteImmediate(\&quot;%(inputtag)s\&quot;, MBT_NumberPad.GetValueInt());&quot;}]"
-       mblogic:menu="[{&quot;type&quot;:&quot;tag&quot;, &quot;name&quot;:&quot;Input Tag&quot;, &quot;param&quot;:&quot;inputtag&quot;, &quot;value&quot;:&quot;&quot;}]"
-       mblogic:editcount="0"
+       mblogic:menu="[{&quot;value&quot;: &quot;d6&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;param&quot;: &quot;inputtag&quot;}]"
+       mblogic:outputfunc=""
        mblogic:widgetname="Numeric Entry Store (Int)"
        mblogic:widgettype="pb_numericpad"
-       class="buttonactivate"
-       transform="matrix(0.29855007,0,0,0.56787919,390.04834,394.71006)"
-       inkscape:label="#g3713-72">
+       style="display:inline"
+       transform="matrix(0.29855007,0,0,0.56787919,390.04834,394.71006)">
       <rect
-         style="fill:url(#MB_OrangeGradient-0-33)"
+         height="36"
          id="rect3715-16"
          rx="5"
-         height="36"
+         style="fill:url(#MB_OrangeGradient-0-33)"
          width="125"
-         y="0"
-         x="0" />
+         x="0"
+         y="0" />
       <text
-         id="text3717-49"
          font-size="24"
-         y="27"
+         id="text3717-49"
+         style="font-size:24px;text-anchor:middle;stroke-width:2px"
          x="62"
-         style="font-size:24px;text-anchor:middle;stroke-width:2px">STR</text>
+         y="27">STR</text>
     </g>
     <g
-       style="display:inline"
+       class="buttonactivate"
        id="d7"
-       mblogic:outputfunc=""
+       inkscape:label="#g3713-0"
+       mblogic:editcount="1"
        mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteImmediate(\&quot;%(inputtag)s\&quot;, MBT_NumberPad.GetValueInt());&quot;}]"
-       mblogic:menu="[{&quot;type&quot;:&quot;tag&quot;, &quot;name&quot;:&quot;Input Tag&quot;, &quot;param&quot;:&quot;inputtag&quot;, &quot;value&quot;:&quot;&quot;}]"
-       mblogic:editcount="0"
+       mblogic:menu="[{&quot;value&quot;: &quot;d7&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;param&quot;: &quot;inputtag&quot;}]"
+       mblogic:outputfunc=""
        mblogic:widgetname="Numeric Entry Store (Int)"
        mblogic:widgettype="pb_numericpad"
-       class="buttonactivate"
-       transform="matrix(0.29855007,0,0,0.56787919,391.46255,439.9649)"
-       inkscape:label="#g3713-0">
+       style="display:inline"
+       transform="matrix(0.29855007,0,0,0.56787919,391.46255,439.9649)">
       <rect
-         style="fill:url(#MB_OrangeGradient-0-80)"
+         height="36"
          id="rect3715-5"
          rx="5"
-         height="36"
+         style="fill:url(#MB_OrangeGradient-0-80)"
          width="125"
-         y="0"
-         x="0" />
+         x="0"
+         y="0" />
       <text
-         id="text3717-6"
          font-size="24"
-         y="27"
+         id="text3717-6"
+         style="font-size:24px;text-anchor:middle;stroke-width:2px"
          x="62"
-         style="font-size:24px;text-anchor:middle;stroke-width:2px">STR</text>
+         y="27">STR</text>
     </g>
     <g
-       style="display:inline"
+       class="buttonactivate"
        id="d8"
-       mblogic:outputfunc=""
+       inkscape:label="#g3713-5"
+       mblogic:editcount="1"
        mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteImmediate(\&quot;%(inputtag)s\&quot;, MBT_NumberPad.GetValueInt());&quot;}]"
-       mblogic:menu="[{&quot;type&quot;:&quot;tag&quot;, &quot;name&quot;:&quot;Input Tag&quot;, &quot;param&quot;:&quot;inputtag&quot;, &quot;value&quot;:&quot;&quot;}]"
-       mblogic:editcount="0"
+       mblogic:menu="[{&quot;value&quot;: &quot;d8&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;param&quot;: &quot;inputtag&quot;}]"
+       mblogic:outputfunc=""
        mblogic:widgetname="Numeric Entry Store (Int)"
        mblogic:widgettype="pb_numericpad"
-       class="buttonactivate"
-       transform="matrix(0.29855007,0,0,0.56787919,391.46255,486.63395)"
-       inkscape:label="#g3713-5">
+       style="display:inline"
+       transform="matrix(0.29855007,0,0,0.56787919,391.46255,486.63395)">
       <rect
-         style="fill:url(#MB_OrangeGradient-0-9)"
+         height="36"
          id="rect3715-7"
          rx="5"
-         height="36"
+         style="fill:url(#MB_OrangeGradient-0-9)"
          width="125"
-         y="0"
-         x="0" />
+         x="0"
+         y="0" />
       <text
-         id="text3717-66"
          font-size="24"
-         y="27"
+         id="text3717-66"
+         style="font-size:24px;text-anchor:middle;stroke-width:2px"
          x="62"
-         style="font-size:24px;text-anchor:middle;stroke-width:2px">STR</text>
+         y="27">STR</text>
     </g>
     <g
-       style="display:inline"
+       class="buttonactivate"
        id="a1"
-       mblogic:outputfunc=""
+       inkscape:label="#g3713-6"
+       mblogic:editcount="1"
        mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteImmediate(\&quot;%(inputtag)s\&quot;, MBT_NumberPad.GetValueInt());&quot;}]"
-       mblogic:menu="[{&quot;type&quot;:&quot;tag&quot;, &quot;name&quot;:&quot;Input Tag&quot;, &quot;param&quot;:&quot;inputtag&quot;, &quot;value&quot;:&quot;&quot;}]"
-       mblogic:editcount="0"
+       mblogic:menu="[{&quot;value&quot;: &quot;a1&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;param&quot;: &quot;inputtag&quot;}]"
+       mblogic:outputfunc=""
        mblogic:widgetname="Numeric Entry Store (Int)"
        mblogic:widgettype="pb_numericpad"
-       class="buttonactivate"
-       transform="matrix(0.29855007,0,0,0.56787919,802.9987,175.50696)"
-       inkscape:label="#g3713-6">
+       style="display:inline"
+       transform="matrix(0.29855007,0,0,0.56787919,802.9987,175.50696)">
       <rect
-         style="fill:url(#MB_OrangeGradient-0-6)"
+         height="36"
          id="rect3715-70"
          rx="5"
-         height="36"
+         style="fill:url(#MB_OrangeGradient-0-6)"
          width="125"
-         y="0"
-         x="0" />
+         x="0"
+         y="0" />
       <text
-         id="text3717-5"
          font-size="24"
-         y="27"
+         id="text3717-5"
+         style="font-size:24px;text-anchor:middle;stroke-width:2px"
          x="62"
-         style="font-size:24px;text-anchor:middle;stroke-width:2px">STR</text>
+         y="27">STR</text>
     </g>
     <g
-       style="display:inline"
+       class="buttonactivate"
        id="a2"
-       mblogic:outputfunc=""
+       inkscape:label="#g3713-20"
+       mblogic:editcount="1"
        mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteImmediate(\&quot;%(inputtag)s\&quot;, MBT_NumberPad.GetValueInt());&quot;}]"
-       mblogic:menu="[{&quot;type&quot;:&quot;tag&quot;, &quot;name&quot;:&quot;Input Tag&quot;, &quot;param&quot;:&quot;inputtag&quot;, &quot;value&quot;:&quot;&quot;}]"
-       mblogic:editcount="0"
+       mblogic:menu="[{&quot;value&quot;: &quot;a2&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;param&quot;: &quot;inputtag&quot;}]"
+       mblogic:outputfunc=""
        mblogic:widgetname="Numeric Entry Store (Int)"
        mblogic:widgettype="pb_numericpad"
-       class="buttonactivate"
-       transform="matrix(0.29855007,0,0,0.56787919,802.99871,222.17601)"
-       inkscape:label="#g3713-20">
+       style="display:inline"
+       transform="matrix(0.29855007,0,0,0.56787919,802.99871,222.17601)">
       <rect
-         style="fill:url(#MB_OrangeGradient-0-32)"
+         height="36"
          id="rect3715-29"
          rx="5"
-         height="36"
+         style="fill:url(#MB_OrangeGradient-0-32)"
          width="125"
-         y="0"
-         x="0" />
+         x="0"
+         y="0" />
       <text
-         id="text3717-00"
          font-size="24"
-         y="27"
+         id="text3717-00"
+         style="font-size:24px;text-anchor:middle;stroke-width:2px"
          x="62"
-         style="font-size:24px;text-anchor:middle;stroke-width:2px">STR</text>
+         y="27">STR</text>
     </g>
     <g
-       style="display:inline"
+       class="buttonactivate"
        id="a3"
-       mblogic:outputfunc=""
+       inkscape:label="#g3713-75"
+       mblogic:editcount="1"
        mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteImmediate(\&quot;%(inputtag)s\&quot;, MBT_NumberPad.GetValueInt());&quot;}]"
-       mblogic:menu="[{&quot;type&quot;:&quot;tag&quot;, &quot;name&quot;:&quot;Input Tag&quot;, &quot;param&quot;:&quot;inputtag&quot;, &quot;value&quot;:&quot;&quot;}]"
-       mblogic:editcount="0"
+       mblogic:menu="[{&quot;value&quot;: &quot;a3&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;param&quot;: &quot;inputtag&quot;}]"
+       mblogic:outputfunc=""
        mblogic:widgetname="Numeric Entry Store (Int)"
        mblogic:widgettype="pb_numericpad"
-       class="buttonactivate"
-       transform="matrix(0.29855007,0,0,0.56787919,802.9987,264.60242)"
-       inkscape:label="#g3713-75">
+       style="display:inline"
+       transform="matrix(0.29855007,0,0,0.56787919,802.9987,264.60242)">
       <rect
-         style="fill:url(#MB_OrangeGradient-0-79)"
+         height="36"
          id="rect3715-25"
          rx="5"
-         height="36"
+         style="fill:url(#MB_OrangeGradient-0-79)"
          width="125"
-         y="0"
-         x="0" />
+         x="0"
+         y="0" />
       <text
-         id="text3717-3"
          font-size="24"
-         y="27"
+         id="text3717-3"
+         style="font-size:24px;text-anchor:middle;stroke-width:2px"
          x="62"
-         style="font-size:24px;text-anchor:middle;stroke-width:2px">STR</text>
+         y="27">STR</text>
     </g>
     <g
-       style="display:inline"
+       class="buttonactivate"
        id="a4"
-       mblogic:outputfunc=""
+       inkscape:label="#g3713-720"
+       mblogic:editcount="1"
        mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteImmediate(\&quot;%(inputtag)s\&quot;, MBT_NumberPad.GetValueInt());&quot;}]"
-       mblogic:menu="[{&quot;type&quot;:&quot;tag&quot;, &quot;name&quot;:&quot;Input Tag&quot;, &quot;param&quot;:&quot;inputtag&quot;, &quot;value&quot;:&quot;&quot;}]"
-       mblogic:editcount="0"
+       mblogic:menu="[{&quot;value&quot;: &quot;a4&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;param&quot;: &quot;inputtag&quot;}]"
+       mblogic:outputfunc=""
        mblogic:widgetname="Numeric Entry Store (Int)"
        mblogic:widgettype="pb_numericpad"
-       class="buttonactivate"
-       transform="matrix(0.29855007,0,0,0.56787919,804.41292,309.85725)"
-       inkscape:label="#g3713-720">
+       style="display:inline"
+       transform="matrix(0.29855007,0,0,0.56787919,804.41292,309.85725)">
       <rect
-         style="fill:url(#MB_OrangeGradient-0-97)"
+         height="36"
          id="rect3715-0"
          rx="5"
-         height="36"
+         style="fill:url(#MB_OrangeGradient-0-97)"
          width="125"
-         y="0"
-         x="0" />
+         x="0"
+         y="0" />
       <text
-         id="text3717-67"
          font-size="24"
-         y="27"
+         id="text3717-67"
+         style="font-size:24px;text-anchor:middle;stroke-width:2px"
          x="62"
-         style="font-size:24px;text-anchor:middle;stroke-width:2px">STR</text>
+         y="27">STR</text>
     </g>
     <g
-       style="display:inline"
+       class="buttonactivate"
        id="a5"
-       mblogic:outputfunc=""
+       inkscape:label="#g3713-01"
+       mblogic:editcount="1"
        mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteImmediate(\&quot;%(inputtag)s\&quot;, MBT_NumberPad.GetValueInt());&quot;}]"
-       mblogic:menu="[{&quot;type&quot;:&quot;tag&quot;, &quot;name&quot;:&quot;Input Tag&quot;, &quot;param&quot;:&quot;inputtag&quot;, &quot;value&quot;:&quot;&quot;}]"
-       mblogic:editcount="0"
+       mblogic:menu="[{&quot;value&quot;: &quot;a5&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;param&quot;: &quot;inputtag&quot;}]"
+       mblogic:outputfunc=""
        mblogic:widgetname="Numeric Entry Store (Int)"
        mblogic:widgettype="pb_numericpad"
-       class="buttonactivate"
-       transform="matrix(0.29855007,0,0,0.56787919,804.41292,355.11208)"
-       inkscape:label="#g3713-01">
+       style="display:inline"
+       transform="matrix(0.29855007,0,0,0.56787919,804.41292,355.11208)">
       <rect
-         style="fill:url(#MB_OrangeGradient-0-93)"
+         height="36"
          id="rect3715-08"
          rx="5"
-         height="36"
+         style="fill:url(#MB_OrangeGradient-0-93)"
          width="125"
-         y="0"
-         x="0" />
+         x="0"
+         y="0" />
       <text
-         id="text3717-9"
          font-size="24"
-         y="27"
+         id="text3717-9"
+         style="font-size:24px;text-anchor:middle;stroke-width:2px"
          x="62"
-         style="font-size:24px;text-anchor:middle;stroke-width:2px">STR</text>
+         y="27">STR</text>
     </g>
     <g
-       style="display:inline"
+       class="buttonactivate"
        id="a6"
-       mblogic:outputfunc=""
+       inkscape:label="#g3713-52"
+       inkscape:transform-center-x="18.659379"
+       inkscape:transform-center-y="-25.778174"
+       mblogic:editcount="1"
        mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteImmediate(\&quot;%(inputtag)s\&quot;, MBT_NumberPad.GetValueInt());&quot;}]"
-       mblogic:menu="[{&quot;type&quot;:&quot;tag&quot;, &quot;name&quot;:&quot;Input Tag&quot;, &quot;param&quot;:&quot;inputtag&quot;, &quot;value&quot;:&quot;&quot;}]"
-       mblogic:editcount="0"
+       mblogic:menu="[{&quot;value&quot;: &quot;a6&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;param&quot;: &quot;inputtag&quot;}]"
+       mblogic:outputfunc=""
        mblogic:widgetname="Numeric Entry Store (Int)"
        mblogic:widgettype="pb_numericpad"
-       class="buttonactivate"
-       transform="matrix(0.29855007,0,0,0.56787919,802.9987,398.95271)"
-       inkscape:transform-center-y="-25.778174"
-       inkscape:transform-center-x="18.659379"
-       inkscape:label="#g3713-52">
+       style="display:inline"
+       transform="matrix(0.29855007,0,0,0.56787919,802.9987,398.95271)">
       <rect
-         style="fill:url(#MB_OrangeGradient-0-60)"
+         height="36"
          id="rect3715-18"
          rx="5"
-         height="36"
+         style="fill:url(#MB_OrangeGradient-0-60)"
          width="125"
-         y="0"
-         x="0" />
+         x="0"
+         y="0" />
       <text
-         id="text3717-007"
          font-size="24"
-         y="27"
+         id="text3717-007"
+         style="font-size:24px;text-anchor:middle;stroke-width:2px"
          x="62"
-         style="font-size:24px;text-anchor:middle;stroke-width:2px">STR</text>
+         y="27">STR</text>
     </g>
     <g
-       style="display:inline"
+       class="buttonactivate"
        id="a7"
-       mblogic:outputfunc=""
+       inkscape:label="#g3713-03"
+       mblogic:editcount="1"
        mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteImmediate(\&quot;%(inputtag)s\&quot;, MBT_NumberPad.GetValueInt());&quot;}]"
-       mblogic:menu="[{&quot;type&quot;:&quot;tag&quot;, &quot;name&quot;:&quot;Input Tag&quot;, &quot;param&quot;:&quot;inputtag&quot;, &quot;value&quot;:&quot;&quot;}]"
-       mblogic:editcount="0"
+       mblogic:menu="[{&quot;value&quot;: &quot;a7&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;param&quot;: &quot;inputtag&quot;}]"
+       mblogic:outputfunc=""
        mblogic:widgetname="Numeric Entry Store (Int)"
        mblogic:widgettype="pb_numericpad"
-       class="buttonactivate"
-       transform="matrix(0.29855007,0,0,0.56787919,804.41292,442.79333)"
-       inkscape:label="#g3713-03">
+       style="display:inline"
+       transform="matrix(0.29855007,0,0,0.56787919,804.41292,442.79333)">
       <rect
-         style="fill:url(#MB_OrangeGradient-0-94)"
+         height="36"
          id="rect3715-6"
          rx="5"
-         height="36"
+         style="fill:url(#MB_OrangeGradient-0-94)"
          width="125"
-         y="0"
-         x="0" />
+         x="0"
+         y="0" />
       <text
-         id="text3717-44"
          font-size="24"
-         y="27"
+         id="text3717-44"
+         style="font-size:24px;text-anchor:middle;stroke-width:2px"
          x="62"
-         style="font-size:24px;text-anchor:middle;stroke-width:2px">STR</text>
+         y="27">STR</text>
     </g>
     <g
-       style="display:inline"
+       class="buttonactivate"
        id="a8"
-       mblogic:outputfunc=""
+       inkscape:label="#g3713-9"
+       mblogic:editcount="1"
        mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteImmediate(\&quot;%(inputtag)s\&quot;, MBT_NumberPad.GetValueInt());&quot;}]"
-       mblogic:menu="[{&quot;type&quot;:&quot;tag&quot;, &quot;name&quot;:&quot;Input Tag&quot;, &quot;param&quot;:&quot;inputtag&quot;, &quot;value&quot;:&quot;&quot;}]"
-       mblogic:editcount="0"
+       mblogic:menu="[{&quot;value&quot;: &quot;a8&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;param&quot;: &quot;inputtag&quot;}]"
+       mblogic:outputfunc=""
        mblogic:widgetname="Numeric Entry Store (Int)"
        mblogic:widgettype="pb_numericpad"
-       class="buttonactivate"
-       transform="matrix(0.29855007,0,0,0.56787919,804.41292,490.87659)"
-       inkscape:label="#g3713-9">
+       style="display:inline"
+       transform="matrix(0.29855007,0,0,0.56787919,804.41292,490.87659)">
       <rect
-         style="fill:url(#MB_OrangeGradient-0-4)"
+         height="36"
          id="rect3715-59"
          rx="5"
-         height="36"
+         style="fill:url(#MB_OrangeGradient-0-4)"
          width="125"
-         y="0"
-         x="0" />
+         x="0"
+         y="0" />
       <text
-         id="text3717-92"
          font-size="24"
-         y="27"
+         id="text3717-92"
+         style="font-size:24px;text-anchor:middle;stroke-width:2px"
          x="62"
-         style="font-size:24px;text-anchor:middle;stroke-width:2px">STR</text>
+         y="27">STR</text>
     </g>
     <g
        id="dout1"
-       mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, &quot;%(widgetid)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);"
+       inkscape:label="#g4045"
+       mblogic:editcount="1"
        mblogic:inputfunc="[]"
-       mblogic:menu="[{&quot;value&quot;: &quot;&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;param&quot;: &quot;outputtag&quot;}]"
-       mblogic:editcount="0"
+       mblogic:menu="[{&quot;param&quot;: &quot;outputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;value&quot;: &quot;dout1&quot;}]"
+       mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, &quot;%(widgetid)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);"
        mblogic:widgetname="Integer Digits"
        mblogic:widgettype="text"
-       transform="matrix(1.3198896,0,0,1.2630776,299.96626,171.7841)"
-       inkscape:label="#g4045">
+       transform="matrix(1.3198896,0,0,1.2630776,299.96626,171.7841)">
       <text
+         font-size="20"
          id="text4047"
-         font-size="20"
-         y="20"
+         style="font-size:20px;text-anchor:end;fill:#4b0082;stroke:#4b0082"
          x="50"
-         style="font-size:20px;text-anchor:end;fill:#4b0082;stroke:#4b0082">1234</text>
+         y="20">1234</text>
     </g>
     <g
-       style="display:inline"
        id="dout2"
-       mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, &quot;%(widgetid)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);"
+       inkscape:label="#g4045-1"
+       mblogic:editcount="1"
        mblogic:inputfunc="[]"
-       mblogic:menu="[{&quot;value&quot;: &quot;&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;param&quot;: &quot;outputtag&quot;}]"
-       mblogic:editcount="0"
+       mblogic:menu="[{&quot;param&quot;: &quot;outputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;value&quot;: &quot;dout2&quot;}]"
+       mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, &quot;%(widgetid)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);"
        mblogic:widgetname="Integer Digits"
        mblogic:widgettype="text"
-       transform="matrix(1.3198896,0,0,1.2630776,302.08759,213.50341)"
-       inkscape:label="#g4045-1">
+       style="display:inline"
+       transform="matrix(1.3198896,0,0,1.2630776,302.08759,213.50341)">
       <text
+         font-size="20"
          id="text4047-1"
-         font-size="20"
-         y="20"
+         style="font-size:20px;text-anchor:end;fill:#4b0082;stroke:#4b0082"
          x="50"
-         style="font-size:20px;text-anchor:end;fill:#4b0082;stroke:#4b0082">1234</text>
+         y="20">1234</text>
     </g>
     <g
-       style="display:inline"
        id="dout3"
-       mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, &quot;%(widgetid)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);"
+       inkscape:label="#g4045-0"
+       mblogic:editcount="1"
        mblogic:inputfunc="[]"
-       mblogic:menu="[{&quot;value&quot;: &quot;&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;param&quot;: &quot;outputtag&quot;}]"
-       mblogic:editcount="0"
+       mblogic:menu="[{&quot;param&quot;: &quot;outputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;value&quot;: &quot;dout3&quot;}]"
+       mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, &quot;%(widgetid)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);"
        mblogic:widgetname="Integer Digits"
        mblogic:widgettype="text"
-       transform="matrix(1.3198896,0,0,1.2630776,303.50181,260.17245)"
-       inkscape:label="#g4045-0">
+       style="display:inline"
+       transform="matrix(1.3198896,0,0,1.2630776,303.50181,260.17245)">
       <text
+         font-size="20"
          id="text4047-4"
-         font-size="20"
-         y="20"
+         style="font-size:20px;text-anchor:end;fill:#4b0082;stroke:#4b0082"
          x="50"
-         style="font-size:20px;text-anchor:end;fill:#4b0082;stroke:#4b0082">1234</text>
+         y="20">1234</text>
     </g>
     <g
-       style="display:inline"
        id="dout4"
-       mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, &quot;%(widgetid)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);"
+       inkscape:label="#g4045-4"
+       mblogic:editcount="1"
        mblogic:inputfunc="[]"
-       mblogic:menu="[{&quot;value&quot;: &quot;&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;param&quot;: &quot;outputtag&quot;}]"
-       mblogic:editcount="0"
+       mblogic:menu="[{&quot;param&quot;: &quot;outputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;value&quot;: &quot;dout4&quot;}]"
+       mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, &quot;%(widgetid)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);"
        mblogic:widgetname="Integer Digits"
        mblogic:widgettype="text"
-       transform="matrix(1.3198896,0,0,1.2630776,303.50181,302.59886)"
-       inkscape:label="#g4045-4">
+       style="display:inline"
+       transform="matrix(1.3198896,0,0,1.2630776,303.50181,302.59886)">
       <text
+         font-size="20"
          id="text4047-0"
-         font-size="20"
-         y="20"
+         style="font-size:20px;text-anchor:end;fill:#4b0082;stroke:#4b0082"
          x="50"
-         style="font-size:20px;text-anchor:end;fill:#4b0082;stroke:#4b0082">1234</text>
+         y="20">1234</text>
     </g>
     <g
-       style="display:inline"
        id="dout5"
-       mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, &quot;%(widgetid)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);"
+       inkscape:label="#g4045-12"
+       mblogic:editcount="1"
        mblogic:inputfunc="[]"
-       mblogic:menu="[{&quot;value&quot;: &quot;&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;param&quot;: &quot;outputtag&quot;}]"
-       mblogic:editcount="0"
+       mblogic:menu="[{&quot;param&quot;: &quot;outputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;value&quot;: &quot;dout5&quot;}]"
+       mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, &quot;%(widgetid)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);"
        mblogic:widgetname="Integer Digits"
        mblogic:widgettype="text"
-       transform="matrix(1.3198896,0,0,1.2630776,303.50181,347.8537)"
-       inkscape:label="#g4045-12">
+       style="display:inline"
+       transform="matrix(1.3198896,0,0,1.2630776,303.50181,347.8537)">
       <text
+         font-size="20"
          id="text4047-00"
-         font-size="20"
-         y="20"
+         style="font-size:20px;text-anchor:end;fill:#4b0082;stroke:#4b0082"
          x="50"
-         style="font-size:20px;text-anchor:end;fill:#4b0082;stroke:#4b0082">1234</text>
+         y="20">1234</text>
     </g>
     <g
-       style="display:inline"
        id="dout6"
-       mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, &quot;%(widgetid)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);"
+       inkscape:label="#g4045-3"
+       mblogic:editcount="1"
        mblogic:inputfunc="[]"
-       mblogic:menu="[{&quot;value&quot;: &quot;&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;param&quot;: &quot;outputtag&quot;}]"
-       mblogic:editcount="0"
+       mblogic:menu="[{&quot;param&quot;: &quot;outputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;value&quot;: &quot;dout6&quot;}]"
+       mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, &quot;%(widgetid)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);"
        mblogic:widgetname="Integer Digits"
        mblogic:widgettype="text"
-       transform="matrix(1.3198896,0,0,1.2630776,302.08759,391.69432)"
-       inkscape:label="#g4045-3">
+       style="display:inline"
+       transform="matrix(1.3198896,0,0,1.2630776,302.08759,391.69432)">
       <text
-         id="text4047-16"
          font-size="20"
-         y="20"
+         id="text4047-16"
+         style="font-size:20px;text-anchor:end;fill:#4b0082;stroke:#4b0082"
          x="50"
-         style="font-size:20px;text-anchor:end;fill:#4b0082;stroke:#4b0082">1234</text>
+         y="20">1234</text>
     </g>
     <g
-       style="display:inline"
-       id="g4045-09"
-       mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, &quot;%(widgetid)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);"
+       id="dout7"
+       inkscape:label="#g4045-09"
+       mblogic:editcount="1"
        mblogic:inputfunc="[]"
-       mblogic:menu="[{&quot;value&quot;: &quot;&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;param&quot;: &quot;outputtag&quot;}]"
-       mblogic:editcount="0"
+       mblogic:menu="[{&quot;param&quot;: &quot;outputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;value&quot;: &quot;dout7&quot;}]"
+       mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, &quot;%(widgetid)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);"
        mblogic:widgetname="Integer Digits"
        mblogic:widgettype="text"
+       style="display:inline"
        transform="matrix(1.3198896,0,0,1.2630776,303.50181,436.94915)">
       <text
-         id="dout7"
          font-size="20"
-         y="20"
-         x="50"
+         id="text4047-43"
+         inkscape:label="#text4047-43"
          style="font-size:20px;text-anchor:end;fill:#4b0082;stroke:#4b0082"
-         inkscape:label="#text4047-43">1234</text>
+         x="50"
+         y="20">1234</text>
     </g>
     <g
-       style="display:inline"
        id="dout8"
-       mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, &quot;%(widgetid)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);"
+       inkscape:label="#g4045-5"
+       mblogic:editcount="1"
        mblogic:inputfunc="[]"
-       mblogic:menu="[{&quot;value&quot;: &quot;&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;param&quot;: &quot;outputtag&quot;}]"
-       mblogic:editcount="0"
+       mblogic:menu="[{&quot;param&quot;: &quot;outputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;value&quot;: &quot;dout8&quot;}]"
+       mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, &quot;%(widgetid)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);"
        mblogic:widgetname="Integer Digits"
        mblogic:widgettype="text"
-       transform="matrix(1.3198896,0,0,1.2630776,303.50181,479.37556)"
-       inkscape:label="#g4045-5">
+       style="display:inline"
+       transform="matrix(1.3198896,0,0,1.2630776,303.50181,479.37556)">
       <text
-         id="text4047-7"
          font-size="20"
-         y="20"
+         id="text4047-7"
+         style="font-size:20px;text-anchor:end;fill:#4b0082;stroke:#4b0082"
          x="50"
-         style="font-size:20px;text-anchor:end;fill:#4b0082;stroke:#4b0082">1234</text>
+         y="20">1234</text>
     </g>
     <g
        id="aout1"
-       mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, &quot;%(widgetid)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);"
+       inkscape:label="#g4134"
+       mblogic:editcount="1"
        mblogic:inputfunc="[]"
-       mblogic:menu="[{&quot;value&quot;: &quot;&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;param&quot;: &quot;outputtag&quot;}]"
-       mblogic:editcount="0"
+       mblogic:menu="[{&quot;param&quot;: &quot;outputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;value&quot;: &quot;aout1&quot;}]"
+       mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, &quot;%(widgetid)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);"
        mblogic:widgetname="Integer Digits"
        mblogic:widgettype="text"
-       transform="matrix(1.5240864,0,0,1.2622108,705.67742,170.38091)"
-       inkscape:label="#g4134">
+       transform="matrix(1.5240864,0,0,1.2622108,705.67742,170.38091)">
       <text
+         font-size="20"
          id="text4136"
-         font-size="20"
-         y="20"
+         style="font-size:20px;text-anchor:end;fill:#008000;stroke:#008000"
          x="50"
-         style="font-size:20px;text-anchor:end;fill:#008000;stroke:#008000">1234</text>
+         y="20">1234</text>
     </g>
     <g
-       style="display:inline"
        id="aout2"
-       mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, &quot;%(widgetid)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);"
+       inkscape:label="#g4134-8"
+       mblogic:editcount="1"
        mblogic:inputfunc="[]"
-       mblogic:menu="[{&quot;value&quot;: &quot;&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;param&quot;: &quot;outputtag&quot;}]"
-       mblogic:editcount="0"
+       mblogic:menu="[{&quot;param&quot;: &quot;outputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;value&quot;: &quot;aout2&quot;}]"
+       mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, &quot;%(widgetid)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);"
        mblogic:widgetname="Integer Digits"
        mblogic:widgettype="text"
-       transform="matrix(1.5240864,0,0,1.2622108,705.67743,216.34286)"
-       inkscape:label="#g4134-8">
+       style="display:inline"
+       transform="matrix(1.5240864,0,0,1.2622108,705.67743,216.34286)">
       <text
-         id="text4136-0"
          font-size="20"
-         y="20"
+         id="text4136-0"
+         style="font-size:20px;text-anchor:end;fill:#008000;stroke:#008000"
          x="50"
-         style="font-size:20px;text-anchor:end;fill:#008000;stroke:#008000">1234</text>
+         y="20">1234</text>
     </g>
     <g
-       style="display:inline"
-       id="g4134-9"
-       mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, &quot;%(widgetid)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);"
+       id="aout3"
+       inkscape:label="#g4134-9"
+       mblogic:editcount="1"
        mblogic:inputfunc="[]"
-       mblogic:menu="[{&quot;value&quot;: &quot;&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;param&quot;: &quot;outputtag&quot;}]"
-       mblogic:editcount="0"
+       mblogic:menu="[{&quot;param&quot;: &quot;outputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;value&quot;: &quot;aout3&quot;}]"
+       mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, &quot;%(widgetid)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);"
        mblogic:widgetname="Integer Digits"
        mblogic:widgettype="text"
+       style="display:inline"
        transform="matrix(1.5240864,0,0,1.2622108,707.09164,257.35505)">
       <text
-         id="aout3"
          font-size="20"
-         y="20"
-         x="50"
+         id="text4136-4"
+         inkscape:label="#text4136-4"
          style="font-size:20px;text-anchor:end;fill:#008000;stroke:#008000"
-         inkscape:label="#text4136-4">1234</text>
-    </g>
-    <g
-       style="display:inline"
-       id="aout4"
-       mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, &quot;%(widgetid)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);"
-       mblogic:inputfunc="[]"
-       mblogic:menu="[{&quot;value&quot;: &quot;&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;param&quot;: &quot;outputtag&quot;}]"
-       mblogic:editcount="0"
-       mblogic:widgetname="Integer Digits"
-       mblogic:widgettype="text"
-       transform="matrix(1.5240864,0,0,1.2622108,708.50586,302.60989)"
-       inkscape:label="#g4134-0">
-      <text
-         id="text4136-04"
-         font-size="20"
-         y="20"
          x="50"
-         style="font-size:20px;text-anchor:end;fill:#008000;stroke:#008000">1234</text>
+         y="20">1234</text>
     </g>
     <g
-       style="display:inline"
-       id="g4134-1"
-       mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, &quot;%(widgetid)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);"
+       id="aout4"
+       inkscape:label="#g4134-0"
+       mblogic:editcount="1"
        mblogic:inputfunc="[]"
-       mblogic:menu="[{&quot;value&quot;: &quot;&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;param&quot;: &quot;outputtag&quot;}]"
-       mblogic:editcount="0"
+       mblogic:menu="[{&quot;param&quot;: &quot;outputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;value&quot;: &quot;aout4&quot;}]"
+       mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, &quot;%(widgetid)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);"
        mblogic:widgetname="Integer Digits"
        mblogic:widgettype="text"
+       style="display:inline"
+       transform="matrix(1.5240864,0,0,1.2622108,708.50586,302.60989)">
+      <text
+         font-size="20"
+         id="text4136-04"
+         style="font-size:20px;text-anchor:end;fill:#008000;stroke:#008000"
+         x="50"
+         y="20">1234</text>
+    </g>
+    <g
+       id="aout5"
+       inkscape:label="#g4134-1"
+       mblogic:editcount="1"
+       mblogic:inputfunc="[]"
+       mblogic:menu="[{&quot;param&quot;: &quot;outputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;value&quot;: &quot;aout5&quot;}]"
+       mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, &quot;%(widgetid)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);"
+       mblogic:widgetname="Integer Digits"
+       mblogic:widgettype="text"
+       style="display:inline"
        transform="matrix(1.5240864,0,0,1.2622108,709.92007,346.45051)">
       <text
-         id="aout5"
          font-size="20"
-         y="20"
-         x="50"
+         id="text4136-1"
+         inkscape:label="#text4136-1"
          style="font-size:20px;text-anchor:end;fill:#008000;stroke:#008000"
-         inkscape:label="#text4136-1">1234</text>
+         x="50"
+         y="20">1234</text>
     </g>
     <g
-       style="display:inline"
        id="aout6"
-       mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, &quot;%(widgetid)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);"
+       inkscape:label="#g4134-4"
+       mblogic:editcount="1"
        mblogic:inputfunc="[]"
-       mblogic:menu="[{&quot;value&quot;: &quot;&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;param&quot;: &quot;outputtag&quot;}]"
-       mblogic:editcount="0"
+       mblogic:menu="[{&quot;param&quot;: &quot;outputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;value&quot;: &quot;aout6&quot;}]"
+       mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, &quot;%(widgetid)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);"
        mblogic:widgetname="Integer Digits"
        mblogic:widgettype="text"
-       transform="matrix(1.5240864,0,0,1.2622108,708.50586,391.70534)"
-       inkscape:label="#g4134-4">
+       style="display:inline"
+       transform="matrix(1.5240864,0,0,1.2622108,708.50586,391.70534)">
       <text
+         font-size="20"
          id="text4136-11"
-         font-size="20"
-         y="20"
+         style="font-size:20px;text-anchor:end;fill:#008000;stroke:#008000"
          x="50"
-         style="font-size:20px;text-anchor:end;fill:#008000;stroke:#008000">1234</text>
+         y="20">1234</text>
     </g>
     <g
-       style="display:inline"
        id="aout7"
-       mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, &quot;%(widgetid)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);"
+       inkscape:label="#g4134-93"
+       mblogic:editcount="1"
        mblogic:inputfunc="[]"
-       mblogic:menu="[{&quot;value&quot;: &quot;&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;param&quot;: &quot;outputtag&quot;}]"
-       mblogic:editcount="0"
+       mblogic:menu="[{&quot;param&quot;: &quot;outputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;value&quot;: &quot;aout7&quot;}]"
+       mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, &quot;%(widgetid)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);"
        mblogic:widgetname="Integer Digits"
        mblogic:widgettype="text"
-       transform="matrix(1.5240864,0,0,1.2622108,711.33429,435.54596)"
-       inkscape:label="#g4134-93">
+       style="display:inline"
+       transform="matrix(1.5240864,0,0,1.2622108,711.33429,435.54596)">
       <text
-         id="text4136-15"
          font-size="20"
-         y="20"
+         id="text4136-15"
+         style="font-size:20px;text-anchor:end;fill:#008000;stroke:#008000"
          x="50"
-         style="font-size:20px;text-anchor:end;fill:#008000;stroke:#008000">1234</text>
+         y="20">1234</text>
     </g>
     <g
-       style="display:inline"
        id="aout8"
-       mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, &quot;%(widgetid)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);"
+       inkscape:label="#g4134-3"
+       mblogic:editcount="1"
        mblogic:inputfunc="[]"
-       mblogic:menu="[{&quot;value&quot;: &quot;&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;param&quot;: &quot;outputtag&quot;}]"
-       mblogic:editcount="0"
+       mblogic:menu="[{&quot;param&quot;: &quot;outputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;value&quot;: &quot;aout8&quot;}]"
+       mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, &quot;%(widgetid)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);"
        mblogic:widgetname="Integer Digits"
        mblogic:widgettype="text"
-       transform="matrix(1.5240864,0,0,1.2622108,712.7485,477.97237)"
-       inkscape:label="#g4134-3">
+       style="display:inline"
+       transform="matrix(1.5240864,0,0,1.2622108,712.7485,477.97237)">
       <text
-         id="text4136-9"
          font-size="20"
-         y="20"
+         id="text4136-9"
+         style="font-size:20px;text-anchor:end;fill:#008000;stroke:#008000"
          x="50"
-         style="font-size:20px;text-anchor:end;fill:#008000;stroke:#008000">1234</text>
+         y="20">1234</text>
     </g>
   </g>
   <g
@@ -3937,12 +3940,12 @@
       <rect
          height="130"
          id="DispSpeedCol"
+         inkscape:label="#rect3333"
          rx="0"
          style="fill:url(#linearGradient3384-4);stroke:none"
          width="15"
          x="12"
-         y="5"
-         inkscape:label="#rect3333" />
+         y="5" />
     </g>
     <g
        id="Angle"
@@ -4096,7 +4099,7 @@
          inkscape:label="#g3489"
          mblogic:editcount="9"
          mblogic:inputfunc="[]"
-         mblogic:menu="[{&quot;param&quot;: &quot;outputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;value&quot;: &quot;AnglePtr1&quot;}, {&quot;param&quot;: &quot;dialoffset&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Dial Offset&quot;, &quot;value&quot;: &quot;90&quot;}, {&quot;param&quot;: &quot;dialmax&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Dial Maximum&quot;, &quot;value&quot;: &quot;180&quot;}, {&quot;param&quot;: &quot;mindata&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Minimum Data Value&quot;, &quot;value&quot;: &quot;-10&quot;}, {&quot;param&quot;: &quot;maxdata&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Maximum Data Value&quot;, &quot;value&quot;: &quot;10&quot;}]"
+         mblogic:menu="[{&quot;value&quot;: &quot;AnglePtr1&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;param&quot;: &quot;outputtag&quot;}, {&quot;value&quot;: &quot;90&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Dial Offset&quot;, &quot;param&quot;: &quot;dialoffset&quot;}, {&quot;value&quot;: &quot;180&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Dial Maximum&quot;, &quot;param&quot;: &quot;dialmax&quot;}, {&quot;value&quot;: &quot;-10&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Minimum Data Value&quot;, &quot;param&quot;: &quot;mindata&quot;}, {&quot;value&quot;: &quot;10&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Maximum Data Value&quot;, &quot;param&quot;: &quot;maxdata&quot;}]"
          mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_DialGauge(document, &quot;%(widgetid)s&quot;, %(dialoffset)s, %(dialmax)s, %(mindata)s, %(maxdata)s), &quot;%(outputtag)s&quot;, &quot;read&quot;);"
          mblogic:widgetname="Dial Pointer"
          mblogic:widgettype="dialpointer"
@@ -4130,7 +4133,7 @@
           <!-- This is the pointer. -->
           <polygon
              id="polygon3497"
-             points="-0.6,40 0.6,40 5,0 0,5 -5,0 "
+             points="0,5 -5,0 -0.6,40 0.6,40 5,0 "
              style="stroke:#000000;stroke-width:2px" />
           <line
              id="line3499"
@@ -4148,7 +4151,7 @@
        inkscape:label="#g3522"
        mblogic:editcount="6"
        mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteIncImmediate(\&quot;%(inputtag)s\&quot;, \&quot;%(reftag)s\&quot;, %(inc)s, %(limit)s);&quot;}]"
-       mblogic:menu="[{&quot;value&quot;: &quot;SpeedUp&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;param&quot;: &quot;inputtag&quot;}, {&quot;value&quot;: &quot;SpeedDispTxt&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Reference Tag&quot;, &quot;param&quot;: &quot;reftag&quot;}, {&quot;value&quot;: &quot;1&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Increment&quot;, &quot;param&quot;: &quot;inc&quot;}, {&quot;value&quot;: &quot;10&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Limit&quot;, &quot;param&quot;: &quot;limit&quot;}]"
+       mblogic:menu="[{&quot;param&quot;: &quot;inputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;value&quot;: &quot;SpeedUp&quot;}, {&quot;param&quot;: &quot;reftag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Reference Tag&quot;, &quot;value&quot;: &quot;SpeedDispTxt&quot;}, {&quot;param&quot;: &quot;inc&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Increment&quot;, &quot;value&quot;: &quot;1&quot;}, {&quot;param&quot;: &quot;limit&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Limit&quot;, &quot;value&quot;: &quot;10&quot;}]"
        mblogic:outputfunc=""
        mblogic:widgetname="Increment Push Button"
        mblogic:widgettype="pb_inc"
@@ -4157,11 +4160,11 @@
       <!-- This provides the relief. -->
       <polygon
          id="polygon3524"
-         points="0,40 4,42 44,42 40,40 0,40 "
+         points="40,40 0,40 0,40 4,42 44,42 "
          style="fill:url(#linearGradient3569-6)" />
       <polygon
          id="polygon3526"
-         points="20,0 24,2 44,42 40,40 20,0 "
+         points="40,40 20,0 20,0 24,2 44,42 "
          style="fill:url(#linearGradient3571-8)" />
       <!-- This is the button. -->
       <polygon
@@ -4175,7 +4178,7 @@
        inkscape:label="#g3550"
        mblogic:editcount="5"
        mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteIncImmediate(\&quot;%(inputtag)s\&quot;, \&quot;%(reftag)s\&quot;, %(inc)s, %(limit)s);&quot;}]"
-       mblogic:menu="[{&quot;value&quot;: &quot;SpeedDown&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;param&quot;: &quot;inputtag&quot;}, {&quot;value&quot;: &quot;SpeedDispTxt&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Reference Tag&quot;, &quot;param&quot;: &quot;reftag&quot;}, {&quot;value&quot;: &quot;-1&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Increment&quot;, &quot;param&quot;: &quot;inc&quot;}, {&quot;value&quot;: &quot;-10&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Limit&quot;, &quot;param&quot;: &quot;limit&quot;}]"
+       mblogic:menu="[{&quot;param&quot;: &quot;inputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;value&quot;: &quot;SpeedDown&quot;}, {&quot;param&quot;: &quot;reftag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Reference Tag&quot;, &quot;value&quot;: &quot;SpeedDispTxt&quot;}, {&quot;param&quot;: &quot;inc&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Increment&quot;, &quot;value&quot;: &quot;-1&quot;}, {&quot;param&quot;: &quot;limit&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Limit&quot;, &quot;value&quot;: &quot;-10&quot;}]"
        mblogic:outputfunc=""
        mblogic:widgetname="Decrement Push Button"
        mblogic:widgettype="pb_dec"
@@ -4184,11 +4187,11 @@
       <!-- This provides the relief. -->
       <polygon
          id="polygon3552"
-         points="7,0 45,0 42,2 2,2 2,2 "
+         points="2,2 2,2 7,0 45,0 42,2 "
          style="fill:url(#linearGradient3577-0)" />
       <polygon
          id="polygon3554"
-         points="42,2 22,42 24,41 45,0 45,0 "
+         points="45,0 45,0 42,2 22,42 24,41 "
          style="fill:url(#linearGradient3579-1)" />
       <!-- This is the button. -->
       <polygon
@@ -4202,7 +4205,7 @@
        inkscape:label="#g3135"
        mblogic:editcount="2"
        mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteImmediate(\&quot;%(inputtag)s\&quot;, %(value)s);&quot;}]"
-       mblogic:menu="[{&quot;value&quot;: &quot;GS_OFF&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;param&quot;: &quot;inputtag&quot;}, {&quot;value&quot;: &quot;0&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Write Value&quot;, &quot;param&quot;: &quot;value&quot;}]"
+       mblogic:menu="[{&quot;param&quot;: &quot;inputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;value&quot;: &quot;GS_OFF&quot;}, {&quot;param&quot;: &quot;value&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Write Value&quot;, &quot;value&quot;: &quot;0&quot;}]"
        mblogic:outputfunc=""
        mblogic:widgetname="Selector Switch Label"
        mblogic:widgettype="ss_label"
@@ -4227,7 +4230,7 @@
        inkscape:label="#g3152"
        mblogic:editcount="2"
        mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteImmediate(\&quot;%(inputtag)s\&quot;, %(value)s);&quot;}]"
-       mblogic:menu="[{&quot;value&quot;: &quot;GS_ON&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;param&quot;: &quot;inputtag&quot;}, {&quot;value&quot;: &quot;1&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Write Value&quot;, &quot;param&quot;: &quot;value&quot;}]"
+       mblogic:menu="[{&quot;param&quot;: &quot;inputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;value&quot;: &quot;GS_ON&quot;}, {&quot;param&quot;: &quot;value&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Write Value&quot;, &quot;value&quot;: &quot;1&quot;}]"
        mblogic:outputfunc=""
        mblogic:widgetname="Selector Switch Label"
        mblogic:widgettype="ss_label"
@@ -4251,7 +4254,7 @@
        inkscape:label="#g3179"
        mblogic:editcount="3"
        mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteToggleImmediate(\&quot;%(inputtag)s\&quot;, \&quot;%(inputtag)s\&quot;);&quot;}]"
-       mblogic:menu="[{&quot;value&quot;: &quot;GlobalSwitchButton&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;param&quot;: &quot;inputtag&quot;}, {&quot;value&quot;: &quot;GS_OFF&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Switch Tag&quot;, &quot;param&quot;: &quot;switchtag&quot;}]"
+       mblogic:menu="[{&quot;param&quot;: &quot;inputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;value&quot;: &quot;GlobalSwitchButton&quot;}, {&quot;param&quot;: &quot;switchtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Switch Tag&quot;, &quot;value&quot;: &quot;GS_OFF&quot;}]"
        mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_2PosSSDisplay(document, &quot;%(widgetid)s&quot;, -60, 60), &quot;%(switchtag)s&quot;, &quot;read&quot;);"
        mblogic:widgetname="2 Pos SS"
        mblogic:widgettype="ss2short"
@@ -4259,12 +4262,12 @@
       <!-- This is a decorative nut. -->
       <polygon
          id="polygon3181"
-         points="-45,-18 -45,18 -18,45 18,45 45,18 45,-18 18,-45 18,-45 -18,-45 "
+         points="-18,-45 -45,-18 -45,18 -18,45 18,45 45,18 45,-18 18,-45 18,-45 "
          style="fill:#808080;stroke:none;filter:url(#MB_DropShadowFilter-3-7)"
          transform="translate(5,5)" />
       <polygon
          id="polygon3183"
-         points="-45,-18 -45,18 -18,45 18,45 45,18 45,-18 18,-45 18,-45 -18,-45 "
+         points="-18,-45 -45,-18 -45,18 -18,45 18,45 45,18 45,-18 18,-45 18,-45 "
          style="fill:url(#linearGradient3739);stroke:none" />
       <g
          class="buttonactivate"
@@ -4302,7 +4305,7 @@
        inkscape:label="#g3233"
        mblogic:editcount="2"
        mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteImmediate(\&quot;%(inputtag)s\&quot;, 1); window.setTimeout(MBHMIProtocol.WritePulse, %(pulse)s, \&quot;%(inputtag)s\&quot;, 0, MBHMIProtocol);&quot;}]"
-       mblogic:menu="[{&quot;param&quot;: &quot;inputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;value&quot;: &quot;Honk&quot;}, {&quot;param&quot;: &quot;pulse&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Pulse Length (msec)&quot;, &quot;value&quot;: &quot;1000&quot;}, {&quot;param&quot;: &quot;outputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;value&quot;: &quot;Horn&quot;}, {&quot;param&quot;: &quot;initcolour&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;Init Colour&quot;, &quot;value&quot;: &quot;black&quot;}, {&quot;param&quot;: &quot;offcolour&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;Off Colour&quot;, &quot;value&quot;: &quot;red&quot;}, {&quot;param&quot;: &quot;oncolour&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;On Colour&quot;, &quot;value&quot;: &quot;blue&quot;}]"
+       mblogic:menu="[{&quot;value&quot;: &quot;Honk&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;param&quot;: &quot;inputtag&quot;}, {&quot;value&quot;: &quot;1000&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Pulse Length (msec)&quot;, &quot;param&quot;: &quot;pulse&quot;}, {&quot;value&quot;: &quot;Horn&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;param&quot;: &quot;outputtag&quot;}, {&quot;value&quot;: &quot;black&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;Init Colour&quot;, &quot;param&quot;: &quot;initcolour&quot;}, {&quot;value&quot;: &quot;red&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;Off Colour&quot;, &quot;param&quot;: &quot;offcolour&quot;}, {&quot;value&quot;: &quot;blue&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;On Colour&quot;, &quot;param&quot;: &quot;oncolour&quot;}]"
        mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_PilotLight(document, &quot;%(widgetid)s&quot;, &quot;%(initcolour)s&quot;, &quot;%(offcolour)s&quot;, &quot;%(oncolour)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);"
        mblogic:widgetname="Pulse Illuminated Push Button"
        mblogic:widgettype="pb_pulse_illum"
@@ -4343,7 +4346,7 @@
        inkscape:label="#g3292"
        mblogic:editcount="2"
        mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteIncImmediate(\&quot;%(inputtag)s\&quot;, \&quot;%(reftag)s\&quot;, %(inc)s, %(limit)s);&quot;}]"
-       mblogic:menu="[{&quot;value&quot;: &quot;AngleRight&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;param&quot;: &quot;inputtag&quot;}, {&quot;value&quot;: &quot;SteerDispTxt&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Reference Tag&quot;, &quot;param&quot;: &quot;reftag&quot;}, {&quot;value&quot;: &quot;1&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Increment&quot;, &quot;param&quot;: &quot;inc&quot;}, {&quot;value&quot;: &quot;10&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Limit&quot;, &quot;param&quot;: &quot;limit&quot;}]"
+       mblogic:menu="[{&quot;param&quot;: &quot;inputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;value&quot;: &quot;AngleRight&quot;}, {&quot;param&quot;: &quot;reftag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Reference Tag&quot;, &quot;value&quot;: &quot;SteerDispTxt&quot;}, {&quot;param&quot;: &quot;inc&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Increment&quot;, &quot;value&quot;: &quot;1&quot;}, {&quot;param&quot;: &quot;limit&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Limit&quot;, &quot;value&quot;: &quot;10&quot;}]"
        mblogic:outputfunc=""
        mblogic:widgetname="Increment Push Button"
        mblogic:widgettype="pb_inc"
@@ -4385,7 +4388,7 @@
        inkscape:label="#g3325"
        mblogic:editcount="4"
        mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteIncImmediate(\&quot;%(inputtag)s\&quot;, \&quot;%(reftag)s\&quot;, %(inc)s, %(limit)s);&quot;}]"
-       mblogic:menu="[{&quot;value&quot;: &quot;AngleLeft&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;param&quot;: &quot;inputtag&quot;}, {&quot;value&quot;: &quot;SteerDispTxt&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Reference Tag&quot;, &quot;param&quot;: &quot;reftag&quot;}, {&quot;value&quot;: &quot;-1&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Increment&quot;, &quot;param&quot;: &quot;inc&quot;}, {&quot;value&quot;: &quot;-10&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Limit&quot;, &quot;param&quot;: &quot;limit&quot;}]"
+       mblogic:menu="[{&quot;param&quot;: &quot;inputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;value&quot;: &quot;AngleLeft&quot;}, {&quot;param&quot;: &quot;reftag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Reference Tag&quot;, &quot;value&quot;: &quot;SteerDispTxt&quot;}, {&quot;param&quot;: &quot;inc&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Increment&quot;, &quot;value&quot;: &quot;-1&quot;}, {&quot;param&quot;: &quot;limit&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Limit&quot;, &quot;value&quot;: &quot;-10&quot;}]"
        mblogic:outputfunc=""
        mblogic:widgetname="Decrement Push Button"
        mblogic:widgettype="pb_dec"
@@ -4427,7 +4430,7 @@
        inkscape:label="#g3353"
        mblogic:editcount="2"
        mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteToggleImmediate(\&quot;%(inputtag)s\&quot;, \&quot;%(inputtag)s\&quot;);&quot;}]"
-       mblogic:menu="[{&quot;param&quot;: &quot;inputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;value&quot;: &quot;EStop&quot;}, {&quot;param&quot;: &quot;outputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;value&quot;: &quot;EStop&quot;}, {&quot;param&quot;: &quot;initcolour&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;Init Colour&quot;, &quot;value&quot;: &quot;aqua&quot;}, {&quot;param&quot;: &quot;offcolour&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;Off Colour&quot;, &quot;value&quot;: &quot;black&quot;}, {&quot;param&quot;: &quot;oncolour&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;On Colour&quot;, &quot;value&quot;: &quot;red&quot;}]"
+       mblogic:menu="[{&quot;value&quot;: &quot;EStop&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;param&quot;: &quot;inputtag&quot;}, {&quot;value&quot;: &quot;EStop&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;param&quot;: &quot;outputtag&quot;}, {&quot;value&quot;: &quot;aqua&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;Init Colour&quot;, &quot;param&quot;: &quot;initcolour&quot;}, {&quot;value&quot;: &quot;black&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;Off Colour&quot;, &quot;param&quot;: &quot;offcolour&quot;}, {&quot;value&quot;: &quot;red&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;On Colour&quot;, &quot;param&quot;: &quot;oncolour&quot;}]"
        mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_PilotLight(document, &quot;%(widgetid)s&quot;, &quot;%(initcolour)s&quot;, &quot;%(offcolour)s&quot;, &quot;%(oncolour)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);"
        mblogic:widgetname="Toggle Illuminated Push Button"
        mblogic:widgettype="pb_toggle_illum"
@@ -4485,7 +4488,7 @@
        inkscape:label="#g4543"
        mblogic:editcount="2"
        mblogic:inputfunc="[]"
-       mblogic:menu="[{&quot;param&quot;: &quot;outputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;value&quot;: &quot;SpeedDispTxt&quot;}]"
+       mblogic:menu="[{&quot;value&quot;: &quot;SpeedDispTxt&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;param&quot;: &quot;outputtag&quot;}]"
        mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, &quot;%(widgetid)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);"
        mblogic:widgetname="Integer Digits"
        mblogic:widgettype="text"
@@ -4502,7 +4505,7 @@
        inkscape:label="#g4557"
        mblogic:editcount="1"
        mblogic:inputfunc="[]"
-       mblogic:menu="[{&quot;param&quot;: &quot;outputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;value&quot;: &quot;SteerDispTxt&quot;}]"
+       mblogic:menu="[{&quot;value&quot;: &quot;SteerDispTxt&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;param&quot;: &quot;outputtag&quot;}]"
        mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, &quot;%(widgetid)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);"
        mblogic:widgetname="Integer Digits"
        mblogic:widgettype="text"
@@ -4519,7 +4522,7 @@
        inkscape:label="#g4581"
        mblogic:editcount="1"
        mblogic:inputfunc="[]"
-       mblogic:menu="[{&quot;param&quot;: &quot;outputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;value&quot;: &quot;OnLight&quot;}, {&quot;param&quot;: &quot;initcolour&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;Init Colour&quot;, &quot;value&quot;: &quot;black&quot;}, {&quot;param&quot;: &quot;offcolour&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;Off Colour&quot;, &quot;value&quot;: &quot;red&quot;}, {&quot;param&quot;: &quot;oncolour&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;On Colour&quot;, &quot;value&quot;: &quot;green&quot;}]"
+       mblogic:menu="[{&quot;value&quot;: &quot;OnLight&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;param&quot;: &quot;outputtag&quot;}, {&quot;value&quot;: &quot;black&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;Init Colour&quot;, &quot;param&quot;: &quot;initcolour&quot;}, {&quot;value&quot;: &quot;red&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;Off Colour&quot;, &quot;param&quot;: &quot;offcolour&quot;}, {&quot;value&quot;: &quot;green&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;On Colour&quot;, &quot;param&quot;: &quot;oncolour&quot;}]"
        mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_PilotLight(document, &quot;%(widgetid)s&quot;, &quot;%(initcolour)s&quot;, &quot;%(offcolour)s&quot;, &quot;%(oncolour)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);"
        mblogic:widgetname="Pilot Light"
        mblogic:widgettype="pilot_light"
@@ -4528,12 +4531,12 @@
       <!-- This is a decorative nut. -->
       <polygon
          id="polygon4583"
-         points="90,63 90,27 63,0 63,0 27,0 0,27 0,63 27,90 63,90 "
+         points="63,90 90,63 90,27 63,0 63,0 27,0 0,27 0,63 27,90 "
          style="fill:#808080;stroke:none;filter:url(#MB_DropShadowFilter)"
          transform="translate(5,5)" />
       <polygon
          id="polygon4585"
-         points="90,63 90,27 63,0 63,0 27,0 0,27 0,63 27,90 63,90 "
+         points="63,90 90,63 90,27 63,0 63,0 27,0 0,27 0,63 27,90 "
          style="fill:url(#linearGradient4606);stroke:none" />
       <!-- This is the part which changes colour. -->
       <circle
@@ -4550,23 +4553,23 @@
     </g>
     <g
        id="SpeedDispCol"
-       mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_ColumnGauge(document, &quot;%(widgetid)s&quot;, &quot;MB_Column_WhiteGradient&quot;, &quot;%(min)s&quot;, &quot;%(max)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);"
+       inkscape:label="#g3509"
+       mblogic:editcount="1"
        mblogic:inputfunc="[]"
-       mblogic:menu="[{&quot;value&quot;: &quot;&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;param&quot;: &quot;outputtag&quot;}, {&quot;value&quot;: 0, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Minimum Value&quot;, &quot;param&quot;: &quot;min&quot;}, {&quot;value&quot;: 100, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Maximum Value&quot;, &quot;param&quot;: &quot;max&quot;}]"
-       mblogic:editcount="0"
+       mblogic:menu="[{&quot;param&quot;: &quot;outputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;value&quot;: &quot;SpeedColumnDisp&quot;}, {&quot;param&quot;: &quot;min&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Minimum Value&quot;, &quot;value&quot;: &quot;-10&quot;}, {&quot;param&quot;: &quot;max&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Maximum Value&quot;, &quot;value&quot;: &quot;10&quot;}]"
+       mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_ColumnGauge(document, &quot;%(widgetid)s&quot;, &quot;MB_Column_WhiteGradient&quot;, &quot;%(min)s&quot;, &quot;%(max)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);"
        mblogic:widgetname="Column Gauge Rectangle"
        mblogic:widgettype="column_gauge"
        style="fill:url(#linearGradient3526)"
-       transform="matrix(1,0,0,1.8061018,112.37973,296.94913)"
-       inkscape:label="#g3509">
+       transform="matrix(1,0,0,1.8061018,112.37973,296.94913)">
       <!-- This is the actual column. The fill value will be added later. -->
       <rect
-         id="rect3511"
          height="100"
+         id="rect3511"
+         style="fill:url(#linearGradient3524);stroke:none"
          width="10"
-         y="0"
          x="0"
-         style="fill:url(#linearGradient3524);stroke:none" />
+         y="0" />
     </g>
   </g>
   <g
@@ -4580,7 +4583,7 @@
        inkscape:label="#g3064"
        mblogic:editcount="2"
        mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBT_SVGScreenSelect.SelectScreen(\&quot;%(layername)s\&quot;);&quot;}]"
-       mblogic:menu="[{&quot;param&quot;: &quot;layername&quot;, &quot;type&quot;: &quot;layer&quot;, &quot;name&quot;: &quot;Layer Name&quot;, &quot;value&quot;: &quot;OpScr&quot;}]"
+       mblogic:menu="[{&quot;value&quot;: &quot;OpScr&quot;, &quot;type&quot;: &quot;layer&quot;, &quot;name&quot;: &quot;Layer Name&quot;, &quot;param&quot;: &quot;layername&quot;}]"
        mblogic:outputfunc=""
        mblogic:widgetname="Menu Push Button"
        mblogic:widgettype="pb_menu"
@@ -4623,7 +4626,7 @@
        inkscape:label="#g3123"
        mblogic:editcount="2"
        mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBT_SVGScreenSelect.SelectScreen(\&quot;%(layername)s\&quot;);&quot;}]"
-       mblogic:menu="[{&quot;param&quot;: &quot;layername&quot;, &quot;type&quot;: &quot;layer&quot;, &quot;name&quot;: &quot;Layer Name&quot;, &quot;value&quot;: &quot;EngScr&quot;}]"
+       mblogic:menu="[{&quot;value&quot;: &quot;EngScr&quot;, &quot;type&quot;: &quot;layer&quot;, &quot;name&quot;: &quot;Layer Name&quot;, &quot;param&quot;: &quot;layername&quot;}]"
        mblogic:outputfunc=""
        mblogic:widgetname="Menu Push Button"
        mblogic:widgettype="pb_menu"
@@ -4665,7 +4668,7 @@
        inkscape:label="#g3156"
        mblogic:editcount="2"
        mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBT_SVGScreenSelect.SelectScreen(\&quot;%(layername)s\&quot;);&quot;}]"
-       mblogic:menu="[{&quot;param&quot;: &quot;layername&quot;, &quot;type&quot;: &quot;layer&quot;, &quot;name&quot;: &quot;Layer Name&quot;, &quot;value&quot;: &quot;DummyScr&quot;}]"
+       mblogic:menu="[{&quot;value&quot;: &quot;DummyScr&quot;, &quot;type&quot;: &quot;layer&quot;, &quot;name&quot;: &quot;Layer Name&quot;, &quot;param&quot;: &quot;layername&quot;}]"
        mblogic:outputfunc=""
        mblogic:widgetname="Menu Push Button"
        mblogic:widgettype="pb_menu"
@@ -4700,7 +4703,7 @@
        inkscape:label="#g3216"
        mblogic:editcount="2"
        mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBT_SVGScreenSelect.SelectScreen(\&quot;%(layername)s\&quot;);&quot;}]"
-       mblogic:menu="[{&quot;param&quot;: &quot;layername&quot;, &quot;type&quot;: &quot;layer&quot;, &quot;name&quot;: &quot;Layer Name&quot;, &quot;value&quot;: &quot;GrphScr&quot;}]"
+       mblogic:menu="[{&quot;value&quot;: &quot;GrphScr&quot;, &quot;type&quot;: &quot;layer&quot;, &quot;name&quot;: &quot;Layer Name&quot;, &quot;param&quot;: &quot;layername&quot;}]"
        mblogic:outputfunc=""
        mblogic:widgetname="Menu Push Button"
        mblogic:widgettype="pb_menu"
@@ -4742,13 +4745,13 @@
     <layerlist
        id="layerlist475">
       <param
-         id="param477">DummyScr</param>
+         id="param670">DummyScr</param>
       <param
-         id="param479">GrphScr</param>
+         id="param672">GrphScr</param>
       <param
-         id="param481">EngScr</param>
+         id="param674">EngScr</param>
       <param
-         id="param483">OpScr</param>
+         id="param676">OpScr</param>
     </layerlist>
     <alarmzonelist
        id="alarmzonelist485" />
