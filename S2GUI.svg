@@ -1713,6 +1713,49 @@
          offset="100%"
          stop-color="white" />
     </linearGradient>
+    <linearGradient
+       id="MB_Column_RedGradient"
+       x1="0"
+       x2="0"
+       y1="1"
+       y2="0">
+      <stop
+         id="stop3660"
+         offset="0%"
+         stop-color="red" />
+      <stop
+         id="stop3662"
+         offset="10%"
+         stop-color="red" />
+      <stop
+         id="stop3664"
+         offset="90%"
+         stop-color="white" />
+      <stop
+         id="stop3666"
+         offset="100%"
+         stop-color="white" />
+    </linearGradient>
+    <linearGradient
+       gradientTransform="scale(0.31622777,3.1622777)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient3683"
+       inkscape:collect="always"
+       x1="0"
+       x2="0"
+       xlink:href="#MB_Column_RedGradient"
+       y1="31.622777"
+       y2="0" />
+    <linearGradient
+       gradientTransform="scale(0.31622777,3.1622777)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient3685"
+       inkscape:collect="always"
+       x1="0"
+       x2="0"
+       xlink:href="#MB_Column_RedGradient"
+       y1="31.622777"
+       y2="0" />
   </defs>
   <sodipodi:namedview
      bordercolor="#666666"
@@ -1721,9 +1764,9 @@
      gridtolerance="10000"
      guidetolerance="10"
      id="base"
-     inkscape:current-layer="EngScr"
-     inkscape:cx="18.002469"
-     inkscape:cy="258.63388"
+     inkscape:current-layer="GrphScr"
+     inkscape:cx="343.65011"
+     inkscape:cy="315.20242"
      inkscape:document-units="px"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
@@ -1794,9 +1837,9 @@
     <g
        id="GraphSpeed"
        inkscape:label="#g3419"
-       mblogic:editcount="3"
+       mblogic:editcount="6"
        mblogic:inputfunc="[]"
-       mblogic:menu="[{&quot;value&quot;: &quot;GraphSpeed&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;param&quot;: &quot;outputtag&quot;}, {&quot;value&quot;: &quot;50&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Max Points&quot;, &quot;param&quot;: &quot;maxpoints&quot;}, {&quot;value&quot;: &quot;10&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;X Increment&quot;, &quot;param&quot;: &quot;xincr&quot;}, {&quot;value&quot;: &quot;1&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Y Scale&quot;, &quot;param&quot;: &quot;yincr&quot;}, {&quot;value&quot;: &quot;1.0&quot;, &quot;type&quot;: &quot;float&quot;, &quot;name&quot;: &quot;Time Interval&quot;, &quot;param&quot;: &quot;timeinterval&quot;}]"
+       mblogic:menu="[{&quot;value&quot;: &quot;GraphSpeed&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;param&quot;: &quot;outputtag&quot;}, {&quot;value&quot;: &quot;50&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Max Points&quot;, &quot;param&quot;: &quot;maxpoints&quot;}, {&quot;value&quot;: &quot;1&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;X Increment&quot;, &quot;param&quot;: &quot;xincr&quot;}, {&quot;value&quot;: &quot;10&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Y Scale&quot;, &quot;param&quot;: &quot;yincr&quot;}, {&quot;value&quot;: &quot;0.5&quot;, &quot;type&quot;: &quot;float&quot;, &quot;name&quot;: &quot;Time Interval&quot;, &quot;param&quot;: &quot;timeinterval&quot;}]"
        mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_StripChart(document, &quot;%(widgetid)s&quot;, %(maxpoints)s, %(xincr)s, %(yincr)s, %(timeinterval)s), &quot;%(outputtag)s&quot;, &quot;read&quot;);"
        mblogic:widgetname="Strip Chart"
        mblogic:widgettype="strip_chart"
@@ -1807,7 +1850,7 @@
       <polyline
          id="polyline3421"
          points="0,0 20,0 40,100 60,0 80,40 100,10 120,85 140,100 160,0 200,0"
-         style="fill:none;stroke:#4b0082;stroke-width:5" />
+         style="fill:none;stroke:#4b0082;stroke-width:2" />
     </g>
     <g
        id="GrphScrTxt"
@@ -1832,7 +1875,7 @@
      id="EngScr"
      inkscape:groupmode="layer"
      inkscape:label="EngScr"
-     style="display:inline">
+     style="display:none">
     <g
        id="BackgroundLayer-1"
        inkscape:label="BackgroundLayer"
@@ -3824,7 +3867,7 @@
      id="OpScr"
      inkscape:groupmode="layer"
      inkscape:label="OpScr"
-     style="display:inline">
+     style="display:none">
     <path
        d="m 3.5765571,377.59847 0,-374.2857327 424.2857129,0 424.28571,0 0,374.2857327 0,374.2857 -424.28571,0 -424.2857129,0 0,-374.2857 z"
        id="path3047"
@@ -4133,7 +4176,7 @@
           <!-- This is the pointer. -->
           <polygon
              id="polygon3497"
-             points="0,5 -5,0 -0.6,40 0.6,40 5,0 "
+             points="-0.6,40 0.6,40 5,0 0,5 -5,0 "
              style="stroke:#000000;stroke-width:2px" />
           <line
              id="line3499"
@@ -4160,16 +4203,16 @@
       <!-- This provides the relief. -->
       <polygon
          id="polygon3524"
-         points="40,40 0,40 0,40 4,42 44,42 "
+         points="0,40 4,42 44,42 40,40 0,40 "
          style="fill:url(#linearGradient3569-6)" />
       <polygon
          id="polygon3526"
-         points="40,40 20,0 20,0 24,2 44,42 "
+         points="20,0 24,2 44,42 40,40 20,0 "
          style="fill:url(#linearGradient3571-8)" />
       <!-- This is the button. -->
       <polygon
          id="polygon3528"
-         points="0,40 0,40 20,0 40,40 "
+         points="20,0 40,40 0,40 0,40 "
          style="fill:url(#linearGradient3573-5)" />
     </g>
     <g
@@ -4187,16 +4230,16 @@
       <!-- This provides the relief. -->
       <polygon
          id="polygon3552"
-         points="2,2 2,2 7,0 45,0 42,2 "
+         points="7,0 45,0 42,2 2,2 2,2 "
          style="fill:url(#linearGradient3577-0)" />
       <polygon
          id="polygon3554"
-         points="45,0 45,0 42,2 22,42 24,41 "
+         points="42,2 22,42 24,41 45,0 45,0 "
          style="fill:url(#linearGradient3579-1)" />
       <!-- This is the button. -->
       <polygon
          id="polygon3556"
-         points="2,2 22,42 42,2 2,2 "
+         points="42,2 2,2 2,2 22,42 "
          style="fill:url(#linearGradient3581-3)" />
     </g>
     <g
@@ -4262,12 +4305,12 @@
       <!-- This is a decorative nut. -->
       <polygon
          id="polygon3181"
-         points="-18,-45 -45,-18 -45,18 -18,45 18,45 45,18 45,-18 18,-45 18,-45 "
+         points="-45,18 -18,45 18,45 45,18 45,-18 18,-45 18,-45 -18,-45 -45,-18 "
          style="fill:#808080;stroke:none;filter:url(#MB_DropShadowFilter-3-7)"
          transform="translate(5,5)" />
       <polygon
          id="polygon3183"
-         points="-18,-45 -45,-18 -45,18 -18,45 18,45 45,18 45,-18 18,-45 18,-45 "
+         points="-45,18 -18,45 18,45 45,18 45,-18 18,-45 18,-45 -18,-45 -45,-18 "
          style="fill:url(#linearGradient3739);stroke:none" />
       <g
          class="buttonactivate"
@@ -4295,7 +4338,7 @@
            y="-33" />
         <polygon
            id="polygon3191"
-           points="0,-30 0,-30 -5,-20 5,-20 "
+           points="-5,-20 5,-20 0,-30 0,-30 "
            style="fill:#ffffff" />
       </g>
     </g>
@@ -4531,12 +4574,12 @@
       <!-- This is a decorative nut. -->
       <polygon
          id="polygon4583"
-         points="63,90 90,63 90,27 63,0 63,0 27,0 0,27 0,63 27,90 "
+         points="90,27 63,0 63,0 27,0 0,27 0,63 27,90 63,90 90,63 "
          style="fill:#808080;stroke:none;filter:url(#MB_DropShadowFilter)"
          transform="translate(5,5)" />
       <polygon
          id="polygon4585"
-         points="63,90 90,63 90,27 63,0 63,0 27,0 0,27 0,63 27,90 "
+         points="90,27 63,0 63,0 27,0 0,27 0,63 27,90 63,90 90,63 "
          style="fill:url(#linearGradient4606);stroke:none" />
       <!-- This is the part which changes colour. -->
       <circle
@@ -4552,21 +4595,41 @@
          style="stroke:#000000;stroke-width:5px" />
     </g>
     <g
-       id="SpeedDispCol"
+       id="SpeedDispColUp"
        inkscape:label="#g3509"
-       mblogic:editcount="1"
+       mblogic:editcount="5"
        mblogic:inputfunc="[]"
-       mblogic:menu="[{&quot;param&quot;: &quot;outputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;value&quot;: &quot;SpeedColumnDisp&quot;}, {&quot;param&quot;: &quot;min&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Minimum Value&quot;, &quot;value&quot;: &quot;-10&quot;}, {&quot;param&quot;: &quot;max&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Maximum Value&quot;, &quot;value&quot;: &quot;10&quot;}]"
+       mblogic:menu="[{&quot;param&quot;: &quot;outputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;value&quot;: &quot;SpeedColumnDispUp&quot;}, {&quot;param&quot;: &quot;min&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Minimum Value&quot;, &quot;value&quot;: &quot;0&quot;}, {&quot;param&quot;: &quot;max&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Maximum Value&quot;, &quot;value&quot;: &quot;10&quot;}]"
        mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_ColumnGauge(document, &quot;%(widgetid)s&quot;, &quot;MB_Column_WhiteGradient&quot;, &quot;%(min)s&quot;, &quot;%(max)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);"
        mblogic:widgetname="Column Gauge Rectangle"
        mblogic:widgettype="column_gauge"
        style="fill:url(#linearGradient3526)"
-       transform="matrix(1,0,0,1.8061018,112.37973,296.94913)">
+       transform="matrix(1,0,0,0.88686298,112.37973,296.94913)">
       <!-- This is the actual column. The fill value will be added later. -->
       <rect
          height="100"
          id="rect3511"
          style="fill:url(#linearGradient3524);stroke:none"
+         width="10"
+         x="0"
+         y="0" />
+    </g>
+    <g
+       id="SpeedDispColDown"
+       inkscape:label="#g3668"
+       mblogic:editcount="3"
+       mblogic:inputfunc="[]"
+       mblogic:menu="[{&quot;param&quot;: &quot;outputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;value&quot;: &quot;SpeedColumnDispDown&quot;}, {&quot;param&quot;: &quot;min&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Minimum Value&quot;, &quot;value&quot;: &quot;0&quot;}, {&quot;param&quot;: &quot;max&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Maximum Value&quot;, &quot;value&quot;: &quot;-10&quot;}]"
+       mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_ColumnGauge(document, &quot;%(widgetid)s&quot;, &quot;MB_Column_RedGradient&quot;, &quot;%(min)s&quot;, &quot;%(max)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);"
+       mblogic:widgetname="Column Gauge Rectangle"
+       mblogic:widgettype="column_gauge"
+       style="fill:url(#linearGradient3685)"
+       transform="matrix(1,0,0,-0.89504619,112.37972,475.14005)">
+      <!-- This is the actual column. The fill value will be added later. -->
+      <rect
+         height="100"
+         id="rect3670"
+         style="fill:url(#linearGradient3683);stroke:none"
          width="10"
          x="0"
          y="0" />
@@ -4745,13 +4808,13 @@
     <layerlist
        id="layerlist475">
       <param
-         id="param670">DummyScr</param>
+         id="param679">DummyScr</param>
       <param
-         id="param672">GrphScr</param>
+         id="param681">GrphScr</param>
       <param
-         id="param674">EngScr</param>
+         id="param683">EngScr</param>
       <param
-         id="param676">OpScr</param>
+         id="param685">OpScr</param>
     </layerlist>
     <alarmzonelist
        id="alarmzonelist485" />
