@@ -4,21 +4,47 @@ These are the notes for the work being done on the S2HMI
 
 
 ####S2GUI.svg#####
-1. The Digital and Analog inputs are to be included >>> Configure the Str buttons right
 
-2. Check if speed and angle buttons are configured correctly.>>>>>>>Done
+[x] The Digital and Analog inputs are to be included >>> Configure the Str buttons right >>>>>>>>>>Done
 
-3. There was no id for the vertical display bar, check that.>>>>>>>>>Done
+[x] Check if speed and angle buttons are configured correctly.>>>>>>>Done
 
-4. Adjust graph dimensions!!!!!!!!! >>> Adjust timing and and sizes
+[x] There was no id for the vertical display bar, check that.>>>>>>>>>Done
 
-5. Try configuring alarms and events
+[x] Adjust graph dimensions!!!!!!!!! >>> Adjust timing and and sizes >>>>>>>>>>Done>>>To be changed after talking to Chun as per requirements later
 
-6. Fix vertical column issue, if doesn't work, add two columns with different ranges
+[ ] Try configuring alarms and events
 
-7. Reconfigure addresses after getting ones from Harsha. Save old file and do this in a new file.
+[ ] Fix vertical column issue, if doesn't work, add two columns with different ranges >>>>>>>>>Done
 
-8. Cleanup unwanted items.
+[ ] Reconfigure addresses after getting ones from Harsha. Save old file and do this in a new file.
+
+[ ] Cleanup unwanted items.
+
+[ ] Change graph width (x) to about 100 or 200, as it's very small now.
+
+[ ] Issues with communication, look into sourcecode.
+
+
+
+
+
+##############################################################
+##Changes Made###
+#############################################################
+
+
+#Modbusclient.py
+
+>>def SetCoilsBool()
+
+
+#ModbusDatalib.py
+
+>>def coilvalue()
+
+
+
 
 
 

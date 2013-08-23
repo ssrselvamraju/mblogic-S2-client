@@ -210,18 +210,6 @@ class DataTableAccess:
 #		self._ModbusRequest(5, addr, 1, bindata)
 
 
-	########################################################
-	def SetCoils(self, addr, data):
-		"""Write coils to the host (function 15).
-		addr (integer) = Modbus discrete inputs address.
-		data (string) = Packed binary string with the data to write.
-		"""
-#		bindata = ModbusDataLib.boollist2bin([data])
-#		self._ModbusRequest(15, addr, 1, bindata)
-		bindata = coilvalue(data)
-		print bindata
-		print "Size", len(bindata)
-		self._ModbusRequest(5, addr, 1, bindata)
 
 	########################################################
 	def SetHoldingRegistersInt(self, addr, data):

@@ -208,9 +208,9 @@ def coilvalue(state):
 #		return '\xFF\x00'
 
 	if (state == 0) or (state == False):
-		return '\x00\x00'
+		return '\x00'
 	else:
-		return '\xFF\x00'
+		return '\x01'
 
 #############################################################
 # swapbytes
