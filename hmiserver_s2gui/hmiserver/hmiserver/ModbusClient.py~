@@ -198,18 +198,31 @@ class DataTableAccess:
 
 	########################################################
 	def SetCoilsBool(self, addr, data):
-		"""Write coils to the host (function 15).
+		"""Write coils to the host (function 15).               #######Changed to 5
 		addr (integer) = Modbus discrete inputs address.
 		data (string) = Packed binary string with the data to write.
 		"""
-		bindata = ModbusDataLib.boollist2bin([data])
-		self._ModbusRequest(15, addr, 1, bindata)
+##		print "data", data
+#		bindata = ModbusDataLib.boollist2bin([data])
+		bindata = ModbusDataLib.coilvalue(data)
+##		print bindata
+#		self._ModbusRequest(15, addr, 1, bindata)
+##		print "Size", len(bindata)
+		self._ModbusRequest(5, addr, 1, bindata)
+
+
+	########################################################
+#	def SetCoils(self, addr, data):
+#		"""Write coils to the host (function 15).
+#		addr (integer) = Modbus discrete inputs address.
+#		data (string) = Packed binary string with the data to write.
+#		"""
+#		bindata = ModbusDataLib.boollist2bin([data])
+#		self._ModbusRequest(15, addr, 1, bindata)
 #		bindata = coilvalue(data)
-		print bindata
-		print "Size", len(bindata)
+#		print bindata
+#		print "Size", len(bindata)
 #		self._ModbusRequest(5, addr, 1, bindata)
-
-
 
 	########################################################
 	def SetHoldingRegistersInt(self, addr, data):
@@ -217,8 +230,13 @@ class DataTableAccess:
 		addr (integer) = Modbus discrete inputs address.
 		data (string) = Packed binary string with the data to write.
 		"""
-		bindata = ModbusDataLib.signedintlist2bin([data])
-		self._ModbusRequest(16, addr, 1, bindata)
+#		bindata = ModbusDataLib.signedintlist2bin([data])
+		bindata = ModbusDataLib.SignedInt2BinStr(data)
+
+
+#		self._ModbusRequest(16, addr, 1, bindata)
+		self._ModbusRequest(6, addr, 1, bindata)
+
 
 
 	########################################################

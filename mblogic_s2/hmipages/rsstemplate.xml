@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+	<channel>
+		<title>MBLogic Example Channel</title>
+		<linkfile>hmidemo.xhtml</linkfile>
+		<taglist>PumpRunning,PumpStopped</taglist>
+		<logofile>pagelogo.png</logofile>
+		<description>Sample RSS Events</description>
+		<image>
+			<title>RSS Demo</title>
+			<url>%(logofile)s</url>
+		</image>
+		%(messages)s
+	</channel>
+</rss>
+

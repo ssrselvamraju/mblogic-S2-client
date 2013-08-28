@@ -38,6 +38,8 @@ These are the notes for the work being done on the S2HMI
 
 >>def SetCoilsBool()
 
+>>added SetCoils()
+
 
 #ModbusDatalib.py
 
@@ -45,6 +47,8 @@ These are the notes for the work being done on the S2HMI
 
 
 
+
+>>>>>>Be sure to check the mbhmi.config file while working with different servers.
 
 
 
