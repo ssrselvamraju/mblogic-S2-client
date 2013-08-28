@@ -3,7 +3,7 @@ MBT_ClientID = "S2 HMI Client";
 
 // HMI scan in milliseconds. The web browser will poll the server at the
 // interval defined here.
-MBT_ScanRate = 4500;
+MBT_ScanRate = 1500;
 //This was originally 1500, and is now modified
 
 

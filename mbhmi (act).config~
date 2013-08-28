@@ -33,37 +33,37 @@ memaddr=1113
 
 [SpeedDispTxt]
 addrtype=holdingreg
-memaddr=32000
+memaddr=9
 datatype=integer
-range=-10, 10
+range=-4095, 4095
 scale=0, 1
 
 [SpeedColumnDispUp]
-addrtype=inputreg
-memaddr=32000
+addrtype=holdingreg
+memaddr=9
 datatype=integer
-range=-10, 10
+range=-4095, 4095
 scale=0,1
 
 [SpeedColumnDispDown]
-addrtype=inputreg
-memaddr=32000
+addrtype=holdingreg
+memaddr=9
 datatype=integer
-range=-10, 10
+range=-4095, 4095
 scale=0,1
 
 [SteerDispTxt]
 addrtype=holdingreg
-memaddr=32010
+memaddr=1
 datatype=integer
-range=-10, 10
+range=0, 2470
 scale=0, 1
 
 [AnglePtr1]
-addrtype=inputreg
-memaddr=32010
+addrtype=holdingreg
+memaddr=1
 datatype=integer
-range=-10, 10
+range= 0, 2470
 scale=0,1
 
 
@@ -71,55 +71,140 @@ scale=0,1
 
 [SpeedUp]
 addrtype=holdingreg
-memaddr=32000
+memaddr=9
 datatype=integer
 scale=0, 1
 
 [SpeedDown]
 addrtype=holdingreg
-memaddr=32000
+memaddr=9
 datatype=integer
 scale=0, 1
 
+[SpeedUp10]
+addrtype=holdingreg
+memaddr=9
+datatype=integer
+scale=0, 1
+
+[SpeedDown10]
+addrtype=holdingreg
+memaddr=9
+datatype=integer
+scale=0, 1
+
+[SpeedUp100]
+addrtype=holdingreg
+memaddr=9
+datatype=integer
+scale=0, 1
+
+[SpeedDown100]
+addrtype=holdingreg
+memaddr=9
+datatype=integer
+scale=0, 1
+
+[SpeedMax]
+addrtype=holdingreg
+memaddr=9
+datatype=integer
+scale=0, 1
+
+[SpeedZero]
+addrtype=holdingreg
+memaddr=9
+datatype=integer
+scale=0, 1
+
+
 [AngleLeft]
 addrtype=holdingreg
-memaddr=32010
+memaddr=1
 datatype=integer
 scale=0, 1
 
 [AngleRight]
 addrtype=holdingreg
-memaddr=32010
+memaddr=1
 datatype=integer
 scale=0, 1
+
+[AngleLeft10]
+addrtype=holdingreg
+memaddr=1
+datatype=integer
+scale=0, 1
+
+[AngleRight10]
+addrtype=holdingreg
+memaddr=1
+datatype=integer
+scale=0, 1
+
+[AngleLeft100]
+addrtype=holdingreg
+memaddr=1
+datatype=integer
+scale=0, 1
+
+[AngleRight100]
+addrtype=holdingreg
+memaddr=1
+datatype=integer
+scale=0, 1
+
+[AngleLeftMax]
+addrtype=holdingreg
+memaddr=1
+datatype=integer
+scale=0, 1
+
+[AngleRightMax]
+addrtype=holdingreg
+memaddr=1
+datatype=integer
+scale=0, 1
+
+[AngleCenter]
+addrtype=holdingreg
+memaddr=1
+datatype=integer
+scale=0, 1
+
 
 #######E-Stop and Honk buttons#####
 
 [EStop]
 addrtype=coil
-memaddr=10
+memaddr=8
 
 [Honk]
 addrtype=coil
-memaddr=11
+memaddr=9
+
+[Traction_Enable]
+addrtype=coil
+memaddr=8
+
 
 #####Global Swtich#####
 
 [GS_ON]
 addrtype=coil
-memaddr=100
+memaddr=2
 
 [GS_OFF]
 addrtype=coil
-memaddr=100
+memaddr=2
 
 [GlobalSwitchButton]
 addrtype=coil
-memaddr=101
+memaddr=3
 
 [OnLight]
 addrtype=coil
-memaddr=100
+memaddr=2
 
 ################################
 
@@ -128,42 +213,34 @@ memaddr=100
 [din1]
 addrtype=discrete
 memaddr=0
-datatype=integer
 
 [din2]
 addrtype=discrete
 memaddr=1
-datatype=integer
 
 [din3]
 addrtype=discrete
 memaddr=2
-datatype=integer
 
 [din4]
 addrtype=discrete
 memaddr=3
-datatype=integer
 
 [din5]
 addrtype=discrete
 memaddr=4
-datatype=integer
 
 [din6]
 addrtype=discrete
 memaddr=5
-datatype=integer
 
 [din7]
 addrtype=discrete
 memaddr=6
-datatype=integer
 
 [din8]
 addrtype=discrete
 memaddr=7
-datatype=integer
 
 
 ####D_OUTs####
@@ -171,84 +248,68 @@ datatype=integer
 [dout1]
 addrtype=coil
 memaddr=0
-datatype=integer
 
 [dout2]
 addrtype=coil
 memaddr=1
-datatype=integer
 
 [dout3]
 addrtype=coil
 memaddr=2
-datatype=integer
 
 [dout4]
 addrtype=coil
 memaddr=3
-datatype=integer
 
 [dout5]
 addrtype=coil
 memaddr=4
-datatype=integer
 
 [dout6]
 addrtype=coil
 memaddr=5
-datatype=integer
 
 [dout7]
 addrtype=coil
 memaddr=6
-datatype=integer
 
 [dout8]
 addrtype=coil
 memaddr=7
-datatype=integer
 
 ####D_OUT_Store####
 
 [d1]
 addrtype=coil
 memaddr=0
-datatype=integer
 
 [d2]
 addrtype=coil
 memaddr=1
-datatype=integer
 
 [d3]
 addrtype=coil
 memaddr=2
-datatype=integer
 
 [d4]
 addrtype=coil
 memaddr=3
-datatype=integer
 
 [d5]
 addrtype=coil
 memaddr=4
-datatype=integer
 
 [d6]
 addrtype=coil
 memaddr=5
-datatype=integer
 
 [d7]
 addrtype=coil
 memaddr=6
-datatype=integer
 
 [d8]
 addrtype=coil
 memaddr=7
-datatype=integer
 
 
 
@@ -388,15 +449,15 @@ datatype=integer
 ###GraphScreen####
 
 [GraphSpeed]
-addrtype=inputreg
-memaddr=32000
+addrtype=holdingreg
+memaddr=9
 datatype=integer
-range = -10, 10
+range = -4095, 4095
 scale = 0, 1
 
 [GrphScrTxt]
-addrtype=inputreg
-memaddr=32000
+addrtype=holdingreg
+memaddr=9
 datatype=integer
 scale = 0, 1
 

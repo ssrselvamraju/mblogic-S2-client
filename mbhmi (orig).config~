@@ -15,55 +15,55 @@ id=S2 Modbus server
 
 [MenuOp]
 addrtype=coil
-memaddr=0
+memaddr=1110
 
 [MenuEng]
 addrtype=coil
-memaddr=1
+memaddr=1111
 
 [MenuGrph]
 addrtype=coil
-memaddr=2
+memaddr=1112
 
 [MenuDummy]
 addrtype=coil
-memaddr=3
+memaddr=1113
 
 ####Speed and angle displays######
 
 [SpeedDispTxt]
 addrtype=holdingreg
-memaddr=32000
+memaddr=409
 datatype=integer
-range=-10, 10
+range=-4095, 4095
 scale=0, 1
 
 [SpeedColumnDispUp]
-addrtype=inputreg
-memaddr=32000
+addrtype=holdingreg
+memaddr=409
 datatype=integer
-range=-10, 10
+range=-4095, 4095
 scale=0,1
 
 [SpeedColumnDispDown]
-addrtype=inputreg
-memaddr=32000
+addrtype=holdingreg
+memaddr=409
 datatype=integer
-range=-10, 10
+range=-4095, 4095
 scale=0,1
 
 [SteerDispTxt]
 addrtype=holdingreg
-memaddr=32010
+memaddr=401
 datatype=integer
-range=-10, 10
+range=0, 2475
 scale=0, 1
 
 [AnglePtr1]
-addrtype=inputreg
-memaddr=32010
+addrtype=holdingreg
+memaddr=401
 datatype=integer
-range=-10, 10
+range=0, 2475
 scale=0,1
 
 
@@ -71,160 +71,244 @@ scale=0,1
 
 [SpeedUp]
 addrtype=holdingreg
-memaddr=32000
+memaddr=409
 datatype=integer
 scale=0, 1
 
 [SpeedDown]
 addrtype=holdingreg
-memaddr=32000
+memaddr=409
 datatype=integer
 scale=0, 1
 
+[SpeedUp10]
+addrtype=holdingreg
+memaddr=409
+datatype=integer
+scale=0, 1
+
+[SpeedDown10]
+addrtype=holdingreg
+memaddr=409
+datatype=integer
+scale=0, 1
+
+[SpeedUp100]
+addrtype=holdingreg
+memaddr=409
+datatype=integer
+scale=0, 1
+
+[SpeedDown100]
+addrtype=holdingreg
+memaddr=409
+datatype=integer
+scale=0, 1
+
+[SpeedMax]
+addrtype=holdingreg
+memaddr=409
+datatype=integer
+scale=0, 1
+
+[SpeedZero]
+addrtype=holdingreg
+memaddr=409
+datatype=integer
+scale=0, 1
+
+
 [AngleLeft]
 addrtype=holdingreg
-memaddr=32010
+memaddr=401
 datatype=integer
 scale=0, 1
 
 [AngleRight]
 addrtype=holdingreg
-memaddr=32010
+memaddr=401
 datatype=integer
 scale=0, 1
+
+[AngleLeft10]
+addrtype=holdingreg
+memaddr=401
+datatype=integer
+scale=0, 1
+
+[AngleRight10]
+addrtype=holdingreg
+memaddr=401
+datatype=integer
+scale=0, 1
+
+[AngleLeft100]
+addrtype=holdingreg
+memaddr=401
+datatype=integer
+scale=0, 1
+
+[AngleRight100]
+addrtype=holdingreg
+memaddr=401
+datatype=integer
+scale=0, 1
+
+[AngleLeftMax]
+addrtype=holdingreg
+memaddr=401
+datatype=integer
+scale=0, 1
+
+[AngleRightMax]
+addrtype=holdingreg
+memaddr=401
+datatype=integer
+scale=0, 1
+
+[AngleCenter]
+addrtype=holdingreg
+memaddr=401
+datatype=integer
+scale=0, 1
+
 
 #######E-Stop and Honk buttons#####
 
 [EStop]
 addrtype=coil
-memaddr=10
+memaddr=208
 
 [Honk]
 addrtype=coil
-memaddr=11
+memaddr=209
+
+[Traction_Enable]
+addrtype=coil
+memaddr=208
+
 
 #####Global Swtich#####
 
 [GS_ON]
 addrtype=coil
-memaddr=100
+memaddr=202
 
 [GS_OFF]
 addrtype=coil
-memaddr=100
+memaddr=202
 
 [GlobalSwitchButton]
 addrtype=coil
-memaddr=101
+memaddr=203
 
 [OnLight]
 addrtype=coil
-memaddr=100
+memaddr=202
 
 ################################
 
 ####D_INs####
 
 [din1]
-addrtype=inputreg
-memaddr=1001
+addrtype=discrete
+memaddr=100
 
 [din2]
-addrtype=inputreg
-memaddr=1002
+addrtype=discrete
+memaddr=101
 
 [din3]
-addrtype=inputreg
-memaddr=1003
+addrtype=discrete
+memaddr=102
 
 [din4]
-addrtype=inputreg
-memaddr=1004
+addrtype=discrete
+memaddr=103
 
 [din5]
-addrtype=inputreg
-memaddr=1005
+addrtype=discrete
+memaddr=104
 
 [din6]
-addrtype=inputreg
-memaddr=1006
+addrtype=discrete
+memaddr=105
 
 [din7]
-addrtype=inputreg
-memaddr=1007
+addrtype=discrete
+memaddr=106
 
 [din8]
-addrtype=inputreg
-memaddr=1008
-
+addrtype=discrete
+memaddr=107
 
 ####D_OUTs####
 
 [dout1]
 addrtype=coil
-memaddr=2001
+memaddr=200
 
 [dout2]
 addrtype=coil
-memaddr=2002
+memaddr=201
 
 [dout3]
 addrtype=coil
-memaddr=2003
+memaddr=202
 
 [dout4]
 addrtype=coil
-memaddr=2004
+memaddr=203
 
 [dout5]
 addrtype=coil
-memaddr=2005
+memaddr=204
 
 [dout6]
 addrtype=coil
-memaddr=2006
+memaddr=205
 
 [dout7]
 addrtype=coil
-memaddr=2007
+memaddr=206
 
 [dout8]
 addrtype=coil
-memaddr=2008
+memaddr=207
 
 ####D_OUT_Store####
 
 [d1]
 addrtype=coil
-memaddr=2001
+memaddr=200
 
 [d2]
 addrtype=coil
-memaddr=2002
+memaddr=201
 
 [d3]
 addrtype=coil
-memaddr=2003
+memaddr=202
 
 [d4]
 addrtype=coil
-memaddr=2004
+memaddr=203
 
 [d5]
 addrtype=coil
-memaddr=2005
+memaddr=204
 
 [d6]
 addrtype=coil
-memaddr=2006
+memaddr=205
 
 [d7]
 addrtype=coil
-memaddr=2007
+memaddr=206
 
 [d8]
 addrtype=coil
-memaddr=2008
+memaddr=207
 
 
 
@@ -232,126 +316,126 @@ memaddr=2008
 
 [ain1]
 addrtype=inputreg
-memaddr=1011
+memaddr=300
 datatype=integer
 
 [ain2]
 addrtype=inputreg
-memaddr=1012
+memaddr=301
 datatype=integer
 
 [ain3]
 addrtype=inputreg
-memaddr=1013
+memaddr=302
 datatype=integer
 
 [ain4]
 addrtype=inputreg
-memaddr=1014
+memaddr=303
 datatype=integer
 
 [ain5]
 addrtype=inputreg
-memaddr=1015
+memaddr=304
 datatype=integer
 
 [ain6]
 addrtype=inputreg
-memaddr=1016
+memaddr=305
 datatype=integer
 
 [ain7]
 addrtype=inputreg
-memaddr=1017
+memaddr=306
 datatype=integer
 
 [ain8]
 addrtype=inputreg
-memaddr=1018
+memaddr=307
 datatype=integer
 
 ####A_OUTs##
 
 [aout1]
 addrtype=holdingreg
-memaddr=2011
+memaddr=400
 datatype=integer
 
 [aout2]
 addrtype=holdingreg
-memaddr=2012
+memaddr=401
 datatype=integer
 
 [aout3]
 addrtype=holdingreg
-memaddr=2013
+memaddr=402
 datatype=integer
 
 [aout4]
 addrtype=holdingreg
-memaddr=2014
+memaddr=403
 datatype=integer
 
 [aout5]
 addrtype=holdingreg
-memaddr=2015
+memaddr=404
 datatype=integer
 
 [aout6]
 addrtype=holdingreg
-memaddr=2016
+memaddr=405
 datatype=integer
 
 [aout7]
 addrtype=holdingreg
-memaddr=2017
+memaddr=406
 datatype=integer
 
 [aout8]
 addrtype=holdingreg
-memaddr=2018
+memaddr=407
 datatype=integer
 
 ####A_OUT_Store##
 
 [a1]
 addrtype=holdingreg
-memaddr=2011
+memaddr=400
 datatype=integer
 
 [a2]
 addrtype=holdingreg
-memaddr=2012
+memaddr=401
 datatype=integer
 
 [a3]
 addrtype=holdingreg
-memaddr=2013
+memaddr=402
 datatype=integer
 
 [a4]
 addrtype=holdingreg
-memaddr=2014
+memaddr=403
 datatype=integer
 
 [a5]
 addrtype=holdingreg
-memaddr=2015
+memaddr=404
 datatype=integer
 
 [a6]
 addrtype=holdingreg
-memaddr=2016
+memaddr=405
 datatype=integer
 
 [a7]
 addrtype=holdingreg
-memaddr=2017
+memaddr=406
 datatype=integer
 
 [a8]
 addrtype=holdingreg
-memaddr=2018
+memaddr=407
 datatype=integer
 
 ###IntegerWriter####
@@ -364,15 +448,15 @@ datatype=integer
 ###GraphScreen####
 
 [GraphSpeed]
-addrtype=inputreg
-memaddr=32000
+addrtype=holdingreg
+memaddr=209
 datatype=integer
-range = -10, 10
+range = -4095, 4095
 scale = 0, 1
 
 [GrphScrTxt]
-addrtype=inputreg
-memaddr=32000
+addrtype=holdingreg
+memaddr=209
 datatype=integer
 scale = 0, 1
 
