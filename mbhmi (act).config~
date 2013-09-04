@@ -56,15 +56,27 @@ scale=0,1
 addrtype=holdingreg
 memaddr=1
 datatype=integer
-range=0, 2470
+range=0, 2475
 scale=0, 1
 
 [AnglePtr1]
 addrtype=holdingreg
 memaddr=1
 datatype=integer
-range= 0, 2470
+range= 0, 2475
 scale=0,1
+
+[SpeedEncoderDisp]
+addrtype=inputreg32
+memaddr=10
+datatype=integer
+scale=0, 1
+
+[SpeedEncoderDisp]
+addrtype=inputreg32
+memaddr=12
+datatype=integer
+scale=0, 1
 
 
 ###Speed and angle buttons####

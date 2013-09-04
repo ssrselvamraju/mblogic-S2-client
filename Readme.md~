@@ -40,6 +40,8 @@ These are the notes for the work being done on the S2HMI
 
 >>added SetCoils()
 
+>>def SetHoldingRegistersInt()
+
 
 #ModbusDatalib.py
 

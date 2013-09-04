@@ -225,7 +225,7 @@ class DataTableAccess:
 #		self._ModbusRequest(5, addr, 1, bindata)
 
 	########################################################
-	def SetHoldingRegistersInt(self, addr, data):
+	def SetHoldingRegistersInt(self, addr, data):				#Function changed to 6
 		"""Write holding registers from the host (function 16).
 		addr (integer) = Modbus discrete inputs address.
 		data (string) = Packed binary string with the data to write.

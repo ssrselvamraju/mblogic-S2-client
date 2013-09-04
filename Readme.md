@@ -23,8 +23,9 @@ These are the notes for the work being done on the S2HMI
 
 [ ] Change graph width (x) to about 100 or 200, as it's very small now.
 
-[ ] Issues with communication, look into sourcecode.
+[X] Issues with communication, look into sourcecode.
 
+[ ] Check writing and reading a 32bit input/holding register.... Use the full program and in engg screen use the last address to be a 32 bit int.
 
 
 
