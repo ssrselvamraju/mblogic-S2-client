@@ -208,9 +208,9 @@ def coilvalue(state):
 #		return '\xFF\x00'
 
 	if (state == 0) or (state == False):
-		return '\x00'
+		return '\x00\x00'
 	else:
-		return '\x01'
+		return '\xFF\x00'
 
 #############################################################
 # swapbytes
@@ -254,7 +254,7 @@ def SignedInt2BinStr(intdata):
 	Parameters: intdata (integer).
 	Returns: binary string. 
 	"""
-	return struct.pack('>h', intdata)
+	return struct.pack('>l', intdata)
 
 ##############################################################################
 # BinStr2SignedInt

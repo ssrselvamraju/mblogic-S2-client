@@ -1,0 +1,735 @@
+<?xml version="1.0" ?><!DOCTYPE html  PUBLIC '-//W3C//DTD XHTML 1.0 Strict//EN'  'http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd'><html xmlns="http://www.w3.org/1999/xhtml" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<head>
+<link href="pageicon.png" rel="icon" type="image/png"/>
+
+<!-- For a top menu screen with no header. 
+	Version 09-Jan-2010. -->
+
+<!-- Change this title to something appropriate. -->
+<title id="MBT_ClientName_Title">S2 HMI</title>
+
+<!-- General page layout style sheet. -->
+<link href="pagelayout.css" rel="stylesheet" type="text/css"/>
+<!-- Pagfe layout style sheet. This file contains the size and layout specific 
+	settings. Change this to import the correct CSS file for the SVG template 
+	you are using. -->
+<link href="pagelayout_template.css" rel="stylesheet" type="text/css"/>
+
+
+<!-- Style sheet to control graphic buttons. -->
+<link href="hmibuttons.css" rel="stylesheet" type="text/css"/>
+
+<!-- JSON parser. -->
+<script src="json2.js" type="text/javascript"/>
+<!-- HMI Protocol functions. -->
+<script src="libhmiclient2.js" type="text/javascript"/>
+<!-- MBHMI Library. -->
+<script src="libmbhmicontrols2.js" type="text/javascript"/>
+<script src="libmbhmimisc.js" type="text/javascript"/>
+<!-- MBHMI Library for events, alarms, and error display. -->
+<script src="libmbevents.js" type="text/javascript"/>
+
+
+<!-- Standard error and other message text definitions. -->
+<script src="standardtexts.js" type="text/javascript"/>
+
+<!-- The following files must be created by the user. 
+	The file names can be changed if necessary. -->
+<!-- Application configuration data. -->
+<script src="clientconfigdata.js" type="text/javascript"/>
+<!-- Message texts. -->
+<script src="messagetexts.js" type="text/javascript"/>
+
+</head>
+
+
+<body onload="MBT_pageinit();">
+
+
+<!-- This provides a container for the HTML elements so we can centre the contents. -->
+<div id="MBT_HTMLContainer">
+
+	<div id="MBT_TopHeader">
+	<h1 class="pos_left">
+		<!-- Include a logo here. -->
+		<object data="pagelogo.jpg" width="170"/>
+	</h1>
+
+	<h1 class="pos_right" id="MBT_ClientName_Heading">
+		S2 HMI
+	</h1>
+
+	</div>
+	<!-- This is the standard nav bar. -->
+	<div id="MBT_HTMLNavTop">
+		<ul>
+		<li><a onclick="MBT_HTMLSelect.SelectScreen('MBT_SVGScreen')">Main</a></li>
+		<li><a onclick="MBT_HTMLSelect.SelectScreen('MBT_AlarmsScreen')">Alarms</a></li>
+		<li><a onclick="MBT_HTMLSelect.SelectScreen('MBT_EventsScreen')">Events</a></li>
+		<li><a onclick="MBT_HTMLSelect.SelectScreen('MBT_SystemStatusScreen')">Status</a></li>
+		<li><a onclick="MBT_HTMLSelect.SelectScreen('MBT_HelpScreen')">Help</a></li>
+		</ul>
+	</div>
+
+
+
+<!-- This sets the display styles for the standard HTML screens for pages with
+	horizontal menus across the top. -->
+<div id="MBT_HTMLScreensTop">
+
+	<!-- ################################################################## -->
+	<!-- Controls display of the main SVG screen. -->
+	<div id="MBT_SVGScreen">
+	<!-- Put main SVG content here -->
+
+
+
+	<svg height="750" id="svg2445" inkscape:output_extension="org.inkscape.output.svg.inkscape" inkscape:version="0.48.3.1 r9886" sodipodi:docname="S2Speedo.svg" sodipodi:version="0.32" version="1.0" width="850" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:mblogic="http://www.example.com/mblogic" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs id="defs2447">
+    <inkscape:perspective id="perspective2453" inkscape:persp3d-origin="372.04724 : 350.78739 : 1" inkscape:vp_x="0 : 526.18109 : 1" inkscape:vp_y="0 : 1000 : 0" inkscape:vp_z="744.09448 : 526.18109 : 1" sodipodi:type="inkscape:persp3d"/>
+    <linearGradient id="MB_BlueGradient" x1="1" x2="0" y1="1" y2="0">
+      <stop id="stop2989" offset="50%" stop-color="blue"/>
+      <stop id="stop2991" offset="100%" stop-color="white"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" id="linearGradient3051" inkscape:collect="always" x1="106" x2="4" xlink:href="#MB_BlueGradient" y1="106" y2="4"/>
+    <linearGradient gradientTransform="scale(0.66666667,1.5)" gradientUnits="userSpaceOnUse" id="linearGradient3053" inkscape:collect="always" x1="85.5" x2="79.5" xlink:href="#MB_BlueGradient" y1="71.333333" y2="65.333333"/>
+    <linearGradient gradientTransform="scale(0.66666667,1.5)" gradientUnits="userSpaceOnUse" id="linearGradient3055" inkscape:collect="always" x1="85.5" x2="79.5" xlink:href="#MB_BlueGradient" y1="71.333333" y2="65.333333"/>
+    <linearGradient gradientTransform="scale(0.66666667,1.5)" gradientUnits="userSpaceOnUse" id="linearGradient3057" inkscape:collect="always" x1="85.5" x2="79.5" xlink:href="#MB_BlueGradient" y1="71.333333" y2="65.333333"/>
+    <linearGradient gradientTransform="scale(0.66666667,1.5)" gradientUnits="userSpaceOnUse" id="linearGradient3059" inkscape:collect="always" x1="85.5" x2="79.5" xlink:href="#MB_BlueGradient" y1="71.333333" y2="65.333333"/>
+    <linearGradient gradientTransform="scale(0.66666667,1.5)" gradientUnits="userSpaceOnUse" id="linearGradient3061" inkscape:collect="always" x1="85.5" x2="79.5" xlink:href="#MB_BlueGradient" y1="71.333333" y2="65.333333"/>
+    <linearGradient gradientTransform="scale(0.66666667,1.5)" gradientUnits="userSpaceOnUse" id="linearGradient3063" inkscape:collect="always" x1="85.5" x2="79.5" xlink:href="#MB_BlueGradient" y1="71.333333" y2="65.333333"/>
+    <linearGradient gradientTransform="scale(0.66666667,1.5)" gradientUnits="userSpaceOnUse" id="linearGradient3065" inkscape:collect="always" x1="85.5" x2="79.5" xlink:href="#MB_BlueGradient" y1="71.333333" y2="65.333333"/>
+    <linearGradient gradientTransform="scale(0.66666667,1.5)" gradientUnits="userSpaceOnUse" id="linearGradient3067" inkscape:collect="always" x1="85.5" x2="79.5" xlink:href="#MB_BlueGradient" y1="71.333333" y2="65.333333"/>
+    <linearGradient gradientTransform="scale(0.66666667,1.5)" gradientUnits="userSpaceOnUse" id="linearGradient3069" inkscape:collect="always" x1="85.5" x2="79.5" xlink:href="#MB_BlueGradient" y1="71.333333" y2="65.333333"/>
+    <linearGradient gradientTransform="scale(0.66666667,1.5)" gradientUnits="userSpaceOnUse" id="linearGradient3071" inkscape:collect="always" x1="85.5" x2="79.5" xlink:href="#MB_BlueGradient" y1="71.333333" y2="65.333333"/>
+    <linearGradient gradientTransform="scale(0.66666667,1.5)" gradientUnits="userSpaceOnUse" id="linearGradient3073" inkscape:collect="always" x1="85.5" x2="79.5" xlink:href="#MB_BlueGradient" y1="71.333333" y2="65.333333"/>
+    <linearGradient gradientTransform="scale(0.66666667,1.5)" gradientUnits="userSpaceOnUse" id="linearGradient3075" inkscape:collect="always" x1="85.5" x2="79.5" xlink:href="#MB_BlueGradient" y1="71.333333" y2="65.333333"/>
+    <linearGradient gradientUnits="userSpaceOnUse" id="linearGradient3077" inkscape:collect="always" x1="107" x2="3" xlink:href="#MB_BlueGradient" y1="107" y2="3"/>
+    <linearGradient gradientUnits="userSpaceOnUse" id="linearGradient3079" inkscape:collect="always" x1="60.5" x2="49.5" xlink:href="#MB_BlueGradient" y1="60.5" y2="49.5"/>
+    <linearGradient gradientUnits="userSpaceOnUse" id="linearGradient3081" inkscape:collect="always" x1="111" x2="-1" xlink:href="#MB_BlueGradient" y1="111" y2="-1"/>
+    <linearGradient id="MB_Column_MaroonGradient" x1="0" x2="0" y1="1" y2="0">
+      <stop id="stop3114" offset="0%" stop-color="maroon"/>
+      <stop id="stop3116" offset="10%" stop-color="maroon"/>
+      <stop id="stop3118" offset="90%" stop-color="white"/>
+      <stop id="stop3120" offset="100%" stop-color="white"/>
+    </linearGradient>
+    <linearGradient id="MB_SilverGradient" x1="1" x2="0" y1="1" y2="0">
+      <stop id="stop3142" offset="50%" stop-color="silver"/>
+      <stop id="stop3144" offset="100%" stop-color="white"/>
+    </linearGradient>
+    <linearGradient id="MB_TanGradient" x1="1" x2="0" y1="1" y2="0">
+      <stop id="stop3206" offset="50%" stop-color="tan"/>
+      <stop id="stop3208" offset="100%" stop-color="white"/>
+    </linearGradient>
+    <linearGradient gradientTransform="scale(0.49236596,2.0310096)" gradientUnits="userSpaceOnUse" id="linearGradient3265" inkscape:collect="always" x1="73.116346" x2="8.1240384" xlink:href="#MB_TanGradient" y1="66.961771" y2="1.9694639"/>
+    <linearGradient gradientTransform="scale(4,0.25)" gradientUnits="userSpaceOnUse" id="linearGradient3267" inkscape:collect="always" x1="7.75" x2="-0.25" xlink:href="#MB_TanGradient" y1="4" y2="-4"/>
+    <linearGradient gradientTransform="scale(4,0.25)" gradientUnits="userSpaceOnUse" id="linearGradient3269" inkscape:collect="always" x1="7.75" x2="-0.25" xlink:href="#MB_TanGradient" y1="44" y2="36"/>
+    <linearGradient gradientTransform="scale(4,0.25)" gradientUnits="userSpaceOnUse" id="linearGradient3271" inkscape:collect="always" x1="7.75" x2="-0.25" xlink:href="#MB_TanGradient" y1="84" y2="76"/>
+    <linearGradient gradientTransform="scale(4,0.25)" gradientUnits="userSpaceOnUse" id="linearGradient3273" inkscape:collect="always" x1="7.75" x2="-0.25" xlink:href="#MB_TanGradient" y1="124" y2="116"/>
+    <linearGradient gradientTransform="scale(4,0.25)" gradientUnits="userSpaceOnUse" id="linearGradient3275" inkscape:collect="always" x1="7.75" x2="-0.25" xlink:href="#MB_TanGradient" y1="164" y2="156"/>
+    <linearGradient gradientTransform="scale(4,0.25)" gradientUnits="userSpaceOnUse" id="linearGradient3277" inkscape:collect="always" x1="7.75" x2="-0.25" xlink:href="#MB_TanGradient" y1="204" y2="196"/>
+    <linearGradient gradientTransform="scale(4,0.25)" gradientUnits="userSpaceOnUse" id="linearGradient3279" inkscape:collect="always" x1="7.75" x2="-0.25" xlink:href="#MB_TanGradient" y1="244" y2="236"/>
+    <linearGradient gradientTransform="scale(4,0.25)" gradientUnits="userSpaceOnUse" id="linearGradient3281" inkscape:collect="always" x1="7.75" x2="-0.25" xlink:href="#MB_TanGradient" y1="284" y2="276"/>
+    <linearGradient gradientTransform="scale(4,0.25)" gradientUnits="userSpaceOnUse" id="linearGradient3283" inkscape:collect="always" x1="7.75" x2="-0.25" xlink:href="#MB_TanGradient" y1="324" y2="316"/>
+    <linearGradient gradientTransform="scale(4,0.25)" gradientUnits="userSpaceOnUse" id="linearGradient3285" inkscape:collect="always" x1="7.75" x2="-0.25" xlink:href="#MB_TanGradient" y1="364" y2="356"/>
+    <linearGradient gradientTransform="scale(4,0.25)" gradientUnits="userSpaceOnUse" id="linearGradient3287" inkscape:collect="always" x1="7.75" x2="-0.25" xlink:href="#MB_TanGradient" y1="404" y2="396"/>
+    <linearGradient gradientTransform="scale(0.56011203,1.7853571)" gradientUnits="userSpaceOnUse" id="linearGradient3289" inkscape:collect="always" x1="55.34607" x2="-1.7853571" xlink:href="#MB_TanGradient" y1="56.571315" y2="-0.56011203"/>
+    <linearGradient gradientTransform="scale(0.33968311,2.9439203)" gradientUnits="userSpaceOnUse" id="linearGradient3291" inkscape:collect="always" x1="79.485848" x2="35.327043" xlink:href="#MB_TanGradient" y1="45.85722" y2="1.6984156"/>
+    <linearGradient gradientTransform="scale(0.55708601,1.7950549)" gradientUnits="userSpaceOnUse" id="linearGradient3293" inkscape:collect="always" x1="76.289835" x2="-4.4876373" xlink:href="#MB_TanGradient" y1="79.384757" y2="-1.392715"/>
+    <linearGradient gradientTransform="scale(0.31622777,3.1622777)" gradientUnits="userSpaceOnUse" id="linearGradient3295" inkscape:collect="always" x1="0" x2="0" xlink:href="#MB_Column_MaroonGradient" y1="31.622777" y2="0"/>
+    <linearGradient gradientTransform="scale(0.31622777,3.1622777)" gradientUnits="userSpaceOnUse" id="linearGradient3297" inkscape:collect="always" x1="0" x2="0" xlink:href="#MB_Column_MaroonGradient" y1="31.622777" y2="0"/>
+  </defs>
+  <sodipodi:namedview bordercolor="#666666" borderlayer="true" borderopacity="1.0" gridtolerance="10000" guidetolerance="10" id="base" inkscape:current-layer="BackgroundLayer" inkscape:cx="425" inkscape:cy="375" inkscape:document-units="px" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:window-height="715" inkscape:window-maximized="0" inkscape:window-width="1050" inkscape:window-x="66" inkscape:window-y="24" inkscape:zoom="0.65866667" objecttolerance="10" pagecolor="#ffffff" showgrid="false"/>
+  <metadata id="metadata2450">
+    <rdf:RDF>
+      <cc:Work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g id="BackgroundLayer" inkscape:groupmode="layer" inkscape:label="BackgroundLayer">
+    <rect height="750" id="Background" inkscape:label="#BackgroundRectangle" style="fill:#000080;fill-opacity:1;fill-rule:nonzero;stroke:none" width="850" x="1.5182186" y="0"/>
+    <g id="g2993" style="fill:url(#linearGradient3081)" transform="matrix(2.4367323,0,0,2.20664,119.52224,284.75829)">
+      <!-- This adds the outer ring. -->
+      <circle cx="55" cy="55" d="M 110,55 C 110,85.375661 85.375661,110 55,110 24.624339,110 0,85.375661 0,55 0,24.624339 24.624339,0 55,0 c 30.375661,0 55,24.624339 55,55 z" id="circle2995" r="55" sodipodi:cx="55" sodipodi:cy="55" sodipodi:rx="55" sodipodi:ry="55" style="fill:#c0c0c0;stroke:#000000;stroke-width:2px"/>
+      <!-- This adds the outer part of the dial background. -->
+      <circle cx="55" cy="55" d="M 105,55 C 105,82.614237 82.614237,105 55,105 27.385763,105 5,82.614237 5,55 5,27.385763 27.385763,5 55,5 c 27.614237,0 50,22.385763 50,50 z" id="circle2997" r="50" sodipodi:cx="55" sodipodi:cy="55" sodipodi:rx="50" sodipodi:ry="50" style="fill:url(#linearGradient3051);stroke:#000000;stroke-width:2px"/>
+      <!-- These add the "tick" marks to the dial. -->
+      <g id="g2999" style="fill:url(#linearGradient3077);stroke:#ffffff;stroke-width:4px">
+        <line id="line3001" style="fill:url(#linearGradient3053)" x1="55" x2="55" y1="105" y2="100"/>
+        <line id="line3003" style="fill:url(#linearGradient3055)" transform="matrix(0.8660254,0.5,-0.5,0.8660254,34.868603,-20.131397)" x1="55" x2="55" y1="105" y2="100"/>
+        <line id="line3005" style="fill:url(#linearGradient3057)" transform="matrix(0.5,0.8660254,-0.8660254,0.5,75.131397,-20.131397)" x1="55" x2="55" y1="105" y2="100"/>
+        <line id="line3007" style="fill:url(#linearGradient3059)" transform="matrix(0,1,-1,0,110,0)" x1="55" x2="55" y1="105" y2="100"/>
+        <line id="line3009" style="fill:url(#linearGradient3061)" transform="matrix(-0.5,0.8660254,-0.8660254,-0.5,130.1314,34.868603)" x1="55" x2="55" y1="105" y2="100"/>
+        <line id="line3011" style="fill:url(#linearGradient3063)" transform="matrix(-0.8660254,0.5,-0.5,-0.8660254,130.1314,75.131397)" x1="55" x2="55" y1="105" y2="100"/>
+        <line id="line3013" style="fill:url(#linearGradient3065)" transform="matrix(-1,0,0,-1,110,110)" x1="55" x2="55" y1="105" y2="100"/>
+        <line id="line3015" style="fill:url(#linearGradient3067)" transform="matrix(-0.8660254,-0.5,0.5,-0.8660254,75.131397,130.1314)" x1="55" x2="55" y1="105" y2="100"/>
+        <line id="line3017" style="fill:url(#linearGradient3069)" transform="matrix(-0.5,-0.8660254,0.8660254,-0.5,34.868603,130.1314)" x1="55" x2="55" y1="105" y2="100"/>
+        <line id="line3019" style="fill:url(#linearGradient3071)" transform="matrix(0,-1,1,0,0,110)" x1="55" x2="55" y1="105" y2="100"/>
+        <line id="line3021" style="fill:url(#linearGradient3073)" transform="matrix(0.5,-0.8660254,0.8660254,0.5,-20.131397,75.131397)" x1="55" x2="55" y1="105" y2="100"/>
+        <line id="line3023" style="fill:url(#linearGradient3075)" transform="matrix(0.8660254,-0.5,0.5,0.8660254,-20.131397,34.868603)" x1="55" x2="55" y1="105" y2="100"/>
+      </g>
+      <!-- This gives us a target to help align the pointer. -->
+      <circle cx="55" cy="55" d="m 60,55 c 0,2.761424 -2.238576,5 -5,5 -2.761424,0 -5,-2.238576 -5,-5 0,-2.761424 2.238576,-5 5,-5 2.761424,0 5,2.238576 5,5 z" id="circle3025" r="5" sodipodi:cx="55" sodipodi:cy="55" sodipodi:rx="5" sodipodi:ry="5" style="fill:url(#linearGradient3079);stroke:#000000;stroke-width:1px"/>
+    </g>
+    <g id="2TillerAngle" inkscape:label="#g3085" mblogic:editcount="6" mblogic:inputfunc="[]" mblogic:menu="[{&quot;param&quot;: &quot;outputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;value&quot;: &quot;Z2TillerAngle&quot;}, {&quot;param&quot;: &quot;dialoffset&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Dial Offset&quot;, &quot;value&quot;: &quot;0&quot;}, {&quot;param&quot;: &quot;dialmax&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Dial Maximum&quot;, &quot;value&quot;: &quot;360&quot;}, {&quot;param&quot;: &quot;mindata&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Minimum Data Value&quot;, &quot;value&quot;: &quot;0&quot;}, {&quot;param&quot;: &quot;maxdata&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Maximum Data Value&quot;, &quot;value&quot;: &quot;360&quot;}]" mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_DialGauge(document, &quot;%(widgetid)s&quot;, %(dialoffset)s, %(dialmax)s, %(mindata)s, %(maxdata)s), &quot;%(outputtag)s&quot;, &quot;read&quot;);" mblogic:widgetname="Dial Pointer" mblogic:widgettype="dialpointer" transform="matrix(1.5367659,0,0,2.3209392,253.89512,412.6877)">
+      <g id="g3087" style="fill:#d2b48c">
+        <!-- This is the centre part of the pointer. -->
+        <circle cx="0" cy="0" d="M 5,0 C 5,2.7614237 2.7614237,5 0,5 -2.7614237,5 -5,2.7614237 -5,0 c 0,-2.7614237 2.2385763,-5 5,-5 2.7614237,0 5,2.2385763 5,5 z" id="circle3089" r="5" sodipodi:cx="0" sodipodi:cy="0" sodipodi:rx="5" sodipodi:ry="5" style="stroke:#000000;stroke-width:2px"/>
+        <circle cx="0" cy="0" d="M 1,0 C 1,0.55228475 0.55228475,1 0,1 -0.55228475,1 -1,0.55228475 -1,0 c 0,-0.55228475 0.44771525,-1 1,-1 0.55228475,0 1,0.44771525 1,1 z" id="circle3091" r="1" sodipodi:cx="0" sodipodi:cy="0" sodipodi:rx="1" sodipodi:ry="1" style="fill:#000000;stroke:#000000;stroke-width:1px"/>
+        <!-- This is the pointer. -->
+        <polygon id="polygon3093" points="5,0 0,5 -5,0 -0.6,40 0.6,40 " style="stroke:#000000;stroke-width:2px"/>
+        <line id="line3095" style="stroke:#000000;stroke-width:1px" x1="0" x2="0" y1="5" y2="40"/>
+      </g>
+    </g>
+    <g id="g3210" style="fill:url(#linearGradient3293)" transform="matrix(1.5735493,0,0,3.146447,572.02093,109.96125)">
+      <!-- This adds the outer ring. -->
+      <rect height="140" id="rect3212" rx="5" style="fill:#c0c0c0;stroke:#000000;stroke-width:5px" width="40" x="0" y="0"/>
+      <!-- This adds the inner background. -->
+      <rect height="130" id="rect3214" rx="5" style="fill:url(#linearGradient3265);stroke:#000000;stroke-width:2px" width="30" x="5" y="5"/>
+      <!-- These add the "tick" marks to the background. -->
+      <g id="g3216" style="fill:url(#linearGradient3289);stroke:#ffffff;stroke-width:2px" transform="translate(5,20)">
+        <line id="line3218" style="fill:url(#linearGradient3267)" x1="0" x2="30" y1="0" y2="0"/>
+        <line id="line3220" style="fill:url(#linearGradient3269)" x1="0" x2="30" y1="10" y2="10"/>
+        <line id="line3222" style="fill:url(#linearGradient3271)" x1="0" x2="30" y1="20" y2="20"/>
+        <line id="line3224" style="fill:url(#linearGradient3273)" x1="0" x2="30" y1="30" y2="30"/>
+        <line id="line3226" style="fill:url(#linearGradient3275)" x1="0" x2="30" y1="40" y2="40"/>
+        <line id="line3228" style="fill:url(#linearGradient3277)" x1="0" x2="30" y1="50" y2="50"/>
+        <line id="line3230" style="fill:url(#linearGradient3279)" x1="0" x2="30" y1="60" y2="60"/>
+        <line id="line3232" style="fill:url(#linearGradient3281)" x1="0" x2="30" y1="70" y2="70"/>
+        <line id="line3234" style="fill:url(#linearGradient3283)" x1="0" x2="30" y1="80" y2="80"/>
+        <line id="line3236" style="fill:url(#linearGradient3285)" x1="0" x2="30" y1="90" y2="90"/>
+        <line id="line3238" style="fill:url(#linearGradient3287)" x1="0" x2="30" y1="100" y2="100"/>
+      </g>
+      <!-- This covers the inner part of the "tick" marks. -->
+      <rect height="130" id="rect3240" rx="0" style="fill:url(#linearGradient3291);stroke:none" width="15" x="12" y="5"/>
+    </g>
+    <g id="2TruckSpeed" inkscape:label="#g3122" mblogic:editcount="4" mblogic:inputfunc="[]" mblogic:menu="[{&quot;param&quot;: &quot;outputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;value&quot;: &quot;Z2TruckSpeed&quot;}, {&quot;param&quot;: &quot;min&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Minimum Value&quot;, &quot;value&quot;: &quot;0&quot;}, {&quot;param&quot;: &quot;max&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Maximum Value&quot;, &quot;value&quot;: &quot;3000&quot;}]" mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_ColumnGauge(document, &quot;%(widgetid)s&quot;, &quot;MB_Column_MaroonGradient&quot;, &quot;%(min)s&quot;, &quot;%(max)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);" mblogic:widgetname="Column Gauge Rectangle" mblogic:widgettype="column_gauge" style="fill:url(#linearGradient3297)" transform="matrix(1.4554656,0,0,4.0668016,596.21456,129.1498)">
+      <!-- This is the actual column. The fill value will be added later. -->
+      <rect height="100" id="rect3124" style="fill:url(#linearGradient3295);stroke:none" width="10" x="0" y="0"/>
+    </g>
+    <g id="2DistTrav" inkscape:label="#g3301" mblogic:editcount="3" mblogic:inputfunc="[]" mblogic:menu="[{&quot;param&quot;: &quot;outputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;value&quot;: &quot;Z2DistTrav&quot;}, {&quot;param&quot;: &quot;decimals&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Decimals&quot;, &quot;value&quot;: &quot;2&quot;}]" mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_NumericFloatDisplay(document, &quot;%(widgetid)s&quot;, &quot;%(decimals)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);" mblogic:widgetname="Float Digits" mblogic:widgettype="text" transform="matrix(2.0770522,0,0,2.1297003,570.192,645.48166)">
+      <text font-size="20" id="text3303" inkscape:label="#text3303" style="font-size:20px;text-anchor:end;fill:#00ff00;stroke:#00ff00" x="50" y="20">12.34</text>
+    </g>
+    <text id="text3313" sodipodi:linespacing="125%" style="font-size:28px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#f2f2f2;fill-opacity:1;stroke:none;font-family:Sans" x="344.63562" xml:space="preserve" y="683.19843"><tspan id="tspan3315" sodipodi:role="line" x="344.63562" y="683.19843">Dist. Travelled</tspan></text>
+    <text id="text3317" sodipodi:linespacing="125%" style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans" x="74.392715" xml:space="preserve" y="121.45749"><tspan id="tspan3319" sodipodi:role="line" x="74.392715" y="121.45749">x</tspan></text>
+    <text id="text3317-6" sodipodi:linespacing="125%" style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans" x="76.298874" xml:space="preserve" y="221.96989"><tspan id="tspan3319-8" sodipodi:role="line" x="76.298874" y="221.96989">h</tspan></text>
+    <text id="text3317-8" sodipodi:linespacing="125%" style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans" x="76.298866" xml:space="preserve" y="165.79581"><tspan id="tspan3319-3" sodipodi:role="line" x="76.298866" y="165.79581">y</tspan></text>
+    <text id="text3313-0" sodipodi:linespacing="125%" style="font-size:28px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#f2f2f2;fill-opacity:1;stroke:none;font-family:Sans" x="518.41791" xml:space="preserve" y="584.32513"><tspan id="tspan3315-9" sodipodi:role="line" x="518.41791" y="584.32513">Truck Speed</tspan></text>
+    <text id="text3313-5" sodipodi:linespacing="125%" style="font-size:28px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#f2f2f2;fill-opacity:1;stroke:none;font-family:Sans" x="181.37337" xml:space="preserve" y="561.55182"><tspan id="tspan3315-4" sodipodi:role="line" x="181.37337" y="561.55182">Tiller Angle</tspan></text>
+    <rect height="32.336456" id="rect3404" rx="11.046399" ry="9.2389879" style="fill:#ffffff;stroke:#00ffff;stroke-width:5.05117655" width="110.46399" x="119.85403" y="91.625298"/>
+    <g id="2x" inkscape:label="#g3301-3" mblogic:editcount="3" mblogic:inputfunc="[]" mblogic:menu="[{&quot;param&quot;: &quot;outputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;value&quot;: &quot;Z2x&quot;}, {&quot;param&quot;: &quot;decimals&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Decimals&quot;, &quot;value&quot;: &quot;2&quot;}]" mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_NumericFloatDisplay(document, &quot;%(widgetid)s&quot;, &quot;%(decimals)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);" mblogic:widgetname="Float Digits" mblogic:widgettype="text" transform="matrix(1.6126647,0,0,1.3587304,137.91524,88.406826)">
+      <text font-size="20" id="2DistTrav-4" inkscape:label="#text3303" style="font-size:20px;text-anchor:end;fill:#00ff00;stroke:#00ff00" x="50" y="20">12.34</text>
+    </g>
+    <rect height="32.336456" id="rect3404-0" rx="11.046399" ry="9.2389879" style="fill:#ffffff;stroke:#00ffff;stroke-width:5.05117655" width="110.46399" x="119.36314" y="137.17186"/>
+    <g id="2y" inkscape:label="#g3301-3-0" mblogic:editcount="3" mblogic:inputfunc="[]" mblogic:menu="[{&quot;param&quot;: &quot;outputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;value&quot;: &quot;Z2y&quot;}, {&quot;param&quot;: &quot;decimals&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Decimals&quot;, &quot;value&quot;: &quot;2&quot;}]" mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_NumericFloatDisplay(document, &quot;%(widgetid)s&quot;, &quot;%(decimals)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);" mblogic:widgetname="Float Digits" mblogic:widgettype="text" transform="matrix(1.6126647,0,0,1.3587304,137.42436,133.95338)">
+      <text font-size="20" id="2DistTrav-4-5" inkscape:label="#text3303" style="font-size:20px;text-anchor:end;fill:#00ff00;stroke:#00ff00" x="50" y="20">12.34</text>
+    </g>
+    <rect height="32.336456" id="rect3404-2" rx="11.046399" ry="9.2389879" style="fill:#ffffff;stroke:#00ffff;stroke-width:5.05117655" width="110.46399" x="119.36314" y="190.30951"/>
+    <g id="2h" inkscape:label="#g3301-3-3" mblogic:editcount="3" mblogic:inputfunc="[]" mblogic:menu="[{&quot;param&quot;: &quot;outputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;value&quot;: &quot;Z2h&quot;}, {&quot;param&quot;: &quot;decimals&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Decimals&quot;, &quot;value&quot;: &quot;2&quot;}]" mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_NumericFloatDisplay(document, &quot;%(widgetid)s&quot;, &quot;%(decimals)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);" mblogic:widgetname="Float Digits" mblogic:widgettype="text" transform="matrix(1.6126647,0,0,1.3587304,137.42436,187.09103)">
+      <text font-size="20" id="2DistTrav-4-6" inkscape:label="#text3303" style="font-size:20px;text-anchor:end;fill:#00ff00;stroke:#00ff00" x="50" y="20">12.34</text>
+    </g>
+    <text id="text3317-0" sodipodi:linespacing="125%" style="font-size:70.9828186px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans" transform="scale(1.0475357,0.9546214)" x="176.243" xml:space="preserve" y="68.711411"><tspan id="tspan3319-2" sodipodi:role="line" x="176.243" y="68.711411">S2 Dashboard</tspan></text>
+  </g>
+<mblogicdata><layerlist/><alarmzonelist/><eventzonelist/></mblogicdata></svg></div>
+
+	<!-- End of the main page. -->
+
+	<!-- ################################################################## -->
+
+
+	<!-- This is for alarms. Do not modify this section. -->
+
+	<div id="MBT_AlarmsScreen">
+	
+		<h2>Active Alarms:</h2> 
+	
+		<p>  
+		<svg height="75" width="250px" xmlns="http://www.w3.org/2000/svg" xmlns:html="http://www.w3.org/1999/xhtml">
+	
+	
+		<defs>
+			<!-- The following filter is used to add a drop shadown. -->
+			<filter id="MBT_AlarmDropShadowFilter">
+				<feGaussianBlur stdDeviation="2">
+				</feGaussianBlur>
+			</filter>
+	
+				<!-- For violet buttons. -->
+			<linearGradient id="MBT_AlarmGradient" x1="1" x2="0" y1="1" y2="0">
+				<stop offset="50%" stop-color="violet"/>
+				<stop offset="100%" stop-color="white"/>
+			</linearGradient>
+	
+		</defs>
+	
+	
+				<!-- Push button to acknowledge alarms. -->
+		<g class="buttonactivate" fill="url(#MBT_AlarmGradient)" onclick="MBHMIProtocol.AddAlarmAck();" transform="translate(100, 35)">
+	
+ 			<!-- This is the actual button. -->
+			<!-- Rectangular push button. -->
+			<g id="MBT_AlarmPB">
+					<!-- This rectangle is used for the drop shadown. -->
+					<rect fill="grey" filter="url(#MBT_AlarmDropShadowFilter)" height="50" rx="15" stroke="none" stroke-width="0px" width="160" x="-73" y="-18"/>
+			
+					<!-- This is the actual button. -->
+					<rect height="50" rx="15" width="160" x="-80" y="-25"/>
+			</g>
+	
+			<!-- This is the text label. -->
+			<text font-size="20" stroke-width="2px" x="-65" y="8">Acknowledge</text> 
+	
+		</g>
+			
+	
+		</svg>
+		</p> 
+	
+		<p>
+		 	<!-- This is the table used to display the alarms. -->
+			<table border="5" cellpadding="5" id="MBT_AlarmDisplay">
+			<tr> 
+				<td><b>Alarm:</b></td>
+				<td><b>Alarm State:</b></td>
+				<td><b>Time:</b></td> 
+				<td><b>Time OK:</b></td> 
+				<td><b>Count:</b></td>
+			</tr>
+			</table>
+		</p>
+	
+	
+		<h2>Alarm History:</h2>
+	
+		<!-- This is the table used to display the alarm history. -->
+		<p>
+			<table border="5" cellpadding="5" id="MBT_AlarmHistoryDisplay">
+			<tr>
+				<td><b>Alarm:</b></td>
+				<td><b>Alarm Time:</b></td> 
+				<td><b>Time OK:</b></td> 
+				<td><b>Ack By:</b></td> 
+			</tr>
+			</table>
+		</p>
+	
+	</div>
+	
+	<!-- End of the alarms page. -->
+
+	<!-- ################################################################## -->
+
+
+	<!-- This is for events. Do not modify this section. -->
+
+	<div id="MBT_EventsScreen">
+		<h2>Events:</h2>
+
+		<p>
+		<!-- This is the table used to display the events. -->
+		<table border="5" cellpadding="5" id="MBT_EventDisplay">
+		<tr>
+			<td><b>Event #:</b></td> 
+			<td><b>Date:</b></td> 
+			<td><b>Event:</b></td> 
+			<td><b>State:</b></td>
+		</tr>
+		</table>
+		</p>
+	</div>
+
+
+	<!-- End of the events page. -->
+
+	<!-- ################################################################## -->
+
+	<!-- This is for system errors. Do not modify this section. -->
+
+	<div id="MBT_SystemStatusScreen">
+
+		<h2>Communications Errors:</h2>
+		<!-- This is the table used to display the communcations errors. -->
+		<p><table border="5" cellpadding="5" id="MBT_ErrorDisplay">
+		<tr>
+			<td><b>Date:</b></td> 
+			<td><b>Tag:</b></td> 
+			<td><b>Error:</b></td>
+		</tr>
+		</table>
+		</p>
+
+
+		<h2>Communications Status:</h2>
+		<!-- This is the table used to display the coummunications status. -->
+		<p><table border="5" cellpadding="5" id="MBT_StatusDisplay">
+		<tr>
+			<td><b>Date:</b></td> 
+			<td><b>Status Code:</b></td> 
+			<td><b>Status:</b></td>
+		</tr>
+		</table>
+		</p>
+
+	</div>
+
+	<!-- End of the system status page. -->
+
+	<!-- ################################################################## -->
+
+
+	<!-- This is for application specific help. -->
+
+	<div id="MBT_HelpScreen">
+
+		<h1>Help:</h1>
+
+		<h2>Main</h2>
+		<p>Application specific help content goes here. 
+		</p>
+
+		<hr/>
+
+		<h2>Alarms</h2>
+		<p>Alarms are high priority operator messages which require 
+		acknowledgement (i.e. fault messages).
+		</p>
+
+		<p>The alarm screen consists of two tables. The active alarms table shows
+		alarms which are currently active. Repeated alarms are automatically 
+		summarised. Alarms are colour coded according to whether they have been
+		already acknowledged and as to whether the fault condition has already 
+		corrected itself. If multiple operator stations are in use and an 
+		operator acknowledges an alarm, the acknowledgement is automatically
+		reflected to all other operator stations.
+		</p>
+		
+		<p>Once alarms have been acknowledged and the alarm condition they
+		automatically move to a historical table. 
+		</p>
+
+		<p>The active alarms table contains the following columns:</p>
+
+		<ul>
+			<li><strong>Alarm</strong> - The alarm text. This is application
+				specific.</li>
+			<li><strong>Alarm State</strong> - The current state of the alarms.</li>
+			<li><strong>Time</strong> - The time at which the alarm condition 
+				(fault) occurred.</li>
+			<li><strong>Time OK</strong> - The time at which the alarm condition
+				cleared.</li>
+			<li><strong>Count</strong> - The number of times the alarm condition
+				occurred before clearing and being acknowledged. Each time the
+				alarm transitions from OK to not OK the count will increment.
+				Once the alarm message has moved to the alarm history table the
+				count will rest to zero.</li>
+		</ul>
+
+		<p>The alarm history table contains the following columns:
+		</p>
+
+		<ul>
+			<li><strong>Alarm</strong> - This is the same as in the active alarms
+				table.</li>
+			<li><strong>Alarm Time</strong> - This is the same as in the active alarms
+				table.</li>
+			<li><strong>Time OK</strong> - This is the same as in the active alarms
+				table.</li>
+			<li><strong>Ack By</strong> - This is the id of the HMI client that
+				acknowledged the alarm.</li>
+		</ul>
+
+		<hr/>
+
+		<h2>Events</h2>
+		<p>Events are low priority operator messages which do not require 
+		acknowledgement. Events are displayed in a historical table. 
+		</p>
+
+		<p>The events table contains the following columns:
+		</p>
+
+		<ul>
+			<li><strong>Event #</strong> - The event serial number. This is applied
+				by the server and is unique for each event occurrence. </li>
+			<li><strong>Date</strong> - The time at which the event occurred.</li>
+			<li><strong>Event</strong> - The event text. This is application
+				specific.</li>
+			<li><strong>State</strong> - The current data state of the event.</li>
+		</ul>
+
+		<hr/>
+
+		<h2>Status</h2>
+		<p>The error status screen displays communications errors and status.
+		The communications errors errors table displays error codes returned
+		from the server. These error codes are associated with individual 
+		commands for such things as data out of range, incompatible data types, 
+		etc. Status errors are usually caused by HMI programming or server 
+		configuration errors. The communications errors table contains the 
+		following columns:  
+		</p>
+
+		<ul>
+			<li><strong>Date</strong> - The time at which the error occurred.</li>
+			<li><strong>Tag</strong> - The protocol tag associated with the 
+					error.</li>
+			<li><strong>Error</strong> - The descriptive error text.</li>
+		</ul>
+
+		<p>A communications status code reflects the protocol status code.
+		A status message is added to the table whenever a status code other
+		than &quot;ok&quot; is returned. The communications status table contains the 
+		following columns:
+		</p>
+
+		<ul>
+			<li><strong>Date</strong> - The time at which the error occurred.</li>
+			<li><strong>Status Code</strong> - The protocol status code.</li>
+			<li><strong>Status</strong> - The descriptive text for the status
+				code.</li>
+		</ul>
+
+		<p>Communications error and status messages are only returned to the 
+		client which generated the original request. When the web page is
+		reloaded, the messages are cleared. 
+		</p>
+
+		<hr/>
+
+		<h2>Help</h2>
+		<p>This screen.
+		</p>
+
+
+	</div>
+
+	<!-- End of the help page. -->
+
+<!-- ################################################################## -->
+
+</div>	<!-- For MBT_HTMLScreens. -->
+
+<!-- Standard footer -->
+<div id="MBT_HTMLFooter">
+	<p id="MBT_ClientName_Footer">SEEGRID Corporation</p>
+</div>
+
+</div>	<!-- For MBT_HTMLContainer. -->
+
+
+</body>
+
+	<script id="MBT_ControlLists">
+	<![CDATA[
+
+	// DO THIS: Parameters required for the protocol definition must be
+	// inserted here.
+	// ######################################################################
+
+	// The list of tags to poll.
+	MBT_ReadList = ["Z2TruckSpeed", "Z2y", "Z2x", "Z2TillerAngle", "Z2DistTrav", "Z2h"];
+	// The alarm zone list to poll.
+	MBT_AlarmZoneList = [];
+	// The event zone list to poll.
+	MBT_EventZoneList = [];
+	
+	// We also add the SVG screen list here.
+	MBT_SVGScreenTable = [];
+
+	// ######################################################################
+
+	//]]>
+	</script>
+
+	<script>
+	<![CDATA[
+
+	var xmlns="http://www.w3.org/2000/svg";
+
+
+	/* This handles communications with the server. 
+	The parameters are: 
+		1) The host name the web page was loaded from.
+		2) The url (this can be a blank string).
+		2) The port number the web page was loaded from. 
+		3) The client ID string.
+		4) The list of tags to poll for data.
+		5) The list of alarm zones to poll for new alarms.
+		6) The list of event zones to poll for new events.
+		7) true = Enable asynchronous communications.
+	The first two parameters use a standard Javascript feature.
+	Alternatively, these can be hard coded values if the host
+	and port are known in advance.
+	*/
+	/* DO THIS: Make sure you update the MBT_ReadList, MBT_AlarmZoneList, 
+		and MBT_EventZoneList lists and the MBT_ClientID string in the 
+		external data file.
+	*/
+	var MBHMIProtocol = new HMIClient(window.location.hostname, 
+			window.location.pathname, window.location.port, 
+			MBT_ClientID, MBT_ReadList, MBT_AlarmZoneList, 
+			MBT_EventZoneList, true);
+
+
+	//]]>
+	</script>
+
+	<script id="MBT_ControlScripts">
+	<![CDATA[
+
+	// DO THIS: Application specific code goes here.
+	// ######################################################################
+
+	MBHMIProtocol.AddToDisplayList(new MB_DialGauge(document, "2TillerAngle", 0, 360, 0, 360), "Z2TillerAngle", "read");
+	MBHMIProtocol.AddToDisplayList(new MB_ColumnGauge(document, "2TruckSpeed", "MB_Column_MaroonGradient", "0", "3000"), "Z2TruckSpeed", "read");
+	MBHMIProtocol.AddToDisplayList(new MB_NumericFloatDisplay(document, "2DistTrav", "2"), "Z2DistTrav", "read");
+	MBHMIProtocol.AddToDisplayList(new MB_NumericFloatDisplay(document, "2x", "2"), "Z2x", "read");
+	MBHMIProtocol.AddToDisplayList(new MB_NumericFloatDisplay(document, "2y", "2"), "Z2y", "read");
+	MBHMIProtocol.AddToDisplayList(new MB_NumericFloatDisplay(document, "2h", "2"), "Z2h", "read");
+
+	// ######################################################################
+
+
+	//]]>
+	</script>
+
+	<script>
+	<![CDATA[
+
+	/* Make a list of all the screens that can be selected.
+		If you modify the HTML menu you may need to update this list.
+	*/
+	var MBT_HTMLScreenTable = ["MBT_SVGScreen", "MBT_EventsScreen",
+		"MBT_AlarmsScreen", "MBT_SystemStatusScreen", "MBT_HelpScreen"];
+	// This creates an object that controls display of the screens.
+	var MBT_HTMLSelect = new MB_ScreenSelect(document, MBT_HTMLScreenTable);
+
+	/* This handles the secondary SVG screens within the main screen.
+		The list of ids for the screens comes from an external data file.
+	*/ 
+	var MBT_SVGScreenSelect = new MB_ScreenSelect(document, MBT_SVGScreenTable);
+
+
+	/* Standard HTML screens. Message texts and other configuration data 
+		is read from external data files.
+	*/
+
+	// This is to display the alarms.
+	var MBT_AlarmDisplay = new MB_AlarmDisplay(document, "MBT_AlarmDisplay", 
+				MBT_AlarmText, MBT_AlarmStatesText, 
+				"red", "orange", "green");
+	// Add this to the display list.
+	MBHMIProtocol.AddToDisplayList(MBT_AlarmDisplay, "alarms", "alarms");
+
+
+	// This is to display the alarm history.
+	var MBT_AlarmHistoryDisplay = new MB_AlarmHistoryDisplay(document, 
+				"MBT_AlarmHistoryDisplay", 50, MBT_AlarmText);
+	// Add this to the display list.
+	MBHMIProtocol.AddToDisplayList(MBT_AlarmHistoryDisplay, 
+					"alarmhistory", "alarmhistory");
+
+	// This is to display the events.
+	var MBT_EventDisplay = new MB_EventDisplay(document, 
+			"MBT_EventDisplay", 50, MBT_EventText);
+	// Add this to the display list.
+ 	MBHMIProtocol.AddToDisplayList(MBT_EventDisplay, "events", "events");
+
+
+	// This is to display the communications errors.
+	var MBT_ErrorDisplay = new MB_TagErrorDisplay(document, 
+					"MBT_ErrorDisplay", 50, MBT_ErrorText);
+	// Add this to the display list.
+	MBHMIProtocol.AddToDisplayList(MBT_ErrorDisplay, "errors", "errors");
+
+
+	// This is to display the communications status log.
+	var MBT_StatusLogDisplay = new MB_StatusLogDisplay(document, 
+					"MBT_StatusDisplay", 50, MBT_StatusText);
+	// Add this to the display list.
+	MBHMIProtocol.AddToDisplayList(MBT_StatusLogDisplay, "status", "status");
+
+
+	// Set a page title. This uses data from a variable to set the page title
+	// plus any other page elements which need to be labeled at run time. This
+	// permits giving the HMI page a unique name based on the data in an 
+	// external Javascript file.  
+	function SetTitle(tname, msg) {
+		var tref = document.getElementById(tname);
+		// If there are any existing elements, remove them first.
+		if (tref.hasChildNodes()) {
+			while (tref.firstChild) {
+				tref.removeChild(tref.firstChild);
+			}
+		} 
+		// Add the text and insert it in the page. 
+		tref.appendChild(document.createTextNode(msg));
+	}
+
+	// Set the page title.
+	SetTitle("MBT_ClientName_Title", MBT_PageTitle);
+	// Page heading.
+	SetTitle("MBT_ClientName_Heading", MBT_PageTitle);
+	// Page footer. 
+	SetTitle("MBT_ClientName_Footer", MBT_PageTitle);
+
+	// Set whether the page heading is visible. Setting it to true will
+	// display the HTML "banner" heading, while setting it to false will
+	// hide the heading.
+	function SetHeadingVisbility(visible) {
+		if (visible) {
+			document.getElementById("MBT_TopHeader").style.display = "block";
+		} else {
+			document.getElementById("MBT_TopHeader").style.display = "none";
+		}
+	}
+	SetHeadingVisbility(MBT_HeaderVisible);
+
+
+
+	// Run all the operations required each scan cycle.
+	function MBT_RunScanCycle() {
+
+		// Query the server for updates.
+		MBHMIProtocol.SendRequest();
+
+
+		/* Call the function back again at the set interval. The time 
+		interval should be set to a larger value on very slow 
+		computers. The time interval between scans is set by 
+		the MBT_ScanRate, which is read from an external data file.
+		*/
+		window.setTimeout("MBT_RunScanCycle()", MBT_ScanRate);
+		
+	}
+
+	// Start up and initialisation.
+	function MBT_pageinit() {
+
+		// Call the function back again at the set interval.
+		window.setTimeout("MBT_RunScanCycle()",500);
+	}
+
+
+
+	//]]>
+	</script>
+
+<!-- Copyright 2008 - 2011. Michael Griffin
+This file is part of MBLogic.
+MBLogic is free software: you can redistribute it and/or modify 
+it under the terms of the GNU General Public License as published by 
+the Free Software Foundation, either version 3 of the License, or 
+(at your option) any later version. 
+MBLogic is distributed in the hope that it will be useful, 
+but WITHOUT ANY WARRANTY; without even the implied warranty of 
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the 
+GNU General Public License for more details. 
+You should have received a copy of the GNU General Public License 
+along with MBLogic. If not, see <http://www.gnu.org/licenses/>. 
+-->
+
+</html>

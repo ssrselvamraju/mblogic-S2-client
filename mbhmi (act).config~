@@ -70,13 +70,15 @@ scale=0,1
 addrtype=inputreg32
 memaddr=10
 datatype=integer
-scale=0, 1
+range = -2147483648, 2147483647
+scale = 0, 1
 
-[SpeedEncoderDisp]
+[AngleEncoderDisp]
 addrtype=inputreg32
 memaddr=12
 datatype=integer
-scale=0, 1
+range = -2147483648, 2147483647
+scale = 0, 1
 
 
 ###Speed and angle buttons####
@@ -474,6 +476,50 @@ datatype=integer
 scale = 0, 1
 
 
+####################################################
+####################################################
+##################S2Speedo##########################
+####################################################
+####################################################
+
+[Z2TillerAngle]
+addrtype=inputreg
+memaddr=14
+datatype=integer
+scale=0, 1
+
+[Z2TruckSpeed]
+addrtype=inputreg
+memaddr=20
+datatype=integer
+scale = 0, 1
+
+[Z2DistTrav]
+addrtype=inputreg
+memaddr=22
+datatype=float
+scale = 0, 1
+
+[Z2x]
+addrtype=inputreg
+memaddr=23
+datatype=float
+scale = 0, 1
+
+[Z2y]
+addrtype=inputreg
+memaddr=24
+datatype=float
+scale = 0, 1
+
+[Z2h]
+addrtype=inputreg
+memaddr=25
+datatype=float   ####check
+scale = 0, 1
+
+
+#########################################################
 #########################################################
 
 # Event definitions.

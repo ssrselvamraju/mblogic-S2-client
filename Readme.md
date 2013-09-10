@@ -15,13 +15,13 @@ These are the notes for the work being done on the S2HMI
 
 [ ] Try configuring alarms and events
 
-[ ] Fix vertical column issue, if doesn't work, add two columns with different ranges >>>>>>>>>Done
+[X] Fix vertical column issue, if doesn't work, add two columns with different ranges >>>>>>>>>Done
 
-[ ] Reconfigure addresses after getting ones from Harsha. Save old file and do this in a new file.
+[X] Reconfigure addresses after getting ones from Harsha. Save old file and do this in a new file.
 
 [ ] Cleanup unwanted items.
 
-[ ] Change graph width (x) to about 100 or 200, as it's very small now.
+[X] Change graph width (x) to about 100 or 200, as it's very small now.
 
 [X] Issues with communication, look into sourcecode.
 
@@ -49,7 +49,7 @@ These are the notes for the work being done on the S2HMI
 >>def coilvalue()
 
 
-
+##Other notes
 
 >>>>>>Be sure to check the mbhmi.config file while working with different servers.
 
