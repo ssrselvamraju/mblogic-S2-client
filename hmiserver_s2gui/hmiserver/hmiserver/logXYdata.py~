@@ -82,10 +82,10 @@ HBClient1 = ModbusClient.DataTableAccess('192.168.10.237', 1502, 5.0, 1)
 file = open("encoder10.txt","w")
 with open("encoder.txt","w") as file:
 	while True:
-		val10 = HBClient1.GetInputRegistersIntList(10,2)
-		val12 = HBClient1.GetInputRegistersIntList(12,2)	
-		file.write( "Addr10" + str(val10) + "Addr12" + str(val12) + '\n' )
+		valX = HBClient1.GetInputRegistersInt(14)
+		valY = HBClient1.GetInputRegistersInt(15)	
+		file.write( str(valX) + '\t' + str(valY) + '\n' )
 		time.sleep(0.5)
-		print "Here"
-print "Here2"
+#		print "Here"
+#print "Here2"
 #Loop exits when program is terminated 

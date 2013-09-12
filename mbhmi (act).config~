@@ -31,51 +31,84 @@ memaddr=1113
 
 ####Speed and angle displays######
 
-[SpeedDispTxt]
+[SpeedDispAct]
 addrtype=holdingreg
-memaddr=9
+memaddr=16
 datatype=integer
-range=-4095, 4095
+range=0, 3000
 scale=0, 1
 
-[SpeedColumnDispUp]
+[SpeedDispSet]
 addrtype=holdingreg
-memaddr=9
+memaddr=10
 datatype=integer
-range=-4095, 4095
-scale=0,1
-
-[SpeedColumnDispDown]
-addrtype=holdingreg
-memaddr=9
-datatype=integer
-range=-4095, 4095
-scale=0,1
-
-[SteerDispTxt]
-addrtype=holdingreg
-memaddr=1
-datatype=integer
-range=0, 2475
+range=0,3000
 scale=0, 1
 
-[AnglePtr1]
+[SpeedColumnUpAct]
 addrtype=holdingreg
-memaddr=1
+memaddr=16
 datatype=integer
-range= 0, 2475
+range=0, 3000
+scale=0,1
+
+[SpeedColumnUpSet]
+addrtype=holdingreg
+memaddr=10
+datatype=integer
+range=0, 3000
+scale=0,1
+
+[SpeedColumnDownAct]
+addrtype=holdingreg
+memaddr=16
+datatype=integer
+scale=0,1
+
+[SpeedColumnDownSet]
+addrtype=holdingreg
+memaddr=10
+datatype=integer
+scale=0,1
+
+[SteerDispTxtAct]
+addrtype=holdingreg
+memaddr=9
+datatype=integer
+range=0, 360
+scale=0, 1
+
+[SteerDispTxtSet]
+addrtype=holdingreg
+memaddr=11
+datatype=integer
+range=0, 360
+scale=0, 1
+
+[AnglePtrAct]
+addrtype=holdingreg
+memaddr=9
+datatype=integer
+range= 0, 360
+scale=0,1
+
+[AnglePtrSet]
+addrtype=holdingreg
+memaddr=11
+datatype=integer
+range= 0, 360
 scale=0,1
 
 [SpeedEncoderDisp]
 addrtype=inputreg32
-memaddr=10
+memaddr=12
 datatype=integer
 range = -2147483648, 2147483647
 scale = 0, 1
 
 [AngleEncoderDisp]
 addrtype=inputreg32
-memaddr=12
+memaddr=10
 datatype=integer
 range = -2147483648, 2147483647
 scale = 0, 1
@@ -85,104 +118,104 @@ scale = 0, 1
 
 [SpeedUp]
 addrtype=holdingreg
-memaddr=9
+memaddr=10
 datatype=integer
 scale=0, 1
 
 [SpeedDown]
 addrtype=holdingreg
-memaddr=9
+memaddr=10
 datatype=integer
 scale=0, 1
 
 [SpeedUp10]
 addrtype=holdingreg
-memaddr=9
+memaddr=10
 datatype=integer
 scale=0, 1
 
 [SpeedDown10]
 addrtype=holdingreg
-memaddr=9
+memaddr=10
 datatype=integer
 scale=0, 1
 
 [SpeedUp100]
 addrtype=holdingreg
-memaddr=9
+memaddr=10
 datatype=integer
 scale=0, 1
 
 [SpeedDown100]
 addrtype=holdingreg
-memaddr=9
+memaddr=10
 datatype=integer
 scale=0, 1
 
 [SpeedMax]
 addrtype=holdingreg
-memaddr=9
+memaddr=10
 datatype=integer
 scale=0, 1
 
 [SpeedZero]
 addrtype=holdingreg
-memaddr=9
+memaddr=10
 datatype=integer
 scale=0, 1
 
 
 [AngleLeft]
 addrtype=holdingreg
-memaddr=1
+memaddr=11
 datatype=integer
 scale=0, 1
 
 [AngleRight]
 addrtype=holdingreg
-memaddr=1
+memaddr=11
 datatype=integer
 scale=0, 1
 
 [AngleLeft10]
 addrtype=holdingreg
-memaddr=1
+memaddr=11
 datatype=integer
 scale=0, 1
 
 [AngleRight10]
 addrtype=holdingreg
-memaddr=1
+memaddr=11
 datatype=integer
 scale=0, 1
 
 [AngleLeft100]
 addrtype=holdingreg
-memaddr=1
+memaddr=11
 datatype=integer
 scale=0, 1
 
 [AngleRight100]
 addrtype=holdingreg
-memaddr=1
+memaddr=11
 datatype=integer
 scale=0, 1
 
 [AngleLeftMax]
 addrtype=holdingreg
-memaddr=1
+memaddr=11
 datatype=integer
 scale=0, 1
 
 [AngleRightMax]
 addrtype=holdingreg
-memaddr=1
+memaddr=11
 datatype=integer
 scale=0, 1
 
 [AngleCenter]
 addrtype=holdingreg
-memaddr=1
+memaddr=11
 datatype=integer
 scale=0, 1
 
@@ -464,14 +497,14 @@ datatype=integer
 
 [GraphSpeed]
 addrtype=holdingreg
-memaddr=9
+memaddr=16
 datatype=integer
-range = -4095, 4095
-scale = 0, 1
+range = 0, 3000
+scale = 0, 0.1
 
 [GrphScrTxt]
 addrtype=holdingreg
-memaddr=9
+memaddr=16
 datatype=integer
 scale = 0, 1
 
@@ -484,38 +517,38 @@ scale = 0, 1
 
 [Z2TillerAngle]
 addrtype=inputreg
-memaddr=14
+memaddr=9
 datatype=integer
 scale=0, 1
 
 [Z2TruckSpeed]
 addrtype=inputreg
-memaddr=20
+memaddr=16
 datatype=integer
 scale = 0, 1
 
 [Z2DistTrav]
 addrtype=inputreg
-memaddr=22
+memaddr=17
 datatype=float
 scale = 0, 1
 
 [Z2x]
 addrtype=inputreg
-memaddr=23
-datatype=float
+memaddr=14
+datatype=integer
 scale = 0, 1
 
 [Z2y]
 addrtype=inputreg
-memaddr=24
-datatype=float
+memaddr=15
+datatype=integer
 scale = 0, 1
 
 [Z2h]
 addrtype=inputreg
-memaddr=25
-datatype=float   ####check
+memaddr=18
+datatype=integer
 scale = 0, 1
 
 
