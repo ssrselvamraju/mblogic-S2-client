@@ -73,7 +73,8 @@ import HMIServerCommon
 
 #HBClient = ModbusClient.DataTableAccess(hbhost, hbport, hbtimeout, hbunitid)
 
-HBClient = ModbusClient.DataTableAccess('192.168.10.237', 1502, 5.0, 1)
+#HBClient = ModbusClient.DataTableAccess('192.168.10.237', 1502, 5.0, 1)
+HBClient = ModbusClient.DataTableAccess('10.0.0.100', 1502, 5.0, 1)
 
 ############################################################
 

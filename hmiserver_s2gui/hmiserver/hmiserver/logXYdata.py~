@@ -3,8 +3,8 @@
 # Module: 	hmimbclienthearbeat.py
 # Purpose: 	Pass a heartbeat value as a client. to turn on and off a coil which is in sync with the MODBUS/TCP server.
 # Language:	Python 2.5
-# Date:		30-Aug-2013.
-# Ver.:		30-Aug-2013.
+# Date:		13-Sep-2013.
+# Ver.:		13-Sep-2013.
 # Copyright:	2013 - 2014 - S. Selvam Raju @SEEGRID corp.       <sraju@seegrid.com>
 # 
 # This program is free software: you can redistribute it and/or modify
@@ -24,14 +24,14 @@
 ##############################################################################
 
 # Name of this program.
-_SOFTNAME = 'ModbusLogEncoderData'
+_SOFTNAME = 'ModbusLogVehicleXYData'
 
 # Version of this server.
 _VERSION = '30-Aug-2013'
 
 _HelpStr = """
 %s, %s
-This module passes a heartbeat value as a client to turn on and off a coil which should be sync with the MODBUS/TCP server heartbeat monitor. In case of powerloss or wifi disconnect the heartbeat is lost and the server terminates any critical functions to ensure safety.
+This module logs the Vehicle Forward and Vehicle Lateral information which is calculated at the Server and stored in allocated InputRegisters as a Float Value. The data is logged into a .dat file which is in a format used by gnuplot, to give a plot of the path navigated by the truck.
 Just like the standard clients this client has to be started with the command line parameters (which are supposed to be the same as those in the MBClient and this program should run on the same computer that runs the standard client.
 
 Any parameters which are not specified will use their default values. 
@@ -51,9 +51,11 @@ This program is automatically setup to get the command line parameters sent to t
 
 import time
 import sys
+import os
 
 import ModbusClient
 import HMIServerCommon
+from mbprotocols import ModbusExtData
 
 
 ############################################################
@@ -73,19 +75,33 @@ import HMIServerCommon
 
 #HBClient = ModbusClient.DataTableAccess(hbhost, hbport, hbtimeout, hbunitid)
 
-HBClient1 = ModbusClient.DataTableAccess('192.168.10.237', 1502, 5.0, 1)
+#HBClient1 = ModbusClient.DataTableAccess('192.168.10.237', 1502, 5.0, 1)
+HBClient1 = ModbusClient.DataTableAccess('10.0.0.100', 1502, 5.0, 1)
+
+ExtData1 = ModbusExtData.ExtendedDataTypes(HBClient1)
 
 ############################################################
 
 #Loop to keep the heartbeat alive
 
-file = open("encoder10.txt","w")
-with open("encoder.txt","w") as file:
-	while True:
-		valX = HBClient1.GetInputRegistersInt(14)
-		valY = HBClient1.GetInputRegistersInt(15)	
-		file.write( str(valX) + '\t' + str(valY) + '\n' )
-		time.sleep(0.5)
+file = open("truckxy.dat","w")
+
+x = 0
+#with open("truckxy.dat","a") as file:
+while True:
+#		valX = HBClient1.GetInputRegistersInt(14)
+#		valY = HBClient1.GetInputRegistersInt(15)	
+#	x = x+1
+#	print x
+	valVF = ExtData1.GetInpRegFloat32(22)
+	valVL = ExtData1.GetInpRegFloat32(20)
+	file.write( str(valVF) + '\t' + str(valVL) + '\n' )
+	time.sleep(0.5)
+#	if x % 7 is 0:
+	file.close()		
+	os.system('cp truckxy.dat truckplot.dat')
+	file = open("truckxy.dat","a")			
+
 #		print "Here"
 #print "Here2"
 #Loop exits when program is terminated 

@@ -534,21 +534,24 @@ datatype=float
 scale = 0, 1
 
 [Z2x]
-addrtype=inputreg
-memaddr=14
-datatype=integer
+addrtype=inputregfloat
+memaddr=22
+datatype=float
+range = -2147483648, 2147483647
 scale = 0, 1
 
 [Z2y]
-addrtype=inputreg
-memaddr=15
-datatype=integer
+addrtype=inputregfloat
+memaddr=20
+datatype=float
+range = -2147483648, 2147483647
 scale = 0, 1
 
 [Z2h]
 addrtype=inputreg
 memaddr=18
 datatype=integer
+range = -2147483648, 2147483647
 scale = 0, 1
 
 
