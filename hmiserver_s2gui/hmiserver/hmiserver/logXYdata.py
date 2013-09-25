@@ -82,16 +82,28 @@ ExtData1 = ModbusExtData.ExtendedDataTypes(HBClient1)
 
 ############################################################
 
-#Loop to keep the heartbeat alive
+
+
+file2 = open("truckHeading.dat","w")
+file2.write( "0" + '\t' + "0" + '\t' + "0" + '\t' + "0" + '\n' )
+file2.close()
+
 
 file = open("truckxy.dat","w")
 
-x = 0
+x = 1
+VF_1 = 0
+VL_1 = 0
+VF_2 = 0
+VL_2 = 0
 #with open("truckxy.dat","a") as file:
 while True:
 #		valX = HBClient1.GetInputRegistersInt(14)
 #		valY = HBClient1.GetInputRegistersInt(15)	
-#	x = x+1
+	if x%10 is 0:
+		VF_1 = VF_2
+		VL_1 = VL_2
+	x = x+1
 #	print x
 	valVF = ExtData1.GetInpRegFloat32(22)
 	valVL = ExtData1.GetInpRegFloat32(20)
@@ -99,6 +111,15 @@ while True:
 	time.sleep(0.5)
 #	if x % 7 is 0:
 	file.close()		
+
+	if x%10 is 0:
+		VF_2 = valVF
+		VL_2 = valVL
+		file2 = open("truckHeading.dat","w")
+		VF_Delta = VF_2-VF_1
+		VL_Detla = VL_2-VL_1
+		file2.write( str(VF_1) + '\t' + str(VL_1) + '\t' + str(VF_Delta) + '\t' + str(VL_Detla) + '\n' )
+		file2.close()
 	os.system('cp truckxy.dat truckplot.dat')
 	file = open("truckxy.dat","a")			
 
