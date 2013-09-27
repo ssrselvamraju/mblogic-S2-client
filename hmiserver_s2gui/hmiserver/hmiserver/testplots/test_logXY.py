@@ -54,9 +54,9 @@ import sys
 import os
 import math
 
-import ModbusClient
-import HMIServerCommon
-from mbprotocols import ModbusExtData
+#import ModbusClient
+#import HMIServerCommon
+#from mbprotocols import ModbusExtData
 
 
 ############################################################
@@ -77,9 +77,9 @@ from mbprotocols import ModbusExtData
 #HBClient = ModbusClient.DataTableAccess(hbhost, hbport, hbtimeout, hbunitid)
 
 #HBClient1 = ModbusClient.DataTableAccess('192.168.10.237', 1502, 5.0, 1)
-HBClient1 = ModbusClient.DataTableAccess('10.0.0.100', 1502, 5.0, 1)
+#HBClient1 = ModbusClient.DataTableAccess('10.0.0.100', 1502, 5.0, 1)
 
-ExtData1 = ModbusExtData.ExtendedDataTypes(HBClient1)
+#ExtData1 = ModbusExtData.ExtendedDataTypes(HBClient1)
 
 ############################################################
 
@@ -112,10 +112,13 @@ while True:
 #	print x
 
 
-	valVF = ExtData1.GetInpRegFloat32(20)
-	valVL = ExtData1.GetInpRegFloat32(22)
+#	valVF = ExtData1.GetInpRegFloat32(22)
+	valVF = raw_input("Enter FWD: ")
+#	valVL = ExtData1.GetInpRegFloat32(20)
+	valVL = raw_input("Enter LAT: ")
 	#old_head = new_head
-	new_head = HBClient1.GetInputRegistersInt(18)
+#	new_head = HBClient1.GetInputRegistersInt(18)
+	new_head = float(raw_input("Enter HEAD: "))
 	file.write( str(valVL) + '\t' + str(valVF) + '\n' )
 	time.sleep(0.5)
 
@@ -128,9 +131,9 @@ while True:
 	
 
 	VF_Delta = 1000*math.sin(math.radians(del_head))
-	VL_Detla = 1000*math.cos(math.radians(del_head))
+	VL_Delta = 1000*math.cos(math.radians(del_head))
 	file2 = open("truckHeading.dat","w")
-	file2.write( str(valVL) + '\t' + str(valVF) + '\t' + str(VF_Delta) + '\t' + str(VL_Detla) + '\n' )
+	file2.write( str(valVL) + '\t' + str(valVF) + '\t' + str(VF_Delta) + '\t' + str(VL_Delta) + '\n' )
 	file2.close()
 
 
@@ -151,3 +154,4 @@ while True:
 #		print "Here"
 #print "Here2"
 #Loop exits when program is terminated 
+
