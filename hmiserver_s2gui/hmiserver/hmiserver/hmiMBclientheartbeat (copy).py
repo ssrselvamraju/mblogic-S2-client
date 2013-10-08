@@ -3,8 +3,8 @@
 # Module: 	hmimbclienthearbeat.py
 # Purpose: 	Pass a heartbeat value as a client. to turn on and off a coil which is in sync with the MODBUS/TCP server.
 # Language:	Python 2.5
-# Date:		13-Sep-2013.
-# Ver.:		13-Sep-2013.
+# Date:		30-Aug-2013.
+# Ver.:		30-Aug-2013.
 # Copyright:	2013 - 2014 - S. Selvam Raju @SEEGRID corp.       <sraju@seegrid.com>
 # 
 # This program is free software: you can redistribute it and/or modify
@@ -24,14 +24,14 @@
 ##############################################################################
 
 # Name of this program.
-_SOFTNAME = 'ModbusLogVehicleXYData'
+_SOFTNAME = 'HMIMBClientHearBeat'
 
 # Version of this server.
 _VERSION = '30-Aug-2013'
 
 _HelpStr = """
 %s, %s
-This module logs the Vehicle Forward and Vehicle Lateral information which is calculated at the Server and stored in allocated InputRegisters as a Float Value. The data is logged into a .dat file which is in a format used by gnuplot, to give a plot of the path navigated by the truck.
+This module passes a heartbeat value as a client to turn on and off a coil which should be sync with the MODBUS/TCP server heartbeat monitor. In case of powerloss or wifi disconnect the heartbeat is lost and the server terminates any critical functions to ensure safety.
 Just like the standard clients this client has to be started with the command line parameters (which are supposed to be the same as those in the MBClient and this program should run on the same computer that runs the standard client.
 
 Any parameters which are not specified will use their default values. 
@@ -51,12 +51,9 @@ This program is automatically setup to get the command line parameters sent to t
 
 import time
 import sys
-import os
-import math
 
-#import ModbusClient
-#import HMIServerCommon
-#from mbprotocols import ModbusExtData
+import ModbusClient
+import HMIServerCommon
 
 
 ############################################################
@@ -76,90 +73,19 @@ import math
 
 #HBClient = ModbusClient.DataTableAccess(hbhost, hbport, hbtimeout, hbunitid)
 
-#HBClient1 = ModbusClient.DataTableAccess('192.168.10.237', 1502, 5.0, 1)
-#HBClient1 = ModbusClient.DataTableAccess('10.0.0.100', 1502, 5.0, 1)
-
-#ExtData1 = ModbusExtData.ExtendedDataTypes(HBClient1)
+#HBClient = ModbusClient.DataTableAccess('192.168.10.237', 1502, 5.0, 1)
+ResetClient = ModbusClient.DataTableAccess('10.0.0.100', 1502, 5.0, 1)
 
 ############################################################
 
+#This is to clear registers
 
-
-file2 = open("truckHeading.dat","w")
-file2.write( "0" + '\t' + "0" + '\t' + "0" + '\t' + "0" + '\n' )
-file2.close()
-
-
-file = open("truckxy.dat","w")
-
-old_head = 0
-new_head = 0
-x = 1
-VF_1 = 0
-VL_1 = 0
-VF_2 = 0
-VL_2 = 0
-#with open("truckxy.dat","a") as file:
 while True:
-
-
-#		valX = HBClient1.GetInputRegistersInt(14)
-#		valY = HBClient1.GetInputRegistersInt(15)	
-#	if x%10 is 0:
-#		VF_1 = VF_2
-#		VL_1 = VL_2
-#	x = x+1
-#	print x
-
-
-#	valVF = ExtData1.GetInpRegFloat32(22)
-	valVF = raw_input("Enter FWD: ")
-#	valVL = ExtData1.GetInpRegFloat32(20)
-	valVL = raw_input("Enter LAT: ")
-	#old_head = new_head
-#	new_head = HBClient1.GetInputRegistersInt(18)
-	new_head = float(raw_input("Enter HEAD: "))
-	file.write( str(valVL) + '\t' + str(valVF) + '\n' )
-	time.sleep(0.5)
-
-#	if x % 7 is 0:
-
-	file.close()		
-
-	del_head = new_head#-old_head
-	print "Old: " + str(old_head) + "New: " + str(new_head) + "Delta: " + str(del_head)
 	
-
-	VF_Delta = 1000*math.cos(math.radians(del_head))
-	VL_Delta = -(1000*math.sin(math.radians(del_head)))
-
-	if abs(VF_Delta) < 0.000001:
-		VF_Delta = 0
-
-	if abs(VL_Delta) < 0.000001:
-		VL_Delta = 0
-
-	print "VF_Delta: " + str(VF_Delta) + "  VL_Delta: " + str(VL_Delta)
-	file2 = open("truckHeading.dat","w")
-	file2.write( str(valVL) + '\t' + str(valVF) + '\t' + str(VL_Delta) + '\t' + str(VF_Delta) + '\n' )
-	file2.close()
-
-
-
-#	if x%10 is 0:
-#		VF_2 = valVF
-#		VL_2 = valVL
-#		file2 = open("truckHeading.dat","w")
-#		VF_Delta = VF_2-VF_1
-#		VL_Delta = VL_2-VL_1
-#		file2.write( str(VF_1) + '\t' + str(VL_1) + '\t' + str(VF_Delta) + '\t' + str(VL_Delta) + '\n' )
-#		file2.close()
-
-
-	os.system('cp truckxy.dat truckplot.dat')
-	file = open("truckxy.dat","a")			
-
-#		print "Here"
-#print "Here2"
+	a= raw_input("Enter something and press enter to reset encoders: ") 
+	HBClient.SetCoilsBool(12,0)
+	#time.sleep(0.5)
+	#HBClient.SetCoilsBool(0,1)
+	#time.sleep(0.5)
+	
 #Loop exits when program is terminated 
-

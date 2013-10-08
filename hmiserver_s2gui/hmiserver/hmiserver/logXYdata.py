@@ -127,10 +127,20 @@ while True:
 	print "Old: " + str(old_head) + "New: " + str(new_head) + "Delta: " + str(del_head)
 	
 
-	VF_Delta = 1000*math.sin(math.radians(del_head))
-	VL_Detla = 1000*math.cos(math.radians(del_head))
+	VF_Delta = 1000*math.cos(math.radians(del_head))
+	VL_Delta = -(1000*math.sin(math.radians(del_head)))
+
+	#Correcting rounding errors
+	if abs(VF_Delta) < 0.000001:
+		VF_Delta = 0
+
+	if abs(VL_Delta) < 0.000001:
+		VL_Delta = 0
+
+
+
 	file2 = open("truckHeading.dat","w")
-	file2.write( str(valVL) + '\t' + str(valVF) + '\t' + str(VF_Delta) + '\t' + str(VL_Detla) + '\n' )
+	file2.write( str(valVL) + '\t' + str(valVF) + '\t' + str(VL_Delta) + '\t' + str(VF_Delta) + '\n' )
 	file2.close()
 
 
