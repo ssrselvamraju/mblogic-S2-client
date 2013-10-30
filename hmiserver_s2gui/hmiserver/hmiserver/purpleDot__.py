@@ -77,75 +77,51 @@ from mbprotocols import ModbusExtData
 #HBClient = ModbusClient.DataTableAccess(hbhost, hbport, hbtimeout, hbunitid)
 
 #HBClient1 = ModbusClient.DataTableAccess('192.168.10.237', 1502, 5.0, 1)
-HBClient1 = ModbusClient.DataTableAccess('10.0.0.100', 1502, 5.0, 1)
+PDClient1 = ModbusClient.DataTableAccess('10.0.0.100', 1502, 5.0, 1)
 
-ExtData1 = ModbusExtData.ExtendedDataTypes(HBClient1)
+ExtData2 = ModbusExtData.ExtendedDataTypes(PDClient1)
 
 ############################################################
 
 
 
-file2 = open("truckHeading.dat","w")
-file2.write( "0" + '\t' + "0" + '\t' + "0" + '\t' + "0" + '\n' )
-file2.close()
+#file2 = open("truckHeading.dat","w")
+#file2.write( "0" + '\t' + "0" + '\t' + "0" + '\t' + "0" + '\n' )
+#file2.close()
+choice = int(raw_input("\nEnter start position code: "))
 
+file = open("truckPurple.dat","w")
 
-file = open("truckxy.dat","w")
-
-old_head = 0
-new_head = 0
-x = 1
-VF_1 = 0
-VL_1 = 0
-VF_2 = 0
-VL_2 = 0
-#with open("truckxy.dat","a") as file:
 while True:
 
 
-#		valX = HBClient1.GetInputRegistersInt(14)
-#		valY = HBClient1.GetInputRegistersInt(15)	
-#	if x%10 is 0:
-#		VF_1 = VF_2
-#		VL_1 = VL_2
-#	x = x+1
-#	print x
+	valVF = ExtData2.GetInpRegFloat32(20)
+	valVL = ExtData2.GetInpRegFloat32(22)
+	
+	if choice is 1:		#bottom left corner and left turns >> VF is along graph x
+		start_x = 780
+		start_y = 625
+		direction = 'xy'
+	elif choice is 2:	#bottom left corner and right turns >> VF is along graph y
+		#xy axis switched
+		start_x = 625
+		start_y = 780
+		direction = 'yx'
 
+	if direction is 'xy':
+		x_map = (((valVF/228)*37)/10) + start_x
+		y_map = -(((valVL/228)*37)/10) + start_y
+	elif direction is 'yx':
+		x_map = (((valVL/228)*37)/10) + start_y
+		y_map = (((valVF/228)*37)/10) + start_x
 
-	valVF = ExtData1.GetInpRegFloat32(20)
-	valVL = ExtData1.GetInpRegFloat32(22)
-	#old_head = new_head
-	new_head = HBClient1.GetInputRegistersInt(18)
-	file.write( str(valVL) + '\t' + str(valVF) + '\n' )
+	file.write( str(x_map) + '\t' + str(y_map) + '\n' )
 	time.sleep(0.5)
-
-#	if x % 7 is 0:
 
 	file.close()		
 
-	del_head = new_head#-old_head
-	print "Old: " + str(old_head) + "New: " + str(new_head) + "Delta: " + str(del_head)
-	
-
-	VF_Delta = 1000*math.cos(math.radians(del_head))
-	VL_Delta = -(1000*math.sin(math.radians(del_head)))
-
-	#Correcting rounding errors
-	if abs(VF_Delta) < 0.000001:
-		VF_Delta = 0
-
-	if abs(VL_Delta) < 0.000001:
-		VL_Delta = 0
-
-
-
-	file2 = open("truckHeading.dat","w")
-	file2.write( str(valVL) + '\t' + str(valVF) + '\t' + str(VL_Delta) + '\t' + str(VF_Delta) + '\n' )
-	file2.close()
-
-
-	os.system('cp truckxy.dat truckplot.dat')
-	file = open("truckxy.dat","a")			
+	os.system('cp truckPurple.dat purplePlot.dat')
+	file = open("truckPurple.dat","a")			
 
 #		print "Here"
 #print "Here2"
