@@ -72,32 +72,32 @@ datatype=integer
 scale=0,1
 
 [SteerDispTxtAct]
-addrtype=inputreg
-memaddr=9
-datatype=integer
-range=0, 360
+addrtype=inputregfloat
+memaddr=44
+datatype=float
+range=-360, 360
 scale=0, 1
 
 [SteerDispTxtSet]
-addrtype=holdingreg
-memaddr=11
-datatype=integer
-range=0, 360
+addrtype=holdingregfloat
+memaddr=44
+datatype=float
+range=-360, 360
 scale=0, 1
 
 [AnglePtrAct]
-addrtype=inputreg
-memaddr=9
-datatype=integer
-range= 0, 360
-scale=0,1
+addrtype=inputregfloat
+memaddr=44
+datatype=float
+range= -360, 360
+scale=0,-1
 
 [AnglePtrSet]
-addrtype=holdingreg
-memaddr=11
-datatype=integer
-range= 0, 360
-scale=0,1
+addrtype=holdingregfloat
+memaddr=44
+datatype=float
+range= -360, 360
+scale=0,-1
 
 [SpeedEncoderDisp]
 addrtype=inputreg32
@@ -166,58 +166,58 @@ scale=0, 1
 
 
 [AngleLeft]
-addrtype=holdingreg
-memaddr=11
-datatype=integer
-scale=0, 1
+addrtype=holdingregfloat
+memaddr=44
+datatype=float
+scale=0, -1
 
 [AngleRight]
-addrtype=holdingreg
-memaddr=11
-datatype=integer
-scale=0, 1
+addrtype=holdingregfloat
+memaddr=44
+datatype=float
+scale=0, -1
 
 [AngleLeft10]
-addrtype=holdingreg
-memaddr=11
-datatype=integer
-scale=0, 1
+addrtype=holdingregfloat
+memaddr=44
+datatype=float
+scale=0, -1
 
 [AngleRight10]
-addrtype=holdingreg
-memaddr=11
-datatype=integer
-scale=0, 1
+addrtype=holdingregfloat
+memaddr=44
+datatype=float
+scale=0, -1
 
 [AngleLeft100]
-addrtype=holdingreg
-memaddr=11
-datatype=integer
-scale=0, 1
+addrtype=holdingregfloat
+memaddr=44
+datatype=float
+scale=0, -1
 
 [AngleRight100]
-addrtype=holdingreg
-memaddr=11
-datatype=integer
-scale=0, 1
+addrtype=holdingregfloat
+memaddr=44
+datatype=float
+scale=0, -1
 
 [AngleLeftMax]
-addrtype=holdingreg
-memaddr=11
-datatype=integer
-scale=0, 1
+addrtype=holdingregfloat
+memaddr=44
+datatype=float
+scale=0, -1
 
 [AngleRightMax]
-addrtype=holdingreg
-memaddr=11
-datatype=integer
-scale=0, 1
+addrtype=holdingregfloat
+memaddr=44
+datatype=float
+scale=0, -1
 
 [AngleCenter]
-addrtype=holdingreg
-memaddr=11
-datatype=integer
-scale=0, 1
+addrtype=holdingregfloat
+memaddr=44
+datatype=float
+scale=0, -1
 
 
 #######E-Stop and Honk buttons#####
@@ -536,10 +536,10 @@ scale = 0, 1
 ####################################################
 
 [Z2TillerAngle]
-addrtype=inputreg
-memaddr=9
-datatype=integer
-scale=0, 1
+addrtype=inputregfloat
+memaddr=44
+datatype=float
+scale=0, -1
 
 [Z2TruckSpeed]
 addrtype=inputreg
@@ -561,7 +561,7 @@ scale = 0, 1
 range = -2147483648, 2147483647
 
 [Z2y_VL]
-addrtype=inputreg
+addrtype=inputregfloat
 memaddr=22
 datatype=float
 scale = 0, 1
