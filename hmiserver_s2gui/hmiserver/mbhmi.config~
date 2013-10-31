@@ -224,7 +224,7 @@ scale=0, 1
 
 [EStop]
 addrtype=coil
-memaddr=8
+memaddr=10
 
 [Honk]
 addrtype=coil
@@ -234,24 +234,44 @@ memaddr=9
 addrtype=coil
 memaddr=8
 
+[Home_Start]
+addrtype=coil
+memaddr=12
+
+
+#####Sevcon CAN Swtich#####
+
+[CAN_Mode]
+addrtype=coil
+memaddr=13
+
+[Analog_Mode]
+addrtype=coil
+memaddr=13
+
+[CANSwitchButton]
+addrtype=coil
+memaddr=13
+
+
 
 #####Global Swtich#####
 
 [GS_ON]
 addrtype=coil
-memaddr=2
+memaddr=11
 
 [GS_OFF]
 addrtype=coil
-memaddr=2
+memaddr=11
 
 [GlobalSwitchButton]
 addrtype=coil
-memaddr=3
+memaddr=11
 
 [OnLight]
 addrtype=coil
-memaddr=2
+memaddr=11
 
 ################################
 
@@ -530,28 +550,27 @@ scale = 0, 1
 [Z2DistTrav]
 addrtype=inputreg
 memaddr=17
-datatype=float
+datatype=integer
 scale = 0, 1
 
-[Z2x]
-addrtype=inputregfloat
-memaddr=22
-datatype=float
-range = -2147483648, 2147483647
-scale = 0, 1
-
-[Z2y]
+[Z2x_VF]
 addrtype=inputregfloat
 memaddr=20
 datatype=float
-range = -2147483648, 2147483647
 scale = 0, 1
+range = -2147483648, 2147483647
+
+[Z2y_VL]
+addrtype=inputreg
+memaddr=22
+datatype=float
+scale = 0, 1
+range = -2147483648, 2147483647
 
 [Z2h]
 addrtype=inputreg
 memaddr=18
 datatype=integer
-range = -2147483648, 2147483647
 scale = 0, 1
 
 

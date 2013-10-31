@@ -548,22 +548,24 @@ datatype=integer
 scale = 0, 1
 
 [Z2DistTrav]
-addrtype=inputreg
+addrtype=inputregfloat
 memaddr=17
 datatype=float
 scale = 0, 1
 
 [Z2x_VF]
-addrtype=inputreg
+addrtype=inputregfloat
 memaddr=20
 datatype=float
 scale = 0, 1
+range = -2147483648, 2147483647
 
 [Z2y_VL]
 addrtype=inputreg
 memaddr=22
 datatype=float
 scale = 0, 1
+range = -2147483648, 2147483647
 
 [Z2h]
 addrtype=inputreg
