@@ -68,7 +68,7 @@ from mbprotocols import ModbusExtData
 ############################################################
 
 #Function Defenitions
-'''
+
 def buildData(full_data):
 	for ln in full_data:
 		if ln[4] > 0:
@@ -77,7 +77,7 @@ def buildData(full_data):
 	for ln in full_data[full_data.index(ln):]:
 		built_data.append([abs(ln[4]), ln[5]])
 	return built_data
-
+'''
 def read_encoder(a):
 	return a+10
 
@@ -127,24 +127,32 @@ data_to_follow = buildData(data)
 
 ExtData4.SetHRegFloat32(44, data_to_follow[0][1]) #Truck's start angle at 0 speed
 
-dummy = rawinput("Enter something and press Return to get the truck moving: ") #Wait until user input
+dummy = raw_input("Enter something and press Return to get the truck moving: ") #Wait until user input
 
-replayDataClient1.SetHoldingRegistersInt(10,truck_const_speed) #Set truck to move at a constant speed
+print "Moving truck"
+####Setting this in server for now####### replayDataClient1.SetHoldingRegistersInt(10,truck_const_speed) #Set truck to move at a constant speed
+replayDataClient1.SetCoilsBool(8,1) #Setting deadman switch to 1 to make truck move
+
 
 index = 1
 
 #print "Here"
 #print data_to_follow[len(data_to_follow)-3][0]
-while replayDataClient1.GetInputRegistersInt(12) < data_to_follow[len(data_to_follow)-3][0]:  #Getting current encoder and checking if lesser than (last but third) end point encoder value
+while ExtData4.GetInpRegInt32(12) < data_to_follow[len(data_to_follow)-3][0]:  #Getting current encoder and checking if lesser than (last but third) end point encoder value
 	#print str(a) + " " + str(data_to_follow[index][0]) +" " + str(data_to_follow[index-1][0])
-	while replayDataClient1.GetInputRegistersInt(12) < data_to_follow[index][0] and replayDataClient1.GetInputRegistersInt(12) >= data_to_follow[index-1][0]:
+	while ExtData4.GetInpRegInt32(12) < data_to_follow[index][0] and ExtData4.GetInpRegInt32(12) >= data_to_follow[index-1][0]:
 		truck_angle = data_to_follow[index-1][1]
-		file.write("Index:\t" + str(index) + "\tEnc:\t"+ str(replayDataClient1.GetInputRegistersInt(12)) + "\tAng:\t" + str(truck_angle))
+		file2.write("Index:\t" + str(index) + "\tEnc:\t"+ str(ExtData4.GetInpRegInt32(12)) + "\tAng:\t" + str(truck_angle))
+		print "\n   Move in Progress...\n"
 	index = index+1
 
-replayDataClient1.SetHoldingRegistersInt(10,truck_const_speed) #Set truck to move at a constant speed
+#########replayDataClient1.SetHoldingRegistersInt(10,0) #Set truck speed to 0 to stop truck
+replayDataClient1.SetCoilsBool(8,0)
+
 print "\nRun successful. Truck at the trained endpoint.\n"
 file2.close()
+
+
 
 
 

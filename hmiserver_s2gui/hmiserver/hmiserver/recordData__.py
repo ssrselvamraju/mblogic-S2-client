@@ -75,20 +75,29 @@ from mbprotocols import ModbusExtData
 #Initialize an instance of the ModbusClient.DataTableAccess to initialize this client.
 
 #HBClient = ModbusClient.DataTableAccess(hbhost, hbport, hbtimeout, hbunitid)
-
 #HBClient1 = ModbusClient.DataTableAccess('192.168.10.237', 1502, 5.0, 1)
-recDataClient1 = ModbusClient.DataTableAccess('10.0.0.100', 1502, 5.0, 1)
 
-ExtData3 = ModbusExtData.ExtendedDataTypes(recDataClient1)
+
+#recDataClient1 = ModbusClient.DataTableAccess('10.0.0.100', 1502, 5.0, 1)
+
+#ExtData3 = ModbusExtData.ExtendedDataTypes(recDataClient1)
 
 ############################################################
 
 
-
+record_mode = raw_input("Enter 0 to record Train, and 1 to record Replay: ")
 #file2 = open("truckHeading.dat","w")
 #file2.close()
 
-file = open("truckData.dat","w")
+if record_mode:
+	print record_mode
+	#file = open("truckData_replay.dat","w")
+else:
+	print record_mode
+	file = open("truckData.dat", "w")
+file.close
+exit(0)
+
 file.write( "###Truck route record\n" )
 file.write( "###S.No.\tVF\tVL\tHeading\tEncoder-Raw\tTiller-Angle\n" )
 
@@ -101,17 +110,20 @@ while True:
 	valVF = ExtData3.GetInpRegFloat32(20)
 	valVL = ExtData3.GetInpRegFloat32(22)
 	truckHeading = recDataClient1.GetInputRegistersInt(18)
-	tractionEncoder = recDataClient1.GetInputRegistersInt(12)
+	tractionEncoder = ExtData3.GetInpRegInt32(12)
 	tillerAngle = ExtData3.GetInpRegFloat32(44)
 
-	print tractionEncoder
+	print str(tractionEncoder) + str(valVF)
 
 	file.write( str(i) + '\t' + str(valVF) + '\t' + str(valVL) + '\t' + str(truckHeading) + '\t' + str(tractionEncoder) + '\t' + str(tillerAngle) + '\n' )
 	time.sleep(0.5)
 
 	file.close()		
 
-	file = open("truckData.dat","a")			
+	if record_mode:
+		file = open("truckData_replay.dat","a")
+	else:
+		file = open("truckData.dat", "a")
 
 #		print "Here"
 #print "Here2"
