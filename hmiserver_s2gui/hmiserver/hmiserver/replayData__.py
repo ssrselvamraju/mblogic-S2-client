@@ -68,7 +68,7 @@ from mbprotocols import ModbusExtData
 ############################################################
 
 #Function Defenitions
-
+'''
 def buildData(full_data):
 	for ln in full_data:
 		if ln[4] > 0:
@@ -83,6 +83,7 @@ def read_encoder(a):
 
 def read_encoder1(a):
 	return a
+'''
 ############################################################
 
 
@@ -97,9 +98,9 @@ def read_encoder1(a):
 #HBClient = ModbusClient.DataTableAccess(hbhost, hbport, hbtimeout, hbunitid)
 
 #HBClient1 = ModbusClient.DataTableAccess('192.168.10.237', 1502, 5.0, 1)
-#replayDataClient1 = ModbusClient.DataTableAccess('10.0.0.100', 1502, 5.0, 1)
+replayDataClient1 = ModbusClient.DataTableAccess('10.0.0.100', 1502, 5.0, 1)
 
-#ExtData4 = ModbusExtData.ExtendedDataTypes(replayDataClient1)
+ExtData4 = ModbusExtData.ExtendedDataTypes(replayDataClient1)
 
 ############################################################
 
@@ -111,36 +112,39 @@ def read_encoder1(a):
 file = open("truckData.dat","r")
 file.readline()
 file.readline()
-truckspeed = 700
+truck_const_speed = 700 #mm/s
 
+file2 = open("truckReplayStats.dat", "w")
 
 data = [map(float, line.split()) for line in file]
 data_end = len(data)-1
+
+file.close()
 
 data_to_follow = buildData(data)
 
 #print data_to_follow
 
-truck_angle = 0.24
-truck_const_speed = 700
+ExtData4.SetHRegFloat32(44, data_to_follow[0][1]) #Truck's start angle at 0 speed
+
+dummy = rawinput("Enter something and press Return to get the truck moving: ") #Wait until user input
+
+replayDataClient1.SetHoldingRegistersInt(10,truck_const_speed) #Set truck to move at a constant speed
+
 index = 1
-a=0
-print "Here"
-print data_to_follow[len(data_to_follow)-3][0]
-while read_encoder1(a) < data_to_follow[len(data_to_follow)-3][0]:
-	print "getting here"
-	print str(a) + " " + str(data_to_follow[index][0]) +" " + str(data_to_follow[index-1][0])
-	while read_encoder(a) < data_to_follow[index][0] and read_encoder1(a) > data_to_follow[index-1][0]:
-		print truck_angle
-		print a
+
+#print "Here"
+#print data_to_follow[len(data_to_follow)-3][0]
+while replayDataClient1.GetInputRegistersInt(12) < data_to_follow[len(data_to_follow)-3][0]:  #Getting current encoder and checking if lesser than (last but third) end point encoder value
+	#print str(a) + " " + str(data_to_follow[index][0]) +" " + str(data_to_follow[index-1][0])
+	while replayDataClient1.GetInputRegistersInt(12) < data_to_follow[index][0] and replayDataClient1.GetInputRegistersInt(12) >= data_to_follow[index-1][0]:
 		truck_angle = data_to_follow[index-1][1]
-		
+		file.write("Index:\t" + str(index) + "\tEnc:\t"+ str(replayDataClient1.GetInputRegistersInt(12)) + "\tAng:\t" + str(truck_angle))
 	index = index+1
 
-truck_speed = 0
-
-
-
+replayDataClient1.SetHoldingRegistersInt(10,truck_const_speed) #Set truck to move at a constant speed
+print "\nRun successful. Truck at the trained endpoint.\n"
+file2.close()
 
 #i = 0
 
@@ -185,6 +189,3 @@ truck_speed = 0
 
 #	file = open("truckData.dat","a")			
 
-#		print "Here"
-#print "Here2"
-#Loop exits when program is terminated 
