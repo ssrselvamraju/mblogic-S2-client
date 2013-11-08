@@ -146,6 +146,12 @@ replayDataClient1.SetHoldingRegistersInt(10,truck_const_speed) #Set truck to mov
 print "\nRun successful. Truck at the trained endpoint.\n"
 file2.close()
 
+
+
+
+
+
+
 #i = 0
 
 #Can try with file open here
@@ -164,28 +170,4 @@ file2.close()
 #while truck encoder near last 5-10 values > slow down (or brake for now)
 #while truck encoder is > data[i] and  < data[i+1] truck encoder = enc@data[i]
 #when this while breaks, i++ and back to while //Considering linear increments
-
-
-
-
-
-
-
-#while True:
-
-#	i = i+1
-#	valVF = ExtData3.GetInpRegFloat32(20)
-#	valVL = ExtData3.GetInpRegFloat32(22)
-#	truckHeading = recDataClient1.GetInputRegistersInt(18)
-#	tractionEncoder = recDataClient1.GetInputRegistersInt(12)
-#	tillerAngle = ExtData3.GetInpRegFloat32(44)
-
-#	print tractionEncoder
-
-#	file.write( str(i) + '\t' + str(valVF) + '\t' + str(valVL) + '\t' + str(truckHeading) + '\t' + str(tractionEncoder) + '\t' + str(tillerAngle) + '\n' )
-#	time.sleep(0.5)
-
-#	file.close()		
-
-#	file = open("truckData.dat","a")			
 
