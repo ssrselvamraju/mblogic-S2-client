@@ -78,25 +78,21 @@ from mbprotocols import ModbusExtData
 #HBClient1 = ModbusClient.DataTableAccess('192.168.10.237', 1502, 5.0, 1)
 
 
-#recDataClient1 = ModbusClient.DataTableAccess('10.0.0.100', 1502, 5.0, 1)
+recDataClient1 = ModbusClient.DataTableAccess('10.0.0.100', 1502, 5.0, 1)
 
-#ExtData3 = ModbusExtData.ExtendedDataTypes(recDataClient1)
+ExtData3 = ModbusExtData.ExtendedDataTypes(recDataClient1)
 
 ############################################################
 
 
-record_mode = raw_input("Enter 0 to record Train, and 1 to record Replay: ")
+record_mode = int(raw_input("Enter 0 to record Train, and 1 to record Replay: "))
 #file2 = open("truckHeading.dat","w")
 #file2.close()
 
 if record_mode:
-	print record_mode
-	#file = open("truckData_replay.dat","w")
+	file = open("truckData_replay.dat","w")
 else:
-	print record_mode
 	file = open("truckData.dat", "w")
-file.close
-exit(0)
 
 file.write( "###Truck route record\n" )
 file.write( "###S.No.\tVF\tVL\tHeading\tEncoder-Raw\tTiller-Angle\n" )
@@ -113,7 +109,7 @@ while True:
 	tractionEncoder = ExtData3.GetInpRegInt32(12)
 	tillerAngle = ExtData3.GetInpRegFloat32(44)
 
-	print str(tractionEncoder) + str(valVF)
+	print str(tractionEncoder) + "\t" + str(tillerAngle)
 
 	file.write( str(i) + '\t' + str(valVF) + '\t' + str(valVL) + '\t' + str(truckHeading) + '\t' + str(tractionEncoder) + '\t' + str(tillerAngle) + '\n' )
 	time.sleep(0.5)
