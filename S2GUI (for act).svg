@@ -2819,142 +2819,12 @@
     <linearGradient
        inkscape:collect="always"
        xlink:href="#MB_GreyGradient"
-       id="linearGradient4439"
-       x1="73.116346"
-       y1="66.961771"
-       x2="8.1240384"
-       y2="1.9694639"
-       gradientTransform="scale(0.49236596,2.0310096)"
-       gradientUnits="userSpaceOnUse" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#MB_GreyGradient"
-       id="linearGradient4441"
-       x1="7.75"
-       y1="4"
-       x2="-0.25"
-       y2="-4"
-       gradientTransform="scale(4,0.25)"
-       gradientUnits="userSpaceOnUse" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#MB_GreyGradient"
-       id="linearGradient4443"
-       x1="7.75"
-       y1="44"
-       x2="-0.25"
-       y2="36"
-       gradientTransform="scale(4,0.25)"
-       gradientUnits="userSpaceOnUse" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#MB_GreyGradient"
-       id="linearGradient4445"
-       x1="7.75"
-       y1="84"
-       x2="-0.25"
-       y2="76"
-       gradientTransform="scale(4,0.25)"
-       gradientUnits="userSpaceOnUse" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#MB_GreyGradient"
-       id="linearGradient4448"
-       x1="7.75"
-       y1="124"
-       x2="-0.25"
-       y2="116"
-       gradientTransform="scale(4,0.25)"
-       gradientUnits="userSpaceOnUse" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#MB_GreyGradient"
-       id="linearGradient4450"
-       x1="7.75"
-       y1="164"
-       x2="-0.25"
-       y2="156"
-       gradientTransform="scale(4,0.25)"
-       gradientUnits="userSpaceOnUse" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#MB_GreyGradient"
-       id="linearGradient4452"
-       x1="7.75"
-       y1="204"
-       x2="-0.25"
-       y2="196"
-       gradientTransform="scale(4,0.25)"
-       gradientUnits="userSpaceOnUse" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#MB_GreyGradient"
-       id="linearGradient4455"
-       x1="7.75"
-       y1="244"
-       x2="-0.25"
-       y2="236"
-       gradientTransform="scale(4,0.25)"
-       gradientUnits="userSpaceOnUse" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#MB_GreyGradient"
-       id="linearGradient4457"
-       x1="7.75"
-       y1="284"
-       x2="-0.25"
-       y2="276"
-       gradientTransform="scale(4,0.25)"
-       gradientUnits="userSpaceOnUse" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#MB_GreyGradient"
-       id="linearGradient4459"
-       x1="7.75"
-       y1="324"
-       x2="-0.25"
-       y2="316"
-       gradientTransform="scale(4,0.25)"
-       gradientUnits="userSpaceOnUse" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#MB_GreyGradient"
-       id="linearGradient4462"
-       x1="7.75"
-       y1="364"
-       x2="-0.25"
-       y2="356"
-       gradientTransform="scale(4,0.25)"
-       gradientUnits="userSpaceOnUse" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#MB_GreyGradient"
-       id="linearGradient4464"
-       x1="7.75"
-       y1="404"
-       x2="-0.25"
-       y2="396"
-       gradientTransform="scale(4,0.25)"
-       gradientUnits="userSpaceOnUse" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#MB_GreyGradient"
        id="linearGradient4466"
        x1="55.34607"
        y1="56.571315"
        x2="-1.7853571"
        y2="-0.56011203"
        gradientTransform="scale(0.56011203,1.7853571)"
-       gradientUnits="userSpaceOnUse" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#MB_GreyGradient"
-       id="linearGradient4469"
-       x1="79.485848"
-       y1="45.85722"
-       x2="35.327043"
-       y2="1.6984156"
-       gradientTransform="scale(0.33968311,2.9439203)"
        gradientUnits="userSpaceOnUse" />
     <linearGradient
        inkscape:collect="always"
@@ -5993,7 +5863,7 @@
         <!-- This is the pointer. -->
         <polygon
            id="polygon3497"
-           points="-5,0 -0.6,40 0.6,40 5,0 0,5 "
+           points="0,5 -5,0 -0.6,40 0.6,40 5,0 "
            style="fill:#d40000;stroke:#000000;stroke-width:2px" />
         <line
            id="line3499"
@@ -6019,11 +5889,11 @@
       <!-- This provides the relief. -->
       <polygon
          id="polygon3524"
-         points="0,40 4,42 44,42 40,40 0,40 "
+         points="0,40 0,40 4,42 44,42 40,40 "
          style="fill:url(#linearGradient3569-6)" />
       <polygon
          id="polygon3526"
-         points="20,0 24,2 44,42 40,40 20,0 "
+         points="20,0 20,0 24,2 44,42 40,40 "
          style="fill:url(#linearGradient3571-8)" />
       <!-- This is the button. -->
       <polygon
@@ -6046,11 +5916,11 @@
       <!-- This provides the relief. -->
       <polygon
          id="polygon3552"
-         points="2,2 7,0 45,0 42,2 2,2 "
+         points="2,2 2,2 7,0 45,0 42,2 "
          style="fill:url(#linearGradient3577-0)" />
       <polygon
          id="polygon3554"
-         points="45,0 42,2 22,42 24,41 45,0 "
+         points="45,0 45,0 42,2 22,42 24,41 "
          style="fill:url(#linearGradient3579-1)" />
       <!-- This is the button. -->
       <polygon
@@ -6121,12 +5991,12 @@
       <!-- This is a decorative nut. -->
       <polygon
          id="polygon3181"
-         points="-18,45 18,45 45,18 45,-18 18,-45 18,-45 -18,-45 -45,-18 -45,18 "
+         points="18,-45 18,-45 -18,-45 -45,-18 -45,18 -18,45 18,45 45,18 45,-18 "
          style="fill:#808080;stroke:none;filter:url(#MB_DropShadowFilter-3-7)"
          transform="translate(5,5)" />
       <polygon
          id="polygon3183"
-         points="-18,45 18,45 45,18 45,-18 18,-45 18,-45 -18,-45 -45,-18 -45,18 "
+         points="18,-45 18,-45 -18,-45 -45,-18 -45,18 -18,45 18,45 45,18 45,-18 "
          style="fill:url(#linearGradient3739);stroke:none" />
       <g
          class="buttonactivate"
@@ -6390,12 +6260,12 @@
       <!-- This is a decorative nut. -->
       <polygon
          id="polygon4583"
-         points="63,0 63,0 27,0 0,27 0,63 27,90 63,90 90,63 90,27 "
+         points="0,63 27,90 63,90 90,63 90,27 63,0 63,0 27,0 0,27 "
          style="fill:#808080;stroke:none;filter:url(#MB_DropShadowFilter)"
          transform="translate(5,5)" />
       <polygon
          id="polygon4585"
-         points="63,0 63,0 27,0 0,27 0,63 27,90 63,90 90,63 90,27 "
+         points="0,63 27,90 63,90 90,63 90,27 63,0 63,0 27,0 0,27 "
          style="fill:url(#linearGradient4606);stroke:none" />
       <!-- This is the part which changes colour. -->
       <circle
@@ -6465,11 +6335,11 @@
       <!-- This provides the relief. -->
       <polygon
          id="polygon3524-3"
-         points="44,42 40,40 0,40 0,40 4,42 "
+         points="4,42 44,42 40,40 0,40 0,40 "
          style="fill:url(#linearGradient3569-6-6)" />
       <polygon
          id="polygon3526-0"
-         points="44,42 40,40 20,0 20,0 24,2 "
+         points="24,2 44,42 40,40 20,0 20,0 "
          style="fill:url(#linearGradient3571-8-3)" />
       <!-- This is the button. -->
       <polygon
@@ -6492,11 +6362,11 @@
       <!-- This provides the relief. -->
       <polygon
          id="polygon3552-8"
-         points="2,2 7,0 45,0 42,2 2,2 "
+         points="2,2 2,2 7,0 45,0 42,2 "
          style="fill:url(#linearGradient3577-0-3)" />
       <polygon
          id="polygon3554-8"
-         points="45,0 42,2 22,42 24,41 45,0 "
+         points="45,0 45,0 42,2 22,42 24,41 "
          style="fill:url(#linearGradient3579-1-8)" />
       <!-- This is the button. -->
       <polygon
@@ -6519,11 +6389,11 @@
       <!-- This provides the relief. -->
       <polygon
          id="polygon3524-3-8"
-         points="0,40 0,40 4,42 44,42 40,40 "
+         points="40,40 0,40 0,40 4,42 44,42 "
          style="fill:url(#linearGradient3569-6-6-8)" />
       <polygon
          id="polygon3526-0-4"
-         points="20,0 20,0 24,2 44,42 40,40 "
+         points="40,40 20,0 20,0 24,2 44,42 "
          style="fill:url(#linearGradient3571-8-3-5)" />
       <!-- This is the button. -->
       <polygon
@@ -6546,11 +6416,11 @@
       <!-- This provides the relief. -->
       <polygon
          id="polygon3552-8-6"
-         points="42,2 2,2 2,2 7,0 45,0 "
+         points="45,0 42,2 2,2 2,2 7,0 "
          style="fill:url(#linearGradient3577-0-3-7)" />
       <polygon
          id="polygon3554-8-5"
-         points="24,41 45,0 45,0 42,2 22,42 "
+         points="22,42 24,41 45,0 45,0 42,2 "
          style="fill:url(#linearGradient3579-1-8-6)" />
       <!-- This is the button. -->
       <polygon
@@ -7073,7 +6943,7 @@
         <!-- This is the pointer. -->
         <polygon
            id="polygon3497-0"
-           points="-0.6,40 0.6,40 5,0 0,5 -5,0 "
+           points="-5,0 -0.6,40 0.6,40 5,0 0,5 "
            style="fill:#00ff00;stroke:#000000;stroke-width:2px" />
         <line
            id="line3499-5"
@@ -7539,12 +7409,12 @@
       <!-- This is a decorative nut. -->
       <polygon
          id="polygon3181-1"
-         points="-18,45 18,45 45,18 45,-18 18,-45 18,-45 -18,-45 -45,-18 -45,18 "
+         points="18,-45 18,-45 -18,-45 -45,-18 -45,18 -18,45 18,45 45,18 45,-18 "
          style="fill:#808080;stroke:none;filter:url(#MB_DropShadowFilter-3-7-4)"
          transform="translate(5,5)" />
       <polygon
          id="polygon3183-0"
-         points="-18,45 18,45 45,18 45,-18 18,-45 18,-45 -18,-45 -45,-18 -45,18 "
+         points="18,-45 18,-45 -18,-45 -45,-18 -45,18 -18,45 18,45 45,18 45,-18 "
          style="fill:url(#linearGradient3739-6);stroke:none" />
       <g
          class="buttonactivate"
@@ -7692,7 +7562,7 @@
          style="fill:url(#linearGradient4551);stroke:none" />
     </g>
     <g
-       id="g4568"
+       id="Battery"
        mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_ColumnGauge(document, &quot;%(widgetid)s&quot;, &quot;MB_Column_SilverGradient&quot;, &quot;%(min)s&quot;, &quot;%(max)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);"
        mblogic:inputfunc="[]"
        mblogic:menu="[{&quot;value&quot;: &quot;&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;param&quot;: &quot;outputtag&quot;}, {&quot;value&quot;: 0, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Minimum Value&quot;, &quot;param&quot;: &quot;min&quot;}, {&quot;value&quot;: 100, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Maximum Value&quot;, &quot;param&quot;: &quot;max&quot;}]"
@@ -7700,7 +7570,8 @@
        mblogic:widgetname="Column Gauge Rectangle"
        mblogic:widgettype="column_gauge"
        style="fill:url(#linearGradient4805)"
-       transform="matrix(1,0,0,0.6040202,34.597981,39.562265)">
+       transform="matrix(1,0,0,0.6040202,34.597981,39.562265)"
+       inkscape:label="#g4568">
       <!-- This is the actual column. The fill value will be added later. -->
       <rect
          id="rect4570"
