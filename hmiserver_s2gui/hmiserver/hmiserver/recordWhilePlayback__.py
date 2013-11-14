@@ -1,6 +1,6 @@
 ##############################################################################
 # Project: 	SeegridS2Client
-# Module: 	recordData__.py
+# Module: 	recordWhileReplay__.py
 # Purpose: 	Record data from the truck's modbus server to be able to feed the playback program.
 # Language:	Python 2.5
 # Date:		06-Nov-2013.
@@ -78,61 +78,52 @@ from mbprotocols import ModbusExtData
 #HBClient1 = ModbusClient.DataTableAccess('192.168.10.237', 1502, 5.0, 1)
 
 
-recDataClient1 = ModbusClient.DataTableAccess('10.0.0.100', 1502, 5.0, 1)
+recDataClient2 = ModbusClient.DataTableAccess('10.0.0.100', 1502, 5.0, 1)
 
-ExtData3 = ModbusExtData.ExtendedDataTypes(recDataClient1)
+ExtData5 = ModbusExtData.ExtendedDataTypes(recDataClient2)
 
 ############################################################
 
 
 #record_mode = int(raw_input("Enter 0 to record Train, and 1 to record Replay: "))
 
-while True:
+train_mode = recDataClient2.GetCoilsBool(31) #1 for train start, 0 for train stop
 
-	train_mode = recDataClient1.GetCoilsBool(31) #1 for train start, 0 for train stop
-
-	#replay_mode = recDataClient1.GetCoilsBool(32) #1 for replay start, 0 when done
-
-	while not train_mode:
-		train_mode = recDataClient1.GetCoilsBool(31)
+replay_mode = recDataClient2.GetCoilsBool(32) #1 for replay start, 0 when done
 
 
-	recDataClient1.SetCoilsBool(40,1)
-	#if record_mode:
-	#file = open("truckData_replay.dat","w")
-	#else:
-
+if record_mode:
+	file = open("truckData_replay.dat","w")
+else:
 	file = open("truckData.dat", "w")
 
-	file.write( "###Truck route record\n" )
-	file.write( "###S.No.\tVF\tVL\tHeading\tEncoder-Raw\tTiller-Angle\n" )
+file.write( "###Truck route record\n" )
+file.write( "###S.No.\tVF\tVL\tHeading\tEncoder-Raw\tTiller-Angle\n" )
 
-	i = 0
+i = 0
 
-	while train_mode:
-		train_mode = recDataClient1.GetCoilsBool(31)
-		i = i+1
-		valVF = ExtData3.GetInpRegFloat32(20)
-		valVL = ExtData3.GetInpRegFloat32(22)
-		truckHeading = recDataClient1.GetInputRegistersInt(18)
-		tractionEncoder = ExtData3.GetInpRegInt32(12)
-		tillerAngle = ExtData3.GetInpRegFloat32(44)
+#Can try with file open here
+while True:
 
-		print str(tractionEncoder) + "\t" + str(tillerAngle)
+	i = i+1
+	valVF = ExtData5.GetInpRegFloat32(20)
+	valVL = ExtData5.GetInpRegFloat32(22)
+	truckHeading = recDataClient2.GetInputRegistersInt(18)
+	tractionEncoder = ExtData5.GetInpRegInt32(12)
+	tillerAngle = ExtData5.GetInpRegFloat32(44)
 
-		file.write( str(i) + '\t' + str(valVF) + '\t' + str(valVL) + '\t' + str(truckHeading) + '\t' + str(tractionEncoder) + '\t' + str(tillerAngle) + '\n' )
-		time.sleep(0.5)
+	print str(tractionEncoder) + "\t" + str(tillerAngle)
 
-		file.close()		
+	file.write( str(i) + '\t' + str(valVF) + '\t' + str(valVL) + '\t' + str(truckHeading) + '\t' + str(tractionEncoder) + '\t' + str(tillerAngle) + '\n' )
+	time.sleep(0.5)
 
-		#if record_mode:
-		#	file = open("truckData_replay.dat","a")
-		#else:
+	file.close()		
+
+	if record_mode:
+		file = open("truckData_replay.dat","a")
+	else:
 		file = open("truckData.dat", "a")
 
-	file.close()
-	print "Training complete"
-
-	#		print "Here"
-	#print "Here2"
-	#Loop exits when program is terminated 
+#		print "Here"
+#print "Here2"
+#Loop exits when program is terminated 
