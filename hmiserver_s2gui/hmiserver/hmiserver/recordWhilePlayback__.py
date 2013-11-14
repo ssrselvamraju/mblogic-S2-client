@@ -87,43 +87,43 @@ ExtData5 = ModbusExtData.ExtendedDataTypes(recDataClient2)
 
 #record_mode = int(raw_input("Enter 0 to record Train, and 1 to record Replay: "))
 
-train_mode = recDataClient2.GetCoilsBool(31) #1 for train start, 0 for train stop
-
-replay_mode = recDataClient2.GetCoilsBool(32) #1 for replay start, 0 when done
-
-
-if record_mode:
-	file = open("truckData_replay.dat","w")
-else:
-	file = open("truckData.dat", "w")
-
-file.write( "###Truck route record\n" )
-file.write( "###S.No.\tVF\tVL\tHeading\tEncoder-Raw\tTiller-Angle\n" )
-
-i = 0
-
-#Can try with file open here
 while True:
 
-	i = i+1
-	valVF = ExtData5.GetInpRegFloat32(20)
-	valVL = ExtData5.GetInpRegFloat32(22)
-	truckHeading = recDataClient2.GetInputRegistersInt(18)
-	tractionEncoder = ExtData5.GetInpRegInt32(12)
-	tillerAngle = ExtData5.GetInpRegFloat32(44)
 
-	print str(tractionEncoder) + "\t" + str(tillerAngle)
+	replay_mode = recDataClient2.GetCoilsBool(32) #1 for replay start, 0 when done
 
-	file.write( str(i) + '\t' + str(valVF) + '\t' + str(valVL) + '\t' + str(truckHeading) + '\t' + str(tractionEncoder) + '\t' + str(tillerAngle) + '\n' )
-	time.sleep(0.5)
+	while not replay_mode:
+		replay_mode = recDataClient2.GetCoilsBool(32)
 
-	file.close()		
+	recDataClient1.SetCoilsBool(40,0)
+	
+	file = open("truckData_replay.dat","w")
+	
+	file.write( "###Truck replay sensors record\n" )
+	file.write( "###S.No.\tVF\tVL\tHeading\tEncoder-Raw\tTiller-Angle\n" )
 
-	if record_mode:
+	i = 0
+
+	while replay_mode:
+		replay_mode = recDataClient2.GetCoilsBool(32)
+		i = i+1
+		valVF = ExtData5.GetInpRegFloat32(20)
+		valVL = ExtData5.GetInpRegFloat32(22)
+		truckHeading = recDataClient2.GetInputRegistersInt(18)
+		tractionEncoder = ExtData5.GetInpRegInt32(12)
+		tillerAngle = ExtData5.GetInpRegFloat32(44)
+
+		print str(tractionEncoder) + "\t" + str(tillerAngle)
+
+		file.write( str(i) + '\t' + str(valVF) + '\t' + str(valVL) + '\t' + str(truckHeading) + '\t' + str(tractionEncoder) + '\t' + str(tillerAngle) + '\n' )
+		time.sleep(0.5)
+
+		file.close()		
+
 		file = open("truckData_replay.dat","a")
-	else:
-		file = open("truckData.dat", "a")
-
-#		print "Here"
-#print "Here2"
-#Loop exits when program is terminated 
+		
+	file.close()
+	print "Replay complete"
+	#		print "Here"
+	#print "Here2"
+	#Loop exits when program is terminated 

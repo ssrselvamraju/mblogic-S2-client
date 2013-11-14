@@ -121,6 +121,11 @@ while True:
 		replay_mode = replayDataClient1.GetCoilsBool(32)
 
 	replayDataClient1.SetCoilsBool(40,0)
+	
+	replayDataClient1.SetCoilsBool(12,1)
+	time.sleep(10)
+
+	replayDataClient1.SetCoilsBool(14,1)
 
 	
 	file = open("truckData.dat","r")
@@ -145,6 +150,7 @@ while True:
 
 	print "Moving truck"
 	replayDataClient1.SetHoldingRegistersInt(10,truck_const_speed) #Set truck to move at a constant speed
+	
 	replayDataClient1.SetCoilsBool(8,1) #Setting deadman switch to 1 to make truck move
 
 
@@ -165,11 +171,12 @@ while True:
 		index = index+1
 
 	replayDataClient1.SetHoldingRegistersInt(10,0) #Set truck speed to 0 to stop truck
-	replayDataClient1.SetCoilsBool(8,0)
+	replayDataClient1.SetCoilsBool(8,0) #Setting deadman switch to 0, this switches steering to analog
 
 	print "\nRun successful. Truck at the trained endpoint.\n"
+	
 	file2.close()
-	replayDataClient1.SetCoilsBool(32,0)
+	replayDataClient1.SetCoilsBool(32,0) #Pulling down the Replay mode swtich back to 0
 
 
 
@@ -180,7 +187,7 @@ while True:
 #set angle at data[1]
 #give cont speed to truck
 #read truck encoders
-#while truck encoder near last 5-10 values > slow down (or brake for now)
+#while truck encoder near end stop
 #while truck encoder is > data[i] and  < data[i+1] truck encoder = enc@data[i]
 #when this while breaks, i++ and back to while //Considering linear increments
 
