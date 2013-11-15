@@ -131,6 +131,7 @@ while True:
 	file.close()
 	print "Training complete"
 	#ExtData3.SetHRegStr16(100,30,"Training Route Complete")
+	time.sleep(10)
 
 	#		print "Here"
 	#print "Here2"

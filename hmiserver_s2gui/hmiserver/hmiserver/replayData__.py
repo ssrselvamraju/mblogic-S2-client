@@ -129,11 +129,16 @@ while True:
 
 	
 	file = open("truckData.dat","r")
+	file2 = open("truckReplayStats.dat", "w")
+
+
 	file.readline()
 	file.readline()
 	truck_const_speed = 500 #mm/s
 
-	file2 = open("truckReplayStats.dat", "w")
+
+
+
 
 	data = [map(float, line.split()) for line in file]
 	data_end = len(data)-1
@@ -143,6 +148,10 @@ while True:
 	data_to_follow = buildData(data)
 
 	#print data_to_follow
+
+	file2.write("Index\tEnc\tAng\n\n")
+
+
 
 	ExtData4.SetHRegFloat32(44, data_to_follow[0][1]) #Truck's start angle at 0 speed
 
@@ -163,7 +172,7 @@ while True:
 		while abs(ExtData4.GetInpRegInt32(12)) < data_to_follow[index][0] and abs(ExtData4.GetInpRegInt32(12)) >= data_to_follow[index-1][0]:
 			truck_angle = data_to_follow[index-1][1]
 			ExtData4.SetHRegFloat32(44,truck_angle)
-			file2.write("Index:\t" + str(index) + "\tEnc:\t"+ str(ExtData4.GetInpRegInt32(12)) + "\tAng:\t" + str(truck_angle) + '\n')
+			file2.write(str(index) + '\t' + str(ExtData4.GetInpRegInt32(12)) + '\t' + str(truck_angle) + '\n')
 			#print "\n   Move in Progress...\n"
 			print "Enc:\t" + str(ExtData4.GetInpRegInt32(12)) + "\tAng:\t" + str(truck_angle) + '\n'
 
