@@ -116,7 +116,7 @@ while True:
 		print str(tractionEncoder) + "\t" + str(tillerAngle)
 
 		file.write( str(i) + '\t' + str(valVF) + '\t' + str(valVL) + '\t' + str(truckHeading) + '\t' + str(tractionEncoder) + '\t' + str(tillerAngle) + '\n' )
-		time.sleep(0.5)
+	#	time.sleep(0.5)
 
 		file.close()		
 

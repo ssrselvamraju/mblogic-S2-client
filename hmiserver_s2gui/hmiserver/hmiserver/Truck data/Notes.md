@@ -1,5 +1,5 @@
 
-#In shell do this to copy lines to one file:
+#In shell do this to copy lines to one file: ##No need to use
 paste FileSFC1 FileSFC2 | awk '{print $1 $2 $3 $10 $11 $12}' > newFileSFC
 
 

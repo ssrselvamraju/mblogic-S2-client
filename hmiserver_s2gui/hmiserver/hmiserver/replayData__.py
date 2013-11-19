@@ -120,12 +120,21 @@ while True:
 	while not replay_mode:
 		replay_mode = replayDataClient1.GetCoilsBool(32)
 
-	replayDataClient1.SetCoilsBool(40,0)
+	replayDataClient1.SetCoilsBool(40,0) #Setting record mode to record replay data [temp]
 	
-	replayDataClient1.SetCoilsBool(12,1)
-	time.sleep(10)
+#	replayDataClient1.SetCoilsBool(12,1) #Starting Homing
 
-	replayDataClient1.SetCoilsBool(14,1)
+	###Honk Routine > Honk twice before Following route
+	replayDataClient1.SetCoilsBool(9,1)
+	time.sleep(0.5)
+	replayDataClient1.SetCoilsBool(9,0)
+	time.sleep(0.5)
+	replayDataClient1.SetCoilsBool(9,1)
+	time.sleep(0.5)
+	replayDataClient1.SetCoilsBool(9,0)
+	time.sleep(3)
+
+	replayDataClient1.SetCoilsBool(14,1) #Clear traction encoders
 
 	
 	file = open("truckData.dat","r")
@@ -149,7 +158,7 @@ while True:
 
 	#print data_to_follow
 
-	file2.write("Index\tEnc\tAng\n\n")
+	file2.write("###Index\tEnc\tAng\n\n")
 
 
 

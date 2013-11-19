@@ -72,10 +72,10 @@ from mbprotocols import ModbusExtData
 #Initialize an instance of the ModbusClient.DataTableAccess to initialize this client.
 
 #HBClient = ModbusClient.DataTableAccess(hbhost, hbport, hbtimeout, hbunitid)
-#textDisplayClient1 = ModbusClient.DataTableAccess('192.168.10.226', 1502, 5.0, 1)
+textDisplayClient1 = ModbusClient.DataTableAccess('192.168.10.226', 1502, 5.0, 1)
 
 
-textDisplayClient1 = ModbusClient.DataTableAccess('10.0.0.100', 1502, 5.0, 1)
+#textDisplayClient1 = ModbusClient.DataTableAccess('10.0.0.100', 1502, 5.0, 1)
 
 ExtData6 = ModbusExtData.ExtendedDataTypes(textDisplayClient1)
 
