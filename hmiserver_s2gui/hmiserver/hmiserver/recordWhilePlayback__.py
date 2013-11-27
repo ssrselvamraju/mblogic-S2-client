@@ -95,7 +95,7 @@ while True:
 	while not replay_mode:
 		replay_mode = recDataClient2.GetCoilsBool(32)
 
-	recDataClient1.SetCoilsBool(40,0)
+	recDataClient2.SetCoilsBool(40,0)
 	
 	file = open("truckData_replay.dat","w")
 	

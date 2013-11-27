@@ -95,7 +95,7 @@ while True:
 	replay_mode =  textDisplayClient1.GetCoilsBool(32)
 
 	if train_mode == 0 and replay_mode == 0:
-		state = "Training not started" #Conditions train_mode = 0, replay_mode = 0, coils have never changed before, start state, or end of loop reached and comes back here.
+		STATE = "Training not started" #Conditions train_mode = 0, replay_mode = 0, coils have never changed before, start state, or end of loop reached and comes back here.
 		ExtData6.SetHRegStr16(100,30,"Press Start to Train Route")
 	
 	while train_mode == 0 and replay_mode == 0:
@@ -103,18 +103,18 @@ while True:
 		replay_mode =  textDisplayClient1.GetCoilsBool(32)
 
 	if train_mode == 1 and replay_mode == 0:
-		state = "Training started" #Contions: train_mode = 1 (ensure replay is 0, have a lock on replay_mode), next state cannot be "Replay in Action" 
+		STATE = "Training started" #Conditions: train_mode = 1 (ensure replay is 0, have a lock on replay_mode), next state cannot be "Replay in Action" 
 		ExtData6.SetHRegStr16(100,30,"Training Started")
 		
-		time.sleep(3)
+		time.sleep(2)
 
 		while train_mode:
 			ExtData6.SetHRegStr16(100,30,"Training in Progress")
-			time.sleep(3)
+			time.sleep(2)
 			ExtData6.SetHRegStr16(100,30,"Move truck at a slow const speed")
-			time.sleep(3)
+			time.sleep(2)
 			train_mode = textDisplayClient1.GetCoilsBool(31)
-		state = "Training complete" #Conditions: train_mode changes from 1 to 0, replay_mode still held at zero, this is next state of "Training started", cannot have any other previous state.
+		STATE = "Training complete" #Conditions: train_mode changes from 1 to 0, replay_mode still held at zero, this is next state of "Training started", cannot have any other previous state.
 		ExtData6.SetHRegStr16(100,30,"Training Complete. Please wait.")
 
 	time.sleep(5)
@@ -122,26 +122,26 @@ while True:
 	train_mode = textDisplayClient1.GetCoilsBool(31)
 	replay_mode =  textDisplayClient1.GetCoilsBool(32)
 
-	while train_mode == 0 and train_mode == 0:
+	while train_mode == 0 and replay_mode == 0:
+		ExtData6.SetHRegStr16(100,30,"Take truck to start position")
+		time.sleep(2)
+		ExtData6.SetHRegStr16(100,30,"Press Replay when ready")
+		time.sleep(2)
 		train_mode = textDisplayClient1.GetCoilsBool(31)
 		replay_mode =  textDisplayClient1.GetCoilsBool(32)
-		ExtData6.SetHRegStr16(100,30,"Take truck to start position")
-		time.sleep(3)
-		ExtData6.SetHRegStr16(100,30,"Press Replay when ready")
-		time.sleep(3)
 
 	if train_mode == 0 and replay_mode == 1:
-		state = "Replay in Action" # conditions: Previous mode is "Training Complete", or Training not started (in this case, replay of last trained route will occur), replay_mode = 1, (hold train_mode at 0)
+		STATE = "Replay in Action" # conditions: Previous mode is "Training Complete", or Training not started (in this case, replay of last trained route will occur), replay_mode = 1, (hold train_mode at 0)
 		ExtData6.SetHRegStr16(100,30,"Replay Started")
 		time.sleep(3)
 		while replay_mode:
-			replay_mode = textDisplayClient1.GetCoilsBool(32)
 			ExtData6.SetHRegStr16(100,30,"Truck in motion")
-			time.sleep(3)
+			time.sleep(2)
 			ExtData6.SetHRegStr16(100,30,"Stay away from the robot")
-			time.sleep(3)
-		
-		state = "Replay Complete" #Conditions: Previous mode is "Replay in Action", train_mode = 0 and replay_mode = 0
+			time.sleep(2)
+			replay_mode = textDisplayClient1.GetCoilsBool(32)
+
+		STATE = "Replay Complete" #Conditions: Previous mode is "Replay in Action", train_mode = 0 and replay_mode = 0
 		ExtData6.SetHRegStr16(100,30,"Replay complete. Truck is at end point")	
 
 	time.sleep(6)
