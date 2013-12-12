@@ -259,16 +259,9 @@ addrtype=inputreg
 memaddr=60
 
 ####IMU Truck tilt######
-[TiltPointerL]
+[TiltPointer]
 addrtype=holdingregfloat
-memaddr=27
-datatype=float
-range= -360, 360
-scale=0,10
-
-[TiltPointerR]
-addrtype=holdingregfloat
-memaddr=27
+memaddr=29
 datatype=float
 range= -360, 360
 scale=0,1

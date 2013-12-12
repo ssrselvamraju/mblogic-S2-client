@@ -1,4 +1,91 @@
-<?xml version="1.0" ?><!-- Created with Inkscape (http://www.inkscape.org/) --><svg height="750" id="svg2445" inkscape:output_extension="org.inkscape.output.svg.inkscape" inkscape:version="0.48.3.1 r9886" sodipodi:docname="S2GUI (for act).svg" sodipodi:version="0.32" version="1.0" width="850" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:mblogic="http://www.example.com/mblogic" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<?xml version="1.0" ?><!DOCTYPE html  PUBLIC '-//W3C//DTD XHTML 1.0 Strict//EN'  'http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd'><html xmlns="http://www.w3.org/1999/xhtml" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<head>
+<link href="pageicon.png" rel="icon" type="image/png"/>
+
+<!-- For a top menu screen with no header. 
+	Version 09-Jan-2010. -->
+
+<!-- Change this title to something appropriate. -->
+<title id="MBT_ClientName_Title">S2 HMI</title>
+
+<!-- General page layout style sheet. -->
+<link href="pagelayout.css" rel="stylesheet" type="text/css"/>
+<!-- Pagfe layout style sheet. This file contains the size and layout specific 
+	settings. Change this to import the correct CSS file for the SVG template 
+	you are using. -->
+<link href="pagelayout_template.css" rel="stylesheet" type="text/css"/>
+
+
+<!-- Style sheet to control graphic buttons. -->
+<link href="hmibuttons.css" rel="stylesheet" type="text/css"/>
+
+<!-- JSON parser. -->
+<script src="json2.js" type="text/javascript"/>
+<!-- HMI Protocol functions. -->
+<script src="libhmiclient2.js" type="text/javascript"/>
+<!-- MBHMI Library. -->
+<script src="libmbhmicontrols2.js" type="text/javascript"/>
+<script src="libmbhmimisc.js" type="text/javascript"/>
+<!-- MBHMI Library for events, alarms, and error display. -->
+<script src="libmbevents.js" type="text/javascript"/>
+
+
+<!-- Standard error and other message text definitions. -->
+<script src="standardtexts.js" type="text/javascript"/>
+
+<!-- The following files must be created by the user. 
+	The file names can be changed if necessary. -->
+<!-- Application configuration data. -->
+<script src="clientconfigdata.js" type="text/javascript"/>
+<!-- Message texts. -->
+<script src="messagetexts.js" type="text/javascript"/>
+
+</head>
+
+
+<body onload="MBT_pageinit();">
+
+
+<!-- This provides a container for the HTML elements so we can centre the contents. -->
+<div id="MBT_HTMLContainer">
+
+	<div id="MBT_TopHeader">
+	<h1 class="pos_left">
+		<!-- Include a logo here. -->
+		<object data="pagelogo.jpg" width="170"/>
+	</h1>
+
+	<h1 class="pos_right" id="MBT_ClientName_Heading">
+		S2 HMI
+	</h1>
+
+	</div>
+	<!-- This is the standard nav bar. -->
+	<div id="MBT_HTMLNavTop">
+		<ul>
+		<li><a onclick="MBT_HTMLSelect.SelectScreen('MBT_SVGScreen')">Main</a></li>
+		<li><a onclick="MBT_HTMLSelect.SelectScreen('MBT_AlarmsScreen')">Alarms</a></li>
+		<li><a onclick="MBT_HTMLSelect.SelectScreen('MBT_EventsScreen')">Events</a></li>
+		<li><a onclick="MBT_HTMLSelect.SelectScreen('MBT_SystemStatusScreen')">Status</a></li>
+		<li><a onclick="MBT_HTMLSelect.SelectScreen('MBT_HelpScreen')">Help</a></li>
+		</ul>
+	</div>
+
+
+
+<!-- This sets the display styles for the standard HTML screens for pages with
+	horizontal menus across the top. -->
+<div id="MBT_HTMLScreensTop">
+
+	<!-- ################################################################## -->
+	<!-- Controls display of the main SVG screen. -->
+	<div id="MBT_SVGScreen">
+	<!-- Put main SVG content here -->
+
+
+
+	<svg height="750" id="svg2445" inkscape:output_extension="org.inkscape.output.svg.inkscape" inkscape:version="0.48.3.1 r9886" sodipodi:docname="S2GUI (for act).svg" sodipodi:version="0.32" version="1.0" width="850" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:mblogic="http://www.example.com/mblogic" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs id="defs2447">
     <inkscape:perspective id="perspective2453" inkscape:persp3d-origin="372.04724 : 350.78739 : 1" inkscape:vp_x="0 : 526.18109 : 1" inkscape:vp_y="0 : 1000 : 0" inkscape:vp_z="744.09448 : 526.18109 : 1" sodipodi:type="inkscape:persp3d"/>
     <filter color-interpolation-filters="sRGB" id="MB_DropShadowFilter-6-1">
@@ -681,71 +768,71 @@
   </metadata>
   <g id="BackgroundLayer" inkscape:groupmode="layer" inkscape:label="BackgroundLayer" style="display:inline"/>
   <g id="HiddenLayer" inkscape:groupmode="layer" inkscape:label="HiddenLayer" style="display:inline">
-    <g class="buttonactivate" id="AngleLeft" inkscape:label="#g3325" mblogic:editcount="19" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteIncImmediate(\&quot;%(inputtag)s\&quot;, \&quot;%(reftag)s\&quot;, %(inc)s, %(limit)s);&quot;}]" mblogic:menu="[{&quot;param&quot;: &quot;inputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;value&quot;: &quot;AngleLeft&quot;}, {&quot;param&quot;: &quot;reftag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Reference Tag&quot;, &quot;value&quot;: &quot;SteerDispTxtSet&quot;}, {&quot;param&quot;: &quot;inc&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Increment&quot;, &quot;value&quot;: &quot;1&quot;}, {&quot;param&quot;: &quot;limit&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Limit&quot;, &quot;value&quot;: &quot;120&quot;}]" mblogic:outputfunc="" mblogic:widgetname="Decrement Push Button" mblogic:widgettype="pb_dec" style="display:inline" transform="matrix(0.43950853,0,0,0.32820504,446.57205,476.03877)">
+    <g class="buttonactivate" id="AngleLeft" inkscape:label="#g3325" mblogic:editcount="19" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteIncImmediate(\&quot;%(inputtag)s\&quot;, \&quot;%(reftag)s\&quot;, %(inc)s, %(limit)s);&quot;}]" mblogic:menu="[{&quot;param&quot;: &quot;inputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;value&quot;: &quot;AngleLeft&quot;}, {&quot;param&quot;: &quot;reftag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Reference Tag&quot;, &quot;value&quot;: &quot;SteerDispTxtSet&quot;}, {&quot;param&quot;: &quot;inc&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Increment&quot;, &quot;value&quot;: &quot;1&quot;}, {&quot;param&quot;: &quot;limit&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Limit&quot;, &quot;value&quot;: &quot;120&quot;}]" mblogic:outputfunc="" mblogic:widgetname="Decrement Push Button" mblogic:widgettype="pb_dec" onclick="MBHMIProtocol.WriteIncImmediate(&quot;AngleLeft&quot;, &quot;SteerDispTxtSet&quot;, 1, 120);" style="display:inline" transform="matrix(0.43950853,0,0,0.32820504,446.57205,476.03877)">
       <rect height="80" id="rect3327" rx="15" style="fill:#808080;stroke:none;filter:url(#MB_DropShadowFilter-09-7)" width="80" x="7" y="7"/>
       <rect height="80" id="rect3329" rx="15" style="fill:url(#MB_MaroonGradient-1-4)" width="80" x="0" y="0"/>
       <text font-size="24" id="text3331" sodipodi:linespacing="125%" style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;stroke-width:2px;font-family:Sans;-inkscape-font-specification:Sans" x="40" y="50">
         <tspan id="tspan3375" sodipodi:role="line" x="40" y="50">&lt;</tspan>
       </text>
     </g>
-    <g class="buttonactivate" id="AngleRight" inkscape:label="#g3292" mblogic:editcount="9" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteIncImmediate(\&quot;%(inputtag)s\&quot;, \&quot;%(reftag)s\&quot;, %(inc)s, %(limit)s);&quot;}]" mblogic:menu="[{&quot;param&quot;: &quot;inputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;value&quot;: &quot;AngleRight&quot;}, {&quot;param&quot;: &quot;reftag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Reference Tag&quot;, &quot;value&quot;: &quot;SteerDispTxtSet&quot;}, {&quot;param&quot;: &quot;inc&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Increment&quot;, &quot;value&quot;: &quot;-1&quot;}, {&quot;param&quot;: &quot;limit&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Limit&quot;, &quot;value&quot;: &quot;-120&quot;}]" mblogic:outputfunc="" mblogic:widgetname="Increment Push Button" mblogic:widgettype="pb_inc" style="display:inline" transform="matrix(0.4865881,0,0,0.33468143,489.80206,476.14652)">
+    <g class="buttonactivate" id="AngleRight" inkscape:label="#g3292" mblogic:editcount="9" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteIncImmediate(\&quot;%(inputtag)s\&quot;, \&quot;%(reftag)s\&quot;, %(inc)s, %(limit)s);&quot;}]" mblogic:menu="[{&quot;param&quot;: &quot;inputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;value&quot;: &quot;AngleRight&quot;}, {&quot;param&quot;: &quot;reftag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Reference Tag&quot;, &quot;value&quot;: &quot;SteerDispTxtSet&quot;}, {&quot;param&quot;: &quot;inc&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Increment&quot;, &quot;value&quot;: &quot;-1&quot;}, {&quot;param&quot;: &quot;limit&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Limit&quot;, &quot;value&quot;: &quot;-120&quot;}]" mblogic:outputfunc="" mblogic:widgetname="Increment Push Button" mblogic:widgettype="pb_inc" onclick="MBHMIProtocol.WriteIncImmediate(&quot;AngleRight&quot;, &quot;SteerDispTxtSet&quot;, -1, -120);" style="display:inline" transform="matrix(0.4865881,0,0,0.33468143,489.80206,476.14652)">
       <rect height="80" id="rect3294" rx="15" style="fill:#808080;stroke:none;filter:url(#MB_DropShadowFilter-2-4)" width="80" x="7" y="7"/>
       <rect height="80" id="rect3296" rx="15" style="fill:url(#MB_MaroonGradient-9-1)" width="80" x="0" y="0"/>
       <text font-size="24" id="text3298" sodipodi:linespacing="125%" style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;stroke-width:2px;font-family:Sans;-inkscape-font-specification:Sans" x="40" y="50">
         <tspan id="tspan3377" sodipodi:role="line" x="40" y="50">&gt;</tspan>
       </text>
     </g>
-    <g class="buttonactivate" id="SpeedDown" inkscape:label="#g3550" mblogic:editcount="19" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteIncImmediate(\&quot;%(inputtag)s\&quot;, \&quot;%(reftag)s\&quot;, %(inc)s, %(limit)s);&quot;}]" mblogic:menu="[{&quot;param&quot;: &quot;inputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;value&quot;: &quot;SpeedDown&quot;}, {&quot;param&quot;: &quot;reftag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Reference Tag&quot;, &quot;value&quot;: &quot;SpeedDispSet&quot;}, {&quot;param&quot;: &quot;inc&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Increment&quot;, &quot;value&quot;: &quot;-5&quot;}, {&quot;param&quot;: &quot;limit&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Limit&quot;, &quot;value&quot;: &quot;-3000&quot;}]" mblogic:outputfunc="" mblogic:widgetname="Decrement Push Button" mblogic:widgettype="pb_dec" style="fill:url(#linearGradient3780);stroke:#000000;display:inline" transform="matrix(0.54834496,0,0,0.70595002,241.71125,371.58217)">
+    <g class="buttonactivate" id="SpeedDown" inkscape:label="#g3550" mblogic:editcount="19" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteIncImmediate(\&quot;%(inputtag)s\&quot;, \&quot;%(reftag)s\&quot;, %(inc)s, %(limit)s);&quot;}]" mblogic:menu="[{&quot;param&quot;: &quot;inputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;value&quot;: &quot;SpeedDown&quot;}, {&quot;param&quot;: &quot;reftag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Reference Tag&quot;, &quot;value&quot;: &quot;SpeedDispSet&quot;}, {&quot;param&quot;: &quot;inc&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Increment&quot;, &quot;value&quot;: &quot;-5&quot;}, {&quot;param&quot;: &quot;limit&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Limit&quot;, &quot;value&quot;: &quot;-3000&quot;}]" mblogic:outputfunc="" mblogic:widgetname="Decrement Push Button" mblogic:widgettype="pb_dec" onclick="MBHMIProtocol.WriteIncImmediate(&quot;SpeedDown&quot;, &quot;SpeedDispSet&quot;, -5, -3000);" style="fill:url(#linearGradient3780);stroke:#000000;display:inline" transform="matrix(0.54834496,0,0,0.70595002,241.71125,371.58217)">
       <!-- This provides the relief. -->
       <polygon id="polygon3552" points="2,2 7,0 45,0 42,2 2,2 " style="fill:url(#linearGradient3577-0)"/>
       <polygon id="polygon3554" points="45,0 42,2 22,42 24,41 45,0 " style="fill:url(#linearGradient3579-1)"/>
       <!-- This is the button. -->
       <polygon id="polygon3556" points="2,2 22,42 42,2 2,2 " style="fill:url(#linearGradient3581-3)"/>
     </g>
-    <g class="buttonactivate" id="SpeedUp" inkscape:label="#g3522" mblogic:editcount="11" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteIncImmediate(\&quot;%(inputtag)s\&quot;, \&quot;%(reftag)s\&quot;, %(inc)s, %(limit)s);&quot;}]" mblogic:menu="[{&quot;param&quot;: &quot;inputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;value&quot;: &quot;SpeedUp&quot;}, {&quot;param&quot;: &quot;reftag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Reference Tag&quot;, &quot;value&quot;: &quot;SpeedDispSet&quot;}, {&quot;param&quot;: &quot;inc&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Increment&quot;, &quot;value&quot;: &quot;5&quot;}, {&quot;param&quot;: &quot;limit&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Limit&quot;, &quot;value&quot;: &quot;3000&quot;}]" mblogic:outputfunc="" mblogic:widgetname="Increment Push Button" mblogic:widgettype="pb_inc" style="fill:url(#linearGradient3778);stroke:#000000;display:inline" transform="matrix(0.55783116,0,0,0.77247776,242.54206,335.3103)">
+    <g class="buttonactivate" id="SpeedUp" inkscape:label="#g3522" mblogic:editcount="11" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteIncImmediate(\&quot;%(inputtag)s\&quot;, \&quot;%(reftag)s\&quot;, %(inc)s, %(limit)s);&quot;}]" mblogic:menu="[{&quot;param&quot;: &quot;inputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;value&quot;: &quot;SpeedUp&quot;}, {&quot;param&quot;: &quot;reftag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Reference Tag&quot;, &quot;value&quot;: &quot;SpeedDispSet&quot;}, {&quot;param&quot;: &quot;inc&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Increment&quot;, &quot;value&quot;: &quot;5&quot;}, {&quot;param&quot;: &quot;limit&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Limit&quot;, &quot;value&quot;: &quot;3000&quot;}]" mblogic:outputfunc="" mblogic:widgetname="Increment Push Button" mblogic:widgettype="pb_inc" onclick="MBHMIProtocol.WriteIncImmediate(&quot;SpeedUp&quot;, &quot;SpeedDispSet&quot;, 5, 3000);" style="fill:url(#linearGradient3778);stroke:#000000;display:inline" transform="matrix(0.55783116,0,0,0.77247776,242.54206,335.3103)">
       <!-- This provides the relief. -->
       <polygon id="polygon3524" points="0,40 4,42 44,42 40,40 0,40 " style="fill:url(#linearGradient3569-6)"/>
       <polygon id="polygon3526" points="20,0 24,2 44,42 40,40 20,0 " style="fill:url(#linearGradient3571-8)"/>
       <!-- This is the button. -->
       <polygon id="polygon3528" points="0,40 20,0 40,40 0,40 " style="fill:url(#linearGradient3573-5)"/>
     </g>
-    <g class="buttonactivate" id="SpeedUp-100" inkscape:label="#g3522" mblogic:editcount="11" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteIncImmediate(\&quot;%(inputtag)s\&quot;, \&quot;%(reftag)s\&quot;, %(inc)s, %(limit)s);&quot;}]" mblogic:menu="[{&quot;param&quot;: &quot;inputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;value&quot;: &quot;SpeedUp100&quot;}, {&quot;param&quot;: &quot;reftag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Reference Tag&quot;, &quot;value&quot;: &quot;SpeedDispSet&quot;}, {&quot;param&quot;: &quot;inc&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Increment&quot;, &quot;value&quot;: &quot;250&quot;}, {&quot;param&quot;: &quot;limit&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Limit&quot;, &quot;value&quot;: &quot;3000&quot;}]" mblogic:outputfunc="" mblogic:widgetname="Increment Push Button" mblogic:widgettype="pb_inc" style="fill:url(#linearGradient3778-7-7);stroke:#000000;display:inline" transform="matrix(1.3800557,0,0,1.1287796,222.783,232.73509)">
+    <g class="buttonactivate" id="SpeedUp-100" inkscape:label="#g3522" mblogic:editcount="11" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteIncImmediate(\&quot;%(inputtag)s\&quot;, \&quot;%(reftag)s\&quot;, %(inc)s, %(limit)s);&quot;}]" mblogic:menu="[{&quot;param&quot;: &quot;inputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;value&quot;: &quot;SpeedUp100&quot;}, {&quot;param&quot;: &quot;reftag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Reference Tag&quot;, &quot;value&quot;: &quot;SpeedDispSet&quot;}, {&quot;param&quot;: &quot;inc&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Increment&quot;, &quot;value&quot;: &quot;250&quot;}, {&quot;param&quot;: &quot;limit&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Limit&quot;, &quot;value&quot;: &quot;3000&quot;}]" mblogic:outputfunc="" mblogic:widgetname="Increment Push Button" mblogic:widgettype="pb_inc" onclick="MBHMIProtocol.WriteIncImmediate(&quot;SpeedUp100&quot;, &quot;SpeedDispSet&quot;, 250, 3000);" style="fill:url(#linearGradient3778-7-7);stroke:#000000;display:inline" transform="matrix(1.3800557,0,0,1.1287796,222.783,232.73509)">
       <!-- This provides the relief. -->
       <polygon id="polygon3524-3-8" points="0,40 0,40 4,42 44,42 40,40 " style="fill:url(#linearGradient3569-6-6-8)"/>
       <polygon id="polygon3526-0-4" points="20,0 20,0 24,2 44,42 40,40 " style="fill:url(#linearGradient3571-8-3-5)"/>
       <!-- This is the button. -->
       <polygon id="polygon3528-6-7" points="40,40 0,40 0,40 20,0 " style="fill:url(#linearGradient3879)"/>
     </g>
-    <g class="buttonactivate" id="SpeedDown-100" inkscape:label="#g3550" mblogic:editcount="15" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteIncImmediate(\&quot;%(inputtag)s\&quot;, \&quot;%(reftag)s\&quot;, %(inc)s, %(limit)s);&quot;}]" mblogic:menu="[{&quot;param&quot;: &quot;inputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;value&quot;: &quot;SpeedDown100&quot;}, {&quot;param&quot;: &quot;reftag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Reference Tag&quot;, &quot;value&quot;: &quot;SpeedDispSet&quot;}, {&quot;param&quot;: &quot;inc&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Increment&quot;, &quot;value&quot;: &quot;-250&quot;}, {&quot;param&quot;: &quot;limit&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Limit&quot;, &quot;value&quot;: &quot;-3000&quot;}]" mblogic:outputfunc="" mblogic:widgetname="Decrement Push Button" mblogic:widgettype="pb_dec" style="fill:url(#linearGradient3780-7-9);stroke:#000000;display:inline" transform="matrix(1.2907607,0,0,1.1629965,225.63977,454.75517)">
+    <g class="buttonactivate" id="SpeedDown-100" inkscape:label="#g3550" mblogic:editcount="15" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteIncImmediate(\&quot;%(inputtag)s\&quot;, \&quot;%(reftag)s\&quot;, %(inc)s, %(limit)s);&quot;}]" mblogic:menu="[{&quot;param&quot;: &quot;inputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;value&quot;: &quot;SpeedDown100&quot;}, {&quot;param&quot;: &quot;reftag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Reference Tag&quot;, &quot;value&quot;: &quot;SpeedDispSet&quot;}, {&quot;param&quot;: &quot;inc&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Increment&quot;, &quot;value&quot;: &quot;-250&quot;}, {&quot;param&quot;: &quot;limit&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Limit&quot;, &quot;value&quot;: &quot;-3000&quot;}]" mblogic:outputfunc="" mblogic:widgetname="Decrement Push Button" mblogic:widgettype="pb_dec" onclick="MBHMIProtocol.WriteIncImmediate(&quot;SpeedDown100&quot;, &quot;SpeedDispSet&quot;, -250, -3000);" style="fill:url(#linearGradient3780-7-9);stroke:#000000;display:inline" transform="matrix(1.2907607,0,0,1.1629965,225.63977,454.75517)">
       <!-- This provides the relief. -->
       <polygon id="polygon3552-8-6" points="42,2 2,2 2,2 7,0 45,0 " style="fill:url(#linearGradient3577-0-3-7)"/>
       <polygon id="polygon3554-8-5" points="24,41 45,0 45,0 42,2 22,42 " style="fill:url(#linearGradient3579-1-8-6)"/>
       <!-- This is the button. -->
       <polygon id="polygon3556-5-1" points="2,2 2,2 22,42 42,2 " style="fill:url(#linearGradient3967)"/>
     </g>
-    <g class="buttonactivate" id="AngleLeft-100" inkscape:label="#g3325" mblogic:editcount="17" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteIncImmediate(\&quot;%(inputtag)s\&quot;, \&quot;%(reftag)s\&quot;, %(inc)s, %(limit)s);&quot;}]" mblogic:menu="[{&quot;param&quot;: &quot;inputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;value&quot;: &quot;AngleLeft100&quot;}, {&quot;param&quot;: &quot;reftag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Reference Tag&quot;, &quot;value&quot;: &quot;SteerDispTxtSet&quot;}, {&quot;param&quot;: &quot;inc&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Increment&quot;, &quot;value&quot;: &quot;10&quot;}, {&quot;param&quot;: &quot;limit&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Limit&quot;, &quot;value&quot;: &quot;120&quot;}]" mblogic:outputfunc="" mblogic:widgetname="Decrement Push Button" mblogic:widgettype="pb_dec" style="display:inline" transform="matrix(0.76183284,0,0,0.51450881,317.27599,465.2677)">
+    <g class="buttonactivate" id="AngleLeft-100" inkscape:label="#g3325" mblogic:editcount="17" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteIncImmediate(\&quot;%(inputtag)s\&quot;, \&quot;%(reftag)s\&quot;, %(inc)s, %(limit)s);&quot;}]" mblogic:menu="[{&quot;param&quot;: &quot;inputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;value&quot;: &quot;AngleLeft100&quot;}, {&quot;param&quot;: &quot;reftag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Reference Tag&quot;, &quot;value&quot;: &quot;SteerDispTxtSet&quot;}, {&quot;param&quot;: &quot;inc&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Increment&quot;, &quot;value&quot;: &quot;10&quot;}, {&quot;param&quot;: &quot;limit&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Limit&quot;, &quot;value&quot;: &quot;120&quot;}]" mblogic:outputfunc="" mblogic:widgetname="Decrement Push Button" mblogic:widgettype="pb_dec" onclick="MBHMIProtocol.WriteIncImmediate(&quot;AngleLeft100&quot;, &quot;SteerDispTxtSet&quot;, 10, 120);" style="display:inline" transform="matrix(0.76183284,0,0,0.51450881,317.27599,465.2677)">
       <rect height="80" id="rect3327-0-0" rx="15" style="fill:#808080;stroke:none;filter:url(#MB_DropShadowFilter-09-7-9-9)" width="80" x="7" y="7"/>
       <rect height="80" id="rect3329-4-3" rx="15" style="fill:url(#MB_MaroonGradient-1-4-7-6)" width="80" x="0" y="0"/>
       <text font-size="24" id="text3331-2-8" sodipodi:linespacing="125%" style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;stroke-width:2px;font-family:Sans;-inkscape-font-specification:Sans" x="40" y="50">
         <tspan id="tspan3375-0-2" sodipodi:role="line" x="40" y="50">&lt;</tspan>
       </text>
     </g>
-    <g class="buttonactivate" id="AngleRight-100" inkscape:label="#g3292" mblogic:editcount="10" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteIncImmediate(\&quot;%(inputtag)s\&quot;, \&quot;%(reftag)s\&quot;, %(inc)s, %(limit)s);&quot;}]" mblogic:menu="[{&quot;param&quot;: &quot;inputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;value&quot;: &quot;AngleRight100&quot;}, {&quot;param&quot;: &quot;reftag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Reference Tag&quot;, &quot;value&quot;: &quot;SteerDispTxtSet&quot;}, {&quot;param&quot;: &quot;inc&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Increment&quot;, &quot;value&quot;: &quot;-10&quot;}, {&quot;param&quot;: &quot;limit&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Limit&quot;, &quot;value&quot;: &quot;-120&quot;}]" mblogic:outputfunc="" mblogic:widgetname="Increment Push Button" mblogic:widgettype="pb_inc" style="display:inline" transform="matrix(0.84343934,0,0,0.5246615,601.48838,466.78286)">
+    <g class="buttonactivate" id="AngleRight-100" inkscape:label="#g3292" mblogic:editcount="10" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteIncImmediate(\&quot;%(inputtag)s\&quot;, \&quot;%(reftag)s\&quot;, %(inc)s, %(limit)s);&quot;}]" mblogic:menu="[{&quot;param&quot;: &quot;inputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;value&quot;: &quot;AngleRight100&quot;}, {&quot;param&quot;: &quot;reftag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Reference Tag&quot;, &quot;value&quot;: &quot;SteerDispTxtSet&quot;}, {&quot;param&quot;: &quot;inc&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Increment&quot;, &quot;value&quot;: &quot;-10&quot;}, {&quot;param&quot;: &quot;limit&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Limit&quot;, &quot;value&quot;: &quot;-120&quot;}]" mblogic:outputfunc="" mblogic:widgetname="Increment Push Button" mblogic:widgettype="pb_inc" onclick="MBHMIProtocol.WriteIncImmediate(&quot;AngleRight100&quot;, &quot;SteerDispTxtSet&quot;, -10, -120);" style="display:inline" transform="matrix(0.84343934,0,0,0.5246615,601.48838,466.78286)">
       <rect height="80" id="rect3294-2-7" rx="15" style="fill:#808080;stroke:none;filter:url(#MB_DropShadowFilter-2-4-4-6)" width="80" x="7" y="7"/>
       <rect height="80" id="rect3296-6-3" rx="15" style="fill:url(#MB_MaroonGradient-9-1-9-1)" width="80" x="0" y="0"/>
       <text font-size="24" id="text3298-8-1" sodipodi:linespacing="125%" style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;stroke-width:2px;font-family:Sans;-inkscape-font-specification:Sans" x="40" y="50">
         <tspan id="tspan3377-3-2" sodipodi:role="line" x="40" y="50">&gt;</tspan>
       </text>
     </g>
-    <g class="sswitchactivate" id="Can_AnalogMode" inkscape:label="#g3135" mblogic:editcount="5" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteImmediate(\&quot;%(inputtag)s\&quot;, %(value)s);&quot;}]" mblogic:menu="[{&quot;param&quot;: &quot;inputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;value&quot;: &quot;Analog_Mode&quot;}, {&quot;param&quot;: &quot;value&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Write Value&quot;, &quot;value&quot;: &quot;0&quot;}]" mblogic:outputfunc="" mblogic:widgetname="Selector Switch Label" mblogic:widgettype="ss_label" style="display:inline" transform="matrix(1.0563939,0,0,0.81868679,728.75109,624.59013)">
+    <g class="sswitchactivate" id="Can_AnalogMode" inkscape:label="#g3135" mblogic:editcount="5" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteImmediate(\&quot;%(inputtag)s\&quot;, %(value)s);&quot;}]" mblogic:menu="[{&quot;param&quot;: &quot;inputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;value&quot;: &quot;Analog_Mode&quot;}, {&quot;param&quot;: &quot;value&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Write Value&quot;, &quot;value&quot;: &quot;0&quot;}]" mblogic:outputfunc="" mblogic:widgetname="Selector Switch Label" mblogic:widgettype="ss_label" onclick="MBHMIProtocol.WriteImmediate(&quot;Analog_Mode&quot;, 0);" style="display:inline" transform="matrix(1.0563939,0,0,0.81868679,728.75109,624.59013)">
       <path d="m 0,0 c 16.666667,0 33.333333,0 50,0 0,23.333333 0,46.666667 0,70 C 33.333333,70 16.666667,70 0,70 0,46.666667 0,23.333333 0,0 z" id="rect3137-1" inkscape:connector-curvature="0" style="fill:#ff0000"/>
       <path d="M 6.8159011,10.064549 C 6.2211729,12.163855 5.6264446,14.263158 5.0317162,16.362463 6.5263069,16.119947 9.717344,17.414797 8.0124429,14.272809 7.6135956,12.870057 7.2147484,11.467303 6.8159011,10.064549 z M 6.073576,8.3777596 C 8.2876611,7.4694809 8.0655483,11.163561 8.8855135,12.888993 9.6802927,15.603635 10.475073,18.318278 11.269852,21.032921 8.855999,22.315105 10.122214,16.812769 7.87568,17.786487 6.121729,17.771942 4.0008449,17.080925 3.9662642,20.236186 2.2171267,22.915474 2.4806154,18.946208 3.4812445,17.216576 4.3453551,14.270304 5.2094656,11.324032 6.073576,8.3777596 z m 12.619527,6.9251614 c -0.435288,1.714741 0.955507,5.806536 -0.855862,5.73 -0.871711,-1.361224 0.0161,-4.760571 -0.443211,-6.857346 -2.8496,-4.5584098 -4.194815,2.734905 -3.60418,5.948213 -0.952506,2.979286 -1.604158,-1.476461 -1.20465,-3.175885 0.42698,-1.742168 -1.04649,-5.958195 1.141151,-5.408472 -0.748878,3.399458 4.757204,-4.6487246 4.966752,3.76349 z m 5.717206,0.957827 c -4.966866,-0.838659 -0.906839,7.523992 1.040228,1.722815 0.609174,-1.946689 -0.003,-1.775453 -1.040228,-1.722815 z m 2.389766,-0.644202 c -0.426723,1.745137 1.045933,5.96274 -1.14115,5.416375 0.532631,-2.686513 -5.244861,3.313446 -5.018846,-2.763283 -0.514772,-4.669468 8.811613,-2.087446 2.891161,-5.63676 -6.215204,1.777716 2.24072,-4.566117 3.073481,1.089214 l 0.146512,0.878358 0.04884,1.016096 z m 2.474416,-7.7727952 c 2.257446,-0.6856495 0.776723,3.4947602 1.198139,5.1991142 0,2.663353 0,5.326705 0,7.990056 -2.257446,0.685651 -0.776724,-3.49476 -1.198139,-5.199114 0,-2.663353 0,-5.326704 0,-7.9900562 z m 6.524646,4.7891272 c -5.700779,1.725663 1.499906,12.611547 2.077209,3.661775 0.05417,-1.614619 -0.591149,-3.732611 -2.077209,-3.661775 z m 0,-1.322308 c 5.797291,-0.04133 3.256079,13.755698 -1.973023,9.224367 -2.432048,-2.442229 -1.660569,-9.512764 1.973023,-9.224367 z m 10.125575,4.865415 c -0.54572,-8.7440202 -7.649236,1.902305 -2.04465,3.551581 1.473268,0.111939 2.107301,-1.961505 2.04465,-3.551581 z m 1.198139,3.678727 c 1.160811,4.437772 -5.550336,6.986987 -5.639066,2.77176 1.949949,1.88173 5.099079,0.180242 4.440927,-3.263387 -3.93258,6.262459 -8.112906,-6.256573 -2.975813,-7.969336 2.318656,-0.441919 2.650301,2.273288 3.546388,0.145682 1.428096,0.393934 0.237497,4.196685 0.627564,5.941846 0,0.791144 0,1.582289 0,2.373435 z" id="text3139-8" inkscape:connector-curvature="0" style="font-size:15.21523094px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Sans;-inkscape-font-specification:Sans"/>
     </g>
-    <g class="sswitchactivate" id="Can_CanMode" inkscape:label="#g3152" mblogic:editcount="4" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteImmediate(\&quot;%(inputtag)s\&quot;, %(value)s);&quot;}]" mblogic:menu="[{&quot;param&quot;: &quot;inputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;value&quot;: &quot;CAN_Mode&quot;}, {&quot;param&quot;: &quot;value&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Write Value&quot;, &quot;value&quot;: &quot;1&quot;}]" mblogic:outputfunc="" mblogic:widgetname="Selector Switch Label" mblogic:widgettype="ss_label" style="display:inline" transform="matrix(1.0083643,0,0,0.79928808,784.38188,624.74252)">
+    <g class="sswitchactivate" id="Can_CanMode" inkscape:label="#g3152" mblogic:editcount="4" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteImmediate(\&quot;%(inputtag)s\&quot;, %(value)s);&quot;}]" mblogic:menu="[{&quot;param&quot;: &quot;inputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;value&quot;: &quot;CAN_Mode&quot;}, {&quot;param&quot;: &quot;value&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Write Value&quot;, &quot;value&quot;: &quot;1&quot;}]" mblogic:outputfunc="" mblogic:widgetname="Selector Switch Label" mblogic:widgettype="ss_label" onclick="MBHMIProtocol.WriteImmediate(&quot;CAN_Mode&quot;, 1);" style="display:inline" transform="matrix(1.0083643,0,0,0.79928808,784.38188,624.74252)">
       <path d="m 0,0 c 16.666667,0 33.333333,0 50,0 0,23.333333 0,46.666667 0,70 C 33.333333,70 16.666667,70 0,70 0,46.666667 0,23.333333 0,0 z" id="rect3154-5" inkscape:connector-curvature="0" style="fill:#008000"/>
       <path d="m 18.257812,9.234375 c 0.688997,3.369883 -6.904854,-2.7822779 -7.476564,2.906256 -2.4997443,5.357361 4.51094,8.64399 7.476564,5.649668 C 15.852196,24.492172 4.7076782,16.495086 9.7084954,10.633306 11.393635,7.703815 15.660743,7.4574814 18.257812,9.234375 z m 6.351563,0.65625 c -0.713542,1.934896 -1.427083,3.869792 -2.140625,5.804687 1.775873,-0.228458 5.594539,0.965228 3.586847,-1.897258 -0.482074,-1.302476 -0.964148,-2.604953 -1.446222,-3.907429 z M 23.71875,8.3359375 c 2.629549,-0.830287 2.385153,2.5103055 3.350052,4.0958815 0.961441,2.522727 1.922882,5.045454 2.884323,7.568181 -2.884314,1.174741 -1.386953,-3.856131 -4.051819,-2.992188 -2.087331,0.0035 -4.646989,-0.66201 -4.698897,2.224155 -2.040876,2.5082 -1.85234,-1.082884 -0.613921,-2.69694 1.043421,-2.73303 2.086841,-5.46606 3.130262,-8.1990895 z m 7.929688,0 c 2.583336,-0.8746228 2.971274,1.8990765 4.019821,3.5749735 1.092351,2.060946 2.184702,4.121893 3.277053,6.182839 0,-3.252604 10e-7,-6.505208 0,-9.7578125 2.767759,-0.683865 1.066028,3.1017585 1.53125,4.7204295 0,2.314544 0,4.629089 0,6.943633 -2.583336,0.874623 -2.971274,-1.899077 -4.019821,-3.574973 -1.092351,-2.060947 -2.184702,-4.121893 -3.277053,-6.182839 -10e-7,3.252604 0,6.505208 0,9.757812 -2.767759,0.683865 -1.066028,-3.101759 -1.53125,-4.720429 -10e-7,-2.314545 -10e-7,-4.629089 0,-6.9436335 z" id="text3156-6" inkscape:connector-curvature="0" style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Sans;-inkscape-font-specification:Sans"/>
     </g>
-    <g id="Can_ModeSwitch" inkscape:label="#g3179" mblogic:editcount="7" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteToggleImmediate(\&quot;%(inputtag)s\&quot;, \&quot;%(inputtag)s\&quot;);&quot;}]" mblogic:menu="[{&quot;param&quot;: &quot;inputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;value&quot;: &quot;CANSwitchButton&quot;}, {&quot;param&quot;: &quot;switchtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Switch Tag&quot;, &quot;value&quot;: &quot;Analog_Mode&quot;}]" mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_2PosSSDisplay(document, &quot;%(widgetid)s&quot;, -60, 60), &quot;%(switchtag)s&quot;, &quot;read&quot;);" mblogic:widgetname="2 Pos SS" mblogic:widgettype="ss2short" style="display:inline" transform="matrix(0.82080575,0,0,0.7714543,783.94005,690.29861)">
+    <g id="Can_ModeSwitch" inkscape:label="#g3179" mblogic:editcount="7" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteToggleImmediate(\&quot;%(inputtag)s\&quot;, \&quot;%(inputtag)s\&quot;);&quot;}]" mblogic:menu="[{&quot;param&quot;: &quot;inputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;value&quot;: &quot;CANSwitchButton&quot;}, {&quot;param&quot;: &quot;switchtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Switch Tag&quot;, &quot;value&quot;: &quot;Analog_Mode&quot;}]" mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_2PosSSDisplay(document, &quot;%(widgetid)s&quot;, -60, 60), &quot;%(switchtag)s&quot;, &quot;read&quot;);" mblogic:widgetname="2 Pos SS" mblogic:widgettype="ss2short" onclick="MBHMIProtocol.WriteToggleImmediate(&quot;CANSwitchButton&quot;, &quot;CANSwitchButton&quot;);" style="display:inline" transform="matrix(0.82080575,0,0,0.7714543,783.94005,690.29861)">
       <!-- This is a decorative nut. -->
       <path d="m -13,50 c 12,0 24,0 36,0 9,-9 18,-18 27,-27 0,-12 0,-24 0,-36 -9,-9 -18,-18 -27,-27 -12,0 -24,0 -36,0 -9,9 -18,18 -27,27 0,12 0,24 0,36 9,9 18,18 27,27 z" id="polygon3181-1" inkscape:connector-curvature="0" style="fill:#808080;stroke:none;filter:url(#MB_DropShadowFilter-3-7-4)"/>
       <path d="m -18,45 c 12,0 24,0 36,0 9,-9 18,-18 27,-27 0,-12 0,-24 0,-36 -9,-9 -18,-18 -27,-27 -12,0 -24,0 -36,0 -9,9 -18,18 -27,27 0,12 0,24 0,36 9,9 18,18 27,27 z" id="polygon3183-0" inkscape:connector-curvature="0" style="fill:url(#linearGradient4413);stroke:none"/>
@@ -765,14 +852,14 @@
     <rect height="243.24474" id="rect3985" rx="17.228329" ry="9.2389879" style="fill:#0000ff;fill-opacity:1" width="240.41631" x="22.627415" y="181.48615"/>
     <rect height="243.24474" id="rect3985-0" rx="17.228329" ry="9.2389879" style="fill:#0000ff;fill-opacity:1;display:inline" width="240.41631" x="302.64169" y="182.90036"/>
     <rect height="243.24474" id="rect3985-0-7" inkscape:transform-center-x="195.16147" inkscape:transform-center-y="11.313709" rx="17.228329" ry="9.2389879" style="fill:#0000ff;fill-opacity:1;display:inline" width="240.41631" x="585.48438" y="184.31458"/>
-    <g class="buttonactivate" id="StartRecord" inkscape:label="#g4035" mblogic:editcount="1" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteImmediate(\&quot;%(inputtag)s\&quot;, 1);&quot;}]" mblogic:menu="[{&quot;param&quot;: &quot;inputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;value&quot;: &quot;RecordTrainStart&quot;}]" mblogic:outputfunc="" mblogic:widgetname="Write 1 Push Button" mblogic:widgettype="pb_const" transform="translate(55.82287,248.59581)">
+    <g class="buttonactivate" id="StartRecord" inkscape:label="#g4035" mblogic:editcount="1" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteImmediate(\&quot;%(inputtag)s\&quot;, 1);&quot;}]" mblogic:menu="[{&quot;param&quot;: &quot;inputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;value&quot;: &quot;RecordTrainStart&quot;}]" mblogic:outputfunc="" mblogic:widgetname="Write 1 Push Button" mblogic:widgettype="pb_const" onclick="MBHMIProtocol.WriteImmediate(&quot;RecordTrainStart&quot;, 1);" transform="translate(55.82287,248.59581)">
       <rect height="35" id="rect4037" rx="15" style="fill:#808080;stroke:none;filter:url(#MB_DropShadowFilter-32)" width="100" x="7" y="7"/>
       <rect height="35" id="rect4039" rx="15" style="fill:url(#MB_LimeGradient-6)" width="100" x="0" y="0"/>
       <text font-size="24" id="text4041" sodipodi:linespacing="125%" style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;stroke-width:2px;font-family:Sans;-inkscape-font-specification:Sans" x="50" y="26">
         <tspan id="tspan4329" sodipodi:role="line" x="50" y="26">Start</tspan>
       </text>
     </g>
-    <g class="buttonactivate" id="StopRecord" inkscape:label="#g4068" mblogic:editcount="1" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteImmediate(\&quot;%(inputtag)s\&quot;, 0);&quot;}]" mblogic:menu="[{&quot;param&quot;: &quot;inputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;value&quot;: &quot;RecordTrainStop&quot;}]" mblogic:outputfunc="" mblogic:widgetname="Write 0 Push Button" mblogic:widgettype="pb_const" transform="translate(57.822871,319.30649)">
+    <g class="buttonactivate" id="StopRecord" inkscape:label="#g4068" mblogic:editcount="1" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteImmediate(\&quot;%(inputtag)s\&quot;, 0);&quot;}]" mblogic:menu="[{&quot;param&quot;: &quot;inputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;value&quot;: &quot;RecordTrainStop&quot;}]" mblogic:outputfunc="" mblogic:widgetname="Write 0 Push Button" mblogic:widgettype="pb_const" onclick="MBHMIProtocol.WriteImmediate(&quot;RecordTrainStop&quot;, 0);" transform="translate(57.822871,319.30649)">
       <rect height="35" id="rect4070" rx="15" style="fill:#808080;stroke:none;filter:url(#MB_DropShadowFilter-31)" width="100" x="7" y="7"/>
       <rect height="35" id="rect4072" rx="15" style="fill:url(#MB_RedGradient-0)" width="100" x="0" y="0"/>
       <text font-size="24" id="text4074" sodipodi:linespacing="125%" style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;stroke-width:2px;font-family:Sans;-inkscape-font-specification:Sans" x="50" y="26">
@@ -792,17 +879,17 @@
         </circle>
       </g>
     </g>
-    <g class="buttonactivate" id="Record_Train" inkscape:label="#g4204" mblogic:editcount="1" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteToggleImmediate(\&quot;%(inputtag)s\&quot;, \&quot;%(inputtag)s\&quot;);&quot;}]" mblogic:menu="[{&quot;value&quot;: &quot;RecordModeTrain&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;param&quot;: &quot;inputtag&quot;}, {&quot;value&quot;: &quot;RecordModeTrain&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;param&quot;: &quot;outputtag&quot;}, {&quot;value&quot;: &quot;black&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;Init Colour&quot;, &quot;param&quot;: &quot;initcolour&quot;}, {&quot;value&quot;: &quot;red&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;Off Colour&quot;, &quot;param&quot;: &quot;offcolour&quot;}, {&quot;value&quot;: &quot;green&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;On Colour&quot;, &quot;param&quot;: &quot;oncolour&quot;}]" mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_PilotLight(document, &quot;%(widgetid)s&quot;, &quot;%(initcolour)s&quot;, &quot;%(offcolour)s&quot;, &quot;%(oncolour)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);" mblogic:widgetname="Toggle Illuminated Push Button" mblogic:widgettype="pb_toggle_illum" transform="translate(311.79553,291.02222)">
+    <g class="buttonactivate" id="Record_Train" inkscape:label="#g4204" mblogic:editcount="1" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteToggleImmediate(\&quot;%(inputtag)s\&quot;, \&quot;%(inputtag)s\&quot;);&quot;}]" mblogic:menu="[{&quot;value&quot;: &quot;RecordModeTrain&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;param&quot;: &quot;inputtag&quot;}, {&quot;value&quot;: &quot;RecordModeTrain&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;param&quot;: &quot;outputtag&quot;}, {&quot;value&quot;: &quot;black&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;Init Colour&quot;, &quot;param&quot;: &quot;initcolour&quot;}, {&quot;value&quot;: &quot;red&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;Off Colour&quot;, &quot;param&quot;: &quot;offcolour&quot;}, {&quot;value&quot;: &quot;green&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;On Colour&quot;, &quot;param&quot;: &quot;oncolour&quot;}]" mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_PilotLight(document, &quot;%(widgetid)s&quot;, &quot;%(initcolour)s&quot;, &quot;%(offcolour)s&quot;, &quot;%(oncolour)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);" mblogic:widgetname="Toggle Illuminated Push Button" mblogic:widgettype="pb_toggle_illum" onclick="MBHMIProtocol.WriteToggleImmediate(&quot;RecordModeTrain&quot;, &quot;RecordModeTrain&quot;);" transform="translate(311.79553,291.02222)">
       <rect height="35" id="rect4206" rx="15" style="fill:#808080;stroke:none;filter:url(#MB_DropShadowFilter-927)" width="100" x="7" y="7"/>
       <rect height="35" id="rect4208" rx="15" width="100" x="0" y="0"/>
       <text font-size="24" id="text4210" style="font-size:24px;text-anchor:middle;fill:#f0e68c;stroke:#f0e68c;stroke-width:2px" x="50" y="26">&lt;&lt;&lt;</text>
     </g>
-    <g class="buttonactivate" id="Record_Replay" inkscape:label="#g4229" mblogic:editcount="2" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteToggleImmediate(\&quot;%(inputtag)s\&quot;, \&quot;%(inputtag)s\&quot;);&quot;}]" mblogic:menu="[{&quot;value&quot;: &quot;RecordModeReplay&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;param&quot;: &quot;inputtag&quot;}, {&quot;value&quot;: &quot;RecordModeReplay&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;param&quot;: &quot;outputtag&quot;}, {&quot;value&quot;: &quot;black&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;Init Colour&quot;, &quot;param&quot;: &quot;initcolour&quot;}, {&quot;value&quot;: &quot;green&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;Off Colour&quot;, &quot;param&quot;: &quot;offcolour&quot;}, {&quot;value&quot;: &quot;red&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;On Colour&quot;, &quot;param&quot;: &quot;oncolour&quot;}]" mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_PilotLight(document, &quot;%(widgetid)s&quot;, &quot;%(initcolour)s&quot;, &quot;%(offcolour)s&quot;, &quot;%(oncolour)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);" mblogic:widgetname="Toggle Illuminated Push Button" mblogic:widgettype="pb_toggle_illum" transform="translate(426.34683,292.43643)">
+    <g class="buttonactivate" id="Record_Replay" inkscape:label="#g4229" mblogic:editcount="2" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteToggleImmediate(\&quot;%(inputtag)s\&quot;, \&quot;%(inputtag)s\&quot;);&quot;}]" mblogic:menu="[{&quot;value&quot;: &quot;RecordModeReplay&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;param&quot;: &quot;inputtag&quot;}, {&quot;value&quot;: &quot;RecordModeReplay&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;param&quot;: &quot;outputtag&quot;}, {&quot;value&quot;: &quot;black&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;Init Colour&quot;, &quot;param&quot;: &quot;initcolour&quot;}, {&quot;value&quot;: &quot;green&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;Off Colour&quot;, &quot;param&quot;: &quot;offcolour&quot;}, {&quot;value&quot;: &quot;red&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;On Colour&quot;, &quot;param&quot;: &quot;oncolour&quot;}]" mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_PilotLight(document, &quot;%(widgetid)s&quot;, &quot;%(initcolour)s&quot;, &quot;%(offcolour)s&quot;, &quot;%(oncolour)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);" mblogic:widgetname="Toggle Illuminated Push Button" mblogic:widgettype="pb_toggle_illum" onclick="MBHMIProtocol.WriteToggleImmediate(&quot;RecordModeReplay&quot;, &quot;RecordModeReplay&quot;);" transform="translate(426.34683,292.43643)">
       <rect height="35" id="rect4231" rx="15" style="fill:#808080;stroke:none;filter:url(#MB_DropShadowFilter-8)" width="100" x="7" y="7"/>
       <rect height="35" id="rect4233" rx="15" width="100" x="0" y="0"/>
       <text font-size="24" id="text4235" style="font-size:24px;text-anchor:middle;fill:#f0e68c;stroke:#f0e68c;stroke-width:2px" x="50" y="26">&gt;&gt;&gt;</text>
     </g>
-    <g class="buttonactivate" id="ReplayMode" inkscape:label="#g4254" mblogic:editcount="1" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteToggleImmediate(\&quot;%(inputtag)s\&quot;, \&quot;%(inputtag)s\&quot;);&quot;}]" mblogic:menu="[{&quot;value&quot;: &quot;Replay&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;param&quot;: &quot;inputtag&quot;}, {&quot;value&quot;: &quot;Replay&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;param&quot;: &quot;outputtag&quot;}, {&quot;value&quot;: &quot;black&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;Init Colour&quot;, &quot;param&quot;: &quot;initcolour&quot;}, {&quot;value&quot;: &quot;red&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;Off Colour&quot;, &quot;param&quot;: &quot;offcolour&quot;}, {&quot;value&quot;: &quot;green&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;On Colour&quot;, &quot;param&quot;: &quot;oncolour&quot;}]" mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_PilotLight(document, &quot;%(widgetid)s&quot;, &quot;%(initcolour)s&quot;, &quot;%(offcolour)s&quot;, &quot;%(oncolour)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);" mblogic:widgetname="Toggle Illuminated Push Button" mblogic:widgettype="pb_toggle_illum" transform="matrix(1.1770929,0,0,1.5439283,648.37835,279.7085)">
+    <g class="buttonactivate" id="ReplayMode" inkscape:label="#g4254" mblogic:editcount="1" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteToggleImmediate(\&quot;%(inputtag)s\&quot;, \&quot;%(inputtag)s\&quot;);&quot;}]" mblogic:menu="[{&quot;value&quot;: &quot;Replay&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;param&quot;: &quot;inputtag&quot;}, {&quot;value&quot;: &quot;Replay&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;param&quot;: &quot;outputtag&quot;}, {&quot;value&quot;: &quot;black&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;Init Colour&quot;, &quot;param&quot;: &quot;initcolour&quot;}, {&quot;value&quot;: &quot;red&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;Off Colour&quot;, &quot;param&quot;: &quot;offcolour&quot;}, {&quot;value&quot;: &quot;green&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;On Colour&quot;, &quot;param&quot;: &quot;oncolour&quot;}]" mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_PilotLight(document, &quot;%(widgetid)s&quot;, &quot;%(initcolour)s&quot;, &quot;%(offcolour)s&quot;, &quot;%(oncolour)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);" mblogic:widgetname="Toggle Illuminated Push Button" mblogic:widgettype="pb_toggle_illum" onclick="MBHMIProtocol.WriteToggleImmediate(&quot;Replay&quot;, &quot;Replay&quot;);" transform="matrix(1.1770929,0,0,1.5439283,648.37835,279.7085)">
       <rect height="35" id="rect4256" rx="15" style="fill:#808080;stroke:none;filter:url(#MB_DropShadowFilter-1)" width="100" x="7" y="7"/>
       <rect height="35" id="rect4258" rx="15" width="100" x="0" y="0"/>
       <text font-size="24" id="text4260" style="font-size:24px;text-anchor:middle;fill:#00ffff;stroke:#00ffff;stroke-width:2px" x="50" y="26">Replay</text>
@@ -1012,35 +1099,35 @@
         </g>
       </g>
     </g>
-    <g class="buttonactivate" id="a1" inkscape:label="#g3713-6" mblogic:editcount="2" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteImmediate(\&quot;%(inputtag)s\&quot;, MBT_NumberPad.GetValueInt());&quot;}]" mblogic:menu="[{&quot;value&quot;: &quot;a1&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;param&quot;: &quot;inputtag&quot;}]" mblogic:outputfunc="" mblogic:widgetname="Numeric Entry Store (Int)" mblogic:widgettype="pb_numericpad" style="display:inline" transform="matrix(0.29855007,0,0,0.56787919,802.9987,175.50696)">
+    <g class="buttonactivate" id="a1" inkscape:label="#g3713-6" mblogic:editcount="2" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteImmediate(\&quot;%(inputtag)s\&quot;, MBT_NumberPad.GetValueInt());&quot;}]" mblogic:menu="[{&quot;value&quot;: &quot;a1&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;param&quot;: &quot;inputtag&quot;}]" mblogic:outputfunc="" mblogic:widgetname="Numeric Entry Store (Int)" mblogic:widgettype="pb_numericpad" onclick="MBHMIProtocol.WriteImmediate(&quot;a1&quot;, MBT_NumberPad.GetValueInt());" style="display:inline" transform="matrix(0.29855007,0,0,0.56787919,802.9987,175.50696)">
       <rect height="36" id="rect3715-70" rx="5" style="fill:url(#MB_OrangeGradient-0-6)" width="125" x="0" y="0"/>
       <text font-size="24" id="text3717-5" style="font-size:24px;text-anchor:middle;stroke-width:2px" x="62" y="27">STR</text>
     </g>
-    <g class="buttonactivate" id="a2" inkscape:label="#g3713-20" mblogic:editcount="1" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteImmediate(\&quot;%(inputtag)s\&quot;, MBT_NumberPad.GetValueInt());&quot;}]" mblogic:menu="[{&quot;value&quot;: &quot;a2&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;param&quot;: &quot;inputtag&quot;}]" mblogic:outputfunc="" mblogic:widgetname="Numeric Entry Store (Int)" mblogic:widgettype="pb_numericpad" style="display:inline" transform="matrix(0.29855007,0,0,0.56787919,802.99871,222.17601)">
+    <g class="buttonactivate" id="a2" inkscape:label="#g3713-20" mblogic:editcount="1" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteImmediate(\&quot;%(inputtag)s\&quot;, MBT_NumberPad.GetValueInt());&quot;}]" mblogic:menu="[{&quot;value&quot;: &quot;a2&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;param&quot;: &quot;inputtag&quot;}]" mblogic:outputfunc="" mblogic:widgetname="Numeric Entry Store (Int)" mblogic:widgettype="pb_numericpad" onclick="MBHMIProtocol.WriteImmediate(&quot;a2&quot;, MBT_NumberPad.GetValueInt());" style="display:inline" transform="matrix(0.29855007,0,0,0.56787919,802.99871,222.17601)">
       <rect height="36" id="rect3715-29" rx="5" style="fill:url(#MB_OrangeGradient-0-32)" width="125" x="0" y="0"/>
       <text font-size="24" id="text3717-00" style="font-size:24px;text-anchor:middle;stroke-width:2px" x="62" y="27">STR</text>
     </g>
-    <g class="buttonactivate" id="a3" inkscape:label="#g3713-75" mblogic:editcount="1" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteImmediate(\&quot;%(inputtag)s\&quot;, MBT_NumberPad.GetValueInt());&quot;}]" mblogic:menu="[{&quot;value&quot;: &quot;a3&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;param&quot;: &quot;inputtag&quot;}]" mblogic:outputfunc="" mblogic:widgetname="Numeric Entry Store (Int)" mblogic:widgettype="pb_numericpad" style="display:inline" transform="matrix(0.29855007,0,0,0.56787919,802.9987,264.60242)">
+    <g class="buttonactivate" id="a3" inkscape:label="#g3713-75" mblogic:editcount="1" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteImmediate(\&quot;%(inputtag)s\&quot;, MBT_NumberPad.GetValueInt());&quot;}]" mblogic:menu="[{&quot;value&quot;: &quot;a3&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;param&quot;: &quot;inputtag&quot;}]" mblogic:outputfunc="" mblogic:widgetname="Numeric Entry Store (Int)" mblogic:widgettype="pb_numericpad" onclick="MBHMIProtocol.WriteImmediate(&quot;a3&quot;, MBT_NumberPad.GetValueInt());" style="display:inline" transform="matrix(0.29855007,0,0,0.56787919,802.9987,264.60242)">
       <rect height="36" id="rect3715-25" rx="5" style="fill:url(#MB_OrangeGradient-0-79)" width="125" x="0" y="0"/>
       <text font-size="24" id="text3717-3" style="font-size:24px;text-anchor:middle;stroke-width:2px" x="62" y="27">STR</text>
     </g>
-    <g class="buttonactivate" id="a4" inkscape:label="#g3713-720" mblogic:editcount="1" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteImmediate(\&quot;%(inputtag)s\&quot;, MBT_NumberPad.GetValueInt());&quot;}]" mblogic:menu="[{&quot;value&quot;: &quot;a4&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;param&quot;: &quot;inputtag&quot;}]" mblogic:outputfunc="" mblogic:widgetname="Numeric Entry Store (Int)" mblogic:widgettype="pb_numericpad" style="display:inline" transform="matrix(0.29855007,0,0,0.56787919,804.41292,309.85725)">
+    <g class="buttonactivate" id="a4" inkscape:label="#g3713-720" mblogic:editcount="1" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteImmediate(\&quot;%(inputtag)s\&quot;, MBT_NumberPad.GetValueInt());&quot;}]" mblogic:menu="[{&quot;value&quot;: &quot;a4&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;param&quot;: &quot;inputtag&quot;}]" mblogic:outputfunc="" mblogic:widgetname="Numeric Entry Store (Int)" mblogic:widgettype="pb_numericpad" onclick="MBHMIProtocol.WriteImmediate(&quot;a4&quot;, MBT_NumberPad.GetValueInt());" style="display:inline" transform="matrix(0.29855007,0,0,0.56787919,804.41292,309.85725)">
       <rect height="36" id="rect3715-0" rx="5" style="fill:url(#MB_OrangeGradient-0-97)" width="125" x="0" y="0"/>
       <text font-size="24" id="text3717-67" style="font-size:24px;text-anchor:middle;stroke-width:2px" x="62" y="27">STR</text>
     </g>
-    <g class="buttonactivate" id="a5" inkscape:label="#g3713-01" mblogic:editcount="1" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteImmediate(\&quot;%(inputtag)s\&quot;, MBT_NumberPad.GetValueInt());&quot;}]" mblogic:menu="[{&quot;value&quot;: &quot;a5&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;param&quot;: &quot;inputtag&quot;}]" mblogic:outputfunc="" mblogic:widgetname="Numeric Entry Store (Int)" mblogic:widgettype="pb_numericpad" style="display:inline" transform="matrix(0.29855007,0,0,0.56787919,804.41292,355.11208)">
+    <g class="buttonactivate" id="a5" inkscape:label="#g3713-01" mblogic:editcount="1" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteImmediate(\&quot;%(inputtag)s\&quot;, MBT_NumberPad.GetValueInt());&quot;}]" mblogic:menu="[{&quot;value&quot;: &quot;a5&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;param&quot;: &quot;inputtag&quot;}]" mblogic:outputfunc="" mblogic:widgetname="Numeric Entry Store (Int)" mblogic:widgettype="pb_numericpad" onclick="MBHMIProtocol.WriteImmediate(&quot;a5&quot;, MBT_NumberPad.GetValueInt());" style="display:inline" transform="matrix(0.29855007,0,0,0.56787919,804.41292,355.11208)">
       <rect height="36" id="rect3715-08" rx="5" style="fill:url(#MB_OrangeGradient-0-93)" width="125" x="0" y="0"/>
       <text font-size="24" id="text3717-9" style="font-size:24px;text-anchor:middle;stroke-width:2px" x="62" y="27">STR</text>
     </g>
-    <g class="buttonactivate" id="a6" inkscape:label="#g3713-52" inkscape:transform-center-x="18.659379" inkscape:transform-center-y="-25.778174" mblogic:editcount="1" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteImmediate(\&quot;%(inputtag)s\&quot;, MBT_NumberPad.GetValueInt());&quot;}]" mblogic:menu="[{&quot;value&quot;: &quot;a6&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;param&quot;: &quot;inputtag&quot;}]" mblogic:outputfunc="" mblogic:widgetname="Numeric Entry Store (Int)" mblogic:widgettype="pb_numericpad" style="display:inline" transform="matrix(0.29855007,0,0,0.56787919,802.9987,398.95271)">
+    <g class="buttonactivate" id="a6" inkscape:label="#g3713-52" inkscape:transform-center-x="18.659379" inkscape:transform-center-y="-25.778174" mblogic:editcount="1" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteImmediate(\&quot;%(inputtag)s\&quot;, MBT_NumberPad.GetValueInt());&quot;}]" mblogic:menu="[{&quot;value&quot;: &quot;a6&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;param&quot;: &quot;inputtag&quot;}]" mblogic:outputfunc="" mblogic:widgetname="Numeric Entry Store (Int)" mblogic:widgettype="pb_numericpad" onclick="MBHMIProtocol.WriteImmediate(&quot;a6&quot;, MBT_NumberPad.GetValueInt());" style="display:inline" transform="matrix(0.29855007,0,0,0.56787919,802.9987,398.95271)">
       <rect height="36" id="rect3715-18" rx="5" style="fill:url(#MB_OrangeGradient-0-60)" width="125" x="0" y="0"/>
       <text font-size="24" id="text3717-007" style="font-size:24px;text-anchor:middle;stroke-width:2px" x="62" y="27">STR</text>
     </g>
-    <g class="buttonactivate" id="a7" inkscape:label="#g3713-03" mblogic:editcount="1" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteImmediate(\&quot;%(inputtag)s\&quot;, MBT_NumberPad.GetValueInt());&quot;}]" mblogic:menu="[{&quot;value&quot;: &quot;a7&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;param&quot;: &quot;inputtag&quot;}]" mblogic:outputfunc="" mblogic:widgetname="Numeric Entry Store (Int)" mblogic:widgettype="pb_numericpad" style="display:inline" transform="matrix(0.29855007,0,0,0.56787919,804.41292,442.79333)">
+    <g class="buttonactivate" id="a7" inkscape:label="#g3713-03" mblogic:editcount="1" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteImmediate(\&quot;%(inputtag)s\&quot;, MBT_NumberPad.GetValueInt());&quot;}]" mblogic:menu="[{&quot;value&quot;: &quot;a7&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;param&quot;: &quot;inputtag&quot;}]" mblogic:outputfunc="" mblogic:widgetname="Numeric Entry Store (Int)" mblogic:widgettype="pb_numericpad" onclick="MBHMIProtocol.WriteImmediate(&quot;a7&quot;, MBT_NumberPad.GetValueInt());" style="display:inline" transform="matrix(0.29855007,0,0,0.56787919,804.41292,442.79333)">
       <rect height="36" id="rect3715-6" rx="5" style="fill:url(#MB_OrangeGradient-0-94)" width="125" x="0" y="0"/>
       <text font-size="24" id="text3717-44" style="font-size:24px;text-anchor:middle;stroke-width:2px" x="62" y="27">STR</text>
     </g>
-    <g class="buttonactivate" id="a8" inkscape:label="#g3713-9" mblogic:editcount="2" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteImmediate(\&quot;%(inputtag)s\&quot;, MBT_NumberPad.GetValueInt());&quot;}]" mblogic:menu="[{&quot;value&quot;: &quot;a8&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;param&quot;: &quot;inputtag&quot;}]" mblogic:outputfunc="" mblogic:widgetname="Numeric Entry Store (Int)" mblogic:widgettype="pb_numericpad" style="display:inline" transform="matrix(0.29855007,0,0,0.56787919,804.41292,490.87659)">
+    <g class="buttonactivate" id="a8" inkscape:label="#g3713-9" mblogic:editcount="2" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteImmediate(\&quot;%(inputtag)s\&quot;, MBT_NumberPad.GetValueInt());&quot;}]" mblogic:menu="[{&quot;value&quot;: &quot;a8&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;param&quot;: &quot;inputtag&quot;}]" mblogic:outputfunc="" mblogic:widgetname="Numeric Entry Store (Int)" mblogic:widgettype="pb_numericpad" onclick="MBHMIProtocol.WriteImmediate(&quot;a8&quot;, MBT_NumberPad.GetValueInt());" style="display:inline" transform="matrix(0.29855007,0,0,0.56787919,804.41292,490.87659)">
       <rect height="36" id="rect3715-59" rx="5" style="fill:url(#MB_OrangeGradient-0-4)" width="125" x="0" y="0"/>
       <text font-size="24" id="text3717-92" style="font-size:24px;text-anchor:middle;stroke-width:2px" x="62" y="27">STR</text>
     </g>
@@ -1092,42 +1179,42 @@
     <g id="aout8" inkscape:label="#g4134-3" mblogic:editcount="1" mblogic:inputfunc="[]" mblogic:menu="[{&quot;param&quot;: &quot;outputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;value&quot;: &quot;aout8&quot;}]" mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, &quot;%(widgetid)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);" mblogic:widgetname="Integer Digits" mblogic:widgettype="text" style="display:inline" transform="matrix(1.5240864,0,0,1.2622108,712.7485,477.97237)">
       <text font-size="20" id="text4136-9" style="font-size:20px;text-anchor:end;fill:#008000;stroke:#008000" x="50" y="20">1234</text>
     </g>
-    <g class="buttonactivate" id="d1" inkscape:label="#g4396" mblogic:editcount="1" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteToggleImmediate(\&quot;%(inputtag)s\&quot;, \&quot;%(inputtag)s\&quot;);&quot;}]" mblogic:menu="[{&quot;value&quot;: &quot;d1&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;param&quot;: &quot;inputtag&quot;}, {&quot;value&quot;: &quot;d1&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;param&quot;: &quot;outputtag&quot;}, {&quot;value&quot;: &quot;black&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;Init Colour&quot;, &quot;param&quot;: &quot;initcolour&quot;}, {&quot;value&quot;: &quot;red&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;Off Colour&quot;, &quot;param&quot;: &quot;offcolour&quot;}, {&quot;value&quot;: &quot;green&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;On Colour&quot;, &quot;param&quot;: &quot;oncolour&quot;}]" mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_PilotLight(document, &quot;%(widgetid)s&quot;, &quot;%(initcolour)s&quot;, &quot;%(offcolour)s&quot;, &quot;%(oncolour)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);" mblogic:widgetname="Toggle Illuminated Push Button" mblogic:widgettype="pb_toggle_illum" transform="matrix(0.34222625,0,0,0.51650818,387.57727,177.0567)">
+    <g class="buttonactivate" id="d1" inkscape:label="#g4396" mblogic:editcount="1" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteToggleImmediate(\&quot;%(inputtag)s\&quot;, \&quot;%(inputtag)s\&quot;);&quot;}]" mblogic:menu="[{&quot;value&quot;: &quot;d1&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;param&quot;: &quot;inputtag&quot;}, {&quot;value&quot;: &quot;d1&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;param&quot;: &quot;outputtag&quot;}, {&quot;value&quot;: &quot;black&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;Init Colour&quot;, &quot;param&quot;: &quot;initcolour&quot;}, {&quot;value&quot;: &quot;red&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;Off Colour&quot;, &quot;param&quot;: &quot;offcolour&quot;}, {&quot;value&quot;: &quot;green&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;On Colour&quot;, &quot;param&quot;: &quot;oncolour&quot;}]" mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_PilotLight(document, &quot;%(widgetid)s&quot;, &quot;%(initcolour)s&quot;, &quot;%(offcolour)s&quot;, &quot;%(oncolour)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);" mblogic:widgetname="Toggle Illuminated Push Button" mblogic:widgettype="pb_toggle_illum" onclick="MBHMIProtocol.WriteToggleImmediate(&quot;d1&quot;, &quot;d1&quot;);" transform="matrix(0.34222625,0,0,0.51650818,387.57727,177.0567)">
       <rect height="35" id="rect4398" rx="15" style="fill:#808080;stroke:none;filter:url(#MB_DropShadowFilter-9)" width="100" x="7" y="7"/>
       <rect height="35" id="rect4400" rx="15" width="100" x="0" y="0"/>
       <text font-size="24" id="text4402" style="font-size:24px;text-anchor:middle;fill:#ffa500;stroke:#ffa500;stroke-width:2px" x="50" y="26">PB</text>
     </g>
-    <g class="buttonactivate" id="d2" inkscape:label="#g4396-3" mblogic:editcount="1" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteToggleImmediate(\&quot;%(inputtag)s\&quot;, \&quot;%(inputtag)s\&quot;);&quot;}]" mblogic:menu="[{&quot;value&quot;: &quot;d2&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;param&quot;: &quot;inputtag&quot;}, {&quot;value&quot;: &quot;d2&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;param&quot;: &quot;outputtag&quot;}, {&quot;value&quot;: &quot;black&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;Init Colour&quot;, &quot;param&quot;: &quot;initcolour&quot;}, {&quot;value&quot;: &quot;red&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;Off Colour&quot;, &quot;param&quot;: &quot;offcolour&quot;}, {&quot;value&quot;: &quot;green&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;On Colour&quot;, &quot;param&quot;: &quot;oncolour&quot;}]" mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_PilotLight(document, &quot;%(widgetid)s&quot;, &quot;%(initcolour)s&quot;, &quot;%(offcolour)s&quot;, &quot;%(oncolour)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);" mblogic:widgetname="Toggle Illuminated Push Button" mblogic:widgettype="pb_toggle_illum" style="display:inline" transform="matrix(0.34222625,0,0,0.51650818,387.92042,218.89733)">
+    <g class="buttonactivate" id="d2" inkscape:label="#g4396-3" mblogic:editcount="1" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteToggleImmediate(\&quot;%(inputtag)s\&quot;, \&quot;%(inputtag)s\&quot;);&quot;}]" mblogic:menu="[{&quot;value&quot;: &quot;d2&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;param&quot;: &quot;inputtag&quot;}, {&quot;value&quot;: &quot;d2&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;param&quot;: &quot;outputtag&quot;}, {&quot;value&quot;: &quot;black&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;Init Colour&quot;, &quot;param&quot;: &quot;initcolour&quot;}, {&quot;value&quot;: &quot;red&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;Off Colour&quot;, &quot;param&quot;: &quot;offcolour&quot;}, {&quot;value&quot;: &quot;green&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;On Colour&quot;, &quot;param&quot;: &quot;oncolour&quot;}]" mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_PilotLight(document, &quot;%(widgetid)s&quot;, &quot;%(initcolour)s&quot;, &quot;%(offcolour)s&quot;, &quot;%(oncolour)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);" mblogic:widgetname="Toggle Illuminated Push Button" mblogic:widgettype="pb_toggle_illum" onclick="MBHMIProtocol.WriteToggleImmediate(&quot;d2&quot;, &quot;d2&quot;);" style="display:inline" transform="matrix(0.34222625,0,0,0.51650818,387.92042,218.89733)">
       <rect height="35" id="rect4398-0" rx="15" style="fill:#808080;stroke:none;filter:url(#MB_DropShadowFilter-9-8)" width="100" x="7" y="7"/>
       <rect height="35" id="rect4400-1" rx="15" width="100" x="0" y="0"/>
       <text font-size="24" id="text4402-3" style="font-size:24px;text-anchor:middle;fill:#ffa500;stroke:#ffa500;stroke-width:2px" x="50" y="26">PB</text>
     </g>
-    <g class="buttonactivate" id="d3" inkscape:label="#g4396-0" mblogic:editcount="1" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteToggleImmediate(\&quot;%(inputtag)s\&quot;, \&quot;%(inputtag)s\&quot;);&quot;}]" mblogic:menu="[{&quot;value&quot;: &quot;d3&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;param&quot;: &quot;inputtag&quot;}, {&quot;value&quot;: &quot;d3&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;param&quot;: &quot;outputtag&quot;}, {&quot;value&quot;: &quot;black&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;Init Colour&quot;, &quot;param&quot;: &quot;initcolour&quot;}, {&quot;value&quot;: &quot;red&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;Off Colour&quot;, &quot;param&quot;: &quot;offcolour&quot;}, {&quot;value&quot;: &quot;green&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;On Colour&quot;, &quot;param&quot;: &quot;oncolour&quot;}]" mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_PilotLight(document, &quot;%(widgetid)s&quot;, &quot;%(initcolour)s&quot;, &quot;%(offcolour)s&quot;, &quot;%(oncolour)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);" mblogic:widgetname="Toggle Illuminated Push Button" mblogic:widgettype="pb_toggle_illum" style="display:inline" transform="matrix(0.34222625,0,0,0.51650818,388.99149,265.56638)">
+    <g class="buttonactivate" id="d3" inkscape:label="#g4396-0" mblogic:editcount="1" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteToggleImmediate(\&quot;%(inputtag)s\&quot;, \&quot;%(inputtag)s\&quot;);&quot;}]" mblogic:menu="[{&quot;value&quot;: &quot;d3&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;param&quot;: &quot;inputtag&quot;}, {&quot;value&quot;: &quot;d3&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;param&quot;: &quot;outputtag&quot;}, {&quot;value&quot;: &quot;black&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;Init Colour&quot;, &quot;param&quot;: &quot;initcolour&quot;}, {&quot;value&quot;: &quot;red&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;Off Colour&quot;, &quot;param&quot;: &quot;offcolour&quot;}, {&quot;value&quot;: &quot;green&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;On Colour&quot;, &quot;param&quot;: &quot;oncolour&quot;}]" mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_PilotLight(document, &quot;%(widgetid)s&quot;, &quot;%(initcolour)s&quot;, &quot;%(offcolour)s&quot;, &quot;%(oncolour)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);" mblogic:widgetname="Toggle Illuminated Push Button" mblogic:widgettype="pb_toggle_illum" onclick="MBHMIProtocol.WriteToggleImmediate(&quot;d3&quot;, &quot;d3&quot;);" style="display:inline" transform="matrix(0.34222625,0,0,0.51650818,388.99149,265.56638)">
       <rect height="35" id="rect4398-9" rx="15" style="fill:#808080;stroke:none;filter:url(#MB_DropShadowFilter-9-2)" width="100" x="7" y="7"/>
       <rect height="35" id="rect4400-4" rx="15" width="100" x="0" y="0"/>
       <text font-size="24" id="text4402-7" style="font-size:24px;text-anchor:middle;fill:#ffa500;stroke:#ffa500;stroke-width:2px" x="50" y="26">PB</text>
     </g>
-    <g class="buttonactivate" id="d4" inkscape:label="#g4396-2" mblogic:editcount="1" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteToggleImmediate(\&quot;%(inputtag)s\&quot;, \&quot;%(inputtag)s\&quot;);&quot;}]" mblogic:menu="[{&quot;value&quot;: &quot;d4&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;param&quot;: &quot;inputtag&quot;}, {&quot;value&quot;: &quot;d4&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;param&quot;: &quot;outputtag&quot;}, {&quot;value&quot;: &quot;black&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;Init Colour&quot;, &quot;param&quot;: &quot;initcolour&quot;}, {&quot;value&quot;: &quot;red&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;Off Colour&quot;, &quot;param&quot;: &quot;offcolour&quot;}, {&quot;value&quot;: &quot;green&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;On Colour&quot;, &quot;param&quot;: &quot;oncolour&quot;}]" mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_PilotLight(document, &quot;%(widgetid)s&quot;, &quot;%(initcolour)s&quot;, &quot;%(offcolour)s&quot;, &quot;%(oncolour)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);" mblogic:widgetname="Toggle Illuminated Push Button" mblogic:widgettype="pb_toggle_illum" style="display:inline" transform="matrix(0.34222625,0,0,0.51650818,389.57727,312.23543)">
+    <g class="buttonactivate" id="d4" inkscape:label="#g4396-2" mblogic:editcount="1" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteToggleImmediate(\&quot;%(inputtag)s\&quot;, \&quot;%(inputtag)s\&quot;);&quot;}]" mblogic:menu="[{&quot;value&quot;: &quot;d4&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;param&quot;: &quot;inputtag&quot;}, {&quot;value&quot;: &quot;d4&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;param&quot;: &quot;outputtag&quot;}, {&quot;value&quot;: &quot;black&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;Init Colour&quot;, &quot;param&quot;: &quot;initcolour&quot;}, {&quot;value&quot;: &quot;red&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;Off Colour&quot;, &quot;param&quot;: &quot;offcolour&quot;}, {&quot;value&quot;: &quot;green&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;On Colour&quot;, &quot;param&quot;: &quot;oncolour&quot;}]" mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_PilotLight(document, &quot;%(widgetid)s&quot;, &quot;%(initcolour)s&quot;, &quot;%(offcolour)s&quot;, &quot;%(oncolour)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);" mblogic:widgetname="Toggle Illuminated Push Button" mblogic:widgettype="pb_toggle_illum" onclick="MBHMIProtocol.WriteToggleImmediate(&quot;d4&quot;, &quot;d4&quot;);" style="display:inline" transform="matrix(0.34222625,0,0,0.51650818,389.57727,312.23543)">
       <rect height="35" id="rect4398-5" rx="15" style="fill:#808080;stroke:none;filter:url(#MB_DropShadowFilter-9-1)" width="100" x="7" y="7"/>
       <rect height="35" id="rect4400-2" rx="15" width="100" x="0" y="0"/>
       <text font-size="24" id="text4402-1" style="font-size:24px;text-anchor:middle;fill:#ffa500;stroke:#ffa500;stroke-width:2px" x="50" y="26">PB</text>
     </g>
-    <g class="buttonactivate" id="d5" inkscape:label="#g4396-1" mblogic:editcount="1" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteToggleImmediate(\&quot;%(inputtag)s\&quot;, \&quot;%(inputtag)s\&quot;);&quot;}]" mblogic:menu="[{&quot;value&quot;: &quot;d5&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;param&quot;: &quot;inputtag&quot;}, {&quot;value&quot;: &quot;d5&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;param&quot;: &quot;outputtag&quot;}, {&quot;value&quot;: &quot;black&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;Init Colour&quot;, &quot;param&quot;: &quot;initcolour&quot;}, {&quot;value&quot;: &quot;red&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;Off Colour&quot;, &quot;param&quot;: &quot;offcolour&quot;}, {&quot;value&quot;: &quot;green&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;On Colour&quot;, &quot;param&quot;: &quot;oncolour&quot;}]" mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_PilotLight(document, &quot;%(widgetid)s&quot;, &quot;%(initcolour)s&quot;, &quot;%(offcolour)s&quot;, &quot;%(oncolour)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);" mblogic:widgetname="Toggle Illuminated Push Button" mblogic:widgettype="pb_toggle_illum" style="display:inline" transform="matrix(0.34222625,0,0,0.51650818,389.57727,353.24762)">
+    <g class="buttonactivate" id="d5" inkscape:label="#g4396-1" mblogic:editcount="1" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteToggleImmediate(\&quot;%(inputtag)s\&quot;, \&quot;%(inputtag)s\&quot;);&quot;}]" mblogic:menu="[{&quot;value&quot;: &quot;d5&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;param&quot;: &quot;inputtag&quot;}, {&quot;value&quot;: &quot;d5&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;param&quot;: &quot;outputtag&quot;}, {&quot;value&quot;: &quot;black&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;Init Colour&quot;, &quot;param&quot;: &quot;initcolour&quot;}, {&quot;value&quot;: &quot;red&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;Off Colour&quot;, &quot;param&quot;: &quot;offcolour&quot;}, {&quot;value&quot;: &quot;green&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;On Colour&quot;, &quot;param&quot;: &quot;oncolour&quot;}]" mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_PilotLight(document, &quot;%(widgetid)s&quot;, &quot;%(initcolour)s&quot;, &quot;%(offcolour)s&quot;, &quot;%(oncolour)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);" mblogic:widgetname="Toggle Illuminated Push Button" mblogic:widgettype="pb_toggle_illum" onclick="MBHMIProtocol.WriteToggleImmediate(&quot;d5&quot;, &quot;d5&quot;);" style="display:inline" transform="matrix(0.34222625,0,0,0.51650818,389.57727,353.24762)">
       <rect height="35" id="rect4398-3" rx="15" style="fill:#808080;stroke:none;filter:url(#MB_DropShadowFilter-9-7)" width="100" x="7" y="7"/>
       <rect height="35" id="rect4400-5" rx="15" width="100" x="0" y="0"/>
       <text font-size="24" id="text4402-2" style="font-size:24px;text-anchor:middle;fill:#ffa500;stroke:#ffa500;stroke-width:2px" x="50" y="26">PB</text>
     </g>
-    <g class="buttonactivate" id="d6" inkscape:label="#g4396-8" mblogic:editcount="1" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteToggleImmediate(\&quot;%(inputtag)s\&quot;, \&quot;%(inputtag)s\&quot;);&quot;}]" mblogic:menu="[{&quot;value&quot;: &quot;d6&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;param&quot;: &quot;inputtag&quot;}, {&quot;value&quot;: &quot;d6&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;param&quot;: &quot;outputtag&quot;}, {&quot;value&quot;: &quot;black&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;Init Colour&quot;, &quot;param&quot;: &quot;initcolour&quot;}, {&quot;value&quot;: &quot;red&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;Off Colour&quot;, &quot;param&quot;: &quot;offcolour&quot;}, {&quot;value&quot;: &quot;green&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;On Colour&quot;, &quot;param&quot;: &quot;oncolour&quot;}]" mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_PilotLight(document, &quot;%(widgetid)s&quot;, &quot;%(initcolour)s&quot;, &quot;%(offcolour)s&quot;, &quot;%(oncolour)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);" mblogic:widgetname="Toggle Illuminated Push Button" mblogic:widgettype="pb_toggle_illum" style="display:inline" transform="matrix(0.34222625,0,0,0.51650818,390.16306,397.08824)">
+    <g class="buttonactivate" id="d6" inkscape:label="#g4396-8" mblogic:editcount="1" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteToggleImmediate(\&quot;%(inputtag)s\&quot;, \&quot;%(inputtag)s\&quot;);&quot;}]" mblogic:menu="[{&quot;value&quot;: &quot;d6&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;param&quot;: &quot;inputtag&quot;}, {&quot;value&quot;: &quot;d6&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;param&quot;: &quot;outputtag&quot;}, {&quot;value&quot;: &quot;black&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;Init Colour&quot;, &quot;param&quot;: &quot;initcolour&quot;}, {&quot;value&quot;: &quot;red&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;Off Colour&quot;, &quot;param&quot;: &quot;offcolour&quot;}, {&quot;value&quot;: &quot;green&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;On Colour&quot;, &quot;param&quot;: &quot;oncolour&quot;}]" mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_PilotLight(document, &quot;%(widgetid)s&quot;, &quot;%(initcolour)s&quot;, &quot;%(offcolour)s&quot;, &quot;%(oncolour)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);" mblogic:widgetname="Toggle Illuminated Push Button" mblogic:widgettype="pb_toggle_illum" onclick="MBHMIProtocol.WriteToggleImmediate(&quot;d6&quot;, &quot;d6&quot;);" style="display:inline" transform="matrix(0.34222625,0,0,0.51650818,390.16306,397.08824)">
       <rect height="35" id="rect4398-99" rx="15" style="fill:#808080;stroke:none;filter:url(#MB_DropShadowFilter-9-68)" width="100" x="7" y="7"/>
       <rect height="35" id="rect4400-12" rx="15" width="100" x="0" y="0"/>
       <text font-size="24" id="text4402-4" style="font-size:24px;text-anchor:middle;fill:#ffa500;stroke:#ffa500;stroke-width:2px" x="50" y="26">PB</text>
     </g>
-    <g class="buttonactivate" id="d7" inkscape:label="#g4396-9" mblogic:editcount="1" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteToggleImmediate(\&quot;%(inputtag)s\&quot;, \&quot;%(inputtag)s\&quot;);&quot;}]" mblogic:menu="[{&quot;value&quot;: &quot;d7&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;param&quot;: &quot;inputtag&quot;}, {&quot;value&quot;: &quot;d7&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;param&quot;: &quot;outputtag&quot;}, {&quot;value&quot;: &quot;black&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;Init Colour&quot;, &quot;param&quot;: &quot;initcolour&quot;}, {&quot;value&quot;: &quot;red&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;Off Colour&quot;, &quot;param&quot;: &quot;offcolour&quot;}, {&quot;value&quot;: &quot;green&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;On Colour&quot;, &quot;param&quot;: &quot;oncolour&quot;}]" mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_PilotLight(document, &quot;%(widgetid)s&quot;, &quot;%(initcolour)s&quot;, &quot;%(offcolour)s&quot;, &quot;%(oncolour)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);" mblogic:widgetname="Toggle Illuminated Push Button" mblogic:widgettype="pb_toggle_illum" style="display:inline" transform="matrix(0.34222625,0,0,0.51650818,390.99149,441.51465)">
+    <g class="buttonactivate" id="d7" inkscape:label="#g4396-9" mblogic:editcount="1" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteToggleImmediate(\&quot;%(inputtag)s\&quot;, \&quot;%(inputtag)s\&quot;);&quot;}]" mblogic:menu="[{&quot;value&quot;: &quot;d7&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;param&quot;: &quot;inputtag&quot;}, {&quot;value&quot;: &quot;d7&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;param&quot;: &quot;outputtag&quot;}, {&quot;value&quot;: &quot;black&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;Init Colour&quot;, &quot;param&quot;: &quot;initcolour&quot;}, {&quot;value&quot;: &quot;red&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;Off Colour&quot;, &quot;param&quot;: &quot;offcolour&quot;}, {&quot;value&quot;: &quot;green&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;On Colour&quot;, &quot;param&quot;: &quot;oncolour&quot;}]" mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_PilotLight(document, &quot;%(widgetid)s&quot;, &quot;%(initcolour)s&quot;, &quot;%(offcolour)s&quot;, &quot;%(oncolour)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);" mblogic:widgetname="Toggle Illuminated Push Button" mblogic:widgettype="pb_toggle_illum" onclick="MBHMIProtocol.WriteToggleImmediate(&quot;d7&quot;, &quot;d7&quot;);" style="display:inline" transform="matrix(0.34222625,0,0,0.51650818,390.99149,441.51465)">
       <rect height="35" id="rect4398-4" rx="15" style="fill:#808080;stroke:none;filter:url(#MB_DropShadowFilter-9-5)" width="100" x="7" y="7"/>
       <rect height="35" id="rect4400-22" rx="15" width="100" x="0" y="0"/>
       <text font-size="24" id="text4402-9" style="font-size:24px;text-anchor:middle;fill:#ffa500;stroke:#ffa500;stroke-width:2px" x="50" y="26">PB</text>
     </g>
-    <g class="buttonactivate" id="d8" inkscape:label="#g4396-6" mblogic:editcount="1" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteToggleImmediate(\&quot;%(inputtag)s\&quot;, \&quot;%(inputtag)s\&quot;);&quot;}]" mblogic:menu="[{&quot;value&quot;: &quot;d8&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;param&quot;: &quot;inputtag&quot;}, {&quot;value&quot;: &quot;d8&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;param&quot;: &quot;outputtag&quot;}, {&quot;value&quot;: &quot;black&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;Init Colour&quot;, &quot;param&quot;: &quot;initcolour&quot;}, {&quot;value&quot;: &quot;red&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;Off Colour&quot;, &quot;param&quot;: &quot;offcolour&quot;}, {&quot;value&quot;: &quot;green&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;On Colour&quot;, &quot;param&quot;: &quot;oncolour&quot;}]" mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_PilotLight(document, &quot;%(widgetid)s&quot;, &quot;%(initcolour)s&quot;, &quot;%(offcolour)s&quot;, &quot;%(oncolour)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);" mblogic:widgetname="Toggle Illuminated Push Button" mblogic:widgettype="pb_toggle_illum" style="display:inline" transform="matrix(0.34222625,0,0,0.51650818,390.99149,486.18369)">
+    <g class="buttonactivate" id="d8" inkscape:label="#g4396-6" mblogic:editcount="1" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteToggleImmediate(\&quot;%(inputtag)s\&quot;, \&quot;%(inputtag)s\&quot;);&quot;}]" mblogic:menu="[{&quot;value&quot;: &quot;d8&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;param&quot;: &quot;inputtag&quot;}, {&quot;value&quot;: &quot;d8&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;param&quot;: &quot;outputtag&quot;}, {&quot;value&quot;: &quot;black&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;Init Colour&quot;, &quot;param&quot;: &quot;initcolour&quot;}, {&quot;value&quot;: &quot;red&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;Off Colour&quot;, &quot;param&quot;: &quot;offcolour&quot;}, {&quot;value&quot;: &quot;green&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;On Colour&quot;, &quot;param&quot;: &quot;oncolour&quot;}]" mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_PilotLight(document, &quot;%(widgetid)s&quot;, &quot;%(initcolour)s&quot;, &quot;%(offcolour)s&quot;, &quot;%(oncolour)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);" mblogic:widgetname="Toggle Illuminated Push Button" mblogic:widgettype="pb_toggle_illum" onclick="MBHMIProtocol.WriteToggleImmediate(&quot;d8&quot;, &quot;d8&quot;);" style="display:inline" transform="matrix(0.34222625,0,0,0.51650818,390.99149,486.18369)">
       <rect height="35" id="rect4398-30" rx="15" style="fill:#808080;stroke:none;filter:url(#MB_DropShadowFilter-9-9)" width="100" x="7" y="7"/>
       <rect height="35" id="rect4400-3" rx="15" width="100" x="0" y="0"/>
       <text font-size="24" id="text4402-6" style="font-size:24px;text-anchor:middle;fill:#ffa500;stroke:#ffa500;stroke-width:2px" x="50" y="26">PB</text>
@@ -1190,15 +1277,15 @@
         <line id="line3499" style="fill:#d40000;stroke:#000000;stroke-width:1px" x1="0" x2="0" y1="5" y2="40"/>
       </g>
     </g>
-    <g class="sswitchactivate" id="GS_OFF" inkscape:label="#g3135" mblogic:editcount="5" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteImmediate(\&quot;%(inputtag)s\&quot;, %(value)s);&quot;}]" mblogic:menu="[{&quot;param&quot;: &quot;inputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;value&quot;: &quot;GS_OFF&quot;}, {&quot;param&quot;: &quot;value&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Write Value&quot;, &quot;value&quot;: &quot;0&quot;}]" mblogic:outputfunc="" mblogic:widgetname="Selector Switch Label" mblogic:widgettype="ss_label" transform="matrix(0.71633468,0,0,0.73141248,751.78311,77.898054)">
+    <g class="sswitchactivate" id="GS_OFF" inkscape:label="#g3135" mblogic:editcount="5" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteImmediate(\&quot;%(inputtag)s\&quot;, %(value)s);&quot;}]" mblogic:menu="[{&quot;param&quot;: &quot;inputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;value&quot;: &quot;GS_OFF&quot;}, {&quot;param&quot;: &quot;value&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Write Value&quot;, &quot;value&quot;: &quot;0&quot;}]" mblogic:outputfunc="" mblogic:widgetname="Selector Switch Label" mblogic:widgettype="ss_label" onclick="MBHMIProtocol.WriteImmediate(&quot;GS_OFF&quot;, 0);" transform="matrix(0.71633468,0,0,0.73141248,751.78311,77.898054)">
       <rect height="70" id="rect3137" style="fill:#ff0000" width="50" x="0" y="0"/>
       <text font-size="16" id="text3139" style="font-size:16px;text-anchor:middle" x="25" y="20">OFF</text>
     </g>
-    <g class="sswitchactivate" id="GS_ON" inkscape:label="#g3152" mblogic:editcount="4" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteImmediate(\&quot;%(inputtag)s\&quot;, %(value)s);&quot;}]" mblogic:menu="[{&quot;param&quot;: &quot;inputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;value&quot;: &quot;GS_ON&quot;}, {&quot;param&quot;: &quot;value&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Write Value&quot;, &quot;value&quot;: &quot;1&quot;}]" mblogic:outputfunc="" mblogic:widgetname="Selector Switch Label" mblogic:widgettype="ss_label" transform="matrix(0.71633468,0,0,0.73141248,790.64854,78.056764)">
+    <g class="sswitchactivate" id="GS_ON" inkscape:label="#g3152" mblogic:editcount="4" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteImmediate(\&quot;%(inputtag)s\&quot;, %(value)s);&quot;}]" mblogic:menu="[{&quot;param&quot;: &quot;inputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;value&quot;: &quot;GS_ON&quot;}, {&quot;param&quot;: &quot;value&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Write Value&quot;, &quot;value&quot;: &quot;1&quot;}]" mblogic:outputfunc="" mblogic:widgetname="Selector Switch Label" mblogic:widgettype="ss_label" onclick="MBHMIProtocol.WriteImmediate(&quot;GS_ON&quot;, 1);" transform="matrix(0.71633468,0,0,0.73141248,790.64854,78.056764)">
       <rect height="70" id="rect3154" style="fill:#008000" width="50" x="0" y="0"/>
       <text font-size="16" id="text3156" style="font-size:16px;text-anchor:middle" x="25" y="20">ON</text>
     </g>
-    <g id="GlobalSwitch" inkscape:label="#g3179" mblogic:editcount="7" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteToggleImmediate(\&quot;%(inputtag)s\&quot;, \&quot;%(inputtag)s\&quot;);&quot;}]" mblogic:menu="[{&quot;param&quot;: &quot;inputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;value&quot;: &quot;GlobalSwitchButton&quot;}, {&quot;param&quot;: &quot;switchtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Switch Tag&quot;, &quot;value&quot;: &quot;GS_OFF&quot;}]" mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_2PosSSDisplay(document, &quot;%(widgetid)s&quot;, -60, 60), &quot;%(switchtag)s&quot;, &quot;read&quot;);" mblogic:widgetname="2 Pos SS" mblogic:widgettype="ss2short" transform="matrix(0.71633468,0,0,0.73141248,787.525,130.24448)">
+    <g id="GlobalSwitch" inkscape:label="#g3179" mblogic:editcount="7" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteToggleImmediate(\&quot;%(inputtag)s\&quot;, \&quot;%(inputtag)s\&quot;);&quot;}]" mblogic:menu="[{&quot;param&quot;: &quot;inputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;value&quot;: &quot;GlobalSwitchButton&quot;}, {&quot;param&quot;: &quot;switchtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Switch Tag&quot;, &quot;value&quot;: &quot;GS_OFF&quot;}]" mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_2PosSSDisplay(document, &quot;%(widgetid)s&quot;, -60, 60), &quot;%(switchtag)s&quot;, &quot;read&quot;);" mblogic:widgetname="2 Pos SS" mblogic:widgettype="ss2short" onclick="MBHMIProtocol.WriteToggleImmediate(&quot;GlobalSwitchButton&quot;, &quot;GlobalSwitchButton&quot;);" transform="matrix(0.71633468,0,0,0.73141248,787.525,130.24448)">
       <!-- This is a decorative nut. -->
       <polygon id="polygon3181" points="-18,45 18,45 45,18 45,-18 18,-45 18,-45 -18,-45 -45,-18 -45,18 " style="fill:#808080;stroke:none;filter:url(#MB_DropShadowFilter-3-7)" transform="translate(5,5)"/>
       <polygon id="polygon3183" points="-18,45 18,45 45,18 45,-18 18,-45 18,-45 -18,-45 -45,-18 -45,18 " style="fill:url(#linearGradient3739);stroke:none"/>
@@ -1210,14 +1297,14 @@
         <polygon id="polygon3191" points="5,-20 0,-30 0,-30 -5,-20 " style="fill:#ffffff"/>
       </g>
     </g>
-    <g class="buttonactivate" id="Honk" inkscape:label="#g3233" mblogic:editcount="5" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteImmediate(\&quot;%(inputtag)s\&quot;, 1); window.setTimeout(MBHMIProtocol.WritePulse, %(pulse)s, \&quot;%(inputtag)s\&quot;, 0, MBHMIProtocol);&quot;}]" mblogic:menu="[{&quot;value&quot;: &quot;Honk&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;param&quot;: &quot;inputtag&quot;}, {&quot;value&quot;: &quot;500&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Pulse Length (msec)&quot;, &quot;param&quot;: &quot;pulse&quot;}, {&quot;value&quot;: &quot;Honk&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;param&quot;: &quot;outputtag&quot;}, {&quot;value&quot;: &quot;black&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;Init Colour&quot;, &quot;param&quot;: &quot;initcolour&quot;}, {&quot;value&quot;: &quot;red&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;Off Colour&quot;, &quot;param&quot;: &quot;offcolour&quot;}, {&quot;value&quot;: &quot;blue&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;On Colour&quot;, &quot;param&quot;: &quot;oncolour&quot;}]" mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_PilotLight(document, &quot;%(widgetid)s&quot;, &quot;%(initcolour)s&quot;, &quot;%(offcolour)s&quot;, &quot;%(oncolour)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);" mblogic:widgetname="Pulse Illuminated Push Button" mblogic:widgettype="pb_pulse_illum" style="display:inline" transform="matrix(1.6830727,0,0,1.9367654,458.48643,654.17075)">
+    <g class="buttonactivate" id="Honk" inkscape:label="#g3233" mblogic:editcount="5" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteImmediate(\&quot;%(inputtag)s\&quot;, 1); window.setTimeout(MBHMIProtocol.WritePulse, %(pulse)s, \&quot;%(inputtag)s\&quot;, 0, MBHMIProtocol);&quot;}]" mblogic:menu="[{&quot;value&quot;: &quot;Honk&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;param&quot;: &quot;inputtag&quot;}, {&quot;value&quot;: &quot;500&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Pulse Length (msec)&quot;, &quot;param&quot;: &quot;pulse&quot;}, {&quot;value&quot;: &quot;Honk&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;param&quot;: &quot;outputtag&quot;}, {&quot;value&quot;: &quot;black&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;Init Colour&quot;, &quot;param&quot;: &quot;initcolour&quot;}, {&quot;value&quot;: &quot;red&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;Off Colour&quot;, &quot;param&quot;: &quot;offcolour&quot;}, {&quot;value&quot;: &quot;blue&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;On Colour&quot;, &quot;param&quot;: &quot;oncolour&quot;}]" mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_PilotLight(document, &quot;%(widgetid)s&quot;, &quot;%(initcolour)s&quot;, &quot;%(offcolour)s&quot;, &quot;%(oncolour)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);" mblogic:widgetname="Pulse Illuminated Push Button" mblogic:widgettype="pb_pulse_illum" onclick="MBHMIProtocol.WriteImmediate(&quot;Honk&quot;, 1); window.setTimeout(MBHMIProtocol.WritePulse, 500, &quot;Honk&quot;, 0, MBHMIProtocol);" style="display:inline" transform="matrix(1.6830727,0,0,1.9367654,458.48643,654.17075)">
       <rect height="35" id="rect3235" rx="15" style="fill:#808080;stroke:none;filter:url(#MB_DropShadowFilter-0-0)" width="100" x="7" y="7"/>
       <rect height="35" id="rect3237" rx="15" width="100" x="0" y="0"/>
       <text font-size="24" id="text3239" sodipodi:linespacing="125%" style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#00ffff;stroke:#00ffff;stroke-width:2px;font-family:Sans;-inkscape-font-specification:Sans" x="50" y="26">
         <tspan id="tspan3373" sodipodi:role="line" x="50" y="26">Horn</tspan>
       </text>
     </g>
-    <g class="buttonactivate" id="EStop" inkscape:label="#g3353" mblogic:editcount="5" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteToggleImmediate(\&quot;%(inputtag)s\&quot;, \&quot;%(inputtag)s\&quot;);&quot;}]" mblogic:menu="[{&quot;value&quot;: &quot;EStop&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;param&quot;: &quot;inputtag&quot;}, {&quot;value&quot;: &quot;EStop&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;param&quot;: &quot;outputtag&quot;}, {&quot;value&quot;: &quot;aqua&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;Init Colour&quot;, &quot;param&quot;: &quot;initcolour&quot;}, {&quot;value&quot;: &quot;black&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;Off Colour&quot;, &quot;param&quot;: &quot;offcolour&quot;}, {&quot;value&quot;: &quot;red&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;On Colour&quot;, &quot;param&quot;: &quot;oncolour&quot;}]" mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_PilotLight(document, &quot;%(widgetid)s&quot;, &quot;%(initcolour)s&quot;, &quot;%(offcolour)s&quot;, &quot;%(oncolour)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);" mblogic:widgetname="Toggle Illuminated Push Button" mblogic:widgettype="pb_toggle_illum" style="display:inline" transform="matrix(1.6451242,0,0,1.8461107,276.87456,656.21374)">
+    <g class="buttonactivate" id="EStop" inkscape:label="#g3353" mblogic:editcount="5" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteToggleImmediate(\&quot;%(inputtag)s\&quot;, \&quot;%(inputtag)s\&quot;);&quot;}]" mblogic:menu="[{&quot;value&quot;: &quot;EStop&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;param&quot;: &quot;inputtag&quot;}, {&quot;value&quot;: &quot;EStop&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;param&quot;: &quot;outputtag&quot;}, {&quot;value&quot;: &quot;aqua&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;Init Colour&quot;, &quot;param&quot;: &quot;initcolour&quot;}, {&quot;value&quot;: &quot;black&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;Off Colour&quot;, &quot;param&quot;: &quot;offcolour&quot;}, {&quot;value&quot;: &quot;red&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;On Colour&quot;, &quot;param&quot;: &quot;oncolour&quot;}]" mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_PilotLight(document, &quot;%(widgetid)s&quot;, &quot;%(initcolour)s&quot;, &quot;%(offcolour)s&quot;, &quot;%(oncolour)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);" mblogic:widgetname="Toggle Illuminated Push Button" mblogic:widgettype="pb_toggle_illum" onclick="MBHMIProtocol.WriteToggleImmediate(&quot;EStop&quot;, &quot;EStop&quot;);" style="display:inline" transform="matrix(1.6451242,0,0,1.8461107,276.87456,656.21374)">
       <rect height="35" id="rect3355" rx="15" style="fill:#808080;stroke:none;filter:url(#MB_DropShadowFilter-60-8)" width="100" x="7" y="7"/>
       <rect height="35" id="rect3357" rx="15" width="100" x="0" y="0"/>
       <text font-size="24" id="text3359" sodipodi:linespacing="125%" style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#ff0000;stroke:#ff0000;stroke-width:2px;font-family:Sans;-inkscape-font-specification:Sans" x="50" y="26">
@@ -1244,42 +1331,42 @@
       <!-- This is the actual column. The fill value will be added later. -->
       <rect height="100" id="rect3670" style="fill:url(#linearGradient3683);stroke:none" width="10" x="0" y="0"/>
     </g>
-    <g class="buttonactivate" id="MaxSpeed" inkscape:label="#g4028" mblogic:editcount="3" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteImmediate(\&quot;%(inputtag)s\&quot;, %(intval)s);&quot;}]" mblogic:menu="[{&quot;param&quot;: &quot;inputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;value&quot;: &quot;SpeedMax&quot;}, {&quot;param&quot;: &quot;intval&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Integer Value&quot;, &quot;value&quot;: &quot;2200&quot;}]" mblogic:outputfunc="" mblogic:widgetname="Write Integer Push Button" mblogic:widgettype="pb_int" transform="matrix(0.40375712,0,0,0.63386057,32.065513,231.7821)">
+    <g class="buttonactivate" id="MaxSpeed" inkscape:label="#g4028" mblogic:editcount="3" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteImmediate(\&quot;%(inputtag)s\&quot;, %(intval)s);&quot;}]" mblogic:menu="[{&quot;param&quot;: &quot;inputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;value&quot;: &quot;SpeedMax&quot;}, {&quot;param&quot;: &quot;intval&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Integer Value&quot;, &quot;value&quot;: &quot;2200&quot;}]" mblogic:outputfunc="" mblogic:widgetname="Write Integer Push Button" mblogic:widgettype="pb_int" onclick="MBHMIProtocol.WriteImmediate(&quot;SpeedMax&quot;, 2200);" transform="matrix(0.40375712,0,0,0.63386057,32.065513,231.7821)">
       <rect height="50" id="rect4030" rx="15" style="fill:#808080;stroke:none;filter:url(#MB_DropShadowFilter-4)" width="140" x="7" y="7"/>
       <rect height="50" id="rect4032" rx="15" style="fill:url(#MB_LimeGradient)" width="140" x="0" y="0"/>
       <text font-size="24" id="text4034" sodipodi:linespacing="125%" style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;stroke-width:2px;font-family:Sans;-inkscape-font-specification:Sans" x="70" y="30">
         <tspan id="tspan4082" sodipodi:role="line" x="70" y="30">MAX</tspan>
       </text>
     </g>
-    <g class="buttonactivate" id="ZeroSpeed" inkscape:label="#g4061" mblogic:editcount="3" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteImmediate(\&quot;%(inputtag)s\&quot;, %(intval)s);&quot;}]" mblogic:menu="[{&quot;param&quot;: &quot;inputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;value&quot;: &quot;SpeedZero&quot;}, {&quot;param&quot;: &quot;intval&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Integer Value&quot;, &quot;value&quot;: &quot;0&quot;}]" mblogic:outputfunc="" mblogic:widgetname="Write Integer Push Button" mblogic:widgettype="pb_int" transform="matrix(0.43170601,0,0,0.58809314,31.822871,358.47554)">
+    <g class="buttonactivate" id="ZeroSpeed" inkscape:label="#g4061" mblogic:editcount="3" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteImmediate(\&quot;%(inputtag)s\&quot;, %(intval)s);&quot;}]" mblogic:menu="[{&quot;param&quot;: &quot;inputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;value&quot;: &quot;SpeedZero&quot;}, {&quot;param&quot;: &quot;intval&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Integer Value&quot;, &quot;value&quot;: &quot;0&quot;}]" mblogic:outputfunc="" mblogic:widgetname="Write Integer Push Button" mblogic:widgettype="pb_int" onclick="MBHMIProtocol.WriteImmediate(&quot;SpeedZero&quot;, 0);" transform="matrix(0.43170601,0,0,0.58809314,31.822871,358.47554)">
       <rect height="50" id="rect4063" rx="15" style="fill:#808080;stroke:none;filter:url(#MB_DropShadowFilter-5)" width="140" x="7" y="7"/>
       <rect height="50" id="rect4065" rx="15" style="fill:url(#MB_RedGradient)" width="140" x="0" y="0"/>
       <text font-size="24" id="text4067" sodipodi:linespacing="125%" style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;stroke-width:2px;font-family:Sans;-inkscape-font-specification:Sans" x="70" y="30">
         <tspan id="tspan4084" sodipodi:role="line" x="70" y="30">ZERO</tspan>
       </text>
     </g>
-    <g class="buttonactivate" id="AngleCenter" inkscape:label="#g4248" mblogic:editcount="7" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteImmediate(\&quot;%(inputtag)s\&quot;, %(intval)s);&quot;}]" mblogic:menu="[{&quot;param&quot;: &quot;inputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;value&quot;: &quot;AngleCenter&quot;}, {&quot;param&quot;: &quot;intval&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Integer Value&quot;, &quot;value&quot;: &quot;0&quot;}]" mblogic:outputfunc="" mblogic:widgetname="Write Integer Push Button" mblogic:widgettype="pb_int" transform="matrix(0.60842135,0,0,0.6469699,430.84628,242.76374)">
+    <g class="buttonactivate" id="AngleCenter" inkscape:label="#g4248" mblogic:editcount="7" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteImmediate(\&quot;%(inputtag)s\&quot;, %(intval)s);&quot;}]" mblogic:menu="[{&quot;param&quot;: &quot;inputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;value&quot;: &quot;AngleCenter&quot;}, {&quot;param&quot;: &quot;intval&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Integer Value&quot;, &quot;value&quot;: &quot;0&quot;}]" mblogic:outputfunc="" mblogic:widgetname="Write Integer Push Button" mblogic:widgettype="pb_int" onclick="MBHMIProtocol.WriteImmediate(&quot;AngleCenter&quot;, 0);" transform="matrix(0.60842135,0,0,0.6469699,430.84628,242.76374)">
       <rect height="50" id="rect4250" rx="15" style="fill:#808080;stroke:none;filter:url(#MB_DropShadowFilter-6)" width="140" x="7" y="7"/>
       <rect height="50" id="rect4252" rx="15" style="fill:url(#MB_LimeGradient-7)" width="140" x="0" y="0"/>
       <text font-size="24" id="text4254" sodipodi:linespacing="125%" style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;stroke-width:2px;font-family:Sans;-inkscape-font-specification:Sans" x="70" y="30">
         <tspan id="tspan4339" sodipodi:role="line" x="70" y="30">Center</tspan>
       </text>
     </g>
-    <g class="buttonactivate" id="AngleLeftMax" inkscape:label="#g4281" mblogic:editcount="7" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteImmediate(\&quot;%(inputtag)s\&quot;, %(intval)s);&quot;}]" mblogic:menu="[{&quot;param&quot;: &quot;inputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;value&quot;: &quot;AngleLeftMax&quot;}, {&quot;param&quot;: &quot;intval&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Integer Value&quot;, &quot;value&quot;: &quot;85&quot;}]" mblogic:outputfunc="" mblogic:widgetname="Write Integer Push Button" mblogic:widgettype="pb_int" transform="matrix(0.69877361,0,0,0.71232215,338.95262,233.33994)">
+    <g class="buttonactivate" id="AngleLeftMax" inkscape:label="#g4281" mblogic:editcount="7" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteImmediate(\&quot;%(inputtag)s\&quot;, %(intval)s);&quot;}]" mblogic:menu="[{&quot;param&quot;: &quot;inputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;value&quot;: &quot;AngleLeftMax&quot;}, {&quot;param&quot;: &quot;intval&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Integer Value&quot;, &quot;value&quot;: &quot;85&quot;}]" mblogic:outputfunc="" mblogic:widgetname="Write Integer Push Button" mblogic:widgettype="pb_int" onclick="MBHMIProtocol.WriteImmediate(&quot;AngleLeftMax&quot;, 85);" transform="matrix(0.69877361,0,0,0.71232215,338.95262,233.33994)">
       <rect height="50" id="rect4283" rx="15" style="fill:#808080;stroke:none;filter:url(#MB_DropShadowFilter-2)" width="140" x="7" y="7"/>
       <rect height="50" id="rect4285" rx="15" style="fill:url(#MB_OrangeGradient-9)" width="140" x="0" y="0"/>
       <text font-size="24" id="text4287" sodipodi:linespacing="125%" style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;stroke-width:2px;font-family:Sans;-inkscape-font-specification:Sans" x="70" y="30">
         <tspan id="tspan4335" sodipodi:role="line" x="70" y="30">Left</tspan>
       </text>
     </g>
-    <g class="buttonactivate" id="AngleRightMax" inkscape:label="#g4314" mblogic:editcount="4" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteImmediate(\&quot;%(inputtag)s\&quot;, %(intval)s);&quot;}]" mblogic:menu="[{&quot;param&quot;: &quot;inputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;value&quot;: &quot;AngleRightMax&quot;}, {&quot;param&quot;: &quot;intval&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Integer Value&quot;, &quot;value&quot;: &quot;-85&quot;}]" mblogic:outputfunc="" mblogic:widgetname="Write Integer Push Button" mblogic:widgettype="pb_int" transform="matrix(0.66263271,0,0,0.77767441,506.28139,231.99369)">
+    <g class="buttonactivate" id="AngleRightMax" inkscape:label="#g4314" mblogic:editcount="4" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteImmediate(\&quot;%(inputtag)s\&quot;, %(intval)s);&quot;}]" mblogic:menu="[{&quot;param&quot;: &quot;inputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;value&quot;: &quot;AngleRightMax&quot;}, {&quot;param&quot;: &quot;intval&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Integer Value&quot;, &quot;value&quot;: &quot;-85&quot;}]" mblogic:outputfunc="" mblogic:widgetname="Write Integer Push Button" mblogic:widgettype="pb_int" onclick="MBHMIProtocol.WriteImmediate(&quot;AngleRightMax&quot;, -85);" transform="matrix(0.66263271,0,0,0.77767441,506.28139,231.99369)">
       <rect height="50" id="rect4316" rx="15" style="fill:#808080;stroke:none;filter:url(#MB_DropShadowFilter-7)" width="140" x="7" y="7"/>
       <rect height="50" id="rect4318" rx="15" style="fill:url(#MB_OrangeGradient-3)" width="140" x="0" y="0"/>
       <text font-size="24" id="text4320" sodipodi:linespacing="125%" style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;stroke-width:2px;font-family:Sans;-inkscape-font-specification:Sans" x="70" y="30">
         <tspan id="tspan4337" sodipodi:role="line" x="70" y="30">Right</tspan>
       </text>
     </g>
-    <g class="buttonactivate" id="TractionEnable" inkscape:label="#g4348" mblogic:editcount="5" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteToggleImmediate(\&quot;%(inputtag)s\&quot;, \&quot;%(inputtag)s\&quot;);&quot;}]" mblogic:menu="[{&quot;value&quot;: &quot;Traction_Enable&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;param&quot;: &quot;inputtag&quot;}, {&quot;value&quot;: &quot;Traction_Enable&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;param&quot;: &quot;outputtag&quot;}, {&quot;value&quot;: &quot;black&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;Init Colour&quot;, &quot;param&quot;: &quot;initcolour&quot;}, {&quot;value&quot;: &quot;yellow&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;Off Colour&quot;, &quot;param&quot;: &quot;offcolour&quot;}, {&quot;value&quot;: &quot;green&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;On Colour&quot;, &quot;param&quot;: &quot;oncolour&quot;}]" mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_PilotLight(document, &quot;%(widgetid)s&quot;, &quot;%(initcolour)s&quot;, &quot;%(offcolour)s&quot;, &quot;%(oncolour)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);" mblogic:widgetname="Toggle Illuminated Push Button" mblogic:widgettype="pb_toggle_illum" transform="translate(91.278742,83.260242)">
+    <g class="buttonactivate" id="TractionEnable" inkscape:label="#g4348" mblogic:editcount="5" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteToggleImmediate(\&quot;%(inputtag)s\&quot;, \&quot;%(inputtag)s\&quot;);&quot;}]" mblogic:menu="[{&quot;value&quot;: &quot;Traction_Enable&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;param&quot;: &quot;inputtag&quot;}, {&quot;value&quot;: &quot;Traction_Enable&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Output Tag&quot;, &quot;param&quot;: &quot;outputtag&quot;}, {&quot;value&quot;: &quot;black&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;Init Colour&quot;, &quot;param&quot;: &quot;initcolour&quot;}, {&quot;value&quot;: &quot;yellow&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;Off Colour&quot;, &quot;param&quot;: &quot;offcolour&quot;}, {&quot;value&quot;: &quot;green&quot;, &quot;type&quot;: &quot;colour&quot;, &quot;name&quot;: &quot;On Colour&quot;, &quot;param&quot;: &quot;oncolour&quot;}]" mblogic:outputfunc="MBHMIProtocol.AddToDisplayList(new MB_PilotLight(document, &quot;%(widgetid)s&quot;, &quot;%(initcolour)s&quot;, &quot;%(offcolour)s&quot;, &quot;%(oncolour)s&quot;), &quot;%(outputtag)s&quot;, &quot;read&quot;);" mblogic:widgetname="Toggle Illuminated Push Button" mblogic:widgettype="pb_toggle_illum" onclick="MBHMIProtocol.WriteToggleImmediate(&quot;Traction_Enable&quot;, &quot;Traction_Enable&quot;);" transform="translate(91.278742,83.260242)">
       <rect height="80" id="rect4350" rx="15" style="fill:#808080;stroke:none;filter:url(#MB_DropShadowFilter-3)" width="80" x="7" y="7"/>
       <rect height="80" id="rect4352" rx="15" width="80" x="0" y="0"/>
       <text font-size="24" id="text4354" sodipodi:linespacing="125%" style="font-size:18.85752678px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#00ff00;stroke:#00ff00;stroke-width:1.5714606px;font-family:Sans;-inkscape-font-specification:Sans" transform="scale(0.85268401,1.1727674)" x="49.815044" y="29.171865">
@@ -1342,7 +1429,7 @@
       <text font-size="20" id="text3303" inkscape:label="#text3303" style="font-size:20px;text-anchor:end;fill:#00ff00;stroke:#00ff00" x="50" y="20">12.34</text>
     </g>
     <text id="text3313" sodipodi:linespacing="125%" style="font-size:28px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#f2f2f2;fill-opacity:1;stroke:none;font-family:Sans" x="39.633106" xml:space="preserve" y="650.31885"><tspan id="tspan3315" sodipodi:role="line" x="39.633106" y="650.31885">Dist. Travelled</tspan></text>
-    <g class="buttonactivate" id="HomeStart" inkscape:label="#g3966" mblogic:editcount="2" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteImmediate(\&quot;%(inputtag)s\&quot;, 1);&quot;}, {&quot;event&quot;: &quot;onmouseup&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteImmediate(\&quot;%(inputtag)s\&quot;, 0);&quot;}, {&quot;event&quot;: &quot;onmouseout&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteImmediate(\&quot;%(inputtag)s\&quot;, 0);&quot;}]" mblogic:menu="[{&quot;param&quot;: &quot;inputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;value&quot;: &quot;Home_Start&quot;}]" mblogic:outputfunc="" mblogic:widgetname="Momentary Push Button" mblogic:widgettype="pb_momentary" transform="matrix(1.070971,0,0,0.79973011,751.71644,175.18413)">
+    <g class="buttonactivate" id="HomeStart" inkscape:label="#g3966" mblogic:editcount="2" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteImmediate(\&quot;%(inputtag)s\&quot;, 1);&quot;}, {&quot;event&quot;: &quot;onmouseup&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteImmediate(\&quot;%(inputtag)s\&quot;, 0);&quot;}, {&quot;event&quot;: &quot;onmouseout&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteImmediate(\&quot;%(inputtag)s\&quot;, 0);&quot;}]" mblogic:menu="[{&quot;param&quot;: &quot;inputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;value&quot;: &quot;Home_Start&quot;}]" mblogic:outputfunc="" mblogic:widgetname="Momentary Push Button" mblogic:widgettype="pb_momentary" onclick="MBHMIProtocol.WriteImmediate(&quot;Home_Start&quot;, 1);" onmouseout="MBHMIProtocol.WriteImmediate(&quot;Home_Start&quot;, 0);" onmouseup="MBHMIProtocol.WriteImmediate(&quot;Home_Start&quot;, 0);" transform="matrix(1.070971,0,0,0.79973011,751.71644,175.18413)">
       <rect height="80" id="rect3968" rx="15" style="fill:#808080;stroke:none;filter:url(#MB_DropShadowFilter-70)" width="80" x="7" y="7"/>
       <rect height="80" id="rect3970" rx="15" style="fill:url(#MB_NavyGradient)" width="80" x="0" y="0"/>
       <text font-size="24" id="text3972" sodipodi:linespacing="125%" style="font-size:27.59870911px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#d45500;stroke-width:2px;font-family:Sans;-inkscape-font-specification:Sans Bold" transform="scale(0.82339903,1.214478)" x="49.415009" y="43.971119">
@@ -1375,28 +1462,28 @@
       <!-- This is the actual column. The fill value will be added later. -->
       <rect height="100" id="rect4570" style="fill:url(#linearGradient4803);stroke:none" width="10" x="0" y="0"/>
     </g>
-    <g class="buttonactivate" id="AngleLeft-10" inkscape:label="#g3325" mblogic:editcount="18" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteIncImmediate(\&quot;%(inputtag)s\&quot;, \&quot;%(reftag)s\&quot;, %(inc)s, %(limit)s);&quot;}]" mblogic:menu="[{&quot;param&quot;: &quot;inputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;value&quot;: &quot;AngleLeft10&quot;}, {&quot;param&quot;: &quot;reftag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Reference Tag&quot;, &quot;value&quot;: &quot;SteerDispTxtSet&quot;}, {&quot;param&quot;: &quot;inc&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Increment&quot;, &quot;value&quot;: &quot;5&quot;}, {&quot;param&quot;: &quot;limit&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Limit&quot;, &quot;value&quot;: &quot;120&quot;}]" mblogic:outputfunc="" mblogic:widgetname="Decrement Push Button" mblogic:widgettype="pb_dec" style="display:inline" transform="matrix(0.64524745,0,0,0.44285352,379.50039,469.30647)">
+    <g class="buttonactivate" id="AngleLeft-10" inkscape:label="#g3325" mblogic:editcount="18" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteIncImmediate(\&quot;%(inputtag)s\&quot;, \&quot;%(reftag)s\&quot;, %(inc)s, %(limit)s);&quot;}]" mblogic:menu="[{&quot;param&quot;: &quot;inputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;value&quot;: &quot;AngleLeft10&quot;}, {&quot;param&quot;: &quot;reftag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Reference Tag&quot;, &quot;value&quot;: &quot;SteerDispTxtSet&quot;}, {&quot;param&quot;: &quot;inc&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Increment&quot;, &quot;value&quot;: &quot;5&quot;}, {&quot;param&quot;: &quot;limit&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Limit&quot;, &quot;value&quot;: &quot;120&quot;}]" mblogic:outputfunc="" mblogic:widgetname="Decrement Push Button" mblogic:widgettype="pb_dec" onclick="MBHMIProtocol.WriteIncImmediate(&quot;AngleLeft10&quot;, &quot;SteerDispTxtSet&quot;, 5, 120);" style="display:inline" transform="matrix(0.64524745,0,0,0.44285352,379.50039,469.30647)">
       <rect height="80" id="rect3327-0" rx="15" style="fill:#808080;stroke:none;filter:url(#MB_DropShadowFilter-09-7-9)" width="80" x="7" y="7"/>
       <rect height="80" id="rect3329-4" rx="15" style="fill:url(#linearGradient4407)" width="80" x="0" y="0"/>
       <text font-size="24" id="text3331-2" sodipodi:linespacing="125%" style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;stroke-width:2px;font-family:Sans;-inkscape-font-specification:Sans" x="40" y="50">
         <tspan id="tspan3375-0" sodipodi:role="line" x="40" y="50">&lt;</tspan>
       </text>
     </g>
-    <g class="buttonactivate" id="AngleRight-10" inkscape:label="#g3292" mblogic:editcount="8" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteIncImmediate(\&quot;%(inputtag)s\&quot;, \&quot;%(reftag)s\&quot;, %(inc)s, %(limit)s);&quot;}]" mblogic:menu="[{&quot;param&quot;: &quot;inputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;value&quot;: &quot;AngleRight10&quot;}, {&quot;param&quot;: &quot;reftag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Reference Tag&quot;, &quot;value&quot;: &quot;SteerDispTxtSet&quot;}, {&quot;param&quot;: &quot;inc&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Increment&quot;, &quot;value&quot;: &quot;-5&quot;}, {&quot;param&quot;: &quot;limit&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Limit&quot;, &quot;value&quot;: &quot;-120&quot;}]" mblogic:outputfunc="" mblogic:widgetname="Increment Push Button" mblogic:widgettype="pb_inc" style="display:inline" transform="matrix(0.71436549,0,0,0.45159224,513.90331,466.55548)">
+    <g class="buttonactivate" id="AngleRight-10" inkscape:label="#g3292" mblogic:editcount="8" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteIncImmediate(\&quot;%(inputtag)s\&quot;, \&quot;%(reftag)s\&quot;, %(inc)s, %(limit)s);&quot;}]" mblogic:menu="[{&quot;param&quot;: &quot;inputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;value&quot;: &quot;AngleRight10&quot;}, {&quot;param&quot;: &quot;reftag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Reference Tag&quot;, &quot;value&quot;: &quot;SteerDispTxtSet&quot;}, {&quot;param&quot;: &quot;inc&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Increment&quot;, &quot;value&quot;: &quot;-5&quot;}, {&quot;param&quot;: &quot;limit&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Limit&quot;, &quot;value&quot;: &quot;-120&quot;}]" mblogic:outputfunc="" mblogic:widgetname="Increment Push Button" mblogic:widgettype="pb_inc" onclick="MBHMIProtocol.WriteIncImmediate(&quot;AngleRight10&quot;, &quot;SteerDispTxtSet&quot;, -5, -120);" style="display:inline" transform="matrix(0.71436549,0,0,0.45159224,513.90331,466.55548)">
       <rect height="80" id="rect3294-2" rx="15" style="fill:#808080;stroke:none;filter:url(#MB_DropShadowFilter-2-4-4)" width="80" x="7" y="7"/>
       <rect height="80" id="rect3296-6" rx="15" style="fill:url(#linearGradient4409)" width="80" x="0" y="0"/>
       <text font-size="24" id="text3298-8" sodipodi:linespacing="125%" style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;stroke-width:2px;font-family:Sans;-inkscape-font-specification:Sans" x="40" y="50">
         <tspan id="tspan3377-3" sodipodi:role="line" x="40" y="50">&gt;</tspan>
       </text>
     </g>
-    <g class="buttonactivate" id="SpeedDown-10" inkscape:label="#g3550" mblogic:editcount="16" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteIncImmediate(\&quot;%(inputtag)s\&quot;, \&quot;%(reftag)s\&quot;, %(inc)s, %(limit)s);&quot;}]" mblogic:menu="[{&quot;param&quot;: &quot;inputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;value&quot;: &quot;SpeedDown10&quot;}, {&quot;param&quot;: &quot;reftag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Reference Tag&quot;, &quot;value&quot;: &quot;SpeedDispSet&quot;}, {&quot;param&quot;: &quot;inc&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Increment&quot;, &quot;value&quot;: &quot;-100&quot;}, {&quot;param&quot;: &quot;limit&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Limit&quot;, &quot;value&quot;: &quot;-300&quot;}]" mblogic:outputfunc="" mblogic:widgetname="Decrement Push Button" mblogic:widgettype="pb_dec" style="fill:url(#linearGradient3780-7);stroke:#000000;display:inline" transform="matrix(0.90248393,0,0,1.0011774,234.05717,406.99905)">
+    <g class="buttonactivate" id="SpeedDown-10" inkscape:label="#g3550" mblogic:editcount="16" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteIncImmediate(\&quot;%(inputtag)s\&quot;, \&quot;%(reftag)s\&quot;, %(inc)s, %(limit)s);&quot;}]" mblogic:menu="[{&quot;param&quot;: &quot;inputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;value&quot;: &quot;SpeedDown10&quot;}, {&quot;param&quot;: &quot;reftag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Reference Tag&quot;, &quot;value&quot;: &quot;SpeedDispSet&quot;}, {&quot;param&quot;: &quot;inc&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Increment&quot;, &quot;value&quot;: &quot;-100&quot;}, {&quot;param&quot;: &quot;limit&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Limit&quot;, &quot;value&quot;: &quot;-300&quot;}]" mblogic:outputfunc="" mblogic:widgetname="Decrement Push Button" mblogic:widgettype="pb_dec" onclick="MBHMIProtocol.WriteIncImmediate(&quot;SpeedDown10&quot;, &quot;SpeedDispSet&quot;, -100, -300);" style="fill:url(#linearGradient3780-7);stroke:#000000;display:inline" transform="matrix(0.90248393,0,0,1.0011774,234.05717,406.99905)">
       <!-- This provides the relief. -->
       <polygon id="polygon3552-8" points="45,0 42,2 2,2 2,2 7,0 " style="fill:url(#linearGradient3577-0-3)"/>
       <polygon id="polygon3554-8" points="22,42 24,41 45,0 45,0 42,2 " style="fill:url(#linearGradient3579-1-8)"/>
       <!-- This is the button. -->
       <polygon id="polygon3556-5" points="22,42 42,2 2,2 2,2 " style="fill:url(#linearGradient3791)"/>
     </g>
-    <g class="buttonactivate" id="SpeedUp-10" inkscape:label="#g3522" mblogic:editcount="10" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteIncImmediate(\&quot;%(inputtag)s\&quot;, \&quot;%(reftag)s\&quot;, %(inc)s, %(limit)s);&quot;}]" mblogic:menu="[{&quot;param&quot;: &quot;inputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;value&quot;: &quot;SpeedUp&quot;}, {&quot;param&quot;: &quot;reftag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Reference Tag&quot;, &quot;value&quot;: &quot;SpeedUp10&quot;}, {&quot;param&quot;: &quot;inc&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Increment&quot;, &quot;value&quot;: &quot;100&quot;}, {&quot;param&quot;: &quot;limit&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Limit&quot;, &quot;value&quot;: &quot;3000&quot;}]" mblogic:outputfunc="" mblogic:widgetname="Increment Push Button" mblogic:widgettype="pb_inc" style="fill:url(#linearGradient3778-7);stroke:#000000;display:inline" transform="translate(232.55844,287.05827)">
+    <g class="buttonactivate" id="SpeedUp-10" inkscape:label="#g3522" mblogic:editcount="10" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBHMIProtocol.WriteIncImmediate(\&quot;%(inputtag)s\&quot;, \&quot;%(reftag)s\&quot;, %(inc)s, %(limit)s);&quot;}]" mblogic:menu="[{&quot;param&quot;: &quot;inputtag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Input Tag&quot;, &quot;value&quot;: &quot;SpeedUp&quot;}, {&quot;param&quot;: &quot;reftag&quot;, &quot;type&quot;: &quot;tag&quot;, &quot;name&quot;: &quot;Reference Tag&quot;, &quot;value&quot;: &quot;SpeedUp10&quot;}, {&quot;param&quot;: &quot;inc&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Increment&quot;, &quot;value&quot;: &quot;100&quot;}, {&quot;param&quot;: &quot;limit&quot;, &quot;type&quot;: &quot;int&quot;, &quot;name&quot;: &quot;Limit&quot;, &quot;value&quot;: &quot;3000&quot;}]" mblogic:outputfunc="" mblogic:widgetname="Increment Push Button" mblogic:widgettype="pb_inc" onclick="MBHMIProtocol.WriteIncImmediate(&quot;SpeedUp&quot;, &quot;SpeedUp10&quot;, 100, 3000);" style="fill:url(#linearGradient3778-7);stroke:#000000;display:inline" transform="translate(232.55844,287.05827)">
       <!-- This provides the relief. -->
       <polygon id="polygon3524-3" points="0,40 0,40 4,42 44,42 40,40 " style="fill:url(#linearGradient3569-6-6)"/>
       <polygon id="polygon3526-0" points="20,0 20,0 24,2 44,42 40,40 " style="fill:url(#linearGradient3571-8-3)"/>
@@ -1454,26 +1541,26 @@
     </g>
   </g>
   <g id="MenuLayer" inkscape:groupmode="layer" inkscape:label="MenuLayer" style="display:inline">
-    <g class="buttonactivate" id="MenuOp" inkscape:label="#g3064" mblogic:editcount="2" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBT_SVGScreenSelect.SelectScreen(\&quot;%(layername)s\&quot;);&quot;}]" mblogic:menu="[{&quot;value&quot;: &quot;OpScr&quot;, &quot;type&quot;: &quot;layer&quot;, &quot;name&quot;: &quot;Layer Name&quot;, &quot;param&quot;: &quot;layername&quot;}]" mblogic:outputfunc="" mblogic:widgetname="Menu Push Button" mblogic:widgettype="pb_menu" style="display:inline" transform="matrix(1.1893217,0,0,1.1807701,84.556711,28.36284)">
+    <g class="buttonactivate" id="MenuOp" inkscape:label="#g3064" mblogic:editcount="2" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBT_SVGScreenSelect.SelectScreen(\&quot;%(layername)s\&quot;);&quot;}]" mblogic:menu="[{&quot;value&quot;: &quot;OpScr&quot;, &quot;type&quot;: &quot;layer&quot;, &quot;name&quot;: &quot;Layer Name&quot;, &quot;param&quot;: &quot;layername&quot;}]" mblogic:outputfunc="" mblogic:widgetname="Menu Push Button" mblogic:widgettype="pb_menu" onclick="MBT_SVGScreenSelect.SelectScreen(&quot;OpScr&quot;);" style="display:inline" transform="matrix(1.1893217,0,0,1.1807701,84.556711,28.36284)">
       <rect height="35" id="rect3066" rx="15" style="fill:#808080;stroke:none;filter:url(#MB_DropShadowFilter-38)" width="100" x="7" y="7"/>
       <rect height="36" id="rect3068" rx="15" style="fill:url(#MB_BlueGradient-4)" width="100" x="0" y="0"/>
       <text font-size="24" id="Main1" inkscape:label="#text3070" sodipodi:linespacing="125%" style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff;stroke-width:2px;font-family:Sans;-inkscape-font-specification:Sans" x="50" y="26">
         <tspan id="tspan3181" sodipodi:role="line" x="50" y="26">Operator</tspan>
       </text>
     </g>
-    <g class="buttonactivate" id="MainEng" inkscape:label="#g3123" mblogic:editcount="3" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBT_SVGScreenSelect.SelectScreen(\&quot;%(layername)s\&quot;);&quot;}]" mblogic:menu="[{&quot;value&quot;: &quot;EngScr&quot;, &quot;type&quot;: &quot;layer&quot;, &quot;name&quot;: &quot;Layer Name&quot;, &quot;param&quot;: &quot;layername&quot;}]" mblogic:outputfunc="" mblogic:widgetname="Menu Push Button" mblogic:widgettype="pb_menu" style="display:inline" transform="matrix(1.1893217,0,0,1.1807701,249.72765,28.36284)">
+    <g class="buttonactivate" id="MainEng" inkscape:label="#g3123" mblogic:editcount="3" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBT_SVGScreenSelect.SelectScreen(\&quot;%(layername)s\&quot;);&quot;}]" mblogic:menu="[{&quot;value&quot;: &quot;EngScr&quot;, &quot;type&quot;: &quot;layer&quot;, &quot;name&quot;: &quot;Layer Name&quot;, &quot;param&quot;: &quot;layername&quot;}]" mblogic:outputfunc="" mblogic:widgetname="Menu Push Button" mblogic:widgettype="pb_menu" onclick="MBT_SVGScreenSelect.SelectScreen(&quot;EngScr&quot;);" style="display:inline" transform="matrix(1.1893217,0,0,1.1807701,249.72765,28.36284)">
       <rect height="35" id="rect3125" rx="15" style="fill:#808080;stroke:none;filter:url(#MB_DropShadowFilter-4-2)" width="100" x="7" y="7"/>
       <rect height="36" id="rect3127" rx="15" style="fill:url(#MB_AquaGradient-4)" width="100" x="0" y="0"/>
       <text font-size="24" id="text3129" sodipodi:linespacing="125%" style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;stroke-width:2px;font-family:Sans;-inkscape-font-specification:Sans" x="50" y="26">
         <tspan id="tspan3202" sodipodi:role="line" x="50" y="26">Engineering</tspan>
       </text>
     </g>
-    <g class="buttonactivate" id="MenuAutoMode" inkscape:label="#g3156" mblogic:editcount="3" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBT_SVGScreenSelect.SelectScreen(\&quot;%(layername)s\&quot;);&quot;}]" mblogic:menu="[{&quot;value&quot;: &quot;AutoModeScr&quot;, &quot;type&quot;: &quot;layer&quot;, &quot;name&quot;: &quot;Layer Name&quot;, &quot;param&quot;: &quot;layername&quot;}]" mblogic:outputfunc="" mblogic:widgetname="Menu Push Button" mblogic:widgettype="pb_menu" style="display:inline" transform="matrix(1.2648983,0,0,1.2714248,571.56206,31.190147)">
+    <g class="buttonactivate" id="MenuAutoMode" inkscape:label="#g3156" mblogic:editcount="3" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBT_SVGScreenSelect.SelectScreen(\&quot;%(layername)s\&quot;);&quot;}]" mblogic:menu="[{&quot;value&quot;: &quot;AutoModeScr&quot;, &quot;type&quot;: &quot;layer&quot;, &quot;name&quot;: &quot;Layer Name&quot;, &quot;param&quot;: &quot;layername&quot;}]" mblogic:outputfunc="" mblogic:widgetname="Menu Push Button" mblogic:widgettype="pb_menu" onclick="MBT_SVGScreenSelect.SelectScreen(&quot;AutoModeScr&quot;);" style="display:inline" transform="matrix(1.2648983,0,0,1.2714248,571.56206,31.190147)">
       <rect height="35" id="rect3158" rx="15" style="fill:#808080;stroke:none;filter:url(#MB_DropShadowFilter-9-6)" width="100" x="7" y="7"/>
       <rect height="36" id="rect3160" rx="15" style="fill:url(#MB_KhakiGradient-0)" width="100" x="0" y="0"/>
       <text font-size="24" id="text3162" style="font-size:19.20187378px;text-anchor:middle;stroke-width:2px" transform="matrix(0.95979274,-0.02626244,0.0238613,1.0412387,0,0)" x="52.402576" y="24.767996">AutoMode</text>
     </g>
-    <g class="buttonactivate" id="MenuGrph" inkscape:label="#g3216" mblogic:editcount="2" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBT_SVGScreenSelect.SelectScreen(\&quot;%(layername)s\&quot;);&quot;}]" mblogic:menu="[{&quot;value&quot;: &quot;GrphScr&quot;, &quot;type&quot;: &quot;layer&quot;, &quot;name&quot;: &quot;Layer Name&quot;, &quot;param&quot;: &quot;layername&quot;}]" mblogic:outputfunc="" mblogic:widgetname="Menu Push Button" mblogic:widgettype="pb_menu" style="display:inline" transform="matrix(1.1893217,0,0,1.1807701,413.47473,32.603801)">
+    <g class="buttonactivate" id="MenuGrph" inkscape:label="#g3216" mblogic:editcount="2" mblogic:inputfunc="[{&quot;event&quot;: &quot;onclick&quot;, &quot;func&quot;: &quot;MBT_SVGScreenSelect.SelectScreen(\&quot;%(layername)s\&quot;);&quot;}]" mblogic:menu="[{&quot;value&quot;: &quot;GrphScr&quot;, &quot;type&quot;: &quot;layer&quot;, &quot;name&quot;: &quot;Layer Name&quot;, &quot;param&quot;: &quot;layername&quot;}]" mblogic:outputfunc="" mblogic:widgetname="Menu Push Button" mblogic:widgettype="pb_menu" onclick="MBT_SVGScreenSelect.SelectScreen(&quot;GrphScr&quot;);" style="display:inline" transform="matrix(1.1893217,0,0,1.1807701,413.47473,32.603801)">
       <rect height="35" id="rect3218" rx="15" style="fill:#808080;stroke:none;filter:url(#MB_DropShadowFilter-6-1)" width="100" x="7" y="7"/>
       <rect height="36" id="rect3220" rx="15" style="fill:url(#MB_RedGradient-8)" width="100" x="0" y="0"/>
       <text font-size="24" id="text3222" sodipodi:linespacing="125%" style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;stroke-width:2px;font-family:Sans;-inkscape-font-specification:Sans" x="50" y="26">
@@ -1491,4 +1578,568 @@
     <alarmzonelist id="alarmzonelist485"/>
     <eventzonelist id="eventzonelist487"/>
   </mblogicdata>
-</svg>
+</svg></div>
+
+	<!-- End of the main page. -->
+
+	<!-- ################################################################## -->
+
+
+	<!-- This is for alarms. Do not modify this section. -->
+
+	<div id="MBT_AlarmsScreen">
+	
+		<h2>Active Alarms:</h2> 
+	
+		<p>  
+		<svg height="75" width="250px" xmlns="http://www.w3.org/2000/svg" xmlns:html="http://www.w3.org/1999/xhtml">
+	
+	
+		<defs>
+			<!-- The following filter is used to add a drop shadown. -->
+			<filter id="MBT_AlarmDropShadowFilter">
+				<feGaussianBlur stdDeviation="2">
+				</feGaussianBlur>
+			</filter>
+	
+				<!-- For violet buttons. -->
+			<linearGradient id="MBT_AlarmGradient" x1="1" x2="0" y1="1" y2="0">
+				<stop offset="50%" stop-color="violet"/>
+				<stop offset="100%" stop-color="white"/>
+			</linearGradient>
+	
+		</defs>
+	
+	
+				<!-- Push button to acknowledge alarms. -->
+		<g class="buttonactivate" fill="url(#MBT_AlarmGradient)" onclick="MBHMIProtocol.AddAlarmAck();" transform="translate(100, 35)">
+	
+ 			<!-- This is the actual button. -->
+			<!-- Rectangular push button. -->
+			<g id="MBT_AlarmPB">
+					<!-- This rectangle is used for the drop shadown. -->
+					<rect fill="grey" filter="url(#MBT_AlarmDropShadowFilter)" height="50" rx="15" stroke="none" stroke-width="0px" width="160" x="-73" y="-18"/>
+			
+					<!-- This is the actual button. -->
+					<rect height="50" rx="15" width="160" x="-80" y="-25"/>
+			</g>
+	
+			<!-- This is the text label. -->
+			<text font-size="20" stroke-width="2px" x="-65" y="8">Acknowledge</text> 
+	
+		</g>
+			
+	
+		</svg>
+		</p> 
+	
+		<p>
+		 	<!-- This is the table used to display the alarms. -->
+			<table border="5" cellpadding="5" id="MBT_AlarmDisplay">
+			<tr> 
+				<td><b>Alarm:</b></td>
+				<td><b>Alarm State:</b></td>
+				<td><b>Time:</b></td> 
+				<td><b>Time OK:</b></td> 
+				<td><b>Count:</b></td>
+			</tr>
+			</table>
+		</p>
+	
+	
+		<h2>Alarm History:</h2>
+	
+		<!-- This is the table used to display the alarm history. -->
+		<p>
+			<table border="5" cellpadding="5" id="MBT_AlarmHistoryDisplay">
+			<tr>
+				<td><b>Alarm:</b></td>
+				<td><b>Alarm Time:</b></td> 
+				<td><b>Time OK:</b></td> 
+				<td><b>Ack By:</b></td> 
+			</tr>
+			</table>
+		</p>
+	
+	</div>
+	
+	<!-- End of the alarms page. -->
+
+	<!-- ################################################################## -->
+
+
+	<!-- This is for events. Do not modify this section. -->
+
+	<div id="MBT_EventsScreen">
+		<h2>Events:</h2>
+
+		<p>
+		<!-- This is the table used to display the events. -->
+		<table border="5" cellpadding="5" id="MBT_EventDisplay">
+		<tr>
+			<td><b>Event #:</b></td> 
+			<td><b>Date:</b></td> 
+			<td><b>Event:</b></td> 
+			<td><b>State:</b></td>
+		</tr>
+		</table>
+		</p>
+	</div>
+
+
+	<!-- End of the events page. -->
+
+	<!-- ################################################################## -->
+
+	<!-- This is for system errors. Do not modify this section. -->
+
+	<div id="MBT_SystemStatusScreen">
+
+		<h2>Communications Errors:</h2>
+		<!-- This is the table used to display the communcations errors. -->
+		<p><table border="5" cellpadding="5" id="MBT_ErrorDisplay">
+		<tr>
+			<td><b>Date:</b></td> 
+			<td><b>Tag:</b></td> 
+			<td><b>Error:</b></td>
+		</tr>
+		</table>
+		</p>
+
+
+		<h2>Communications Status:</h2>
+		<!-- This is the table used to display the coummunications status. -->
+		<p><table border="5" cellpadding="5" id="MBT_StatusDisplay">
+		<tr>
+			<td><b>Date:</b></td> 
+			<td><b>Status Code:</b></td> 
+			<td><b>Status:</b></td>
+		</tr>
+		</table>
+		</p>
+
+	</div>
+
+	<!-- End of the system status page. -->
+
+	<!-- ################################################################## -->
+
+
+	<!-- This is for application specific help. -->
+
+	<div id="MBT_HelpScreen">
+
+		<h1>Help:</h1>
+
+		<h2>Main</h2>
+		<p>Application specific help content goes here. 
+		</p>
+
+		<hr/>
+
+		<h2>Alarms</h2>
+		<p>Alarms are high priority operator messages which require 
+		acknowledgement (i.e. fault messages).
+		</p>
+
+		<p>The alarm screen consists of two tables. The active alarms table shows
+		alarms which are currently active. Repeated alarms are automatically 
+		summarised. Alarms are colour coded according to whether they have been
+		already acknowledged and as to whether the fault condition has already 
+		corrected itself. If multiple operator stations are in use and an 
+		operator acknowledges an alarm, the acknowledgement is automatically
+		reflected to all other operator stations.
+		</p>
+		
+		<p>Once alarms have been acknowledged and the alarm condition they
+		automatically move to a historical table. 
+		</p>
+
+		<p>The active alarms table contains the following columns:</p>
+
+		<ul>
+			<li><strong>Alarm</strong> - The alarm text. This is application
+				specific.</li>
+			<li><strong>Alarm State</strong> - The current state of the alarms.</li>
+			<li><strong>Time</strong> - The time at which the alarm condition 
+				(fault) occurred.</li>
+			<li><strong>Time OK</strong> - The time at which the alarm condition
+				cleared.</li>
+			<li><strong>Count</strong> - The number of times the alarm condition
+				occurred before clearing and being acknowledged. Each time the
+				alarm transitions from OK to not OK the count will increment.
+				Once the alarm message has moved to the alarm history table the
+				count will rest to zero.</li>
+		</ul>
+
+		<p>The alarm history table contains the following columns:
+		</p>
+
+		<ul>
+			<li><strong>Alarm</strong> - This is the same as in the active alarms
+				table.</li>
+			<li><strong>Alarm Time</strong> - This is the same as in the active alarms
+				table.</li>
+			<li><strong>Time OK</strong> - This is the same as in the active alarms
+				table.</li>
+			<li><strong>Ack By</strong> - This is the id of the HMI client that
+				acknowledged the alarm.</li>
+		</ul>
+
+		<hr/>
+
+		<h2>Events</h2>
+		<p>Events are low priority operator messages which do not require 
+		acknowledgement. Events are displayed in a historical table. 
+		</p>
+
+		<p>The events table contains the following columns:
+		</p>
+
+		<ul>
+			<li><strong>Event #</strong> - The event serial number. This is applied
+				by the server and is unique for each event occurrence. </li>
+			<li><strong>Date</strong> - The time at which the event occurred.</li>
+			<li><strong>Event</strong> - The event text. This is application
+				specific.</li>
+			<li><strong>State</strong> - The current data state of the event.</li>
+		</ul>
+
+		<hr/>
+
+		<h2>Status</h2>
+		<p>The error status screen displays communications errors and status.
+		The communications errors errors table displays error codes returned
+		from the server. These error codes are associated with individual 
+		commands for such things as data out of range, incompatible data types, 
+		etc. Status errors are usually caused by HMI programming or server 
+		configuration errors. The communications errors table contains the 
+		following columns:  
+		</p>
+
+		<ul>
+			<li><strong>Date</strong> - The time at which the error occurred.</li>
+			<li><strong>Tag</strong> - The protocol tag associated with the 
+					error.</li>
+			<li><strong>Error</strong> - The descriptive error text.</li>
+		</ul>
+
+		<p>A communications status code reflects the protocol status code.
+		A status message is added to the table whenever a status code other
+		than &quot;ok&quot; is returned. The communications status table contains the 
+		following columns:
+		</p>
+
+		<ul>
+			<li><strong>Date</strong> - The time at which the error occurred.</li>
+			<li><strong>Status Code</strong> - The protocol status code.</li>
+			<li><strong>Status</strong> - The descriptive text for the status
+				code.</li>
+		</ul>
+
+		<p>Communications error and status messages are only returned to the 
+		client which generated the original request. When the web page is
+		reloaded, the messages are cleared. 
+		</p>
+
+		<hr/>
+
+		<h2>Help</h2>
+		<p>This screen.
+		</p>
+
+
+	</div>
+
+	<!-- End of the help page. -->
+
+<!-- ################################################################## -->
+
+</div>	<!-- For MBT_HTMLScreens. -->
+
+<!-- Standard footer -->
+<div id="MBT_HTMLFooter">
+	<p id="MBT_ClientName_Footer">SEEGRID Corporation</p>
+</div>
+
+</div>	<!-- For MBT_HTMLContainer. -->
+
+
+</body>
+
+	<script id="MBT_ControlLists">
+	<![CDATA[
+
+	// DO THIS: Parameters required for the protocol definition must be
+	// inserted here.
+	// ######################################################################
+
+	// The list of tags to poll.
+	MBT_ReadList = ["SpeedZero", "GrphScrTxt", "d8", "d6", "d7", "d4", "d5", "d2", "d3", "d1", "GlobalSwitchButton", "SpeedDispSet", "CANSwitchButton", "TiltPointerL", "Z2h", "AngleRight", "SpeedColumnDownSet", "Display", "ain4", "ain5", "ain6", "ain7", "ain1", "ain2", "ain3", "AngleRight100", "ain8", "Z2y_VL", "SpeedUp10", "Z2DistTrav", "SpeedDispAct", "SpeedUp", "Traction_Enable", "SpeedColumnUpAct", "OnLight", "CAN_Mode", "SpeedColumnDownAct", "AngleLeftMax", "SpeedDown", "Battery", "aout8", "Replay", "SpeedDown10", "Honk", "SpeedUp100", "aout1", "aout2", "aout3", "aout4", "aout5", "aout6", "aout7", "AngleRightMax", "AngleLeft10", "GS_ON", "AnglePtrAct", "SteerDispTxtSet", "RecordModeTrain", "SpeedMax", "Analog_Mode", "din7", "din6", "din5", "din4", "din3", "din2", "din1", "RecordTrainStart", "EStop", "din8", "Home_Start", "GS_OFF", "RecordTrainStop", "AngleLeft", "AnglePtrSet", "AngleLeft100", "TiltPointerR", "dout5", "dout4", "dout7", "dout6", "dout1", "dout3", "dout2", "SpeedDown100", "RecordModeReplay", "dout8", "SteerDispTxtAct", "a1", "a3", "a2", "a5", "a4", "a7", "a6", "a8", "GraphSpeed", "SpeedColumnUpSet", "Z2x_VF", "AngleCenter", "AngleRight10"];
+	// The alarm zone list to poll.
+	MBT_AlarmZoneList = [];
+	// The event zone list to poll.
+	MBT_EventZoneList = [];
+	
+	// We also add the SVG screen list here.
+	MBT_SVGScreenTable = ["AutoModeScr", "GrphScr", "EngScr", "OpScr"];
+
+	// ######################################################################
+
+	//]]>
+	</script>
+
+	<script>
+	<![CDATA[
+
+	var xmlns="http://www.w3.org/2000/svg";
+
+
+	/* This handles communications with the server. 
+	The parameters are: 
+		1) The host name the web page was loaded from.
+		2) The url (this can be a blank string).
+		2) The port number the web page was loaded from. 
+		3) The client ID string.
+		4) The list of tags to poll for data.
+		5) The list of alarm zones to poll for new alarms.
+		6) The list of event zones to poll for new events.
+		7) true = Enable asynchronous communications.
+	The first two parameters use a standard Javascript feature.
+	Alternatively, these can be hard coded values if the host
+	and port are known in advance.
+	*/
+	/* DO THIS: Make sure you update the MBT_ReadList, MBT_AlarmZoneList, 
+		and MBT_EventZoneList lists and the MBT_ClientID string in the 
+		external data file.
+	*/
+	var MBHMIProtocol = new HMIClient(window.location.hostname, 
+			window.location.pathname, window.location.port, 
+			MBT_ClientID, MBT_ReadList, MBT_AlarmZoneList, 
+			MBT_EventZoneList, true);
+
+
+	//]]>
+	</script>
+
+	<script id="MBT_ControlScripts">
+	<![CDATA[
+
+	// DO THIS: Application specific code goes here.
+	// ######################################################################
+
+	MBHMIProtocol.AddToDisplayList(new MB_2PosSSDisplay(document, "Can_ModeSwitch", -60, 60), "Analog_Mode", "read");
+	MBHMIProtocol.AddToDisplayList(new MB_PilotLightFlashTransform(document, "TrainMode"), "RecordTrainStart", "read");
+	MBHMIProtocol.AddToDisplayList(new MB_PilotLight(document, "Record_Train", "black", "red", "green"), "RecordModeTrain", "read");
+	MBHMIProtocol.AddToDisplayList(new MB_PilotLight(document, "Record_Replay", "black", "green", "red"), "RecordModeReplay", "read");
+	MBHMIProtocol.AddToDisplayList(new MB_PilotLight(document, "ReplayMode", "black", "red", "green"), "Replay", "read");
+	MBHMIProtocol.AddToDisplayList(new MB_StringDisplay(document, "Display_AutoMode"), "Display", "read");
+	MBHMIProtocol.AddToDisplayList(new MB_StripChart(document, "GraphSpeed", 200, 1, 1, 0.5), "GraphSpeed", "read");
+	MBHMIProtocol.AddToDisplayList(new MB_StringDisplay(document, "GrphScrTxt"), "GrphScrTxt", "read");
+	MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, "din1"), "din1", "read");
+	MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, "din2"), "din2", "read");
+	MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, "din3"), "din3", "read");
+	MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, "din4"), "din4", "read");
+	MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, "din5"), "din5", "read");
+	MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, "din6"), "din6", "read");
+	MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, "din7"), "din7", "read");
+	MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, "din8"), "din8", "read");
+	MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, "ain1"), "ain1", "read");
+	MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, "ain2"), "ain2", "read");
+	MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, "ain3"), "ain3", "read");
+	MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, "ain4"), "ain4", "read");
+	MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, "ain5"), "ain5", "read");
+	MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, "ain6"), "ain6", "read");
+	MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, "ain7"), "ain7", "read");
+	MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, "ain8"), "ain8", "read");
+	var MBT_NumberPad = new MB_NumericPad(document, "MBT_NumberPaddisplay", "10");
+	MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, "dout1"), "dout1", "read");
+	MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, "dout2"), "dout2", "read");
+	MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, "dout3"), "dout3", "read");
+	MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, "dout4"), "dout4", "read");
+	MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, "dout5"), "dout5", "read");
+	MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, "dout6"), "dout6", "read");
+	MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, "dout7"), "dout7", "read");
+	MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, "dout8"), "dout8", "read");
+	MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, "aout1"), "aout1", "read");
+	MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, "aout2"), "aout2", "read");
+	MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, "aout3"), "aout3", "read");
+	MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, "aout4"), "aout4", "read");
+	MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, "aout5"), "aout5", "read");
+	MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, "aout6"), "aout6", "read");
+	MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, "aout7"), "aout7", "read");
+	MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, "aout8"), "aout8", "read");
+	MBHMIProtocol.AddToDisplayList(new MB_PilotLight(document, "d1", "black", "red", "green"), "d1", "read");
+	MBHMIProtocol.AddToDisplayList(new MB_PilotLight(document, "d2", "black", "red", "green"), "d2", "read");
+	MBHMIProtocol.AddToDisplayList(new MB_PilotLight(document, "d3", "black", "red", "green"), "d3", "read");
+	MBHMIProtocol.AddToDisplayList(new MB_PilotLight(document, "d4", "black", "red", "green"), "d4", "read");
+	MBHMIProtocol.AddToDisplayList(new MB_PilotLight(document, "d5", "black", "red", "green"), "d5", "read");
+	MBHMIProtocol.AddToDisplayList(new MB_PilotLight(document, "d6", "black", "red", "green"), "d6", "read");
+	MBHMIProtocol.AddToDisplayList(new MB_PilotLight(document, "d7", "black", "red", "green"), "d7", "read");
+	MBHMIProtocol.AddToDisplayList(new MB_PilotLight(document, "d8", "black", "red", "green"), "d8", "read");
+	MBHMIProtocol.AddToDisplayList(new MB_DialGauge(document, "AnglePtrSet", 180, 90, 0, 90), "AnglePtrSet", "read");
+	MBHMIProtocol.AddToDisplayList(new MB_2PosSSDisplay(document, "GlobalSwitch", -60, 60), "GS_OFF", "read");
+	MBHMIProtocol.AddToDisplayList(new MB_PilotLight(document, "Honk", "black", "red", "blue"), "Honk", "read");
+	MBHMIProtocol.AddToDisplayList(new MB_PilotLight(document, "EStop", "aqua", "black", "red"), "EStop", "read");
+	MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, "SpeedDispAct"), "SpeedDispAct", "read");
+	MBHMIProtocol.AddToDisplayList(new MB_PilotLight(document, "OnLight", "black", "red", "green"), "OnLight", "read");
+	MBHMIProtocol.AddToDisplayList(new MB_ColumnGauge(document, "SpeedColUpAct", "MB_Column_WhiteGradient", "0", "3000"), "SpeedColumnUpAct", "read");
+	MBHMIProtocol.AddToDisplayList(new MB_ColumnGauge(document, "SpeedColDownAct", "MB_Column_RedGradient", "0", "-3000"), "SpeedColumnDownAct", "read");
+	MBHMIProtocol.AddToDisplayList(new MB_PilotLight(document, "TractionEnable", "black", "yellow", "green"), "Traction_Enable", "read");
+	MBHMIProtocol.AddToDisplayList(new MB_NumericDisplay(document, "SpeedDispSet"), "SpeedDispSet", "read");
+	MBHMIProtocol.AddToDisplayList(new MB_DialGauge(document, "AnglePtrActual", 180, 90, 0, 90), "AnglePtrAct", "read");
+	MBHMIProtocol.AddToDisplayList(new MB_ColumnGauge(document, "SpeedColUpSet", "MB_Column_WhiteGradient", "0", "3000"), "SpeedColumnUpSet", "read");
+	MBHMIProtocol.AddToDisplayList(new MB_ColumnGauge(document, "SpeedColDownSet", "MB_Column_RedGradient", "0", "-3000"), "SpeedColumnDownSet", "read");
+	MBHMIProtocol.AddToDisplayList(new MB_NumericFloatDisplay(document, "xAxis", "2"), "Z2x_VF", "read");
+	MBHMIProtocol.AddToDisplayList(new MB_NumericFloatDisplay(document, "yAxis", "2"), "Z2y_VL", "read");
+	MBHMIProtocol.AddToDisplayList(new MB_NumericFloatDisplay(document, "hTruckHeading", "2"), "Z2h", "read");
+	MBHMIProtocol.AddToDisplayList(new MB_NumericFloatDisplay(document, "TotDistTrav", "2"), "Z2DistTrav", "read");
+	MBHMIProtocol.AddToDisplayList(new MB_ColumnGauge(document, "Battery", "MB_Column_SilverGradient", "0", "100"), "Battery", "read");
+	MBHMIProtocol.AddToDisplayList(new MB_NumericFloatDisplay(document, "SteerDispSet", "2"), "SteerDispTxtSet", "read");
+	MBHMIProtocol.AddToDisplayList(new MB_NumericFloatDisplay(document, "SteerDispAct", "2"), "SteerDispTxtAct", "read");
+	MBHMIProtocol.AddToDisplayList(new MB_DialGauge(document, "TiltPointerL", 90, 180, 0, 90), "TiltPointerL", "read");
+	MBHMIProtocol.AddToDisplayList(new MB_DialGauge(document, "TiltPointerR", 270, 360, 0, 90), "TiltPointerR", "read");
+
+	// ######################################################################
+
+
+	//]]>
+	</script>
+
+	<script>
+	<![CDATA[
+
+	/* Make a list of all the screens that can be selected.
+		If you modify the HTML menu you may need to update this list.
+	*/
+	var MBT_HTMLScreenTable = ["MBT_SVGScreen", "MBT_EventsScreen",
+		"MBT_AlarmsScreen", "MBT_SystemStatusScreen", "MBT_HelpScreen"];
+	// This creates an object that controls display of the screens.
+	var MBT_HTMLSelect = new MB_ScreenSelect(document, MBT_HTMLScreenTable);
+
+	/* This handles the secondary SVG screens within the main screen.
+		The list of ids for the screens comes from an external data file.
+	*/ 
+	var MBT_SVGScreenSelect = new MB_ScreenSelect(document, MBT_SVGScreenTable);
+
+
+	/* Standard HTML screens. Message texts and other configuration data 
+		is read from external data files.
+	*/
+
+	// This is to display the alarms.
+	var MBT_AlarmDisplay = new MB_AlarmDisplay(document, "MBT_AlarmDisplay", 
+				MBT_AlarmText, MBT_AlarmStatesText, 
+				"red", "orange", "green");
+	// Add this to the display list.
+	MBHMIProtocol.AddToDisplayList(MBT_AlarmDisplay, "alarms", "alarms");
+
+
+	// This is to display the alarm history.
+	var MBT_AlarmHistoryDisplay = new MB_AlarmHistoryDisplay(document, 
+				"MBT_AlarmHistoryDisplay", 50, MBT_AlarmText);
+	// Add this to the display list.
+	MBHMIProtocol.AddToDisplayList(MBT_AlarmHistoryDisplay, 
+					"alarmhistory", "alarmhistory");
+
+	// This is to display the events.
+	var MBT_EventDisplay = new MB_EventDisplay(document, 
+			"MBT_EventDisplay", 50, MBT_EventText);
+	// Add this to the display list.
+ 	MBHMIProtocol.AddToDisplayList(MBT_EventDisplay, "events", "events");
+
+
+	// This is to display the communications errors.
+	var MBT_ErrorDisplay = new MB_TagErrorDisplay(document, 
+					"MBT_ErrorDisplay", 50, MBT_ErrorText);
+	// Add this to the display list.
+	MBHMIProtocol.AddToDisplayList(MBT_ErrorDisplay, "errors", "errors");
+
+
+	// This is to display the communications status log.
+	var MBT_StatusLogDisplay = new MB_StatusLogDisplay(document, 
+					"MBT_StatusDisplay", 50, MBT_StatusText);
+	// Add this to the display list.
+	MBHMIProtocol.AddToDisplayList(MBT_StatusLogDisplay, "status", "status");
+
+
+	// Set a page title. This uses data from a variable to set the page title
+	// plus any other page elements which need to be labeled at run time. This
+	// permits giving the HMI page a unique name based on the data in an 
+	// external Javascript file.  
+	function SetTitle(tname, msg) {
+		var tref = document.getElementById(tname);
+		// If there are any existing elements, remove them first.
+		if (tref.hasChildNodes()) {
+			while (tref.firstChild) {
+				tref.removeChild(tref.firstChild);
+			}
+		} 
+		// Add the text and insert it in the page. 
+		tref.appendChild(document.createTextNode(msg));
+	}
+
+	// Set the page title.
+	SetTitle("MBT_ClientName_Title", MBT_PageTitle);
+	// Page heading.
+	SetTitle("MBT_ClientName_Heading", MBT_PageTitle);
+	// Page footer. 
+	SetTitle("MBT_ClientName_Footer", MBT_PageTitle);
+
+	// Set whether the page heading is visible. Setting it to true will
+	// display the HTML "banner" heading, while setting it to false will
+	// hide the heading.
+	function SetHeadingVisbility(visible) {
+		if (visible) {
+			document.getElementById("MBT_TopHeader").style.display = "block";
+		} else {
+			document.getElementById("MBT_TopHeader").style.display = "none";
+		}
+	}
+	SetHeadingVisbility(MBT_HeaderVisible);
+
+
+
+	// Run all the operations required each scan cycle.
+	function MBT_RunScanCycle() {
+
+		// Query the server for updates.
+		MBHMIProtocol.SendRequest();
+
+
+		/* Call the function back again at the set interval. The time 
+		interval should be set to a larger value on very slow 
+		computers. The time interval between scans is set by 
+		the MBT_ScanRate, which is read from an external data file.
+		*/
+		window.setTimeout("MBT_RunScanCycle()", MBT_ScanRate);
+		
+	}
+
+	// Start up and initialisation.
+	function MBT_pageinit() {
+
+		// Call the function back again at the set interval.
+		window.setTimeout("MBT_RunScanCycle()",500);
+	}
+
+
+
+	//]]>
+	</script>
+
+<!-- Copyright 2008 - 2011. Michael Griffin
+This file is part of MBLogic.
+MBLogic is free software: you can redistribute it and/or modify 
+it under the terms of the GNU General Public License as published by 
+the Free Software Foundation, either version 3 of the License, or 
+(at your option) any later version. 
+MBLogic is distributed in the hope that it will be useful, 
+but WITHOUT ANY WARRANTY; without even the implied warranty of 
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the 
+GNU General Public License for more details. 
+You should have received a copy of the GNU General Public License 
+along with MBLogic. If not, see <http://www.gnu.org/licenses/>. 
+-->
+
+</html>

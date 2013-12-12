@@ -113,7 +113,6 @@ datatype=integer
 range = -2147483648, 2147483647
 scale = 0, 1
 
-
 ###Speed and angle buttons####
 
 [SpeedUp]
@@ -259,6 +258,20 @@ memaddr=13
 addrtype=inputreg
 memaddr=60
 
+####IMU Truck tilt######
+[TiltPointerL]
+addrtype=holdingregfloat
+memaddr=27
+datatype=float
+range= -360, 360
+scale=0,10
+
+[TiltPointerR]
+addrtype=holdingregfloat
+memaddr=27
+datatype=float
+range= -360, 360
+scale=0,10
 
 #####Global Swtich#####
 
@@ -589,7 +602,7 @@ scale = 0, 1
 
 [Z2DistTrav]
 addrtype=inputregfloat
-memaddr=17
+memaddr=14
 datatype=float
 scale = 0, 1
 

@@ -55,8 +55,22 @@ import ModbusClient
 import HMIServerCommon
 from mbprotocols import ModbusExtData
 
+import threading
 
 ############################################################
+
+#Some threading tesitng
+
+class Monitor(threading.Thread):
+    def __init__(self, mon):
+        threading.Thread.__init__(self)
+        self.mon = mon
+
+    def run(self):
+        while True:
+            print self.mon
+
+
 
 # Get the command line parameter options.
 #CmdOpts = HMIServerCommon.GetOptionsClient(502, _HelpStr)
@@ -81,7 +95,7 @@ ExtData6 = ModbusExtData.ExtendedDataTypes(textDisplayClient1)
 
 ############################################################
 
-
+STATE = "NULL"
 #record_mode = int(raw_input("Enter 0 to record Train, and 1 to record Replay: "))
 
 while True:
@@ -89,6 +103,11 @@ while True:
 	ExtData6.SetHRegStr16(100,30,"Welcome to S2!")
 	
 	time.sleep(5)
+
+	mon = Monitor(STATE)   #Threading
+	mon.start()            #Threading
+
+	STATE = "NOT NULL"
 
 	train_mode = textDisplayClient1.GetCoilsBool(31) #1 for train start, 0 for train stop
 
@@ -143,7 +162,7 @@ while True:
 
 		STATE = "Replay Complete" #Conditions: Previous mode is "Replay in Action", train_mode = 0 and replay_mode = 0
 		ExtData6.SetHRegStr16(100,30,"Replay complete. Truck is at end point")	
-
+	mon.join()        #Threading
 	time.sleep(6)
 		
 		
